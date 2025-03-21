@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 411f326db4af20a4cb858f865c653a6b
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyelashes
+    second: {fileID: 2100000, guid: 27e1e13361350eb44a1ec46b62a9d3d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: 4de5daf9ad91c9a4fbb7a614af46d8ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HAM_Cap
+    second: {fileID: 2100000, guid: 23db5224e2513a64e9c9c8b2054237ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ham_Accessory
+    second: {fileID: 2100000, guid: 26a8435de0165e64692133b90fdc7c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ham_Hair
+    second: {fileID: 2100000, guid: 4201aaed99619fb4b9b1066525d58b4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ham_Jewellery
+    second: {fileID: 2100000, guid: dd03d1cc79277c14c8eab59cecad80c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ham_Skin
+    second: {fileID: 2100000, guid: b9e722d846b7d2f46bdc98e0450a81c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ham_beard
+    second: {fileID: 2100000, guid: a522d592a74a3b44da7d29376370a8ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legs
+    second: {fileID: 2100000, guid: 766b3fb39f36cee4b957dafc9b0c9a68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoes
+    second: {fileID: 2100000, guid: c30c5a3cdbd4ea94c8d8114620a73283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suit1_Gloves
+    second: {fileID: 2100000, guid: e84d9b5af7ebd1040ba5401bbbdc025a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Torso
+    second: {fileID: 2100000, guid: 2cb67bc3deda9be4badc9c913eef80cc, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_EyeBrow_Alpha
+    second: {fileID: 2800000, guid: ca28b73f956ef1a4aacf7c5407ec38db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_EyeBrow_Diffuse_
+    second: {fileID: 2800000, guid: 16392b7e83327964486d19e378ad0d4b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_EyeBrow_Normal
+    second: {fileID: 2800000, guid: afd1232502608e54ebc6d17687dc1992, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Gloves_BaseColor
+    second: {fileID: 2800000, guid: 8a1878db026fc174884beb88402ba6ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Gloves_Normal
+    second: {fileID: 2800000, guid: 13aee148004bc4f4ea3c49cfa83e52f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Legs_BaseColor
+    second: {fileID: 2800000, guid: 490653e1db6973544ae0f9b56a9a8ddd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Legs_Normal
+    second: {fileID: 2800000, guid: 5875353c6ba3dea43a0e7ed4ea505dca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Shoes_baseColor
+    second: {fileID: 2800000, guid: 9c3c59bcc21ee494797e6919ba75e841, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Shoes_normal
+    second: {fileID: 2800000, guid: 57df1802aef65544983f6b8b7db0f870, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Torso_BaseColor
+    second: {fileID: 2800000, guid: 02aebab4ecde87f40b100379da8c2c3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_DriverSuit_Mercedes_Torso_Normal
+    second: {fileID: 2800000, guid: fe7e319c7c4436d4e8286a009116e7ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_LewisHamilton_Cap_Alpha
+    second: {fileID: 2800000, guid: 5ed70f5b88db62b49bd2729b8709f629, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_LewisHamilton_Cap_BaseColor
+    second: {fileID: 2800000, guid: 8e65ea259858b0f4596cc528dea2009d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_LewisHamilton_Hair_Alpha
+    second: {fileID: 2800000, guid: 9521eb1760c73464f99ba496d4d177ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_LewisHamilton_Hair_BaseColor
+    second: {fileID: 2800000, guid: e17630b5a444ec541875875a24aca6fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_LewisHamilton_Hair_Normal
+    second: {fileID: 2800000, guid: 590174c4389a97b4193ed92401530582, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_Lewis_Hamilton_Head_BaseColor
+    second: {fileID: 2800000, guid: e9e0e33597e2517418711817a787c25e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_Lewis_Hamilton_Head_Normal
+    second: {fileID: 2800000, guid: 96bfab478d2b1ec419f5f60be1a97083, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_Lewis_Hamilton_Head_Roughness
+    second: {fileID: 2800000, guid: 18ee829e6bbb75a4a88b9dfa8f16b9cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_Lewis_Hamilton_Head_SpecularLevel
+    second: {fileID: 2800000, guid: fc86d22465dceb949a236c2520548176, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_Lewis_Hamilton_Jewelry_BaseColor
+    second: {fileID: 2800000, guid: 8f1dfcd946cfbce4dbebd57f9652a24b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_F1_Driver_Lewis_Hamilton_Jewelry_Normal
+    second: {fileID: 2800000, guid: 86839ab8928cef44883054758b50443d, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

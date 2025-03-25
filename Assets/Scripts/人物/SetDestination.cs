@@ -15,14 +15,17 @@ public class MoveToMouseClick : MonoBehaviour
     void Update()
     {
 
-        
+
         // 设置动画的 Speed 参数为 NavMeshAgent 的速度
-        _animator.SetFloat(Animator.StringToHash("Speed"), _agent.velocity.magnitude);
-        _animator.SetFloat(Animator.StringToHash("MotionSpeed"), 1f);
+        if (_animator != null)
+        {
+            _animator.SetFloat(Animator.StringToHash("Speed"), _agent.velocity.magnitude);
+            _animator.SetFloat(Animator.StringToHash("MotionSpeed"), 1f);
 
-        print(_agent.velocity.magnitude);
+            Debug.Log("Agent Velocity: " + _agent.velocity.magnitude);
+            Debug.Log("Agent Destination: " + _agent.destination);
 
-
+        }
         if (Input.GetMouseButtonDown(0)) // 检测鼠标左键点击
         {
             // 获取鼠标点击的屏幕位置
@@ -34,8 +37,9 @@ public class MoveToMouseClick : MonoBehaviour
             {
                 // 设置 NavMeshAgent 的目标位置为鼠标点击的世界坐标
                 _agent.SetDestination(hit.point);
+                Debug.Log("Hit Point: " + hit.point);
             }
         }
     }
-    
+
 }

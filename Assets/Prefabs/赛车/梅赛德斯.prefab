@@ -122,7 +122,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8192396385512254503}
-  - component: {fileID: 2646763196932403014}
   - component: {fileID: 5015325599446273871}
   m_Layer: 0
   m_Name: "\u7B2C\u4E09\u4EBA\u79F0\u6444\u50CF\u673A"
@@ -139,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4112795247271429064}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.16016552, y: 0.0065805563, z: -0.0010677852, w: -0.9870677}
+  m_LocalRotation: {x: 0.1601658, y: -0.006579364, z: 0.0010675951, w: 0.9870677}
   m_LocalPosition: {x: 0.16667512, y: 4.166666, z: -12.49999}
   m_LocalScale: {x: 0.83333266, y: 0.8333331, z: 0.8333328}
   m_ConstrainProportionsScale: 0
@@ -147,14 +146,6 @@ Transform:
   - {fileID: 8875266070589586986}
   m_Father: {fileID: 3515210531021898295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &2646763196932403014
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4112795247271429064}
-  m_Enabled: 1
 --- !u!114 &5015325599446273871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,8 +194,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3515210531021898295}
-  - component: {fileID: 1255441977580849535}
   - component: {fileID: 4694093068118979247}
+  - component: {fileID: 6906945364834238163}
   m_Layer: 0
   m_Name: "\u6885\u8D5B\u5FB7\u65AF"
   m_TagString: Player
@@ -220,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4162890915735625897}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -8, y: -3, z: -0.2000122}
   m_LocalScale: {x: 1.200001, y: 1.2, z: 1.200001}
   m_ConstrainProportionsScale: 0
@@ -230,18 +221,6 @@ Transform:
   - {fileID: 8873899382682755921}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!114 &1255441977580849535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4162890915735625897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2f9625c76b1a04ca93e40be6c52192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!195 &4694093068118979247
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -251,12 +230,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 4162890915735625897}
   m_Enabled: 1
   m_AgentTypeID: -1372625422
-  m_Radius: 0.5
-  m_Speed: 30
-  m_Acceleration: 8
+  m_Radius: 1.2
+  m_Speed: 50
+  m_Acceleration: 300
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 360
+  m_StoppingDistance: 20
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -264,6 +243,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 8
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6906945364834238163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4162890915735625897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a05ecef5bc7a24e855fb0312cbcbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carId: "1\u53F7"
+  checkpointsParent: {fileID: 0}
+  arrivalDistance: 20
 --- !u!1001 &8983789576361362618
 PrefabInstance:
   m_ObjectHideFlags: 0

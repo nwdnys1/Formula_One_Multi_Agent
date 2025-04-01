@@ -1,0 +1,26 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/%E8%BD%A6%E6%89%8B%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.uss?fileID=7433441132597879392&amp;guid=a85d307f24d94334da9b8205a402c3fd&amp;type=3#车手参数设置" />
+    <engine:VisualElement class="driver-display-container" style="height: 1040px; width: 1878px;">
+        <engine:Label text="车手参数详情" class="display-title" />
+        
+        <!-- 车手总评 -->
+        <engine:VisualElement class="parameter-group">
+            <engine:Label text="车手总评 (Overall rate)" class="parameter-label" />
+            <engine:Label name="overallRateLabel" text="80" class="parameter-value" />
+        </engine:VisualElement>
+        
+        <!-- 车手心态 -->
+        <engine:VisualElement class="parameter-group" style="height: 275px;">
+            <engine:Label text="车手心态 (Attitude)" class="parameter-label" />
+            <engine:VisualElement name="attitudeDisplay" class="attitude-display">
+                <engine:Label name="attitudeLabel" text="平衡" class="attitude-value" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        
+        <!-- 车手事故概率 -->
+        <engine:VisualElement class="parameter-group">
+            <engine:Label text="车手事故概率 (Accidents rate)" class="parameter-label" />
+            <engine:Label name="accidentRateLabel" text="15.0%" class="parameter-value" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

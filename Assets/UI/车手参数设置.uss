@@ -1,0 +1,40 @@
+/* 基础样式保持不变，只修改需要调整的部分 */
+.driver-display-container {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 20px;
+}
+
+.display-title {
+    font-size: 24px;
+    color: #e10600; /* F1红色 */
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.parameter-value {
+    font-size: 18px;
+    color: #ffffff;
+    -unity-font-style: bold;
+    margin-left: 10px;
+}
+
+.attitude-display {
+    background-color: rgba(70, 70, 70, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.attitude-value {
+    font-size: 18px;
+    color: #ffffff;
+    -unity-font-style: bold;
+    text-align: center;
+}
+
+/* 移除交互元素的样式 */
+/* 可以保留原有样式文件中不涉及交互的部分 */

@@ -7,13 +7,15 @@ public class ParaManager : MonoBehaviour
     public static ParaManager Instance { get; private set; }
 
     [Header("Parameter Assets")]
-    public Dictionary<string, DriverPara> driverParas = new Dictionary<string, DriverPara>();
-    public Dictionary<string, CarPara> carParas = new Dictionary<string, CarPara>();
+    public Dictionary<string, DriverPara> driverParasPreset = new Dictionary<string, DriverPara>();
+    public Dictionary<string, CarPara> carParasPreset = new Dictionary<string, CarPara>();
     public ParaList paraList;
+    private Dictionary<string, DriverPara> driverParasCurrent = new Dictionary<string, DriverPara>();
+    private Dictionary<string, CarPara> carParasCurrent = new Dictionary<string, CarPara>();
 
     public DriverPara getDriverPara(string id)
     {
-        if (driverParas.TryGetValue(id, out DriverPara config))
+        if (driverParasCurrent.TryGetValue(id, out DriverPara config))
         {
             return config;
         }
@@ -26,7 +28,7 @@ public class ParaManager : MonoBehaviour
 
     public CarPara getCarPara(string id)
     {
-        if (carParas.TryGetValue(id, out CarPara config))
+        if (carParasCurrent.TryGetValue(id, out CarPara config))
         {
             return config;
         }
@@ -35,6 +37,26 @@ public class ParaManager : MonoBehaviour
             Debug.LogError($"未找到赛车配置: {id}");
             return null;
         }
+    }
+
+    public void setDriverPara(string id, DriverPara config)
+    {
+        if (!driverParasCurrent.ContainsKey(id))
+        {
+            Debug.LogError($"未找到角色配置: {id}");
+            return;
+        }
+        driverParasCurrent[id] = config;
+    }
+
+    public void setCarPara(string id, CarPara config)
+    {
+        if (!carParasCurrent.ContainsKey(id))
+        {
+            Debug.LogError($"未找到赛车配置: {id}");
+            return;
+        }
+        carParasCurrent[id] = config;
     }
 
     private void Awake()
@@ -47,15 +69,18 @@ public class ParaManager : MonoBehaviour
             // 从资产初始化字典
             foreach (DriverPara config in paraList.driverParas)
             {
-                driverParas.Add(config.name, config);
+                driverParasPreset.Add(config.name, config);
                 print(config.name);
             }
 
             foreach (CarPara config in paraList.carParas)
             {
-                carParas.Add(config.name, config);
+                carParasPreset.Add(config.name, config);
                 print(config.name);
             }
+            // 赋值
+            driverParasCurrent = new Dictionary<string, DriverPara>(driverParasPreset);
+            carParasCurrent = new Dictionary<string, CarPara>(carParasPreset);
         }
         else
         {

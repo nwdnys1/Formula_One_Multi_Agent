@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51163f7a5b2f3e843949e940a309bddb, type: 3}
   m_Name: "1\u53F7"
   m_EditorClassIdentifier: 
-  overallRate: 50
-  attitude: 1
-  accidentRate: 0.1
+  overallRate: 70
+  attitude: 0
+  accidentRate: 0.2

@@ -1,0 +1,54 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/%E8%B5%9B%E5%9C%BA/%E8%B5%9B%E4%B8%ADUI.uss?fileID=7433441132597879392&amp;guid=2079f4d5bae67e44b99ea0a1f4116fca&amp;type=3#赛中UI" />
+    <engine:VisualElement class="root">
+        <engine:Label text="赛车参数监控" class="header" />
+        <engine:VisualElement class="parameter-section">
+            <engine:Label text="基本信息" class="section-header" />
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="赛车ID:" class="parameter-label" />
+                <engine:Label name="carIdLabel" class="parameter-value" />
+            </engine:VisualElement>
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="当前速度:" class="parameter-label" />
+                <engine:Label name="speedLabel" class="parameter-value" />
+            </engine:VisualElement>
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="当前加速度:" class="parameter-label" />
+                <engine:Label name="accelerationLabel" class="parameter-value" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement class="parameter-section">
+            <engine:Label text="轮胎状态" class="section-header" />
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="轮胎类型:" class="parameter-label" />
+                <engine:Label name="tyreTypeLabel" class="parameter-value" />
+            </engine:VisualElement>
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="轮胎磨损:" class="parameter-label" />
+                <engine:ProgressBar name="tyreWearBar" high-value="100" low-value="0" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement class="parameter-section">
+            <engine:Label text="性能增强" class="section-header" />
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="ERS状态:" class="parameter-label" />
+                <engine:Label name="ersStatusLabel" class="parameter-value" />
+            </engine:VisualElement>
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="油量释放:" class="parameter-label" />
+                <engine:Label name="fuelStatusLabel" class="parameter-value" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement class="parameter-section">
+            <engine:Label text="导航信息" class="section-header" />
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="当前检查点:" class="parameter-label" />
+                <engine:Label name="checkpointLabel" class="parameter-value" />
+            </engine:VisualElement>
+            <engine:VisualElement class="parameter-row">
+                <engine:Label text="赛道段类型:" class="parameter-label" />
+                <engine:Label name="segmentTypeLabel" class="parameter-value" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

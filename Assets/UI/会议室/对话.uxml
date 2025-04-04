@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/%E4%BC%9A%E8%AE%AE%E5%AE%A4/%E5%AF%B9%E8%AF%9D.uss?fileID=7433441132597879392&amp;guid=18f9b02c47eb49d4a810a24f68f96915&amp;type=3#对话" />
+    <engine:VisualElement class="root">
+        <engine:VisualElement class="dialog-container">
+            <engine:Label name="characterName" class="character-name" />
+            <engine:Label name="dialogueText" class="dialogue-text" />
+            <engine:VisualElement class="input-container">
+                <engine:TextField name="playerInput" class="player-input" />
+                <engine:Button name="submitButton" text="发送" class="submit-button" />
+            </engine:VisualElement>
+            <engine:VisualElement name="continueHint" class="continue-hint" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

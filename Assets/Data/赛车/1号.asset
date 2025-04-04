@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
   m_Name: "1\u53F7"
   m_EditorClassIdentifier: 
-  topSpeed: 320
-  acceleration: 15
+  topSpeed: 80
+  acceleration: 50
   drsEffectiveness: 0.5
   carCornering: 3.5
   frontWingAngle: 5

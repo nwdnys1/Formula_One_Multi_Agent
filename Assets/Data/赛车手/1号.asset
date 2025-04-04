@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overallRate: 70
   attitude: 0
-  accidentRate: 0.2
+  accidentRate: 0.3

@@ -1,0 +1,61 @@
+.root {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    min-height: 300px;
+}
+
+.header {
+    font-size: 18px;
+    color: rgb(76, 175, 80);
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parameter-section {
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.section-header {
+    font-size: 14px;
+    color: rgb(33, 150, 243);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.parameter-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.parameter-label {
+    color: rgb(200, 200, 200);
+    font-size: 13px;
+    min-width: 100px;
+}
+
+.parameter-value {
+    color: white;
+    font-size: 13px;
+    text-align: right;
+}
+
+ProgressBar {
+    height: 12px;
+    width: 150px;
+}
+
+ProgressBar > .unity-progress-bar__progress {
+    background-color: rgb(76, 175, 80);
+}
+
+.tyre-wear-low {
+    background-color: rgb(255, 87, 34);
+}

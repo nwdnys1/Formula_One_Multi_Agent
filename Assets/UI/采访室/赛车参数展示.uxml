@@ -1,0 +1,81 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/%E8%B5%9B%E8%BD%A6%E5%8F%82%E6%95%B0%E5%B1%95%E7%A4%BA.uss?fileID=7433441132597879392&amp;guid=f074f0f0916aff84eb23ccf48ebf4839&amp;type=3#赛车参数展示" />
+    <ui:VisualElement class="root">
+        <ui:Label text="赛车参数" class="header" />
+        <ui:VisualElement class="section">
+            <ui:Label text="速度属性" class="section-header" />
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="最高速度 (km/h):" class="parameter-label" />
+                <ui:Label name="topSpeedValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="加速度 (m/s²):" class="parameter-label" />
+                <ui:Label name="accelerationValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="DRS效果:" class="parameter-label" />
+                <ui:Label name="drsEffectivenessValue" class="parameter-value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="弯道性能" class="section-header" />
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="过弯能力 (G):" class="parameter-label" />
+                <ui:Label name="carCorneringValue" class="parameter-value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="轮胎属性" class="section-header" />
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="轮胎类型:" class="parameter-label" />
+                <ui:Label name="tyreTypeValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="磨损率:" class="parameter-label" />
+                <ui:Label name="wearRateValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="当前磨损:" class="parameter-label" />
+                <ui:Label name="currentWearValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="最大圈数:" class="parameter-label" />
+                <ui:Label name="maxLapsValue" class="parameter-value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="赛车调校" class="section-header" />
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="前翼角度:" class="parameter-label" />
+                <ui:Label name="frontWingValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="后翼角度:" class="parameter-label" />
+                <ui:Label name="rearWingValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="防倾杆分布:" class="parameter-label" />
+                <ui:Label name="antiRollValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="轮胎外倾角:" class="parameter-label" />
+                <ui:Label name="camberValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="parameter-row">
+                <ui:Label text="前束角:" class="parameter-label" />
+                <ui:Label name="toeOutValue" class="parameter-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="setup-results">
+                <ui:Label text="调校结果" class="section-header" />
+                <ui:VisualElement class="parameter-row">
+                    <ui:Label text="转向过度评价:" class="parameter-label" />
+                    <ui:Label name="oversteerRating" class="parameter-value" />
+                </ui:VisualElement>
+                <ui:VisualElement class="parameter-row">
+                    <ui:Label text="刹车稳定性评价:" class="parameter-label" />
+                    <ui:Label name="brakingStabilityRating" class="parameter-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

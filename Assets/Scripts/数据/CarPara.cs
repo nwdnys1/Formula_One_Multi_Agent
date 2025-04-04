@@ -6,10 +6,10 @@ public class CarPara : ScriptableObject
     // 赛车性能
     [Header("Speed Attributes")]
     [Tooltip("Top speed in km/h")]
-    public float topSpeed = 320f;
+    public float topSpeed = 320f / 3.6f;
 
     [Tooltip("Acceleration in m/s^2")]
-    public float acceleration = 15f;
+    public float acceleration = 50f;
 
     [Tooltip("DRS effectiveness (0-1)")]
     [Range(0f, 1f)] public float drsEffectiveness = 0.5f;

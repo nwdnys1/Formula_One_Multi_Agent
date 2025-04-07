@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 Assets/Models/场景/赛场.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/Models/场景/媒体室.fbx filter=lfs diff=lfs merge=lfs -text

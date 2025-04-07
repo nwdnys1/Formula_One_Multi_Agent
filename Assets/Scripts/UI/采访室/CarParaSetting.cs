@@ -68,6 +68,12 @@ public class CarParametersUI : MonoBehaviour
         UpdateAllParametersDisplay();
     }
 
+    private void Update()
+    {
+        // 这里可以添加实时更新逻辑，例如根据赛车状态更新参数
+         UpdateAllParametersDisplay();
+    }
+
     /// <summary>
     /// 更新所有参数显示
     /// </summary>

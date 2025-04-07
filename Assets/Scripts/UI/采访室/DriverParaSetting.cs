@@ -12,6 +12,10 @@ public class DriverParaSetting : MonoBehaviour
         InitializeUI();
 
     }
+    private void Update()
+    {
+        DisplayDriver("1ºÅ");
+    }
 
     private void InitializeUI()
     {

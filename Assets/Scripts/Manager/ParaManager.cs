@@ -12,6 +12,14 @@ public class ParaManager : MonoBehaviour
     public ParaList paraList;
     private Dictionary<string, DriverPara> driverParasCurrent = new Dictionary<string, DriverPara>();
     private Dictionary<string, CarPara> carParasCurrent = new Dictionary<string, CarPara>();
+    [Header("Environment Parameters")]
+    public EnvPara envParaPreset;
+    private EnvPara envPara;
+
+    public EnvPara GetEnvPara()
+    {
+        return envPara;
+    }
 
     public DriverPara getDriverPara(string id)
     {

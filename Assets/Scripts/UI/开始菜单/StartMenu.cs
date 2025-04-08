@@ -33,7 +33,7 @@ public class StartMenu : MonoBehaviour
     private void OnStartButtonClicked()
     {
 
-        SceneManager.LoadScene("²É·ÃÊÒ");
+        SceneManager.LoadScene("Á·Ï°Èü");
     }
 
     private void OnSettingsButtonClicked()

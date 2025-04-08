@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DialogExample : MonoBehaviour
 {
-    private DialogUI dialogUI;
+    DialogUI dialogUI;
 
     private void Awake()
     {
@@ -17,11 +17,9 @@ public class DialogExample : MonoBehaviour
     private void Start()
     {
         // 显示NPC对话
-        dialogUI.ShowDialogue("春日野悠", "你好，我是春日野悠。最近过得怎么样？", () =>
-        {
-            // 对话显示完成后显示玩家输入
-            dialogUI.ShowPlayerInput(OnPlayerResponse);
-        });
+        dialogUI.ShowDialogue("你好，我是春日野悠。最近过得怎么样？");
+        // 显示玩家输入框
+        dialogUI.ShowInputField("请输入你的回答...", OnPlayerResponse);
     }
 
     private void OnPlayerResponse(string playerText)
@@ -30,24 +28,15 @@ public class DialogExample : MonoBehaviour
         Debug.Log("玩家说: " + playerText);
 
         // 继续下一段对话
-        dialogUI.ShowDialogue("春日野悠", "我明白了。那么你觉得这个游戏怎么样？", () =>
+        dialogUI.ShowOptions(new string[] { "我很好，谢谢！", "有点忙..." }, (input) =>
         {
-            dialogUI.ShowPlayerInput(OnSecondPlayerResponse);
+            Debug.Log("玩家选择了选项" + input);
         });
     }
 
-    private void OnSecondPlayerResponse(string playerText)
-    {
-        Debug.Log("玩家第二次回应: " + playerText);
-        // 可以继续对话链...
-    }
 
     private void Update()
     {
-        // 点击鼠标左键快速完成当前文本显示
-        if (Input.GetMouseButtonDown(0))
-        {
-            dialogUI.CompleteCurrentText();
-        }
+
     }
 }

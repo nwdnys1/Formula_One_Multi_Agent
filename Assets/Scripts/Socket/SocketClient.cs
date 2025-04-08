@@ -26,7 +26,8 @@ public class SocketClient : MonoBehaviour
     private NetworkStream _stream;
     private Thread _receiveThread;
     private bool _isConnected = false;
-    private Action<string[]> _currentCallback;
+    private Action<string> _currentCallback;
+    private Action<string> _nextCallback;
 
     public void Connect(string serverIP, int port, Action<bool> onConnected = null)
     {
@@ -72,7 +73,12 @@ public class SocketClient : MonoBehaviour
         }
     }
 
-    public void Send(string jsonData, Action<string[]> callback)
+    public void Send(object jsonData, Action<string> callback, Action<string> nextCallback)
+    {
+        Send(JsonUtility.ToJson(jsonData), callback, nextCallback);
+    }
+
+    public void Send(string jsonData, Action<string> callback, Action<string> nextCallback)
     {
         if (!_isConnected)
         {
@@ -81,6 +87,7 @@ public class SocketClient : MonoBehaviour
         }
 
         _currentCallback = callback;
+        _nextCallback = nextCallback;
 
         try
         {
@@ -103,12 +110,11 @@ public class SocketClient : MonoBehaviour
         }
     }
 
-    private List<string> _pendingResponses = new List<string>(); // 存储未结束的响应片段
+
 
     private void ReceiveData()
     {
         byte[] buffer = new byte[4096];
-        StringBuilder receivedData = new StringBuilder();
 
         try
         {
@@ -122,37 +128,27 @@ public class SocketClient : MonoBehaviour
                 }
 
                 string receivedString = Encoding.UTF8.GetString(buffer, 0, bytesRead).TrimEnd('\0');
-                receivedData.Append(receivedString);
+                print("received:" + receivedString); // 打印接收到的字符串
 
-                // 检查是否收到完整 JSON（假设服务器返回独立 JSON 消息）
-                string completeMessage = receivedData.ToString();
-                receivedData.Clear();
+                bool isEnd = receivedString.Contains("finally_end"); // 判断是否为结束标志
 
-                // 解析 JSON 判断是否结束
-                bool isEnd = completeMessage.Contains("\"end\": \"true\""); // 假设 JSON 中有一个 "end" 字段来标识结束
-
-                // 如果未结束，缓存当前片段
-                if (!isEnd)
+                if (isEnd)
                 {
-                    _pendingResponses.Add(completeMessage);
-                    continue;
+                    _currentCallback = _nextCallback;
+                    _nextCallback = null;
+
                 }
-
-                // 如果结束，合并所有片段并触发回调
-                _pendingResponses.Add(completeMessage); // 加入最后一个片段
-                string[] fullResponse = _pendingResponses.ToArray(); // 转换为数组
-                _pendingResponses.Clear(); // 清空缓存
-
                 // 在主线程执行回调
                 if (_currentCallback != null)
                 {
                     UnityMainThreadDispatcher.Instance.Enqueue(() =>
-                    {   
-                        print( fullResponse);
-                        _currentCallback.Invoke(fullResponse);
-                        _currentCallback = null; // 清空回调（防止重复调用）
+                    {
+
+                        _currentCallback.Invoke(receivedString);
+
                     });
                 }
+
             }
         }
         catch (Exception e)

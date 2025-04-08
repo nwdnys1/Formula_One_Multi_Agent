@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using Cinemachine;
 
 
 
@@ -63,8 +64,15 @@ public class CarController : MonoBehaviour
     private float accidentCheckTimer = 0f;
     private DriverPara driverPara;
 
+    [Header("虚拟相机")]
+    public CinemachineVirtualCamera car3rd;
+
+    // 在CarController类中添加
+    private float _raceStartTime;
+    private float _lastCheckpointTime;
+
     void Start()
-    {
+    {   CameraManager.Instance.SetCamera(car3rd);
         // 从管理器获取赛车参数
         para = ParaManager.Instance.getCarPara(carId);
 
@@ -91,6 +99,9 @@ public class CarController : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
         _agent.speed = 0; // 初始速度为0
         //_agent.acceleration = acceleration;
+
+        _raceStartTime = Time.time;
+        _lastCheckpointTime = _raceStartTime;
 
         // 初始化检查点
         if (checkpointsParent != null)
@@ -145,6 +156,11 @@ public class CarController : MonoBehaviour
         // 检查是否到达检查点
         if (distanceToTarget <= arrivalDistance)
         {
+            float currentTime = Time.time;
+            float checkpointTime = currentTime - _lastCheckpointTime;
+            RaceTimeManager.Instance.UpdateCarCheckpoint(carId, _currentIndex, checkpointTime);
+            _lastCheckpointTime = currentTime;
+
             _currentIndex++;
             if (_currentIndex < _checkpoints.Length)
             {

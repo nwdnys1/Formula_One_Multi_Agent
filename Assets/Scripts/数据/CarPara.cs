@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 [CreateAssetMenu(fileName = "CarPara", menuName = "Scriptable Objects/CarPara")]
 public class CarPara : ScriptableObject
 {
@@ -33,30 +34,33 @@ public class CarPara : ScriptableObject
     public float bestTyreCamber = -3.2f;
     public float bestToeOut = 0.7f;
 
-    public enum SetupRating { Disaster, Low, Medium, High, Perfect }
+    [Header("Setup Result")]
+    public int oversteerRating = 1; //1-5
+    public int brakingStabilityRating = 1; //1-5
+    public int corneringRating = 1; //1-5
+    public int tractionRating = 1; //1-5
+    public int straightsRating = 1; //1-5
 
-    public SetupRating GetOversteerRating()
+    public void CalculateTuningRatings()
     {
-        float frontDiff = Mathf.Abs(frontWingAngle - bestFrontWingAngle);
-        float camberDiff = Mathf.Abs(tyreCamber - bestTyreCamber);
-        return GetRatingFromDifference(frontDiff + camberDiff);
+
+        // 计算各参数匹配度（0-1，1表示完全匹配）
+        float frontWingMatch = 1 - Mathf.Abs(frontWingAngle - bestFrontWingAngle) / 10f;
+        float rearWingMatch = 1 - Mathf.Abs(rearWingAngle - bestRearWingAngle) / 10f;
+        float antiRollMatch = 1 - Mathf.Abs(antiRollDistribution - bestAntiRollDistribution) / 2f;
+        float camberMatch = 1 - Mathf.Abs(tyreCamber - bestTyreCamber) / 1.5f;
+        float toeOutMatch = 1 - Mathf.Abs(toeOut - bestToeOut);
+
+        // 计算5个评分（基于影响参数加权）
+        oversteerRating = Mathf.Clamp((int)((frontWingMatch * 0.5f + camberMatch * 0.5f) * 5f + 0.5f), 1, 5);
+        brakingStabilityRating = Mathf.Clamp((int)((antiRollMatch * 0.6f + camberMatch * 0.4f) * 5f + 0.5f), 1, 5);
+        corneringRating = Mathf.Clamp((int)((frontWingMatch * 0.7f + toeOutMatch * 0.3f) * 5f + 0.5f), 1, 5);
+        tractionRating = Mathf.Clamp((int)((rearWingMatch * 0.6f + toeOutMatch * 0.4f) * 5f + 0.5f), 1, 5);
+        straightsRating = Mathf.Clamp((int)(rearWingMatch * 5f + 0.5f), 1, 5);
+
+
     }
 
-    public SetupRating GetBrakingStabilityRating()
-    {
-        float antiRollDiff = Mathf.Abs(antiRollDistribution - bestAntiRollDistribution);
-        float camberDiff = Mathf.Abs(tyreCamber - bestTyreCamber);
-        return GetRatingFromDifference(antiRollDiff + camberDiff);
-    }
-
-    private SetupRating GetRatingFromDifference(float difference)
-    {
-        if (difference < 0.5f) return SetupRating.Perfect;
-        if (difference < 1f) return SetupRating.High;
-        if (difference < 2f) return SetupRating.Medium;
-        if (difference < 3f) return SetupRating.Low;
-        return SetupRating.Disaster;
-    }
 
     // 轮胎参数
     public enum TyreType { Hard, Medium, Soft }

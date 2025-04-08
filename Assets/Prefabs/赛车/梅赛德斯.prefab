@@ -570,8 +570,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4112795247271429064}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1601658, y: -0.0065802867, z: 0.0010677445, w: 0.98706764}
-  m_LocalPosition: {x: 0.16666934, y: 4.166666, z: -12.499967}
+  m_LocalRotation: {x: -0.16016556, y: 0.0065804813, z: -0.0010677752, w: -0.98706764}
+  m_LocalPosition: {x: 0.16673435, y: 4.166666, z: -12.499773}
   m_LocalScale: {x: 0.83333266, y: 0.8333331, z: 0.8333328}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -736,12 +736,6 @@ MonoBehaviour:
   - type: 1
     startCheckpointIndex: 15
     endCheckpointIndex: 16
-  - type: 0
-    startCheckpointIndex: 16
-    endCheckpointIndex: 17
-  - type: 1
-    startCheckpointIndex: 17
-    endCheckpointIndex: 18
   straightTopSpeed: 320
   cornerTopSpeed: 180
   acceleration: 15
@@ -768,6 +762,7 @@ MonoBehaviour:
   driverId: "1\u53F7"
   accidentRate: 0
   accidentCheckInterval: 10
+  car3rd: {fileID: 5015325599446273871}
 --- !u!1 &4356494505716844094
 GameObject:
   m_ObjectHideFlags: 0

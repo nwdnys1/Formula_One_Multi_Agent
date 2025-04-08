@@ -71,7 +71,7 @@ public class CarParametersUI : MonoBehaviour
     private void Update()
     {
         // 这里可以添加实时更新逻辑，例如根据赛车状态更新参数
-         UpdateAllParametersDisplay();
+        UpdateAllParametersDisplay();
     }
 
     /// <summary>
@@ -117,8 +117,8 @@ public class CarParametersUI : MonoBehaviour
     /// </summary>
     private void UpdateSetupRatingsDisplay()
     {
-        oversteerRating.text = currentCarPara.GetOversteerRating().ToString();
-        brakingStabilityRating.text = currentCarPara.GetBrakingStabilityRating().ToString();
+        oversteerRating.text = currentCarPara.oversteerRating.ToString();
+        brakingStabilityRating.text = currentCarPara.brakingStabilityRating.ToString();
     }
 
     /// <summary>

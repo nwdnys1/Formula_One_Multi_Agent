@@ -1,0 +1,16 @@
+﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
+        <Style src="Meeting Room - Pre - Wolff.uss" />
+        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
+            <unity:VisualElement id="2:2" name="Meeting Room - Pre - Wolff" class="unity-base-override Meeting-Room-Pre-Wolff unity-viewport" picking-mode="Ignore">
+                <unity:VisualElement id="2:3" name="Rectangle 2" class="unity-base-override Rectangle-2" picking-mode="Ignore" />
+                <unity:VisualElement id="2:4" name="Rectangle 1" class="unity-base-override Rectangle-1" picking-mode="Ignore" />
+                <unity:Label id="2:5" name="Toto wolff (You)" class="unity-base-override Toto-wolff-You" picking-mode="Ignore" text="TOTO WOLFF  (YOU)" />
+                <unity:Label id="2:6" name="Contents" class="unity-base-override Contents" picking-mode="Ignore" text="Contents" />
+                <unity:VisualElement id="2:7" name="Union 1032" class="unity-base-override Union-1032" picking-mode="Ignore" />
+                <unity:Label id="2:8" name="Pre - Match Briefing" class="unity-base-override Pre-Match-Briefing" picking-mode="Ignore" text="PRE - MATCH BRIEFING" />
+                <unity:VisualElement id="2:9" name="wolff-Photoroom 1" class="unity-base-override wolff-Photoroom-1" picking-mode="Ignore" />
+            </unity:VisualElement>
+        </unity:VisualElement>
+    </unity:VisualElement>
+</unity:UXML>

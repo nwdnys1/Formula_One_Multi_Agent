@@ -1,0 +1,157 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Media-Room-Journalist-Report {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+}
+
+.Rectangle-2 {
+	border-radius: 10px;
+	position: absolute;
+	left: 5.21%;
+	right: 7.29%;
+	top: 3.15%;
+	bottom: 86.48%;
+	background-color: rgba(217,217,217,0.50);
+	border-color: rgba(133,133,133,1);
+	border-width: 1px;
+}
+
+.Rectangle-1 {
+	border-radius: 10px;
+	position: absolute;
+	left: 5.18%;
+	right: 7.32%;
+	top: 23.52%;
+	bottom: 4.26%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/85e198590e68e26d20b26bd7057a3791.svg');
+}
+
+.journalist {
+	position: absolute;
+	left: 10.73%;
+	right: 61.15%;
+	top: 15.09%;
+	bottom: 77.31%;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.Contents {
+	position: absolute;
+	left: 8.39%;
+	right: 31.72%;
+	top: 34.91%;
+	bottom: 12.22%;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(255,255,255,1);
+	white-space: normal;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Union-1032 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 89.11%;
+	right: 8.65%;
+	top: 88.52%;
+	bottom: 7.50%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/8e19f6108e71fbcc1aaaa2a8a6093b34.svg');
+}
+
+.media-interview {
+	position: absolute;
+	left: 26.46%;
+	right: 26.46%;
+	top: 6.02%;
+	bottom: 89.44%;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(44,44,64,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.News-Title {
+	position: relative;
+	align-self: center;
+	left: -33px;
+	top: -246px;
+	width: 1542px;
+	height: 49px;
+	margin-bottom: -49px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-left;
+}
+
+.yas-marina-1 {
+	border-radius: 10px;
+	position: relative;
+	left: 69.38%;
+	right: 9.79%;
+	top: -150px;
+	height: 225px;
+	margin-bottom: -225px;
+	align-self: flex-start;
+	width: 20.83%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/3b9ccf1e114ac393a1a5e37d7ad02dae.png');
+	background-size: cover;
+}
+
+.start-1 {
+	border-radius: 10px;
+	position: relative;
+	left: 69.38%;
+	right: 9.79%;
+	top: 123px;
+	height: 267px;
+	margin-bottom: -267px;
+	align-self: flex-start;
+	width: 20.83%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/c92d65d27fa2164afc9d8d81e69fb694.png');
+	background-size: cover;
+}
+
+.reporter-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 118px;
+	width: 175px;
+	top: 155px;
+	height: 99px;
+	background-image: url('Images/8ab93ef1afd18b7760c91cc64db889af.png');
+	background-size: cover;
+}

@@ -1,0 +1,16 @@
+﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
+        <Style src="Media Room - Journalist.uss" />
+        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
+            <unity:VisualElement id="1:2" name="Media Room - Journalist" class="unity-base-override Media-Room-Journalist unity-viewport" picking-mode="Ignore">
+                <unity:VisualElement id="1:3" name="Rectangle 2" class="unity-base-override Rectangle-2" picking-mode="Ignore" />
+                <unity:VisualElement id="1:4" name="Rectangle 1" class="unity-base-override Rectangle-1" picking-mode="Ignore" />
+                <unity:Label id="1:5" name="journalist" class="unity-base-override journalist" picking-mode="Ignore" text="JOURNALIST" />
+                <unity:Label id="1:6" name="Contents" class="unity-base-override Contents" picking-mode="Ignore" text="Contents" />
+                <unity:VisualElement id="1:7" name="Union 1032" class="unity-base-override Union-1032" picking-mode="Ignore" />
+                <unity:Label id="1:8" name="media interview" class="unity-base-override media-interview" picking-mode="Ignore" text="MEDIA INTERVIEW" />
+                <unity:VisualElement id="1:9" name="reporter 1" class="unity-base-override reporter-1" picking-mode="Ignore" />
+            </unity:VisualElement>
+        </unity:VisualElement>
+    </unity:VisualElement>
+</unity:UXML>

@@ -25,22 +25,8 @@
 
 .Menu {
 	border-radius: 0px 0px 0px 0px;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0);
 	overflow: hidden;
-}
-
-.e93defb64f064f1c16cf6ac005828c4-1 {
-	border-radius: 0px 0px 0px 0px;
-	position: relative;
-	left: -13.44%;
-	right: -8.49%;
-	top: -540px;
-	height: 1080px;
-	margin-bottom: -1080px;
-	align-self: flex-start;
-	width: 121.93%;
-	background-image: url('Images/ca179077d32ebd66558d6b110d35e7f7.png');
-	background-size: cover;
 }
 
 .Strategy-Storm {
@@ -90,9 +76,8 @@
 	position: relative;
 	left: 26.09%;
 	right: 57.86%;
-	top: -253px;
+	top: -206px;
 	height: 94px;
-	margin-bottom: -94px;
 	align-self: flex-start;
 	width: 16.05%;
 	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);

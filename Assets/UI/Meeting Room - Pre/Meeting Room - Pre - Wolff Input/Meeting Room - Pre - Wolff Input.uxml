@@ -1,0 +1,28 @@
+﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
+        <Style src="Meeting Room - Pre - Wolff Input.uss" />
+        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
+            <unity:VisualElement id="1:2" name="Meeting Room - Pre - Wolff Input" class="unity-base-override Meeting-Room-Pre-Wolff-Input unity-viewport" picking-mode="Ignore">
+                <unity:VisualElement id="1:3" name="Rectangle 2" class="unity-base-override Rectangle-2" picking-mode="Ignore" />
+                <unity:VisualElement id="1:4" name="Rectangle 1" class="unity-base-override Rectangle-1" picking-mode="Ignore" />
+                <unity:Label id="1:5" name="Toto wolff (You)" class="unity-base-override Toto-wolff-You" picking-mode="Ignore" text="TOTO WOLFF  (YOU)" />
+                <unity:Label id="1:6" name="Input" class="unity-base-override Input" picking-mode="Ignore" text="Input" />
+                <unity:VisualElement id="1:7" name="Union 1032" class="unity-base-override Union-1032" picking-mode="Ignore" />
+                <unity:Label id="1:8" name="Pre - Match Briefing" class="unity-base-override Pre-Match-Briefing" picking-mode="Ignore" text="PRE - MATCH BRIEFING" />
+                <unity:VisualElement id="1:9" name="wolff-Photoroom 1" class="unity-base-override wolff-Photoroom-1" picking-mode="Ignore" />
+                <unity:VisualElement id="1:10" name="Frame 60" class="unity-base-override Frame-60" picking-mode="Ignore">
+                    <unity:VisualElement id="1:11" name="IMAGE" class="unity-base-override IMAGE" picking-mode="Ignore" />
+                    <unity:Label id="1:12" name="To" class="unity-base-override To" picking-mode="Ignore" text="To" />
+                    <unity:VisualElement id="1:13" name="Frame 59" class="unity-base-override Frame-59" picking-mode="Ignore">
+                        <unity:VisualElement id="1:14" name="arrow_up" class="unity-base-override arrow-up" picking-mode="Ignore">
+                            <unity:VisualElement id="1:15" name="Vector" class="unity-base-override Vector-one" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:16" name="arrow_down" class="unity-base-override arrow-down" picking-mode="Ignore">
+                            <unity:VisualElement id="1:17" name="Vector" class="unity-base-override Vector-two" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+            </unity:VisualElement>
+        </unity:VisualElement>
+    </unity:VisualElement>
+</unity:UXML>

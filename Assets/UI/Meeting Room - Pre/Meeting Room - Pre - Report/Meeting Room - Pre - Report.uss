@@ -1,0 +1,155 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Meeting-Room-Pre-Report {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+}
+
+.Rectangle-1 {
+	border-radius: 10px;
+	position: absolute;
+	left: 6.22%;
+	right: 6.28%;
+	top: 27.78%;
+	bottom: 6.39%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/178503a1c131bf9028fe760e7eabe158.svg');
+}
+
+.Rectangle-2 {
+	border-radius: 10px;
+	position: absolute;
+	left: 120px;
+	width: 1680px;
+	top: 34px;
+	height: 112px;
+	background-color: rgba(217,217,217,0.50);
+	border-color: rgba(133,133,133,1);
+	border-width: 1px;
+}
+
+.Toto-wolff-You {
+	position: relative;
+	align-self: center;
+	left: -400px;
+	top: -356px;
+	width: 630px;
+	height: 82px;
+	margin-bottom: -82px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(60,205,221,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.Union-1032 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 89.48%;
+	right: 8.28%;
+	top: 88.06%;
+	bottom: 7.96%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/d4a375e8a6df623747ceafa1f5d11dce.svg');
+}
+
+.Pre-Match-Briefing {
+	position: relative;
+	align-self: center;
+	left: 0px;
+	top: -475px;
+	width: 904px;
+	height: 49px;
+	margin-bottom: -49px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(44,44,64,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.wolff-Photoroom-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 132px;
+	width: 152px;
+	top: 149px;
+	height: 151px;
+	background-image: url('Images/56d4d3cc633f5afc72367d5ed454dd25.png');
+	background-size: cover;
+}
+
+.Contents {
+	position: absolute;
+	left: 9.43%;
+	right: 30.68%;
+	top: 39.17%;
+	bottom: 7.96%;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(255,255,255,1);
+	white-space: normal;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Report-Title {
+	position: relative;
+	align-self: center;
+	left: -13px;
+	top: -200px;
+	width: 1542px;
+	height: 49px;
+	margin-bottom: -49px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-left;
+}
+
+.WolffHamilton-1 {
+	border-radius: 10px;
+	position: absolute;
+	left: 1351px;
+	width: 367px;
+	top: 400px;
+	height: 240px;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/867924fb28843f7481d7f5a18b27ad3d.png');
+	background-size: cover;
+}
+
+.n-1-10 {
+	border-radius: 10px;
+	position: absolute;
+	left: 1351px;
+	width: 367px;
+	top: 699px;
+	height: 212px;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/5f813fec99387dbc73229fba07a73993.png');
+	background-size: cover;
+}

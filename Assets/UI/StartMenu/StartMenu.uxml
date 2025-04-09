@@ -3,7 +3,6 @@
         <Style src="StartMenu.uss" />
         <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
             <unity:VisualElement id="1:4" name="Menu" class="unity-base-override Menu unity-viewport" picking-mode="Ignore">
-                <unity:VisualElement id="1:5" name="e93defb64f064f1c16cf6ac005828c4 1" class="unity-base-override e93defb64f064f1c16cf6ac005828c4-1" picking-mode="Ignore" />
                 <unity:Label id="1:6" name="Strategy Storm" class="unity-base-override Strategy-Storm" picking-mode="Ignore" text="Strategy Storm" />
                 <unity:Label id="1:7" name="Start" class="unity-base-override Start" picking-mode="Ignore" text="Start" />
                 <unity:Label id="1:8" name="Quit" class="unity-base-override Quit" picking-mode="Ignore" text="Quit" />

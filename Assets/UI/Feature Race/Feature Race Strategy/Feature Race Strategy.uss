@@ -47,12 +47,25 @@
 	border-bottom-width: 1px;
 }
 
+.IMAGE-one {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 1118px;
+	width: 50px;
+	top: 977px;
+	height: 50px;
+	background-image: url('Images/46cee6f3024790c76f7e63b1f2e08e67.png');
+	background-size: contain;
+	border-color: rgba(26,28,31,1);
+	border-width: 1px;
+}
+
 .Rectangle-two {
 	border-radius: 8px;
 	position: absolute;
-	left: 1080px;
-	width: 588px;
-	top: 978px;
+	left: 1210px;
+	width: 483px;
+	top: 979px;
 	height: 50px;
 	background-color: rgba(44,44,64,1);
 	border-color: rgba(63,63,79,1);
@@ -62,16 +75,16 @@
 .Rectangle-three {
 	border-radius: 8px;
 	position: absolute;
-	left: 1684px;
+	left: 1709px;
 	width: 99px;
-	top: 978px;
+	top: 979px;
 	height: 50px;
 	background-color: rgba(67,24,209,1);
 }
 
 .Send {
 	position: absolute;
-	left: 1710px;
+	left: 1735px;
 	width: auto;
 	top: 988px;
 	height: 24px;
@@ -84,9 +97,9 @@
 
 .Type-your-message {
 	position: absolute;
-	left: 1096px;
+	left: 1227px;
 	width: auto;
-	top: 991px;
+	top: 993px;
 	height: 19px;
 	color: rgba(255,255,255,1);
 	white-space: nowrap;
@@ -187,7 +200,7 @@
 	height: auto;
 }
 
-.IMAGE-one {
+.IMAGE-two {
 	border-radius: 31655100px;
 	position: relative;
 	width: 50px;
@@ -264,7 +277,7 @@
 	height: auto;
 }
 
-.IMAGE-two {
+.IMAGE-three {
 	border-radius: 31655100px;
 	position: relative;
 	width: 50px;
@@ -341,7 +354,7 @@
 	height: auto;
 }
 
-.IMAGE-three {
+.IMAGE-four {
 	border-radius: 31655100px;
 	position: relative;
 	width: 50px;
@@ -566,7 +579,7 @@
 	-unity-text-align: upper-left;
 }
 
-.IMAGE-four {
+.IMAGE-five {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 203px;
@@ -845,9 +858,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 5%;
-	right: 5%;
+	right: 4.86%;
 	top: 7.50%;
-	bottom: 7.50%;
+	bottom: 6.58%;
 	background-image: url('Images/e7581ff139e9ee9ebe3b22889e16cd30.svg');
 }
 
@@ -855,9 +868,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 31.36%;
-	right: 30.82%;
+	right: 30.61%;
 	top: 28.87%;
-	bottom: 28.26%;
+	bottom: 27.47%;
 	background-image: url('Images/a164a0f9d028b7b1669a3686abd5dfb8.svg');
 }
 
@@ -929,9 +942,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 5%;
-	right: 5%;
+	right: 4.86%;
 	top: 7.50%;
-	bottom: 7.50%;
+	bottom: 6.58%;
 	background-image: url('Images/174cebff4a23704603133625a90fc4c6.svg');
 }
 
@@ -939,9 +952,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 27.05%;
-	right: 27.05%;
+	right: 26.47%;
 	top: 32.59%;
-	bottom: 34.49%;
+	bottom: 33.61%;
 	background-image: url('Images/678f1d5a7d19df5cfd442edb25067f8f.svg');
 }
 
@@ -1013,9 +1026,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 5%;
-	right: 5%;
+	right: 4.86%;
 	top: 7.50%;
-	bottom: 7.50%;
+	bottom: 6.58%;
 	background-image: url('Images/d1240282a090f03b9bd1fc777de99d03.svg');
 }
 
@@ -1023,9 +1036,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 30.18%;
-	right: 30.18%;
+	right: 28.97%;
 	top: 30.62%;
-	bottom: 30%;
+	bottom: 29.94%;
 	background-image: url('Images/9a555696a9c837e96749cc7876decda6.svg');
 }
 
@@ -1097,9 +1110,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 5%;
-	right: 5%;
+	right: 4.86%;
 	top: 7.50%;
-	bottom: 7.50%;
+	bottom: 6.58%;
 	background-image: url('Images/c2f33c3f738648ff6c16e8f3d8932424.svg');
 }
 
@@ -1107,9 +1120,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 44.75%;
-	right: 44.75%;
+	right: 43.98%;
 	top: 30.62%;
-	bottom: 30%;
+	bottom: 29.94%;
 	background-image: url('Images/1fce23df421bb01105c3277e3c2c8d34.svg');
 }
 
@@ -1181,9 +1194,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 5%;
-	right: 5%;
+	right: 4.86%;
 	top: 7.50%;
-	bottom: 7.50%;
+	bottom: 6.58%;
 	background-image: url('Images/ce5ee6051ffe8bc5efa7d88584e61c15.svg');
 }
 
@@ -1191,9 +1204,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 24.71%;
-	right: 24.71%;
+	right: 24.59%;
 	top: 35.09%;
-	bottom: 32.06%;
+	bottom: 31.11%;
 	background-image: url('Images/00fe5036ac0e692d2eb84a5aa8343e42.svg');
 }
 
@@ -1284,9 +1297,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 0%;
-	right: 0%;
+	right: -24.45%;
 	top: 0%;
-	bottom: 0%;
+	bottom: -14.20%;
 	background-image: url('Images/635770cfa6f081e65702de858ff59e03.svg');
 }
 
@@ -1314,9 +1327,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 23.48%;
-	right: 23.46%;
+	right: 22.35%;
 	top: 5.87%;
-	bottom: 5.88%;
+	bottom: 2.46%;
 	background-image: url('Images/601e98f31edc22c22ef6e9460f13f485.svg');
 }
 
@@ -1334,9 +1347,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 0%;
-	right: 25%;
+	right: 23.33%;
 	top: 33.33%;
-	bottom: 12.50%;
+	bottom: 10%;
 	background-image: url('Images/1e6a63aa71853a520e9dc3344965e581.svg');
 }
 
@@ -1346,7 +1359,7 @@
 	left: 83.38%;
 	right: -0.04%;
 	top: 41.71%;
-	bottom: 20.79%;
+	bottom: 18.29%;
 	background-image: url('Images/8edcb28873ef2eba7aa357514aad82b0.svg');
 }
 
@@ -1354,9 +1367,9 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: -0.04%;
-	right: 45.88%;
+	right: 43.38%;
 	top: 12.50%;
-	bottom: 75%;
+	bottom: 74.17%;
 	opacity: 0.40;
 	background-image: url('Images/c738b4814d42846cc2e9a763430947b1.svg');
 }
@@ -1375,8 +1388,62 @@
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 23.46%;
-	right: 23.48%;
+	right: 22.37%;
 	top: 5.87%;
-	bottom: 5.88%;
+	bottom: 2.46%;
 	background-image: url('Images/a7cbea03c3ede4393bcbc9625fb966ea.svg');
+}
+
+.To {
+	position: absolute;
+	left: 1082px;
+	width: auto;
+	top: 990px;
+	height: 24px;
+	margin: 1px 1px 1px 1px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.arrow-up {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1179px;
+	width: 24px;
+	top: 974px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.08%;
+	right: 10.42%;
+	top: 23.48%;
+	bottom: 22.35%;
+	background-image: url('Images/2d1542824481159272dbfb66a01d6c52.svg');
+}
+
+.arrow-down {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1179px;
+	width: 24px;
+	top: 1009px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.08%;
+	right: 10.42%;
+	top: 23.46%;
+	bottom: 22.37%;
+	background-image: url('Images/ac5cae9db506ad78d9a80b50cfc68e59.svg');
 }

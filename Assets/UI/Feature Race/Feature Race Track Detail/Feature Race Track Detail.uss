@@ -24,6 +24,409 @@
 	overflow: hidden;
 }
 
+.Frame-66 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 968px;
+	width: 720px;
+	top: 241px;
+	height: 640px;
+}
+
+.Rectangle-one {
+	border-radius: 20px;
+	position: absolute;
+	left: 0px;
+	width: 720px;
+	top: 0px;
+	height: 640px;
+}
+
+.Rectangle-two {
+	border-radius: 8px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 117px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-three {
+	border-radius: 0px 8px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 117px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-59 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 602px;
+	top: 136px;
+	height: 29px;
+}
+
+.Circuit-Temperature {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-30-C {
+	position: absolute;
+	left: 542px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 187px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 187px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-60 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 599px;
+	top: 207px;
+	height: 29px;
+}
+
+.Air-Temperature {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-25-C {
+	position: absolute;
+	left: 542px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 258px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 258px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-61 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 603px;
+	top: 277px;
+	height: 29px;
+}
+
+.Rainfall {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-0-mm {
+	position: absolute;
+	left: 533px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 328px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 328px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-62 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 604px;
+	top: 348px;
+	height: 29px;
+}
+
+.Wind-Speed {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-5-km-h {
+	position: absolute;
+	left: 517px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 399px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 399px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-63 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 604px;
+	top: 418px;
+	height: 29px;
+}
+
+.Wind-Direction {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.North {
+	position: absolute;
+	left: 530px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 469px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 469px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-64 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 599px;
+	top: 488px;
+	height: 29px;
+}
+
+.Grip-Level {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-50 {
+	position: absolute;
+	left: 548px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-fourteen {
+	border-radius: 0px 0px 0px 8px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 539px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-fifteen {
+	border-radius: 0px 0px 8px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 539px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-65 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 610px;
+	top: 559px;
+	height: 29px;
+}
+
+.Rubber-Particles {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Medium {
+	position: absolute;
+	left: 507px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
 .Frame-40 {
 	border-radius: 12px;
 	position: absolute;
@@ -34,7 +437,7 @@
 	background-color: rgba(30,30,45,1);
 }
 
-.Rectangle-one {
+.Rectangle-sixteen {
 	border-radius: 8px;
 	position: absolute;
 	left: 4px;
@@ -43,7 +446,7 @@
 	height: 48px;
 }
 
-.Rectangle-two {
+.Rectangle-seventeen {
 	border-radius: 8px;
 	position: absolute;
 	left: 186px;
@@ -81,6 +484,12 @@
 
 .Frame-39 {
 	border-radius: 12px;
+	padding: 15px 13px 15px 13px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	--item-spacing: 12;
 	position: absolute;
 	left: 1589px;
 	width: 219px;
@@ -89,23 +498,21 @@
 	background-color: rgba(30,30,45,1);
 }
 
-.Rectangle-three {
+.Rectangle-eighteen {
 	border-radius: 31655100px;
-	position: absolute;
-	left: 13px;
+	position: relative;
 	width: 8px;
-	top: 27px;
 	height: 8px;
+	margin-right: 12px;
 	opacity: 0.56;
 	background-color: rgba(114,239,75,1);
 }
 
 .LIVE {
-	position: absolute;
-	left: 33px;
+	position: relative;
 	width: auto;
-	top: 20px;
 	height: 21px;
+	margin-right: 12px;
 	color: rgba(114,239,75,1);
 	white-space: nowrap;
 	font-size: 14px;
@@ -114,11 +521,10 @@
 }
 
 .LAP {
-	position: absolute;
-	left: 82px;
+	position: relative;
 	width: auto;
-	top: 20px;
 	height: 21px;
+	margin-right: 12px;
 	color: rgba(166,166,177,1);
 	white-space: nowrap;
 	font-size: 14px;
@@ -127,11 +533,10 @@
 }
 
 .n-1 {
-	position: absolute;
-	left: 127px;
+	position: relative;
 	width: auto;
-	top: 16px;
 	height: 30px;
+	margin-right: 12px;
 	color: rgba(196,193,79,1);
 	white-space: nowrap;
 	font-size: 20px;
@@ -140,10 +545,8 @@
 }
 
 .n-58 {
-	position: absolute;
-	left: 152px;
+	position: relative;
 	width: auto;
-	top: 16px;
 	height: 30px;
 	color: rgba(166,166,177,1);
 	white-space: nowrap;
@@ -190,7 +593,7 @@
 	background-image: url('Images/cee27b7e5794cd757186c4bb5f4091ea.svg');
 }
 
-.Group-one {
+.Group {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 15.53%;
@@ -301,42 +704,33 @@
 	background-image: url('Images/52df5d41707d8b48a696579edfd60cff.svg');
 }
 
-.Frame-67 {
+.Rectangle-nineteen {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
-	left: 968px;
-	width: 720px;
-	top: 241px;
-	height: 640px;
-}
-
-.Rectangle-four {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
+	left: 1000px;
 	width: 656px;
-	top: 32px;
+	top: 273px;
 	height: 53px;
 	border-color: rgba(83,83,83,1);
 	border-bottom-width: 1px;
 }
 
-.Rectangle-five {
+.Rectangle-twenty {
 	border-radius: 31655100px;
 	position: absolute;
-	left: 32px;
+	left: 1000px;
 	width: 8px;
-	top: 46px;
+	top: 287px;
 	height: 8px;
 	opacity: 0.56;
 	background-color: rgba(114,239,75,1);
 }
 
-.TRACK-CONDITIONS {
+.TRACK-DETAIL {
 	position: absolute;
-	left: 52px;
+	left: 1020px;
 	width: auto;
-	top: 31px;
+	top: 272px;
 	height: 36px;
 	margin: 1px 1px 1px 1px;
 	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
@@ -347,845 +741,25 @@
 	-unity-text-align: upper-left;
 }
 
-.Frame-66 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 0px;
-	width: 720px;
-	top: 0px;
-	height: 640px;
-}
-
-.Rectangle-six {
-	border-radius: 20px;
-	position: absolute;
-	left: 0px;
-	width: 720px;
-	top: 0px;
-	height: 640px;
-}
-
-.Rectangle-seven {
-	border-radius: 8px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 117px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-eight {
-	border-radius: 0px 8px 0px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 117px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-59 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 602px;
-	top: 136px;
-	height: 29px;
-}
-
-.Circuit-Temperature {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.n-30-C {
-	position: absolute;
-	left: 542px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.Rectangle-nine {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 187px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-ten {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 187px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-60 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 599px;
-	top: 207px;
-	height: 29px;
-}
-
-.Air-Temperature {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.n-25-C {
-	position: absolute;
-	left: 542px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.Rectangle-eleven {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 258px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-twelve {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 258px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-61 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 603px;
-	top: 277px;
-	height: 29px;
-}
-
-.Rainfall {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.n-0-mm {
-	position: absolute;
-	left: 533px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.Rectangle-thirteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 328px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-fourteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 328px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-62 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 604px;
-	top: 348px;
-	height: 29px;
-}
-
-.Wind-Speed {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.n-5-km-h {
-	position: absolute;
-	left: 517px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.Rectangle-fifteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 399px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-sixteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 399px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-63 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 604px;
-	top: 418px;
-	height: 29px;
-}
-
-.Wind-Direction {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.North {
-	position: absolute;
-	left: 530px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.Rectangle-seventeen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 469px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-eighteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 469px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-64 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 599px;
-	top: 488px;
-	height: 29px;
-}
-
-.Grip-Level {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.n-50 {
-	position: absolute;
-	left: 548px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.Rectangle-nineteen {
-	border-radius: 0px 0px 0px 8px;
-	position: absolute;
-	left: 32px;
-	width: 327px;
-	top: 539px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Rectangle-twenty {
-	border-radius: 0px 0px 8px 0px;
-	position: absolute;
-	left: 361px;
-	width: 327px;
-	top: 539px;
-	height: 68px;
-	background-color: rgba(22,23,32,1);
-}
-
-.Frame-65 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 64px;
-	width: 610px;
-	top: 559px;
-	height: 29px;
-}
-
-.Rubber-Particles {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(175,177,178,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.Medium {
-	position: absolute;
-	left: 507px;
-	width: auto;
-	top: 0px;
-	height: 29px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 19px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-right;
-}
-
-.minimapAbuDhabiLarge-1 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 277px;
-	width: 527px;
-	top: 333px;
-	height: 496px;
-	overflow: hidden;
-}
-
-.Group-two {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 6.43%;
-	right: 6.44%;
-	top: 29.82%;
-	bottom: 29.82%;
-}
-
-.Large {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-}
-
-.track-one {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: -2.18%;
-	right: 2.18%;
-	top: 0%;
-	bottom: 0%;
-	opacity: 0.10;
-}
-
-.Vector-eight {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 46.90%;
-	right: 37.29%;
-	top: 21.68%;
-	bottom: 46.46%;
-}
-
-.Vector-nine {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 44.79%;
-	right: 39.40%;
-	top: 21.68%;
-	bottom: 46.46%;
-}
-
-.Vector-ten {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 11.07%;
-	right: 73.13%;
-	top: 21.68%;
-	bottom: 46.46%;
-}
-
-.Vector-eleven {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 49.01%;
-	right: 35.18%;
-	top: 21.68%;
-	bottom: 46.46%;
-}
-
-.Vector-twelve {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 97.91%;
-	right: 0.01%;
-	top: 50.46%;
-	bottom: 45.09%;
-	opacity: 0.50;
-}
-
-.Vector-thirteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 68.74%;
-	right: 12.51%;
-	top: 32.15%;
-	bottom: 41.50%;
-	opacity: 0.50;
-}
-
-.Vector-fourteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 54.34%;
-	right: 21.84%;
-	top: 30.95%;
-	bottom: 19.29%;
-	opacity: 0.50;
-}
-
-.Vector-fifteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 60%;
-	right: 39.15%;
-	top: 75.76%;
-	bottom: 22.42%;
-	opacity: 0.50;
-}
-
-.Vector-sixteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 95.39%;
-	right: 0.32%;
-	top: 47.56%;
-	bottom: 44.19%;
-	opacity: 0.50;
-}
-
-.Vector-seventeen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 81.33%;
-	right: 1.41%;
-	top: 40.51%;
-	bottom: 41.19%;
-	opacity: 0.50;
-}
-
-.Vector-eighteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 57.06%;
-	right: 37.76%;
-	top: 68.20%;
-	bottom: 20.62%;
-	opacity: 0.50;
-}
-
-.Vector-nineteen {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 45.30%;
-	right: 32.65%;
-	top: 22.44%;
-	bottom: 29.60%;
-	opacity: 0.50;
-}
-
-.Vector-twenty {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 23.13%;
-	right: 68.96%;
-	top: 41.21%;
-	bottom: 37.94%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-one {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 1.75%;
-	right: 90.43%;
-	top: 81.80%;
-	bottom: 0.57%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-two {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 27.11%;
-	right: 68.97%;
-	top: 53.65%;
-	bottom: 37.87%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-three {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 1.61%;
-	right: 87.20%;
-	top: 56.61%;
-	bottom: 16.96%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-four {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 0%;
-	right: 89.70%;
-	top: 66.56%;
-	bottom: 2.33%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-five {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 34.96%;
-	right: 62.58%;
-	top: 0.66%;
-	bottom: 93.70%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-six {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 22.63%;
-	right: 69.93%;
-	top: 33.19%;
-	bottom: 49.10%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-seven {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 45.53%;
-	right: 23.39%;
-	top: 23.67%;
-	bottom: 16.66%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-eight {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 34.85%;
-	right: 64.22%;
-	top: 0.01%;
-	bottom: 97.85%;
-	opacity: 0.50;
-}
-
-.Vector-twenty-nine {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 9.61%;
-	right: 71.94%;
-	top: 12.29%;
-	bottom: 47.86%;
-	opacity: 0.50;
-}
-
-.Vector-thirty {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 79.28%;
-	right: 10.96%;
-	top: 39.32%;
-	bottom: 41.19%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-one {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 39.09%;
-	right: 56.31%;
-	top: 5.30%;
-	bottom: 86.49%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-two {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 19.14%;
-	right: 76.74%;
-	top: 18.14%;
-	bottom: 73.01%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-three {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 29.29%;
-	right: 69.17%;
-	top: 58.65%;
-	bottom: 38.02%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-four {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 3.51%;
-	right: 59.42%;
-	top: 1.76%;
-	bottom: 25.59%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-five {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 41.35%;
-	right: 54.76%;
-	top: 6.48%;
-	bottom: 85.72%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-six {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 22.88%;
-	right: 69.67%;
-	top: 37.26%;
-	bottom: 44.83%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-seven {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 21.35%;
-	right: 70.10%;
-	top: 28.82%;
-	bottom: 52.34%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-eight {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 34.99%;
-	right: 57.88%;
-	top: 4.11%;
-	bottom: 82.17%;
-	opacity: 0.50;
-}
-
-.Vector-thirty-nine {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 43.89%;
-	right: 34.20%;
-	top: 15.54%;
-	bottom: 33.65%;
-	opacity: 0.50;
-}
-
-.Vector-forty {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 3.30%;
-	right: 90.66%;
-	top: 86.84%;
-	bottom: 0.01%;
-	opacity: 0.50;
-}
-
-.Vector-forty-one {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 5.46%;
-	right: 90.98%;
-	top: 92.07%;
-	bottom: 0.22%;
-	opacity: 0.50;
-}
-
-.Vector-forty-two {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 42.47%;
-	right: 45.27%;
-	top: 8.81%;
-	bottom: 61.93%;
-	opacity: 0.50;
-}
-
-.Vector-forty-three {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 42.16%;
-	right: 53.19%;
-	top: 7.66%;
-	bottom: 82.15%;
-	opacity: 0.50;
-}
-
-.Vector-forty-four {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 43.65%;
-	right: 43.68%;
-	top: 14.44%;
-	bottom: 57.91%;
-	opacity: 0.50;
-}
-
-.track-two {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: -1.52%;
-	right: 1.52%;
-	top: 0%;
-	bottom: 0%;
-}
-
-.track-three {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: -0.22%;
-	right: 0.22%;
-	top: 0%;
-	bottom: 0%;
-}
-
-.finish {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 40.32%;
-	right: 54.76%;
-	top: 31.86%;
-	bottom: 66.26%;
-}
-
-.Vector-forty-five {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 50.04%;
-	right: 46.55%;
-	top: 29.49%;
-	bottom: 58.35%;
+.vip-tour-hero-1920x694-1 {
+	border-radius: 10px;
+	position: absolute;
+	left: 188px;
+	width: 686px;
+	top: 260px;
+	height: 248px;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/7384cd794bc66e792ef997d132392b88.png');
+	background-size: cover;
+}
+
+.n-2-6 {
+	border-radius: 10px;
+	position: absolute;
+	left: 186px;
+	width: 686px;
+	top: 567px;
+	height: 296px;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/85fbb2761690660bec21bcc6e05bb93a.png');
 }

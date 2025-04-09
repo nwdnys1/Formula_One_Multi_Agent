@@ -1,0 +1,1259 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Practice-Race {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+}
+
+.image-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -195px;
+	width: 2309px;
+	top: 0px;
+	height: 1080px;
+	background-image: url('Images/198d8ba8287bacb3252d011e6c2b562d.png');
+	background-size: cover;
+}
+
+.Frame-12 {
+	border-radius: 10px;
+	padding: 31px 503px 31px 503px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	--item-spacing: 10;
+	position: absolute;
+	left: 120px;
+	width: 1680px;
+	top: 69px;
+	height: 112px;
+	background-color: rgba(217,217,217,0.50);
+	border-color: rgba(133,133,133,1);
+	border-width: 1px;
+}
+
+.practice-race {
+	position: relative;
+	width: auto;
+	height: 58px;
+	color: rgba(44,44,64,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.Frame-21 {
+	border-radius: 10px;
+	position: absolute;
+	left: 120px;
+	width: 400px;
+	top: 190px;
+	height: 461px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(0,0,0,1);
+	border-width: 1px;
+}
+
+.Rectangle-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1px;
+	width: 398px;
+	top: 0px;
+	height: 88px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Frame-one {
+	border-radius: 12px;
+	position: absolute;
+	left: 25px;
+	width: 350px;
+	top: 112px;
+	height: 324px;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Frame-20 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 0px;
+	height: 260px;
+}
+
+.Frame-13 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 0px;
+	height: 65px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Front-Wing-Angle {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 22px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-two {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 16px;
+	height: 32px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-6 {
+	position: absolute;
+	left: 264px;
+	width: auto;
+	top: 20px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-14 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 65px;
+	height: 65px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Rear-Wing-Angle {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 22px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-three {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 16px;
+	height: 32px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-12 {
+	position: absolute;
+	left: 260px;
+	width: auto;
+	top: 20px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-19 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 130px;
+	height: 65px;
+	overflow: hidden;
+}
+
+.Frame-15 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 0px;
+	height: 65px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Anti-Roll-Distribution {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 22px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-four {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 16px;
+	height: 32px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-4-6 {
+	position: absolute;
+	left: 259px;
+	width: auto;
+	top: 20px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-16 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 195px;
+	height: 65px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Tyre-Camber {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 22px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-five {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 16px;
+	height: 32px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-3-00 {
+	position: absolute;
+	left: 246px;
+	width: auto;
+	top: 19px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	top: 276px;
+	height: 32px;
+}
+
+.Toe-Out {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 6px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-17 {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 0px;
+	height: 32px;
+	background-color: rgba(67,24,209,1);
+	overflow: hidden;
+}
+
+.n-0-50 {
+	position: absolute;
+	left: 35px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Car-Setup {
+	position: absolute;
+	left: 25px;
+	width: auto;
+	top: 24px;
+	height: 39px;
+	color: rgba(60,205,221,1);
+	white-space: nowrap;
+	font-size: 26px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-28 {
+	border-radius: 10px;
+	position: absolute;
+	left: 579px;
+	width: 400px;
+	top: 190px;
+	height: 461px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(0,0,0,1);
+	border-width: 1px;
+}
+
+.Rectangle-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1px;
+	width: 398px;
+	top: 1px;
+	height: 91px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-seven {
+	border-radius: 12px;
+	position: absolute;
+	left: 25px;
+	width: 350px;
+	top: 117px;
+	height: 318px;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+}
+
+.Driver-satisfaction {
+	position: absolute;
+	left: 25px;
+	width: auto;
+	top: 26px;
+	height: 39px;
+	color: rgba(60,205,221,1);
+	white-space: nowrap;
+	font-size: 24px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-23 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 350px;
+	top: 117px;
+	height: 63px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Oversteer {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-eight {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 16px;
+	height: 30px;
+	background-color: rgba(67,24,209,1);
+}
+
+.Medium-one {
+	position: absolute;
+	left: 241px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-24 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 350px;
+	top: 180px;
+	height: 64px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Braking-Stability {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 21px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-nine {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 17px;
+	height: 30px;
+	background-color: rgba(67,24,209,1);
+}
+
+.High-one {
+	position: absolute;
+	left: 255px;
+	width: auto;
+	top: 21px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-25 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 350px;
+	top: 244px;
+	height: 64px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Cornering {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 21px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-ten {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 17px;
+	height: 30px;
+	background-color: rgba(67,24,209,1);
+}
+
+.High-two {
+	position: absolute;
+	left: 255px;
+	width: auto;
+	top: 21px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-26 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 350px;
+	top: 308px;
+	height: 64px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Traction {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 21px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-eleven {
+	border-radius: 4px;
+	position: absolute;
+	left: 214px;
+	width: 120px;
+	top: 17px;
+	height: 30px;
+	background-color: rgba(67,24,209,1);
+}
+
+.Medium-two {
+	position: absolute;
+	left: 241px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 41px;
+	width: 318px;
+	top: 389px;
+	height: 30px;
+}
+
+.Straights {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 4px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-27 {
+	border-radius: 4px;
+	position: absolute;
+	left: 198px;
+	width: 120px;
+	top: 0px;
+	height: 30px;
+	background-color: rgba(67,24,209,1);
+	overflow: hidden;
+}
+
+.Low {
+	position: absolute;
+	left: 43px;
+	width: auto;
+	top: 3px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Rectangle-twelve {
+	border-radius: 10px;
+	position: absolute;
+	left: 120px;
+	width: 858px;
+	top: 666px;
+	height: 385px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(0,0,0,1);
+	border-width: 1px;
+}
+
+.Rectangle-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 121px;
+	width: 857px;
+	top: 667px;
+	height: 88px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Car-Performance {
+	position: absolute;
+	left: 145px;
+	width: auto;
+	top: 691px;
+	height: 39px;
+	color: rgba(60,205,221,1);
+	white-space: nowrap;
+	font-size: 26px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-fourteen {
+	border-radius: 12px;
+	position: absolute;
+	left: 145px;
+	width: 809px;
+	top: 779px;
+	height: 247px;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+}
+
+.Frame-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 145px;
+	width: 809px;
+	top: 777px;
+	height: 231px;
+}
+
+.Frame-33 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 809px;
+	top: 0px;
+	height: 186px;
+}
+
+.Frame-29 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 809px;
+	top: 0px;
+	height: 62px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Top-Speed {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-fifteen {
+	border-radius: 4px;
+	position: absolute;
+	left: 667px;
+	width: 120px;
+	top: 16px;
+	height: 29px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-322-05-km-h {
+	position: absolute;
+	left: 677px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-30 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 809px;
+	top: 62px;
+	height: 62px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Acceleration {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-sixteen {
+	border-radius: 4px;
+	position: absolute;
+	left: 667px;
+	width: 120px;
+	top: 16px;
+	height: 29px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-1-832-G {
+	position: absolute;
+	left: 698px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-31 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 809px;
+	top: 124px;
+	height: 62px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.DRS-Effectiveness {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Rectangle-seventeen {
+	border-radius: 4px;
+	position: absolute;
+	left: 667px;
+	width: 120px;
+	top: 16px;
+	height: 29px;
+	background-color: rgba(67,24,209,1);
+}
+
+.n-53-1 {
+	position: absolute;
+	left: 705px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 809px;
+	top: 202px;
+	height: 29px;
+}
+
+.Car-Cornering {
+	position: absolute;
+	left: 19px;
+	width: auto;
+	top: 4px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-32 {
+	border-radius: 4px;
+	position: absolute;
+	left: 670px;
+	width: 120px;
+	top: 0px;
+	height: 29px;
+	background-color: rgba(67,24,209,1);
+	overflow: hidden;
+}
+
+.n-3-586-G {
+	position: absolute;
+	left: 30px;
+	width: auto;
+	top: 4px;
+	height: 21px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-22 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1047px;
+	width: 753px;
+	top: 190px;
+	height: 868px;
+}
+
+.Frame-11 {
+	border-radius: 10px;
+	position: absolute;
+	left: 0px;
+	width: 753px;
+	top: 0px;
+	height: 777px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(0,0,0,1);
+	border-width: 1px;
+}
+
+.Rectangle-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1px;
+	width: 751px;
+	top: 9px;
+	height: 91px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Frame-8 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 753px;
+	top: 777px;
+	height: 91px;
+	border-color: rgba(63,63,79,1);
+	border-top-width: 1px;
+}
+
+.Rectangle-nineteen {
+	border-radius: 8px;
+	position: absolute;
+	left: 24px;
+	width: 588px;
+	top: 20px;
+	height: 50px;
+	background-color: rgba(44,44,64,1);
+	border-color: rgba(63,63,79,1);
+	border-width: 1px;
+}
+
+.Rectangle-twenty {
+	border-radius: 8px;
+	position: absolute;
+	left: 628px;
+	width: 99px;
+	top: 20px;
+	height: 50px;
+	background-color: rgba(67,24,209,1);
+}
+
+.Send {
+	position: absolute;
+	left: 654px;
+	width: auto;
+	top: 30px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Type-your-message {
+	position: absolute;
+	left: 40px;
+	width: auto;
+	top: 33px;
+	height: 19px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-left;
+}
+
+.Frame-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 207px;
+	top: 32px;
+	height: 43px;
+}
+
+.Frame-9 {
+	border-radius: 8px;
+	position: absolute;
+	left: 0px;
+	width: 36px;
+	top: 4px;
+	height: 34px;
+	background-color: rgba(67,24,209,1);
+	overflow: hidden;
+}
+
+.T {
+	position: absolute;
+	left: 12px;
+	width: auto;
+	top: 6px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-10 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 52px;
+	width: 155px;
+	top: 0px;
+	height: 43px;
+}
+
+.Team-Discussion {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 24px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-3-members {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 25px;
+	height: 18px;
+	color: rgba(111,111,135,1);
+	white-space: nowrap;
+	font-size: 12px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 703px;
+	top: 124px;
+	height: 78px;
+}
+
+.IMAGE-one {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 0px;
+	width: 50px;
+	top: 0px;
+	height: 50px;
+	background-image: url('Images/80387e50d477e1ee83a20243801e78a0.png');
+	background-size: contain;
+}
+
+.Frame-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66px;
+	width: 637px;
+	top: 0px;
+	height: 78px;
+}
+
+.Mechanic {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-2 {
+	border-radius: 12px;
+	position: absolute;
+	left: 0px;
+	width: 637px;
+	top: 25px;
+	height: 53px;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Has-everyone-reviewed-the-latest-setup-changes {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 16px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 703px;
+	top: 226px;
+	height: 78px;
+}
+
+.IMAGE-two {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 0px;
+	width: 50px;
+	top: 0px;
+	height: 50px;
+	background-image: url('Images/ae810c8ac29c0c51e8004d1845c117bb.png');
+	background-size: contain;
+}
+
+.Frame-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66px;
+	width: 637px;
+	top: 0px;
+	height: 78px;
+}
+
+.Hamilton {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-4 {
+	border-radius: 12px;
+	position: absolute;
+	left: 0px;
+	width: 637px;
+	top: 25px;
+	height: 53px;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Yes-the-new-wing-configuration-looks-promising-one {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 16px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 703px;
+	top: 324px;
+	height: 78px;
+}
+
+.IMAGE-three {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 0px;
+	width: 50px;
+	top: 0px;
+	height: 50px;
+	background-image: url('Images/56d4d3cc633f5afc72367d5ed454dd25.png');
+	background-size: contain;
+}
+
+.Frame-7 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66px;
+	width: 637px;
+	top: 0px;
+	height: 78px;
+}
+
+.Wolff-You {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-6 {
+	border-radius: 12px;
+	position: absolute;
+	left: 0px;
+	width: 637px;
+	top: 25px;
+	height: 53px;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Yes-the-new-wing-configuration-looks-promising-two {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 16px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}

@@ -1,0 +1,116 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Meeting-Room-Pre-Strategist {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+}
+
+.Rectangle-2 {
+	border-radius: 10px;
+	position: absolute;
+	left: 120px;
+	width: 1680px;
+	top: 34px;
+	height: 112px;
+	background-color: rgba(217,217,217,0.50);
+	border-color: rgba(133,133,133,1);
+	border-width: 1px;
+}
+
+.Rectangle-1 {
+	border-radius: 10px;
+	position: absolute;
+	left: 100px;
+	width: 1680px;
+	top: 682px;
+	height: 352px;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/c050806e59d8e4f2dfd6543c3521703d.svg');
+}
+
+.Strategist {
+	position: relative;
+	align-self: center;
+	left: -458px;
+	top: 37px;
+	width: 540px;
+	height: 82px;
+	margin-bottom: -82px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(60,205,221,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.Contents {
+	position: absolute;
+	left: 156px;
+	width: 1536px;
+	top: 739px;
+	height: 275px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(255,255,255,1);
+	white-space: normal;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Union-1032 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 89.11%;
+	right: 8.65%;
+	top: 88.52%;
+	bottom: 7.53%;
+	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	background-image: url('Images/ee790caa1bb9c206a21a1770afa23466.svg');
+}
+
+.Pre-Match-Briefing {
+	position: relative;
+	align-self: center;
+	left: 0px;
+	top: -475px;
+	width: 904px;
+	height: 49px;
+	margin-bottom: -49px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(44,44,64,1);
+	white-space: nowrap;
+	font-size: 48px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-center;
+}
+
+.peter-bonnington-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 156px;
+	width: 181px;
+	top: 516px;
+	height: 166px;
+	background-image: url('Images/46cee6f3024790c76f7e63b1f2e08e67.png');
+	background-size: cover;
+}

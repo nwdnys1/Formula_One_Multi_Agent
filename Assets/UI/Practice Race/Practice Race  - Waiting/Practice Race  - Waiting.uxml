@@ -1,0 +1,12 @@
+﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
+        <Style src="Practice Race  - Waiting.uss" />
+        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
+            <unity:VisualElement id="2:2" name="Practice Race  - Waiting" class="unity-base-override Practice-Race-Waiting unity-viewport" picking-mode="Ignore">
+                <unity:Label id="2:3" name="LAP HISTORY" class="unity-base-override LAP-HISTORY" picking-mode="Ignore" text="Practicing ..." />
+                <unity:VisualElement id="2:4" name="Rectangle 2" class="unity-base-override Rectangle-2" picking-mode="Ignore" />
+                <unity:Label id="2:5" name="practice race" class="unity-base-override practice-race" picking-mode="Ignore" text="PRACTICE RACE" />
+            </unity:VisualElement>
+        </unity:VisualElement>
+    </unity:VisualElement>
+</unity:UXML>

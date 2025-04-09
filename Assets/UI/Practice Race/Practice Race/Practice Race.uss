@@ -20,19 +20,8 @@
 
 .Practice-Race {
 	border-radius: 0px 0px 0px 0px;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0);
 	overflow: hidden;
-}
-
-.image-1 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: -195px;
-	width: 2309px;
-	top: 0px;
-	height: 1080px;
-	background-image: url('Images/198d8ba8287bacb3252d011e6c2b562d.png');
-	background-size: cover;
 }
 
 .Frame-12 {
@@ -46,7 +35,7 @@
 	position: absolute;
 	left: 120px;
 	width: 1680px;
-	top: 69px;
+	top: 45px;
 	height: 112px;
 	background-color: rgba(217,217,217,0.50);
 	border-color: rgba(133,133,133,1);
@@ -69,7 +58,7 @@
 	position: absolute;
 	left: 120px;
 	width: 400px;
-	top: 190px;
+	top: 166px;
 	height: 461px;
 	background-color: rgba(44,44,64,0.85);
 	border-color: rgba(0,0,0,1);
@@ -370,7 +359,7 @@
 	position: absolute;
 	left: 579px;
 	width: 400px;
-	top: 190px;
+	top: 166px;
 	height: 461px;
 	background-color: rgba(44,44,64,0.85);
 	border-color: rgba(0,0,0,1);
@@ -651,7 +640,7 @@
 	position: absolute;
 	left: 120px;
 	width: 858px;
-	top: 666px;
+	top: 642px;
 	height: 385px;
 	background-color: rgba(44,44,64,0.85);
 	border-color: rgba(0,0,0,1);
@@ -663,7 +652,7 @@
 	position: absolute;
 	left: 121px;
 	width: 857px;
-	top: 667px;
+	top: 643px;
 	height: 88px;
 	border-color: rgba(0,0,0,1);
 	border-bottom-width: 1px;
@@ -673,7 +662,7 @@
 	position: absolute;
 	left: 145px;
 	width: auto;
-	top: 691px;
+	top: 667px;
 	height: 39px;
 	color: rgba(60,205,221,1);
 	white-space: nowrap;
@@ -687,7 +676,7 @@
 	position: absolute;
 	left: 145px;
 	width: 809px;
-	top: 779px;
+	top: 755px;
 	height: 247px;
 	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
 	background-color: rgba(44,44,64,1);
@@ -698,7 +687,7 @@
 	position: absolute;
 	left: 145px;
 	width: 809px;
-	top: 777px;
+	top: 753px;
 	height: 231px;
 }
 
@@ -903,7 +892,7 @@
 	position: absolute;
 	left: 1047px;
 	width: 753px;
-	top: 190px;
+	top: 166px;
 	height: 868px;
 }
 

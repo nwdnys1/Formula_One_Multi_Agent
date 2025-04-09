@@ -3,7 +3,6 @@
         <Style src="Practice Race.uss" />
         <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
             <unity:VisualElement id="1:106" name="Practice Race" class="unity-base-override Practice-Race unity-viewport" picking-mode="Ignore">
-                <unity:VisualElement id="1:107" name="image 1" class="unity-base-override image-1" picking-mode="Ignore" />
                 <unity:VisualElement id="1:108" name="Frame 12" class="unity-base-override Frame-12" picking-mode="Ignore">
                     <unity:Label id="1:109" name="practice race" class="unity-base-override practice-race" picking-mode="Ignore" text="PRACTICE RACE" />
                 </unity:VisualElement>

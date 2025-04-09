@@ -1,0 +1,328 @@
+﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
+        <Style src="Feature Race POV.uss" />
+        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
+            <unity:VisualElement id="14:290" name="Feature Race POV" class="unity-base-override Feature-Race-POV unity-viewport" picking-mode="Ignore">
+                <unity:VisualElement id="14:292" name="Positions" class="unity-base-override Positions" picking-mode="Ignore">
+                    <unity:VisualElement id="14:293" name="Frame 1" class="unity-base-override Frame-1-one" picking-mode="Ignore">
+                        <unity:Label id="14:295" name="RACE" class="unity-base-override RACE" picking-mode="Ignore" text="RACE" />
+                    </unity:VisualElement>
+                    <unity:VisualElement id="14:297" name="List" class="unity-base-override List" picking-mode="Ignore">
+                        <unity:VisualElement id="14:298" name="Row1" class="unity-base-override Row-one" picking-mode="Ignore">
+                            <unity:VisualElement id="14:299" name="Team" class="unity-base-override Team-one" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:299;2:1722" name="Redbull800x800 1" class="unity-base-override Redbull800x800-1-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:300" name="driver_name" class="unity-base-override VER-one" picking-mode="Ignore" text="VER" />
+                            <unity:Label id="14:301" name="1" class="unity-base-override n-1-one" picking-mode="Ignore" text="1" />
+                            <unity:Label id="14:302" name="+1.000" class="unity-base-override n-1-000-one" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:303" name="Tyres" class="unity-base-override Tyres-one" picking-mode="Ignore">
+                                <unity:Label id="I14:303;2:1095" name="M" class="unity-base-override M-one" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:306" name="Row2" class="unity-base-override Row-two" picking-mode="Ignore">
+                            <unity:VisualElement id="14:307" name="Team" class="unity-base-override Team-two" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:307;2:1722" name="Redbull800x800 1" class="unity-base-override Redbull800x800-1-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:308" name="driver_name" class="unity-base-override VER-two" picking-mode="Ignore" text="PER" />
+                            <unity:Label id="14:309" name="2" class="unity-base-override n-2" picking-mode="Ignore" text="2" />
+                            <unity:Label id="14:310" name="+1.000" class="unity-base-override n-1-000-two" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:311" name="Tyres" class="unity-base-override Tyres-two" picking-mode="Ignore">
+                                <unity:Label id="I14:311;2:1095" name="M" class="unity-base-override M-two" picking-mode="Ignore" text="S" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:314" name="Row3" class="unity-base-override Row-three" picking-mode="Ignore">
+                            <unity:VisualElement id="14:315" name="Team" class="unity-base-override Team-three" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:315;2:4580" name="Ferrari800x800" class="unity-base-override Ferrari800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:316" name="driver_name" class="unity-base-override VER-three" picking-mode="Ignore" text="LEC" />
+                            <unity:Label id="14:317" name="3" class="unity-base-override n-3" picking-mode="Ignore" text="3" />
+                            <unity:Label id="14:318" name="+1.000" class="unity-base-override n-1-000-three" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:319" name="Tyres" class="unity-base-override Tyres-three" picking-mode="Ignore">
+                                <unity:Label id="I14:319;2:1095" name="M" class="unity-base-override M-three" picking-mode="Ignore" text="H" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:322" name="Row4" class="unity-base-override Row-four" picking-mode="Ignore">
+                            <unity:VisualElement id="14:323" name="Team" class="unity-base-override Team-four" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:323;2:4580" name="Ferrari800x800" class="unity-base-override Ferrari800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:324" name="driver_name" class="unity-base-override VER-four" picking-mode="Ignore" text="SAI" />
+                            <unity:Label id="14:325" name="4" class="unity-base-override n-4" picking-mode="Ignore" text="4" />
+                            <unity:Label id="14:326" name="+1.000" class="unity-base-override n-1-000-four" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:327" name="Tyres" class="unity-base-override Tyres-four" picking-mode="Ignore">
+                                <unity:Label id="I14:327;2:1095" name="M" class="unity-base-override M-four" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:330" name="Row5" class="unity-base-override Row-five" picking-mode="Ignore">
+                            <unity:VisualElement id="14:331" name="Team" class="unity-base-override Team-five" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:331;2:4582" name="McLaren800x800" class="unity-base-override McLaren800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:332" name="driver_name" class="unity-base-override VER-five" picking-mode="Ignore" text="NOR" />
+                            <unity:Label id="14:333" name="5" class="unity-base-override n-5" picking-mode="Ignore" text="5" />
+                            <unity:Label id="14:334" name="+1.000" class="unity-base-override n-1-000-five" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:335" name="Tyres" class="unity-base-override Tyres-five" picking-mode="Ignore">
+                                <unity:Label id="I14:335;2:1095" name="M" class="unity-base-override M-five" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:338" name="Row6" class="unity-base-override Row-six" picking-mode="Ignore">
+                            <unity:VisualElement id="14:339" name="Team" class="unity-base-override Team-six" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:339;2:4582" name="McLaren800x800" class="unity-base-override McLaren800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:340" name="driver_name" class="unity-base-override RIC" picking-mode="Ignore" text="RIC" />
+                            <unity:Label id="14:341" name="6" class="unity-base-override n-6" picking-mode="Ignore" text="6" />
+                            <unity:Label id="14:342" name="+1.000" class="unity-base-override n-1-000-six" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:343" name="Tyres" class="unity-base-override Tyres-six" picking-mode="Ignore">
+                                <unity:Label id="I14:343;2:1095" name="M" class="unity-base-override M-six" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:346" name="Row7" class="unity-base-override Row-seven" picking-mode="Ignore">
+                            <unity:VisualElement id="14:347" name="Team" class="unity-base-override Team-seven" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:347;2:4583" name="Mercedes800x800" class="unity-base-override Mercedes800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:348" name="driver_name" class="unity-base-override BOT" picking-mode="Ignore" text="BOT" />
+                            <unity:Label id="14:349" name="7" class="unity-base-override n-7" picking-mode="Ignore" text="7" />
+                            <unity:Label id="14:350" name="+1.000" class="unity-base-override n-1-000-seven" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:351" name="Tyres" class="unity-base-override Tyres-seven" picking-mode="Ignore">
+                                <unity:Label id="I14:351;2:1095" name="M" class="unity-base-override M-seven" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:354" name="Row8" class="unity-base-override Row-eight" picking-mode="Ignore">
+                            <unity:VisualElement id="14:355" name="Team" class="unity-base-override Team-eight" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:355;2:4583" name="Mercedes800x800" class="unity-base-override Mercedes800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:356" name="driver_name" class="unity-base-override VER-six" picking-mode="Ignore" text="HAM" />
+                            <unity:Label id="14:357" name="8" class="unity-base-override n-8" picking-mode="Ignore" text="8" />
+                            <unity:Label id="14:358" name="+1.000" class="unity-base-override n-1-000-eight" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:359" name="Tyres" class="unity-base-override Tyres-eight" picking-mode="Ignore">
+                                <unity:Label id="I14:359;2:1095" name="M" class="unity-base-override M-eight" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:362" name="Row9" class="unity-base-override Row-nine" picking-mode="Ignore">
+                            <unity:VisualElement id="14:363" name="Team" class="unity-base-override Team-nine" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:363;2:4579" name="Aston800x800" class="unity-base-override Aston800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:364" name="driver_name" class="unity-base-override VET" picking-mode="Ignore" text="VET" />
+                            <unity:Label id="14:365" name="9" class="unity-base-override n-9" picking-mode="Ignore" text="9" />
+                            <unity:Label id="14:366" name="+1.000" class="unity-base-override n-1-000-nine" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:367" name="Tyres" class="unity-base-override Tyres-nine" picking-mode="Ignore">
+                                <unity:Label id="I14:367;2:1095" name="M" class="unity-base-override M-nine" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:370" name="Row10" class="unity-base-override Row-ten" picking-mode="Ignore">
+                            <unity:VisualElement id="14:371" name="Team" class="unity-base-override Team-ten" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:371;2:4579" name="Aston800x800" class="unity-base-override Aston800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:372" name="driver_name" class="unity-base-override VER-seven" picking-mode="Ignore" text="STR" />
+                            <unity:Label id="14:373" name="10" class="unity-base-override n-10" picking-mode="Ignore" text="10" />
+                            <unity:Label id="14:374" name="+1.000" class="unity-base-override n-1-000-ten" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:375" name="Tyres" class="unity-base-override Tyres-ten" picking-mode="Ignore">
+                                <unity:Label id="I14:375;2:1095" name="M" class="unity-base-override M-ten" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:378" name="Row11" class="unity-base-override Row-eleven" picking-mode="Ignore">
+                            <unity:VisualElement id="14:379" name="Team" class="unity-base-override Team-eleven" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:379;2:4578" name="Alpha800x800" class="unity-base-override Alpha800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:380" name="driver_name" class="unity-base-override VER-eight" picking-mode="Ignore" text="TSU" />
+                            <unity:Label id="14:381" name="11" class="unity-base-override n-11" picking-mode="Ignore" text="11" />
+                            <unity:Label id="14:382" name="+1.000" class="unity-base-override n-1-000-eleven" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:383" name="Tyres" class="unity-base-override Tyres-eleven" picking-mode="Ignore">
+                                <unity:Label id="I14:383;2:1095" name="M" class="unity-base-override M-eleven" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:386" name="Row12" class="unity-base-override Row-twelve" picking-mode="Ignore">
+                            <unity:VisualElement id="14:387" name="Team" class="unity-base-override Team-twelve" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:387;2:4578" name="Alpha800x800" class="unity-base-override Alpha800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:388" name="driver_name" class="unity-base-override GAS" picking-mode="Ignore" text="GAS" />
+                            <unity:Label id="14:389" name="12" class="unity-base-override n-12" picking-mode="Ignore" text="12" />
+                            <unity:Label id="14:390" name="+1.000" class="unity-base-override n-1-000-twelve" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:391" name="Tyres" class="unity-base-override Tyres-twelve" picking-mode="Ignore">
+                                <unity:Label id="I14:391;2:1095" name="M" class="unity-base-override M-twelve" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:394" name="Row13" class="unity-base-override Row-thirteen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:395" name="Team" class="unity-base-override Team-thirteen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:395;2:4576" name="Alpine800x800" class="unity-base-override Alpine800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:396" name="driver_name" class="unity-base-override ALO" picking-mode="Ignore" text="ALO" />
+                            <unity:Label id="14:397" name="13" class="unity-base-override n-13" picking-mode="Ignore" text="13" />
+                            <unity:Label id="14:398" name="+1.000" class="unity-base-override n-1-000-thirteen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:399" name="Tyres" class="unity-base-override Tyres-thirteen" picking-mode="Ignore">
+                                <unity:Label id="I14:399;2:1095" name="M" class="unity-base-override M-thirteen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:402" name="Row14" class="unity-base-override Row-fourteen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:403" name="Team" class="unity-base-override Team-fourteen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:403;2:4576" name="Alpine800x800" class="unity-base-override Alpine800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:404" name="driver_name" class="unity-base-override oco" picking-mode="Ignore" text="OCO" />
+                            <unity:Label id="14:405" name="14" class="unity-base-override n-14" picking-mode="Ignore" text="14" />
+                            <unity:Label id="14:406" name="+1.000" class="unity-base-override n-1-000-fourteen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:407" name="Tyres" class="unity-base-override Tyres-fourteen" picking-mode="Ignore">
+                                <unity:Label id="I14:407;2:1095" name="M" class="unity-base-override M-fourteen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:410" name="Row15" class="unity-base-override Row-fifteen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:411" name="Team" class="unity-base-override Team-fifteen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:411;2:4577" name="Alfa800x800" class="unity-base-override Alfa800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:412" name="driver_name" class="unity-base-override ALB" picking-mode="Ignore" text="ALB" />
+                            <unity:Label id="14:413" name="15" class="unity-base-override n-15" picking-mode="Ignore" text="15" />
+                            <unity:Label id="14:414" name="+1.000" class="unity-base-override n-1-000-fifteen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:415" name="Tyres" class="unity-base-override Tyres-fifteen" picking-mode="Ignore">
+                                <unity:Label id="I14:415;2:1095" name="M" class="unity-base-override M-fifteen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:418" name="Row16" class="unity-base-override Row-sixteen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:419" name="Team" class="unity-base-override Team-sixteen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:419;2:4577" name="Alfa800x800" class="unity-base-override Alfa800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:420" name="driver_name" class="unity-base-override RAI" picking-mode="Ignore" text="RAI" />
+                            <unity:Label id="14:421" name="16" class="unity-base-override n-16" picking-mode="Ignore" text="16" />
+                            <unity:Label id="14:422" name="+1.000" class="unity-base-override n-1-000-sixteen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:423" name="Tyres" class="unity-base-override Tyres-sixteen" picking-mode="Ignore">
+                                <unity:Label id="I14:423;2:1095" name="M" class="unity-base-override M-sixteen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:426" name="Row17" class="unity-base-override Row-seventeen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:427" name="Team" class="unity-base-override Team-seventeen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:427;2:4581" name="Williams" class="unity-base-override Williams-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:428" name="driver_name" class="unity-base-override LAT" picking-mode="Ignore" text="LAT" />
+                            <unity:Label id="14:429" name="17" class="unity-base-override n-17" picking-mode="Ignore" text="17" />
+                            <unity:Label id="14:430" name="+1.000" class="unity-base-override n-1-000-seventeen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:431" name="Tyres" class="unity-base-override Tyres-seventeen" picking-mode="Ignore">
+                                <unity:Label id="I14:431;2:1095" name="M" class="unity-base-override M-seventeen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:434" name="Row18" class="unity-base-override Row-eighteen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:435" name="Team" class="unity-base-override Team-eighteen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:435;2:4581" name="Williams" class="unity-base-override Williams-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:436" name="driver_name" class="unity-base-override RUS" picking-mode="Ignore" text="RUS" />
+                            <unity:Label id="14:437" name="18" class="unity-base-override n-18" picking-mode="Ignore" text="18" />
+                            <unity:Label id="14:438" name="+1.000" class="unity-base-override n-1-000-eighteen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:439" name="Tyres" class="unity-base-override Tyres-eighteen" picking-mode="Ignore">
+                                <unity:Label id="I14:439;2:1095" name="M" class="unity-base-override M-eighteen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:442" name="Row19" class="unity-base-override Row-nineteen" picking-mode="Ignore">
+                            <unity:VisualElement id="14:443" name="Team" class="unity-base-override Team-nineteen" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:443;2:4584" name="Haas800x800" class="unity-base-override Haas800x800-one" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:444" name="driver_name" class="unity-base-override MAZ" picking-mode="Ignore" text="MAZ" />
+                            <unity:Label id="14:445" name="19" class="unity-base-override n-19" picking-mode="Ignore" text="19" />
+                            <unity:Label id="14:446" name="+1.000" class="unity-base-override n-1-000-nineteen" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="14:447" name="Tyres" class="unity-base-override Tyres-nineteen" picking-mode="Ignore">
+                                <unity:Label id="I14:447;2:1095" name="M" class="unity-base-override M-nineteen" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:450" name="Row20" class="unity-base-override Row-twenty" picking-mode="Ignore">
+                            <unity:VisualElement id="14:451" name="Team" class="unity-base-override Team-twenty" picking-mode="Ignore">
+                                <unity:VisualElement id="I14:451;2:4584" name="Haas800x800" class="unity-base-override Haas800x800-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:Label id="14:452" name="driver_name" class="unity-base-override MSC" picking-mode="Ignore" text="MSC" />
+                            <unity:Label id="14:453" name="20" class="unity-base-override n-20" picking-mode="Ignore" text="20" />
+                            <unity:Label id="14:454" name="+1.000" class="unity-base-override n-1-000-twenty" picking-mode="Ignore" text="+1.000" />
+                            <unity:VisualElement id="15:1179" name="Tyres" class="unity-base-override Tyres-twenty" picking-mode="Ignore">
+                                <unity:Label id="15:1180" name="M" class="unity-base-override M-twenty" picking-mode="Ignore" text="M" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                    <unity:VisualElement id="14:458" name="Inner Stripe" class="unity-base-override Inner-Stripe" picking-mode="Ignore" />
+                    <unity:VisualElement id="14:459" name="Outer Stripe" class="unity-base-override Outer-Stripe" picking-mode="Ignore" />
+                    <unity:VisualElement id="14:460" name="Count" class="unity-base-override Count" picking-mode="Ignore">
+                        <unity:Label id="14:461" name="1" class="unity-base-override n-1-two" picking-mode="Ignore" text="1" />
+                        <unity:Label id="14:462" name="/58" class="unity-base-override n-58" picking-mode="Ignore" text="/58" />
+                    </unity:VisualElement>
+                    <unity:Label id="14:463" name="LAP" class="unity-base-override LAP" picking-mode="Ignore" text="LAP" />
+                </unity:VisualElement>
+                <unity:VisualElement id="15:1178" name="Frame 75" class="unity-base-override Frame-75" picking-mode="Ignore">
+                    <unity:VisualElement id="14:464" name="Rectangle" class="unity-base-override Rectangle-one" picking-mode="Ignore" />
+                    <unity:VisualElement id="14:465" name="Rectangle" class="unity-base-override Rectangle-two" picking-mode="Ignore" />
+                    <unity:VisualElement id="14:467" name="Rectangle" class="unity-base-override Rectangle-three" picking-mode="Ignore" />
+                    <unity:VisualElement id="14:470" name="Rectangle" class="unity-base-override Rectangle-four" picking-mode="Ignore" />
+                    <unity:VisualElement id="14:473" name="Rectangle" class="unity-base-override Rectangle-five" picking-mode="Ignore" />
+                    <unity:VisualElement id="15:1177" name="Frame 74" class="unity-base-override Frame-74" picking-mode="Ignore">
+                        <unity:Label id="14:466" name="TRACK CONDITIONS" class="unity-base-override TRACK-CONDITIONS" picking-mode="Ignore" text="TRACK CONDITIONS" />
+                        <unity:VisualElement id="15:1176" name="Frame 73" class="unity-base-override Frame-73" picking-mode="Ignore">
+                            <unity:VisualElement id="15:1172" name="Frame 69" class="unity-base-override Frame-69" picking-mode="Ignore">
+                                <unity:Label id="14:468" name="TRACK TEMPERATURE" class="unity-base-override TRACK-TEMPERATURE" picking-mode="Ignore" text="TRACK TEMPERATURE" />
+                                <unity:Label id="14:469" name="28.2°C" class="unity-base-override n-28-2-C" picking-mode="Ignore" text="28.2°C" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="15:1173" name="Frame 70" class="unity-base-override Frame-70" picking-mode="Ignore">
+                                <unity:Label id="14:471" name="AIR TEMPERATURE" class="unity-base-override AIR-TEMPERATURE" picking-mode="Ignore" text="AIR TEMPERATURE" />
+                                <unity:Label id="14:472" name="24.8°C" class="unity-base-override n-24-8-C" picking-mode="Ignore" text="24.8°C" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="15:1174" name="Frame 71" class="unity-base-override Frame-71" picking-mode="Ignore">
+                                <unity:Label id="14:474" name="TRACK GRIP" class="unity-base-override TRACK-GRIP" picking-mode="Ignore" text="TRACK GRIP" />
+                                <unity:Label id="14:475" name="OPTIMAL" class="unity-base-override OPTIMAL" picking-mode="Ignore" text="OPTIMAL" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="15:1175" name="Frame 72" class="unity-base-override Frame-72" picking-mode="Ignore">
+                                <unity:Label id="14:476" name="TRACK RUBBER" class="unity-base-override TRACK-RUBBER" picking-mode="Ignore" text="TRACK RUBBER" />
+                                <unity:Label id="14:477" name="HIGH" class="unity-base-override HIGH" picking-mode="Ignore" text="HIGH" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="14:497" name="Frame 58" class="unity-base-override Frame-58" picking-mode="Ignore">
+                    <unity:VisualElement id="14:498" name="Frame 57" class="unity-base-override Frame-57" picking-mode="Ignore">
+                        <unity:VisualElement id="14:499" name="Frame 1" class="unity-base-override Frame-1-two" picking-mode="Ignore">
+                            <unity:VisualElement id="14:500" name="Vector" class="unity-base-override Vector-one" picking-mode="Ignore" />
+                            <unity:VisualElement id="14:501" name="Group" class="unity-base-override Group" picking-mode="Ignore">
+                                <unity:VisualElement id="14:502" name="Vector" class="unity-base-override Vector-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                    <unity:VisualElement id="14:503" name="Frame 56" class="unity-base-override Frame-56" picking-mode="Ignore">
+                        <unity:VisualElement id="14:504" name="arrow_left" class="unity-base-override arrow-left" picking-mode="Ignore">
+                            <unity:VisualElement id="14:505" name="Vector" class="unity-base-override Vector-three" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:506" name="camera" class="unity-base-override camera" picking-mode="Ignore">
+                            <unity:VisualElement id="14:507" name="Vector" class="unity-base-override Vector-four" picking-mode="Ignore" />
+                            <unity:VisualElement id="14:508" name="Vector" class="unity-base-override Vector-five" picking-mode="Ignore" />
+                            <unity:VisualElement id="14:509" name="Vector" class="unity-base-override Vector-six" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:510" name="arrow_right" class="unity-base-override arrow-right" picking-mode="Ignore">
+                            <unity:VisualElement id="14:511" name="Vector" class="unity-base-override Vector-seven" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="15:1171" name="Frame 68" class="unity-base-override Frame-68" picking-mode="Ignore">
+                    <unity:VisualElement id="14:478" name="Rectangle" class="unity-base-override Rectangle-six" picking-mode="Ignore" />
+                    <unity:VisualElement id="15:1170" name="Frame 67" class="unity-base-override Frame-67" picking-mode="Ignore">
+                        <unity:VisualElement id="15:1169" name="Frame 66" class="unity-base-override Frame-66" picking-mode="Ignore">
+                            <unity:Label id="14:479" name="HAMILTON" class="unity-base-override HAMILTON" picking-mode="Ignore" text="HAMILTON" />
+                            <unity:Label id="14:480" name="Mercedes" class="unity-base-override Mercedes" picking-mode="Ignore" text="Mercedes" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="14:481" name="Frame 61" class="unity-base-override Frame-61" picking-mode="Ignore">
+                            <unity:VisualElement id="14:482" name="Rectangle" class="unity-base-override Rectangle-seven" picking-mode="Ignore" />
+                            <unity:Label id="14:483" name="DRS" class="unity-base-override DRS" picking-mode="Ignore" text="DRS" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="15:1166" name="Frame 63" class="unity-base-override Frame-63" picking-mode="Ignore">
+                            <unity:Label id="14:485" name="MORALE" class="unity-base-override MORALE" picking-mode="Ignore" text="MORALE" />
+                            <unity:Label id="14:486" name="OPTIMISTIC" class="unity-base-override OPTIMISTIC" picking-mode="Ignore" text="OPTIMISTIC" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="15:1167" name="Frame 64" class="unity-base-override Frame-64" picking-mode="Ignore">
+                            <unity:Label id="14:487" name="FUEL" class="unity-base-override FUEL" picking-mode="Ignore" text="FUEL" />
+                            <unity:Label id="14:488" name="1" class="unity-base-override n-1-three" picking-mode="Ignore" text="1" />
+                            <unity:Label id="14:489" name="/1" class="unity-base-override n-1-four" picking-mode="Ignore" text="/1" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="15:1168" name="Frame 65" class="unity-base-override Frame-65" picking-mode="Ignore">
+                            <unity:Label id="14:490" name="ERS" class="unity-base-override ERS" picking-mode="Ignore" text="ERS" />
+                            <unity:Label id="14:491" name="1" class="unity-base-override n-1-five" picking-mode="Ignore" text="1" />
+                            <unity:Label id="14:492" name="/1" class="unity-base-override n-1-six" picking-mode="Ignore" text="/1" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="15:1165" name="Frame 62" class="unity-base-override Frame-62" picking-mode="Ignore">
+                            <unity:Label id="14:484" name="TIRES" class="unity-base-override TIRES" picking-mode="Ignore" text="TIRES" />
+                            <unity:VisualElement id="14:560" name="Tyres" class="unity-base-override Tyres-twenty-one" picking-mode="Ignore">
+                                <unity:Label id="I14:560;2:1095" name="M" class="unity-base-override M-twenty-one" picking-mode="Ignore" text="H" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                    <unity:Label id="15:1182" name="100%" class="unity-base-override n-100" picking-mode="Ignore" text="100%" />
+                </unity:VisualElement>
+            </unity:VisualElement>
+        </unity:VisualElement>
+    </unity:VisualElement>
+</unity:UXML>

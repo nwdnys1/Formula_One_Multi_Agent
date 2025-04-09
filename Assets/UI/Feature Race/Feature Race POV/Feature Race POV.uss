@@ -1,0 +1,2763 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Team-Redbull {
+	border-radius: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+.Type-M {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Ferrari {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-McLaren {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Mercedes {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Aston-Martin {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Alpha-Tauri {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Alpine {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Alfa {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Williams {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Team-Haas {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.Feature-Race-POV {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+}
+
+.Positions {
+	border-radius: 21px 0px 0px 16px;
+	position: absolute;
+	left: 50px;
+	width: 280px;
+	top: 7px;
+	height: 1073px;
+	background-color: rgba(21,23,32,0.80);
+}
+
+.Frame-1-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 0px;
+	height: 54px;
+}
+
+.RACE {
+	position: absolute;
+	left: 84px;
+	width: auto;
+	top: 16px;
+	height: 38px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 32px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.List {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 113px;
+	height: 961px;
+}
+
+.Row-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 0px;
+	height: 33px;
+}
+
+.Team-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+	overflow: hidden;
+}
+
+.Redbull800x800-1-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-image: url('Images/b762e4dcf392c7b57d569747c2bfffab.png');
+	background-size: cover;
+}
+
+.VER-one {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-one {
+	position: absolute;
+	left: 18px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-one {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-one {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 48px;
+	height: 33px;
+}
+
+.Team-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+	overflow: hidden;
+}
+
+.Redbull800x800-1-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-image: url('Images/b762e4dcf392c7b57d569747c2bfffab.png');
+	background-size: cover;
+}
+
+.VER-two {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-2 {
+	position: absolute;
+	left: 18px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-two {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-two {
+	position: absolute;
+	left: 0%;
+	right: 32.75%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(170,34,26,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 96px;
+	height: 33px;
+}
+
+.Team-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Ferrari800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -10.71%;
+	right: -10.71%;
+	top: -10.71%;
+	bottom: -10.71%;
+	background-image: url('Images/02ff39db5969246d53e2b39e31868799.png');
+	background-size: cover;
+}
+
+.VER-three {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-3 {
+	position: absolute;
+	left: 18px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-three {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-three {
+	position: absolute;
+	left: 0%;
+	right: 21.54%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 144px;
+	height: 33px;
+}
+
+.Team-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Ferrari800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -10.71%;
+	right: -10.71%;
+	top: -10.71%;
+	bottom: -10.71%;
+	background-image: url('Images/02ff39db5969246d53e2b39e31868799.png');
+	background-size: cover;
+}
+
+.VER-four {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-4 {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-four {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-four {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 192px;
+	height: 33px;
+}
+
+.Team-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.McLaren800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -1px;
+	right: -1px;
+	top: -1px;
+	bottom: -1px;
+	background-image: url('Images/07aacf057916be97132ad74a7c7f9b2e.png');
+	background-size: cover;
+}
+
+.VER-five {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-5 {
+	position: absolute;
+	left: 18px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-five {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-five {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 240px;
+	height: 33px;
+}
+
+.Team-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.McLaren800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -1px;
+	right: -1px;
+	top: -1px;
+	bottom: -1px;
+	background-image: url('Images/07aacf057916be97132ad74a7c7f9b2e.png');
+	background-size: cover;
+}
+
+.RIC {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-6 {
+	position: absolute;
+	left: 17px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-six {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-six {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 288px;
+	height: 33px;
+}
+
+.Team-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Mercedes800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 10.71%;
+	right: 10.71%;
+	top: 10.71%;
+	bottom: 10.71%;
+	background-image: url('Images/0632b0f907aff79b8be1b74b287d8664.png');
+	background-size: cover;
+}
+
+.BOT {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-7 {
+	position: absolute;
+	left: 18px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-seven {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-seven {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 336px;
+	height: 33px;
+}
+
+.Team-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Mercedes800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 10.71%;
+	right: 10.71%;
+	top: 10.71%;
+	bottom: 10.71%;
+	background-image: url('Images/0632b0f907aff79b8be1b74b287d8664.png');
+	background-size: cover;
+}
+
+.VER-six {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-8 {
+	position: absolute;
+	left: 17px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-eight {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-eight {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 384px;
+	height: 33px;
+}
+
+.Team-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Aston800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -3.57%;
+	right: -3.57%;
+	top: -3.57%;
+	bottom: -3.57%;
+	background-image: url('Images/8b5f9cf98756dc09cc858235a6a9143e.png');
+	background-size: cover;
+}
+
+.VET {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-9 {
+	position: absolute;
+	left: 18px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-nine {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-nine {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 432px;
+	height: 33px;
+}
+
+.Team-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Aston800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -3.57%;
+	right: -3.57%;
+	top: -3.57%;
+	bottom: -3.57%;
+	background-image: url('Images/8b5f9cf98756dc09cc858235a6a9143e.png');
+	background-size: cover;
+}
+
+.VER-seven {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-10 {
+	position: absolute;
+	left: 10px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-ten {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-ten {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 480px;
+	height: 33px;
+}
+
+.Team-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Alpha800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -7.14%;
+	right: -7.14%;
+	top: -7.14%;
+	bottom: -7.14%;
+	background-image: url('Images/6a9da13530ebaf7773a9997ab4c3fb74.png');
+	background-size: cover;
+}
+
+.VER-eight {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-11 {
+	position: absolute;
+	left: 12px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-eleven {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-eleven {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 528px;
+	height: 33px;
+}
+
+.Team-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Alpha800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -7.14%;
+	right: -7.14%;
+	top: -7.14%;
+	bottom: -7.14%;
+	background-image: url('Images/6a9da13530ebaf7773a9997ab4c3fb74.png');
+	background-size: cover;
+}
+
+.GAS {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-12 {
+	position: absolute;
+	left: 10px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-twelve {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-twelve {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 576px;
+	height: 33px;
+}
+
+.Team-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Alpine800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -3.57%;
+	right: -3.57%;
+	top: -3.57%;
+	bottom: -3.57%;
+	background-image: url('Images/5eeb8e78acf5df8911c7f6f26a78d9a6.png');
+	background-size: cover;
+}
+
+.ALO {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-13 {
+	position: absolute;
+	left: 11px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-thirteen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-thirteen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 625px;
+	height: 33px;
+}
+
+.Team-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Alpine800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -3.57%;
+	right: -3.57%;
+	top: -3.57%;
+	bottom: -3.57%;
+	background-image: url('Images/5eeb8e78acf5df8911c7f6f26a78d9a6.png');
+	background-size: cover;
+}
+
+.oco {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-14 {
+	position: absolute;
+	left: 11px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-fourteen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-fourteen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 673px;
+	height: 33px;
+}
+
+.Team-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Alfa800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -3.57%;
+	right: -3.57%;
+	top: -3.57%;
+	bottom: -3.57%;
+	background-image: url('Images/f2bcbb51ad1610a4959d32e300d54503.png');
+	background-size: cover;
+}
+
+.ALB {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-15 {
+	position: absolute;
+	left: 11px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-fifteen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-fifteen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 721px;
+	height: 33px;
+}
+
+.Team-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Alfa800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -3.57%;
+	right: -3.57%;
+	top: -3.57%;
+	bottom: -3.57%;
+	background-image: url('Images/f2bcbb51ad1610a4959d32e300d54503.png');
+	background-size: cover;
+}
+
+.RAI {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-16 {
+	position: absolute;
+	left: 12px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-sixteen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-sixteen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 769px;
+	height: 33px;
+}
+
+.Team-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Williams-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	background-image: url('Images/3468a7245265b719c28ec9cd0bc059a6.png');
+	background-size: cover;
+}
+
+.LAT {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-17 {
+	position: absolute;
+	left: 12px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-seventeen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-seventeen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 817px;
+	height: 33px;
+}
+
+.Team-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Williams-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	background-image: url('Images/3468a7245265b719c28ec9cd0bc059a6.png');
+	background-size: cover;
+}
+
+.RUS {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-18 {
+	position: absolute;
+	left: 11px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-eighteen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-eighteen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 865px;
+	height: 33px;
+}
+
+.Team-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Haas800x800-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 3.57%;
+	right: 3.57%;
+	top: 3.57%;
+	bottom: 3.57%;
+	background-image: url('Images/5b583f247535036bb737d482799d68bb.png');
+	background-size: cover;
+}
+
+.MAZ {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-19 {
+	position: absolute;
+	left: 11px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-nineteen {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-nineteen {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Row-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 280px;
+	top: 913px;
+	height: 33px;
+}
+
+.Team-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 48px;
+	width: 38px;
+	top: -3px;
+	height: 38px;
+}
+
+.Haas800x800-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 3.57%;
+	right: 3.57%;
+	top: 3.57%;
+	bottom: 3.57%;
+	background-image: url('Images/5b583f247535036bb737d482799d68bb.png');
+	background-size: cover;
+}
+
+.MSC {
+	position: absolute;
+	left: 92px;
+	width: auto;
+	top: 3px;
+	height: 25px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-20 {
+	position: absolute;
+	left: 10px;
+	width: auto;
+	top: 3px;
+	height: 24px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-center;
+}
+
+.n-1-000-twenty {
+	position: absolute;
+	left: 168px;
+	width: auto;
+	top: 5px;
+	height: 23px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-right;
+}
+
+.Tyres-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 258px;
+	width: 18px;
+	top: 8px;
+	height: 18px;
+}
+
+.M-twenty {
+	position: absolute;
+	left: 0%;
+	right: -0.88%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Inner-Stripe {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 3px;
+	width: 273px;
+	top: 66px;
+	height: 1004px;
+	background-image: url('Images/d231f554d01240fa3d7b4c61b9a3afa5.svg');
+}
+
+.Outer-Stripe {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -13px;
+	width: 290px;
+	top: -10px;
+	height: 1092px;
+	background-image: url('Images/afa9831c058a1c6432ebce4ea6859b4b.svg');
+}
+
+.Count {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 140px;
+	width: 61px;
+	top: 68px;
+	height: 29px;
+}
+
+.n-1-two {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	margin: 1px 1px 1px 1px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 24px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-58 {
+	position: absolute;
+	left: 20px;
+	width: auto;
+	top: 0px;
+	height: 25px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 21px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.LAP {
+	position: absolute;
+	left: 74px;
+	width: auto;
+	top: 70px;
+	height: 26px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 22px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-75 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1315px;
+	width: 580px;
+	top: 28px;
+	height: 363px;
+}
+
+.Rectangle-one {
+	border-radius: 10px;
+	position: absolute;
+	left: 0px;
+	width: 580px;
+	top: 0px;
+	height: 363px;
+	--box-shadow: 0px 0px 10px rgba(0,0,0,1);
+	background-color: rgba(22,23,32,0.95);
+	border-color: rgba(0,0,0,1);
+	border-right-width: 1px;
+}
+
+.Rectangle-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 21px;
+	width: 537px;
+	top: 21px;
+	height: 42px;
+	--box-shadow: 0px 0px 3px rgba(0,0,0,0.70);
+	background-image: url('Images/f8c8d77c8b8749535a2a586e734b14d9d0f159e6.svg');
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 21px;
+	width: 537px;
+	top: 74px;
+	height: 71px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 21px;
+	width: 537px;
+	top: 145px;
+	height: 71px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 21px;
+	width: 537px;
+	top: 217px;
+	height: 71px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Frame-74 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 42px;
+	width: 522px;
+	top: 25px;
+	height: 313px;
+}
+
+.TRACK-CONDITIONS {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 33px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 22px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-73 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 522px;
+	top: 69px;
+	height: 244px;
+}
+
+.Frame-69 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 509px;
+	top: 0px;
+	height: 29px;
+}
+
+.TRACK-TEMPERATURE {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-28-2-C {
+	position: absolute;
+	left: 435px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Frame-70 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 511px;
+	top: 72px;
+	height: 29px;
+}
+
+.AIR-TEMPERATURE {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-24-8-C {
+	position: absolute;
+	left: 435px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Frame-71 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 522px;
+	top: 143px;
+	height: 29px;
+}
+
+.TRACK-GRIP {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.OPTIMAL {
+	position: absolute;
+	left: 410px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Frame-72 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 506px;
+	top: 215px;
+	height: 29px;
+}
+
+.TRACK-RUBBER {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.HIGH {
+	position: absolute;
+	left: 446px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Frame-58 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 834px;
+	width: 227px;
+	top: 979px;
+	height: 50px;
+}
+
+.Frame-57 {
+	border-radius: 10px;
+	position: absolute;
+	left: 0px;
+	width: 80px;
+	top: 0px;
+	height: 50px;
+	background-color: rgba(255,255,255,1);
+}
+
+.Frame-1-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 29px;
+	top: 10px;
+	height: 30px;
+}
+
+.Vector-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 29px;
+	top: 0px;
+	height: 30px;
+	background-image: url('Images/cee27b7e5794cd757186c4bb5f4091ea.svg');
+}
+
+.Group {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 15.53%;
+	right: 56.76%;
+	top: 59.40%;
+	bottom: 17.25%;
+	opacity: 0.40;
+}
+
+.Vector-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: -24.45%;
+	top: 0%;
+	bottom: -14.20%;
+	background-image: url('Images/d7c441e73710f385520b600bc31838e0.svg');
+}
+
+.Frame-56 {
+	border-radius: 10px;
+	position: absolute;
+	left: 87px;
+	width: 140px;
+	top: 0px;
+	height: 50px;
+	background-color: rgba(44,44,64,1);
+}
+
+.arrow-left {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 12px;
+	width: 24px;
+	top: 13px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.48%;
+	right: 22.35%;
+	top: 5.87%;
+	bottom: 2.46%;
+	background-image: url('Images/601e98f31edc22c22ef6e9460f13f485.svg');
+}
+
+.camera {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 55px;
+	width: 30px;
+	top: 10px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.Vector-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 23.33%;
+	top: 33.33%;
+	bottom: 10%;
+	background-image: url('Images/1e6a63aa71853a520e9dc3344965e581.svg');
+}
+
+.Vector-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 83.38%;
+	right: -0.04%;
+	top: 41.71%;
+	bottom: 18.29%;
+	background-image: url('Images/8edcb28873ef2eba7aa357514aad82b0.svg');
+}
+
+.Vector-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -0.04%;
+	right: 43.38%;
+	top: 12.50%;
+	bottom: 74.17%;
+	opacity: 0.40;
+	background-image: url('Images/c738b4814d42846cc2e9a763430947b1.svg');
+}
+
+.arrow-right {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 104px;
+	width: 24px;
+	top: 13px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.46%;
+	right: 22.37%;
+	top: 5.87%;
+	bottom: 2.46%;
+	background-image: url('Images/52df5d41707d8b48a696579edfd60cff.svg');
+}
+
+.Frame-68 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1229px;
+	width: 666px;
+	top: 968px;
+	height: 112px;
+}
+
+.Rectangle-six {
+	border-radius: 12px 12px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 666px;
+	top: 0px;
+	height: 112px;
+	--box-shadow: 0px -4px 20px rgba(0,0,0,0.40);
+	background-color: rgba(22,23,32,0.95);
+	border-color: rgba(52,52,52,1);
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+}
+
+.Frame-67 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 35px;
+	width: 599px;
+	top: 27px;
+	height: 57px;
+}
+
+.Frame-66 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 162px;
+	top: 7px;
+	height: 47px;
+}
+
+.HAMILTON {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 24px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Mercedes {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 31px;
+	height: 16px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-61 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 192px;
+	width: 60px;
+	top: 14px;
+	height: 41px;
+}
+
+.Rectangle-seven {
+	border-radius: 6px;
+	position: absolute;
+	left: -7px;
+	width: 55px;
+	top: -3px;
+	height: 37px;
+	background-color: rgba(255,255,255,0.08);
+	border-color: rgba(255,255,255,0.10);
+	border-width: 1px;
+}
+
+.DRS {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 4px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-63 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 320px;
+	width: 145px;
+	top: 2px;
+	height: 54px;
+}
+
+.MORALE {
+	position: absolute;
+	left: 27px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.OPTIMISTIC {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 24px;
+	height: 30px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-64 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 485px;
+	width: 45px;
+	top: 0px;
+	height: 57px;
+}
+
+.FUEL {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-three {
+	position: absolute;
+	left: 2px;
+	width: auto;
+	top: 24px;
+	height: 33px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 22px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-four {
+	position: absolute;
+	left: 16px;
+	width: auto;
+	top: 28px;
+	height: 27px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 18px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-65 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 562px;
+	width: 37px;
+	top: 0px;
+	height: 57px;
+}
+
+.ERS {
+	position: absolute;
+	left: 3px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-five {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 24px;
+	height: 33px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 22px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-six {
+	position: absolute;
+	left: 14px;
+	width: auto;
+	top: 28px;
+	height: 27px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 18px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-62 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 252px;
+	width: 53px;
+	top: 2px;
+	height: 49px;
+}
+
+.TIRES {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 21px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Tyres-twenty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 18px;
+	width: 18px;
+	top: 24px;
+	height: 18px;
+}
+
+.M-twenty-one {
+	position: absolute;
+	left: 0%;
+	right: 21.54%;
+	top: 0%;
+	bottom: -0.88%;
+	width: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 15px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-100 {
+	position: absolute;
+	left: 298px;
+	width: auto;
+	top: 66px;
+	height: 33px;
+	color: rgba(255,255,255,1);
+	white-space: normal;
+	font-size: 10px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
+}

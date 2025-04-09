@@ -47,19 +47,6 @@
 	border-bottom-width: 1px;
 }
 
-.IMAGE-one {
-	border-radius: 31655100px;
-	position: absolute;
-	left: 1118px;
-	width: 50px;
-	top: 977px;
-	height: 50px;
-	background-image: url('Images/46cee6f3024790c76f7e63b1f2e08e67.png');
-	background-size: contain;
-	border-color: rgba(26,28,31,1);
-	border-width: 1px;
-}
-
 .Rectangle-two {
 	border-radius: 8px;
 	position: absolute;
@@ -200,7 +187,7 @@
 	height: auto;
 }
 
-.IMAGE-two {
+.IMAGE-one {
 	border-radius: 31655100px;
 	position: relative;
 	width: 50px;
@@ -277,7 +264,7 @@
 	height: auto;
 }
 
-.IMAGE-three {
+.IMAGE-two {
 	border-radius: 31655100px;
 	position: relative;
 	width: 50px;
@@ -354,7 +341,7 @@
 	height: auto;
 }
 
-.IMAGE-four {
+.IMAGE-three {
 	border-radius: 31655100px;
 	position: relative;
 	width: 50px;
@@ -579,7 +566,7 @@
 	-unity-text-align: upper-left;
 }
 
-.IMAGE-five {
+.IMAGE-four {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 203px;
@@ -1394,11 +1381,33 @@
 	background-image: url('Images/a7cbea03c3ede4393bcbc9625fb966ea.svg');
 }
 
-.To {
+.Frame-60 {
+	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 1082px;
+	width: 121px;
+	top: 974px;
+	height: 59px;
+}
+
+.IMAGE-five {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 36px;
+	width: 50px;
+	top: 3px;
+	height: 50px;
+	background-image: url('Images/46cee6f3024790c76f7e63b1f2e08e67.png');
+	background-size: contain;
+	border-color: rgba(26,28,31,1);
+	border-width: 1px;
+}
+
+.To {
+	position: absolute;
+	left: 0px;
 	width: auto;
-	top: 990px;
+	top: 16px;
 	height: 24px;
 	margin: 1px 1px 1px 1px;
 	color: rgba(255,255,255,1);
@@ -1408,12 +1417,21 @@
 	-unity-text-align: upper-center;
 }
 
+.Frame-59 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 97px;
+	width: 24px;
+	top: 0px;
+	height: 59px;
+}
+
 .arrow-up {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
-	left: 1179px;
+	left: 0px;
 	width: 24px;
-	top: 974px;
+	top: 0px;
 	height: 24px;
 	overflow: hidden;
 }
@@ -1431,9 +1449,9 @@
 .arrow-down {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
-	left: 1179px;
+	left: 0px;
 	width: 24px;
-	top: 1009px;
+	top: 35px;
 	height: 24px;
 	overflow: hidden;
 }

@@ -1,0 +1,1382 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Feature-Race-Strategy {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+}
+
+.Frame-11 {
+	border-radius: 10px;
+	position: absolute;
+	left: 1056px;
+	width: 753px;
+	top: 181px;
+	height: 777px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(0,0,0,1);
+	border-width: 1px;
+}
+
+.Rectangle-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1px;
+	width: 751px;
+	top: 9px;
+	height: 91px;
+	border-color: rgba(0,0,0,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-two {
+	border-radius: 8px;
+	position: absolute;
+	left: 1080px;
+	width: 588px;
+	top: 978px;
+	height: 50px;
+	background-color: rgba(44,44,64,1);
+	border-color: rgba(63,63,79,1);
+	border-width: 1px;
+}
+
+.Rectangle-three {
+	border-radius: 8px;
+	position: absolute;
+	left: 1684px;
+	width: 99px;
+	top: 978px;
+	height: 50px;
+	background-color: rgba(67,24,209,1);
+}
+
+.Send {
+	position: absolute;
+	left: 1710px;
+	width: auto;
+	top: 988px;
+	height: 24px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Type-your-message {
+	position: absolute;
+	left: 1096px;
+	width: auto;
+	top: 991px;
+	height: 19px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-left;
+}
+
+.Frame-one {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	--item-spacing: 16;
+	position: absolute;
+	left: 1081px;
+	width: 207px;
+	top: 213px;
+	height: auto;
+}
+
+.Frame-9 {
+	border-radius: 8px;
+	padding: 6px 10px 4px 12px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	position: relative;
+	width: 36px;
+	height: auto;
+	margin-right: 16px;
+	background-color: rgba(67,24,209,1);
+	overflow: hidden;
+}
+
+.T {
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-10 {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	--item-spacing: 1;
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+}
+
+.Team-Discussion {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 1px;
+	align-self: stretch;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-3-members {
+	position: relative;
+	width: 100%;
+	height: auto;
+	align-self: stretch;
+	color: rgba(111,111,135,1);
+	white-space: nowrap;
+	font-size: 12px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-two {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	--item-spacing: 16;
+	position: absolute;
+	left: 1081px;
+	width: 703px;
+	top: 305px;
+	height: auto;
+}
+
+.IMAGE-one {
+	border-radius: 31655100px;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-right: 16px;
+	background-image: url('Images/46cee6f3024790c76f7e63b1f2e08e67.png');
+	background-size: contain;
+}
+
+.Frame-3 {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	--item-spacing: 4;
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+}
+
+.Strategist {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 4px;
+	align-self: stretch;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-2 {
+	border-radius: 12px;
+	padding: 16px 220px 16px 16px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	height: auto;
+	align-self: stretch;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Has-everyone-reviewed-the-latest-setup-changes {
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-three {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	--item-spacing: 16;
+	position: absolute;
+	left: 1081px;
+	width: 703px;
+	top: 407px;
+	height: auto;
+}
+
+.IMAGE-two {
+	border-radius: 31655100px;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-right: 16px;
+	background-image: url('Images/ae810c8ac29c0c51e8004d1845c117bb.png');
+	background-size: contain;
+}
+
+.Frame-5 {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	--item-spacing: 4;
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+}
+
+.Hamilton {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 4px;
+	align-self: stretch;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-4 {
+	border-radius: 12px;
+	padding: 16px 233px 16px 16px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	height: auto;
+	align-self: stretch;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Yes-the-new-wing-configuration-looks-promising-one {
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-four {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	--item-spacing: 16;
+	position: absolute;
+	left: 1081px;
+	width: 703px;
+	top: 505px;
+	height: auto;
+}
+
+.IMAGE-three {
+	border-radius: 31655100px;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-right: 16px;
+	background-image: url('Images/56d4d3cc633f5afc72367d5ed454dd25.png');
+	background-size: contain;
+}
+
+.Frame-7 {
+	border-radius: 0px 0px 0px 0px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	--item-spacing: 4;
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+}
+
+.Wolff-You {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 4px;
+	align-self: stretch;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-6 {
+	border-radius: 12px;
+	padding: 16px 233px 16px 16px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	height: auto;
+	align-self: stretch;
+	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+	background-color: rgba(44,44,64,1);
+	overflow: hidden;
+}
+
+.Yes-the-new-wing-configuration-looks-promising-two {
+	position: relative;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-40 {
+	border-radius: 12px;
+	position: absolute;
+	left: 137px;
+	width: 370px;
+	top: 76px;
+	height: 56px;
+	background-color: rgba(30,30,45,1);
+}
+
+.Rectangle-four {
+	border-radius: 8px;
+	position: absolute;
+	left: 4px;
+	width: 180px;
+	top: 4px;
+	height: 48px;
+}
+
+.Rectangle-five {
+	border-radius: 8px;
+	position: absolute;
+	left: 186px;
+	width: 180px;
+	top: 4px;
+	height: 48px;
+	background-color: rgba(67,24,209,1);
+}
+
+.Track-Detail {
+	position: absolute;
+	left: 45px;
+	width: auto;
+	top: 14px;
+	height: 24px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Strategy {
+	position: absolute;
+	left: 235px;
+	width: auto;
+	top: 15px;
+	height: 24px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-39 {
+	border-radius: 12px;
+	padding: 15px 13px 15px 13px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	--item-spacing: 12;
+	position: absolute;
+	left: 1589px;
+	width: 219px;
+	top: 73px;
+	height: 62px;
+	background-color: rgba(30,30,45,1);
+}
+
+.Rectangle-six {
+	border-radius: 31655100px;
+	position: relative;
+	width: 8px;
+	height: 8px;
+	margin-right: 12px;
+	opacity: 0.56;
+	background-color: rgba(114,239,75,1);
+}
+
+.LIVE {
+	position: relative;
+	width: auto;
+	height: 21px;
+	margin-right: 12px;
+	color: rgba(114,239,75,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.LAP {
+	position: relative;
+	width: auto;
+	height: 21px;
+	margin-right: 12px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-one {
+	position: relative;
+	width: auto;
+	height: 30px;
+	margin-right: 12px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-58 {
+	position: relative;
+	width: auto;
+	height: 30px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-55 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 135px;
+	width: 835px;
+	top: 441px;
+	height: 224px;
+}
+
+.Rectangle-seven {
+	border-radius: 8px;
+	position: absolute;
+	left: 0px;
+	width: 835px;
+	top: 0px;
+	height: 224px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(63,63,79,1);
+	border-width: 1px;
+}
+
+.Current-Strategy {
+	position: absolute;
+	left: 25px;
+	width: auto;
+	top: 25px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.IMAGE-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 203px;
+	width: 672px;
+	top: 560px;
+	height: 46px;
+	background-image: url('Images/edb864bf3396a213baeb1cd8aae79a66.png');
+	background-size: contain;
+}
+
+.Frame-46 {
+	border-radius: 8px;
+	position: absolute;
+	left: 135px;
+	width: 835px;
+	top: 684px;
+	height: 274px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(63,63,79,1);
+	border-width: 1px;
+}
+
+.Rectangle-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 835px;
+	top: 20px;
+	height: 70px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 835px;
+	top: 108px;
+	height: 70px;
+	border-color: rgba(63,63,79,1);
+	border-bottom-width: 1px;
+}
+
+.Frame-45 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 30px;
+	width: 775px;
+	top: 196px;
+	height: 54px;
+}
+
+.Driver-Morale {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Optimistic {
+	position: absolute;
+	left: 560px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-43 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 775px;
+	top: 25px;
+	height: 54px;
+}
+
+.Fuel-Boost-Left {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-41 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 715px;
+	width: 60px;
+	top: 0px;
+	height: 54px;
+}
+
+.n-1-two {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-three {
+	position: absolute;
+	left: 23px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-44 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 775px;
+	top: 113px;
+	height: 54px;
+}
+
+.ERS-Boost-Left {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-42 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 707px;
+	width: 68px;
+	top: 0px;
+	height: 54px;
+}
+
+.n-0 {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-four {
+	position: absolute;
+	left: 31px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-54 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 135px;
+	width: 835px;
+	top: 181px;
+	height: 241px;
+}
+
+.Frame-53 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 835px;
+	top: 0px;
+	height: 241px;
+}
+
+.Rectangle-ten {
+	border-radius: 8px;
+	position: absolute;
+	left: 0px;
+	width: 835px;
+	top: 0px;
+	height: 241px;
+	background-color: rgba(44,44,64,0.85);
+	border-color: rgba(63,63,79,1);
+	border-width: 1px;
+}
+
+.Compounds-Left {
+	position: absolute;
+	left: 25px;
+	width: auto;
+	top: 23px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-52 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 116px;
+	width: 616px;
+	top: 97px;
+	height: 129px;
+}
+
+.Frame-47 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 77px;
+	top: 0px;
+	height: 129px;
+}
+
+.tyresSoft {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 71px;
+	top: 0px;
+	height: 71px;
+}
+
+.Ellipse-1183 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.80;
+	background-image: url('Images/6ead5d899f50e6dc0ce01208304e0e95.svg');
+}
+
+.Subtraction-763 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 7.50%;
+	bottom: 7.50%;
+	background-image: url('Images/e7581ff139e9ee9ebe3b22889e16cd30.svg');
+}
+
+.Path-6225 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 31.36%;
+	right: 30.82%;
+	top: 28.87%;
+	bottom: 28.26%;
+	background-image: url('Images/a164a0f9d028b7b1669a3686abd5dfb8.svg');
+}
+
+.Frame-34 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 77px;
+	top: 75px;
+	height: 54px;
+}
+
+.n-2-one {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-2-two {
+	position: absolute;
+	left: 25px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-48 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 140px;
+	width: 73px;
+	top: 0px;
+	height: 129px;
+}
+
+.tyresMedium {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 71px;
+	top: 0px;
+	height: 71px;
+}
+
+.Ellipse-1183-2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.80;
+	background-image: url('Images/bbea1d272099f64058c786b862cde2be.svg');
+}
+
+.Subtraction-763-2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 7.50%;
+	bottom: 7.50%;
+	background-image: url('Images/174cebff4a23704603133625a90fc4c6.svg');
+}
+
+.Path-6226 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.05%;
+	right: 27.05%;
+	top: 32.59%;
+	bottom: 34.49%;
+	background-image: url('Images/678f1d5a7d19df5cfd442edb25067f8f.svg');
+}
+
+.Frame-35 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 73px;
+	top: 75px;
+	height: 54px;
+}
+
+.n-2-three {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-2-four {
+	position: absolute;
+	left: 26px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-49 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 276px;
+	width: 72px;
+	top: 0px;
+	height: 129px;
+}
+
+.tyresHard {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 71px;
+	top: 0px;
+	height: 71px;
+}
+
+.Ellipse-1183-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.80;
+	background-image: url('Images/bbea1d272099f64058c786b862cde2be.svg');
+}
+
+.Subtraction-763-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 7.50%;
+	bottom: 7.50%;
+	background-image: url('Images/d1240282a090f03b9bd1fc777de99d03.svg');
+}
+
+.Path-6227 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 30.18%;
+	right: 30.18%;
+	top: 30.62%;
+	bottom: 30%;
+	background-image: url('Images/9a555696a9c837e96749cc7876decda6.svg');
+}
+
+.Frame-36 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 72px;
+	top: 75px;
+	height: 54px;
+}
+
+.n-2-five {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-2-six {
+	position: absolute;
+	left: 25px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-50 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 411px;
+	width: 71px;
+	top: 0px;
+	height: 129px;
+}
+
+.tyresIntermediate {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 71px;
+	top: 0px;
+	height: 71px;
+}
+
+.Ellipse-1183-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.80;
+	background-image: url('Images/bbea1d272099f64058c786b862cde2be.svg');
+}
+
+.Subtraction-763-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 7.50%;
+	bottom: 7.50%;
+	background-image: url('Images/c2f33c3f738648ff6c16e8f3d8932424.svg');
+}
+
+.Path-6229 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 44.75%;
+	right: 44.75%;
+	top: 30.62%;
+	bottom: 30%;
+	background-image: url('Images/1fce23df421bb01105c3277e3c2c8d34.svg');
+}
+
+.Frame-37 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 6px;
+	width: 60px;
+	top: 75px;
+	height: 54px;
+}
+
+.n-1-five {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-six {
+	position: absolute;
+	left: 23px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-51 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 545px;
+	width: 71px;
+	top: 0px;
+	height: 129px;
+}
+
+.tyresWet {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 71px;
+	top: 0px;
+	height: 71px;
+}
+
+.Ellipse-1183-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.80;
+	background-image: url('Images/bbea1d272099f64058c786b862cde2be.svg');
+}
+
+.Subtraction-763-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 7.50%;
+	bottom: 7.50%;
+	background-image: url('Images/ce5ee6051ffe8bc5efa7d88584e61c15.svg');
+}
+
+.Path-6228 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 24.71%;
+	right: 24.71%;
+	top: 35.09%;
+	bottom: 32.06%;
+	background-image: url('Images/00fe5036ac0e692d2eb84a5aa8343e42.svg');
+}
+
+.Frame-38 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 6px;
+	width: 60px;
+	top: 75px;
+	height: 54px;
+}
+
+.n-1-seven {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-eight {
+	position: absolute;
+	left: 23px;
+	width: auto;
+	top: 0px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-58 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 834px;
+	width: 227px;
+	top: 979px;
+	height: 50px;
+}
+
+.Frame-57 {
+	border-radius: 10px;
+	position: absolute;
+	left: 0px;
+	width: 80px;
+	top: 0px;
+	height: 50px;
+	background-color: rgba(255,255,255,1);
+}
+
+.Frame-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 29px;
+	top: 10px;
+	height: 30px;
+}
+
+.Vector-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 29px;
+	top: 0px;
+	height: 30px;
+	background-image: url('Images/cee27b7e5794cd757186c4bb5f4091ea.svg');
+}
+
+.Group {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 15.53%;
+	right: 56.76%;
+	top: 59.40%;
+	bottom: 17.25%;
+	opacity: 0.40;
+}
+
+.Vector-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	background-image: url('Images/635770cfa6f081e65702de858ff59e03.svg');
+}
+
+.Frame-56 {
+	border-radius: 10px;
+	position: absolute;
+	left: 87px;
+	width: 140px;
+	top: 0px;
+	height: 50px;
+	background-color: rgba(44,44,64,1);
+}
+
+.arrow-left {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 12px;
+	width: 24px;
+	top: 13px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.48%;
+	right: 23.46%;
+	top: 5.87%;
+	bottom: 5.88%;
+	background-image: url('Images/601e98f31edc22c22ef6e9460f13f485.svg');
+}
+
+.camera {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 55px;
+	width: 30px;
+	top: 10px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.Vector-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 25%;
+	top: 33.33%;
+	bottom: 12.50%;
+	background-image: url('Images/1e6a63aa71853a520e9dc3344965e581.svg');
+}
+
+.Vector-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 83.38%;
+	right: -0.04%;
+	top: 41.71%;
+	bottom: 20.79%;
+	background-image: url('Images/8edcb28873ef2eba7aa357514aad82b0.svg');
+}
+
+.Vector-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -0.04%;
+	right: 45.88%;
+	top: 12.50%;
+	bottom: 75%;
+	opacity: 0.40;
+	background-image: url('Images/c738b4814d42846cc2e9a763430947b1.svg');
+}
+
+.arrow-right {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 104px;
+	width: 24px;
+	top: 13px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.46%;
+	right: 23.48%;
+	top: 5.87%;
+	bottom: 5.88%;
+	background-image: url('Images/a7cbea03c3ede4393bcbc9625fb966ea.svg');
+}

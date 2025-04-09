@@ -10,6 +10,7 @@
                 <unity:VisualElement id="1:7" name="Union 1032" class="unity-base-override Union-1032" picking-mode="Ignore" />
                 <unity:Label id="1:8" name="media interview" class="unity-base-override media-interview" picking-mode="Ignore" text="MEDIA INTERVIEW" />
                 <unity:VisualElement id="1:9" name="verstappen 1" class="unity-base-override verstappen-1" picking-mode="Ignore" />
+                <unity:Label id="5:2" name="Morale - Optimistic" class="unity-base-override Morale-Optimistic" picking-mode="Ignore" text="Morale - Optimistic" />
             </unity:VisualElement>
         </unity:VisualElement>
     </unity:VisualElement>

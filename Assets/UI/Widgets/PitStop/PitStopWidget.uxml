@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:Label name="numberLabel" text="" />
-    <ui:Button text="Increase" name="increaseButton" />
-    <ui:Button text="Decrease" name="decreaseButton" />
+    <!-- 容器，用于显示所有圈数 -->
+    <ui:VisualElement name="lapContainer" style="display: absolute; flex-direction: row; align-items: center;">
+        <!-- 这里会动态生成每一圈的元素 -->
+    </ui:VisualElement>
 </ui:UXML>

@@ -1199,13 +1199,14 @@ GameObject:
   - component: {fileID: 1146960090}
   - component: {fileID: 1146960089}
   - component: {fileID: 1146960091}
+  - component: {fileID: 1146960092}
   m_Layer: 5
   m_Name: Feature Race Strategy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1146960089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,7 +1248,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146960088}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa4e5d0dd7bf25488b120aa854832eb, type: 3}
   m_Name: 
@@ -1257,6 +1258,25 @@ MonoBehaviour:
   reorder: 1
   waitFrameBeforeRebuild: 1
   fontsDirs: []
+--- !u!114 &1146960092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146960088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38ea97eb36563a4aa0c7a000153a1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDocument: {fileID: 1146960089}
+  pitStopLaps: 0f0000001e000000
+  tyreStrategy:
+  - hard
+  - medium
+  - soft
+  totalLaps: 58
 --- !u!1 &1151669924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,7 +1636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1652927004
 Transform:
   m_ObjectHideFlags: 0

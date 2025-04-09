@@ -531,6 +531,19 @@
 	-unity-text-align: upper-left;
 }
 
+.Strategy-bar{
+	position: absolute;
+	left: 180px;
+	width: auto;
+	top: 110px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
 .IMAGE-four {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;

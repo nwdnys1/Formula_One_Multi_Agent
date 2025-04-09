@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 using UnityEditor.Rendering;
 public class PracticeController : MonoBehaviour
 {
-    DialogUI dialogUI;
+    InterviewDialog dialogUI;
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
     ParaManager paraManager = ParaManager.Instance;
@@ -15,7 +15,7 @@ public class PracticeController : MonoBehaviour
 
     private void Awake()
     {
-        dialogUI = GetComponent<DialogUI>();
+        dialogUI = GetComponent<InterviewDialog>();
         // 确保DialogUI组件已正确设置
         if (dialogUI == null)
         {

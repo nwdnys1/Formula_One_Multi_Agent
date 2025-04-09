@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6348950632502593089}
   - component: {fileID: 6410392410030450798}
   - component: {fileID: 6780767370862782323}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: "\u5F00\u59CB\u83DC\u5355"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: d4dd16d5f3608834abe842ab0eb43317, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: ce61a50d5b153f24593be903caf45417, type: 3}
   m_SortingOrder: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920

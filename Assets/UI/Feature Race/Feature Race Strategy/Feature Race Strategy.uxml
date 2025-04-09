@@ -6,6 +6,7 @@
                 <unity:VisualElement id="1:10" name="Frame 11" class="unity-base-override Frame-11" picking-mode="Ignore">
                     <unity:VisualElement id="1:11" name="Rectangle" class="unity-base-override Rectangle-one" picking-mode="Ignore" />
                 </unity:VisualElement>
+                <unity:VisualElement id="13:132" name="IMAGE" class="unity-base-override IMAGE-one" picking-mode="Ignore" />
                 <unity:VisualElement id="1:12" name="Rectangle" class="unity-base-override Rectangle-two" picking-mode="Ignore" />
                 <unity:VisualElement id="1:13" name="Rectangle" class="unity-base-override Rectangle-three" picking-mode="Ignore" />
                 <unity:Label id="1:14" name="Send" class="unity-base-override Send" picking-mode="Ignore" text="Send" />
@@ -20,7 +21,7 @@
                     </unity:VisualElement>
                 </unity:VisualElement>
                 <unity:VisualElement id="1:22" name="Frame" class="unity-base-override Frame-two" picking-mode="Ignore">
-                    <unity:VisualElement id="1:23" name="IMAGE" class="unity-base-override IMAGE-one" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:23" name="IMAGE" class="unity-base-override IMAGE-two" picking-mode="Ignore" />
                     <unity:VisualElement id="1:24" name="Frame 3" class="unity-base-override Frame-3" picking-mode="Ignore">
                         <unity:Label id="1:25" name="Strategist" class="unity-base-override Strategist" picking-mode="Ignore" text="Strategist" />
                         <unity:VisualElement id="1:26" name="Frame 2" class="unity-base-override Frame-2" picking-mode="Ignore">
@@ -29,7 +30,7 @@
                     </unity:VisualElement>
                 </unity:VisualElement>
                 <unity:VisualElement id="1:28" name="Frame" class="unity-base-override Frame-three" picking-mode="Ignore">
-                    <unity:VisualElement id="1:29" name="IMAGE" class="unity-base-override IMAGE-two" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:29" name="IMAGE" class="unity-base-override IMAGE-three" picking-mode="Ignore" />
                     <unity:VisualElement id="1:30" name="Frame 5" class="unity-base-override Frame-5" picking-mode="Ignore">
                         <unity:Label id="1:31" name="Hamilton" class="unity-base-override Hamilton" picking-mode="Ignore" text="Hamilton" />
                         <unity:VisualElement id="1:32" name="Frame 4" class="unity-base-override Frame-4" picking-mode="Ignore">
@@ -38,7 +39,7 @@
                     </unity:VisualElement>
                 </unity:VisualElement>
                 <unity:VisualElement id="1:34" name="Frame" class="unity-base-override Frame-four" picking-mode="Ignore">
-                    <unity:VisualElement id="1:35" name="IMAGE" class="unity-base-override IMAGE-three" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:35" name="IMAGE" class="unity-base-override IMAGE-four" picking-mode="Ignore" />
                     <unity:VisualElement id="1:36" name="Frame 7" class="unity-base-override Frame-7" picking-mode="Ignore">
                         <unity:Label id="1:37" name="Wolff (You)" class="unity-base-override Wolff-You" picking-mode="Ignore" text="Wolff (You)" />
                         <unity:VisualElement id="1:38" name="Frame 6" class="unity-base-override Frame-6" picking-mode="Ignore">
@@ -63,7 +64,7 @@
                     <unity:VisualElement id="1:52" name="Rectangle" class="unity-base-override Rectangle-seven" picking-mode="Ignore" />
                     <unity:Label id="1:53" name="Current Strategy" class="unity-base-override Current-Strategy" picking-mode="Ignore" text="Current Strategy" />
                 </unity:VisualElement>
-                <unity:VisualElement id="1:54" name="IMAGE" class="unity-base-override IMAGE-four" picking-mode="Ignore" />
+                <unity:VisualElement id="1:54" name="IMAGE" class="unity-base-override IMAGE-five" picking-mode="Ignore" />
                 <unity:VisualElement id="1:55" name="Frame 46" class="unity-base-override Frame-46" picking-mode="Ignore">
                     <unity:VisualElement id="1:56" name="Rectangle" class="unity-base-override Rectangle-eight" picking-mode="Ignore" />
                     <unity:VisualElement id="1:57" name="Rectangle" class="unity-base-override Rectangle-nine" picking-mode="Ignore" />
@@ -171,6 +172,13 @@
                             <unity:VisualElement id="1:130" name="Vector" class="unity-base-override Vector-seven" picking-mode="Ignore" />
                         </unity:VisualElement>
                     </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:Label id="13:134" name="To" class="unity-base-override To" picking-mode="Ignore" text="To" />
+                <unity:VisualElement id="13:140" name="arrow_up" class="unity-base-override arrow-up" picking-mode="Ignore">
+                    <unity:VisualElement id="13:141" name="Vector" class="unity-base-override Vector-eight" picking-mode="Ignore" />
+                </unity:VisualElement>
+                <unity:VisualElement id="13:138" name="arrow_down" class="unity-base-override arrow-down" picking-mode="Ignore">
+                    <unity:VisualElement id="13:139" name="Vector" class="unity-base-override Vector-nine" picking-mode="Ignore" />
                 </unity:VisualElement>
             </unity:VisualElement>
         </unity:VisualElement>

@@ -106,19 +106,13 @@
                     <unity:VisualElement id="1:183" name="Frame 11" class="unity-base-override Frame-11" picking-mode="Ignore">
                         <unity:VisualElement id="1:184" name="Rectangle" class="unity-base-override Rectangle-eighteen" picking-mode="Ignore" />
                     </unity:VisualElement>
-                    <unity:VisualElement id="1:185" name="Frame 8" class="unity-base-override Frame-8" picking-mode="Ignore">
-                        <unity:VisualElement id="1:186" name="Rectangle" class="unity-base-override Rectangle-nineteen" picking-mode="Ignore" />
-                        <unity:VisualElement id="1:187" name="Rectangle" class="unity-base-override Rectangle-twenty" picking-mode="Ignore" />
-                        <unity:Label id="1:188" name="Send" class="unity-base-override Send" picking-mode="Ignore" text="Send" />
-                        <unity:Label id="1:189" name="Type your message..." class="unity-base-override Type-your-message" picking-mode="Ignore" text="Type your message..." />
-                    </unity:VisualElement>
                     <unity:VisualElement id="1:190" name="Frame" class="unity-base-override Frame-six" picking-mode="Ignore">
                         <unity:VisualElement id="1:191" name="Frame 9" class="unity-base-override Frame-9" picking-mode="Ignore">
                             <unity:Label id="1:192" name="T" class="unity-base-override T" picking-mode="Ignore" text="T" />
                         </unity:VisualElement>
                         <unity:VisualElement id="1:193" name="Frame 10" class="unity-base-override Frame-10" picking-mode="Ignore">
                             <unity:Label id="1:194" name="Team Discussion" class="unity-base-override Team-Discussion" picking-mode="Ignore" text="Team Discussion" />
-                            <unity:Label id="1:195" name="3 members" class="unity-base-override n-3-members" picking-mode="Ignore" text="3 members" />
+                            <unity:Label id="1:195" name="2 members" class="unity-base-override n-2-members" picking-mode="Ignore" text="2 members" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                     <unity:VisualElement id="1:196" name="Frame" class="unity-base-override Frame-seven" picking-mode="Ignore">
@@ -135,16 +129,7 @@
                         <unity:VisualElement id="1:204" name="Frame 5" class="unity-base-override Frame-5" picking-mode="Ignore">
                             <unity:Label id="1:205" name="Hamilton" class="unity-base-override Hamilton" picking-mode="Ignore" text="Hamilton" />
                             <unity:VisualElement id="1:206" name="Frame 4" class="unity-base-override Frame-4" picking-mode="Ignore">
-                                <unity:Label id="1:207" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-one" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
-                            </unity:VisualElement>
-                        </unity:VisualElement>
-                    </unity:VisualElement>
-                    <unity:VisualElement id="1:208" name="Frame" class="unity-base-override Frame-nine" picking-mode="Ignore">
-                        <unity:VisualElement id="1:209" name="IMAGE" class="unity-base-override IMAGE-three" picking-mode="Ignore" />
-                        <unity:VisualElement id="1:210" name="Frame 7" class="unity-base-override Frame-7" picking-mode="Ignore">
-                            <unity:Label id="1:211" name="Wolff (You)" class="unity-base-override Wolff-You" picking-mode="Ignore" text="Wolff (You)" />
-                            <unity:VisualElement id="1:212" name="Frame 6" class="unity-base-override Frame-6" picking-mode="Ignore">
-                                <unity:Label id="1:213" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-two" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
+                                <unity:Label id="1:207" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
                             </unity:VisualElement>
                         </unity:VisualElement>
                     </unity:VisualElement>

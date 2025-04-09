@@ -893,7 +893,7 @@
 	left: 1047px;
 	width: 753px;
 	top: 166px;
-	height: 868px;
+	height: 861px;
 }
 
 .Frame-11 {
@@ -902,7 +902,7 @@
 	left: 0px;
 	width: 753px;
 	top: 0px;
-	height: 777px;
+	height: 861px;
 	background-color: rgba(44,44,64,0.85);
 	border-color: rgba(0,0,0,1);
 	border-width: 1px;
@@ -917,65 +917,6 @@
 	height: 91px;
 	border-color: rgba(0,0,0,1);
 	border-bottom-width: 1px;
-}
-
-.Frame-8 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 0px;
-	width: 753px;
-	top: 777px;
-	height: 91px;
-	border-color: rgba(63,63,79,1);
-	border-top-width: 1px;
-}
-
-.Rectangle-nineteen {
-	border-radius: 8px;
-	position: absolute;
-	left: 24px;
-	width: 588px;
-	top: 20px;
-	height: 50px;
-	background-color: rgba(44,44,64,1);
-	border-color: rgba(63,63,79,1);
-	border-width: 1px;
-}
-
-.Rectangle-twenty {
-	border-radius: 8px;
-	position: absolute;
-	left: 628px;
-	width: 99px;
-	top: 20px;
-	height: 50px;
-	background-color: rgba(67,24,209,1);
-}
-
-.Send {
-	position: absolute;
-	left: 654px;
-	width: auto;
-	top: 30px;
-	height: 24px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 16px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-center;
-}
-
-.Type-your-message {
-	position: absolute;
-	left: 40px;
-	width: auto;
-	top: 33px;
-	height: 19px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 16px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: middle-left;
 }
 
 .Frame-six {
@@ -1033,7 +974,7 @@
 	-unity-text-align: upper-left;
 }
 
-.n-3-members {
+.n-2-members {
 	position: absolute;
 	left: 0px;
 	width: auto;
@@ -1167,74 +1108,7 @@
 	overflow: hidden;
 }
 
-.Yes-the-new-wing-configuration-looks-promising-one {
-	position: absolute;
-	left: 16px;
-	width: auto;
-	top: 16px;
-	height: 21px;
-	color: rgba(166,166,177,1);
-	white-space: nowrap;
-	font-size: 14px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.Frame-nine {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 25px;
-	width: 703px;
-	top: 324px;
-	height: 78px;
-}
-
-.IMAGE-three {
-	border-radius: 31655100px;
-	position: absolute;
-	left: 0px;
-	width: 50px;
-	top: 0px;
-	height: 50px;
-	background-image: url('Images/56d4d3cc633f5afc72367d5ed454dd25.png');
-	background-size: contain;
-}
-
-.Frame-7 {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 66px;
-	width: 637px;
-	top: 0px;
-	height: 78px;
-}
-
-.Wolff-You {
-	position: absolute;
-	left: 0px;
-	width: auto;
-	top: 0px;
-	height: 21px;
-	color: rgba(166,166,177,1);
-	white-space: nowrap;
-	font-size: 14px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.Frame-6 {
-	border-radius: 12px;
-	position: absolute;
-	left: 0px;
-	width: 637px;
-	top: 25px;
-	height: 53px;
-	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
-	background-color: rgba(44,44,64,1);
-	overflow: hidden;
-}
-
-.Yes-the-new-wing-configuration-looks-promising-two {
+.Yes-the-new-wing-configuration-looks-promising {
 	position: absolute;
 	left: 16px;
 	width: auto;

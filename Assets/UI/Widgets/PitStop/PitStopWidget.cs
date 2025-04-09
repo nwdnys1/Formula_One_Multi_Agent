@@ -8,6 +8,8 @@ public class PitStopWidget : MonoBehaviour
     [Header("Input Parameters")]
     public int[] pitStopLaps = { 15, 30 }; // 换胎的圈数
     public string[] tyreStrategy = { "hard", "medium", "soft" }; // 轮胎策略
+    public int fuel_release_laps = 12;
+    public int ERS_release_laps = 8;
     public int totalLaps = 58; // 总圈数
 
     private static readonly Color HardColor = Color.white;
@@ -67,6 +69,60 @@ public class PitStopWidget : MonoBehaviour
         lapElement.Add(markerBackground);
     }
 
+    private void AddFuelMarker(VisualElement lapElement, int lapNumber){
+        // 创建一个 Label 用于显示数字
+        var marker = new Label
+        {
+            text = "F",
+            name = "fuelMarker"
+        };
+
+        // 设置数字的样式
+        marker.style.color = Color.white; // 黑色文字
+        marker.style.fontSize = 10; // 增大字体大小
+        marker.style.unityTextAlign = TextAnchor.MiddleCenter; // 居中对齐
+        marker.style.marginTop = 40;
+
+        // 设置背景样式（可选）
+        var markerBackground = new VisualElement();
+        markerBackground.style.width = 15; // 背景宽度
+        markerBackground.style.height = 15; // 背景高度
+        markerBackground.style.unityTextAlign = TextAnchor.MiddleCenter;
+
+        // 将数字添加到背景中
+        markerBackground.Add(marker);
+
+        // 将背景添加到 lapElement 中，并确保它在最上层
+        lapElement.Add(markerBackground);
+    }
+
+    private void AddERSMarker(VisualElement lapElement, int lapNumber){
+        // 创建一个 Label 用于显示数字
+        var marker = new Label
+        {
+            text = "E",
+            name = "ERSMarker"
+        };
+
+        // 设置数字的样式
+        marker.style.color = Color.white; // 黑色文字
+        marker.style.fontSize = 10; // 增大字体大小
+        marker.style.unityTextAlign = TextAnchor.MiddleCenter; // 居中对齐
+        marker.style.marginTop = 40;
+
+        // 设置背景样式（可选）
+        var markerBackground = new VisualElement();
+        markerBackground.style.width = 15; // 背景宽度
+        markerBackground.style.height = 15; // 背景高度
+        markerBackground.style.unityTextAlign = TextAnchor.MiddleCenter;
+
+        // 将数字添加到背景中
+        markerBackground.Add(marker);
+
+        // 将背景添加到 lapElement 中，并确保它在最上层
+        lapElement.Add(markerBackground);
+    }
+
     private void GenerateLapDisplay()
     {
         if (root == null)
@@ -111,11 +167,33 @@ public class PitStopWidget : MonoBehaviour
                 lapElement.style.backgroundColor = tyreColorMap[tyreStrategy[currentTyreIndex]];
             }
 
+            if (lap == fuel_release_laps)
+            {
+                // 用十六进制颜色代码设置加油圈的颜色
+                lapElement.style.backgroundColor = new Color(1f, 0.5f, 0f); // 设置加油圈的颜色为橙色
+            }
+
+            else if (lap == ERS_release_laps)
+            {
+                // 如果是ERS释放圈，添加数字标记
+                lapElement.style.backgroundColor = Color.blue; // 设置ERS释放圈的颜色为蓝色
+            }
+
             if (IsPitStopLap(lap))
             {
                 // 如果是换胎圈，添加数字标记
                 AddPitStopMarker(lapElement, lap);
                 currentTyreIndex++;
+            }
+            else if (lap == ERS_release_laps)
+            {
+                // 如果是ERS释放圈，添加数字标记
+                AddERSMarker(lapElement, lap);
+            }
+            else if (lap == fuel_release_laps)
+            {
+                // 如果是加油圈，添加数字标记
+                AddFuelMarker(lapElement, lap);
             }
 
             lapContainer.Add(lapElement);

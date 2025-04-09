@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Label name="numberLabel" text="" />
+    <ui:Button text="Increase" name="increaseButton" />
+    <ui:Button text="Decrease" name="decreaseButton" />
+</ui:UXML>

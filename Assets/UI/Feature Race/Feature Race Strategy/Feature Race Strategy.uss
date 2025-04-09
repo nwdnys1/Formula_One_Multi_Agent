@@ -47,46 +47,11 @@
 	border-bottom-width: 1px;
 }
 
-.Rectangle-two {
-	border-radius: 8px;
-	position: absolute;
-	left: 1210px;
-	width: 483px;
-	top: 979px;
-	height: 50px;
-	background-color: rgba(44,44,64,1);
-	border-color: rgba(63,63,79,1);
-	border-width: 1px;
-}
-
-.Rectangle-three {
-	border-radius: 8px;
-	position: absolute;
-	left: 1709px;
-	width: 99px;
-	top: 979px;
-	height: 50px;
-	background-color: rgba(67,24,209,1);
-}
-
-.Send {
-	position: absolute;
-	left: 1735px;
-	width: auto;
-	top: 988px;
-	height: 24px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 16px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-center;
-}
-
 .Type-your-message {
 	position: absolute;
-	left: 1227px;
+	left: 1098px;
 	width: auto;
-	top: 993px;
+	top: 992px;
 	height: 19px;
 	color: rgba(255,255,255,1);
 	white-space: nowrap;
@@ -414,7 +379,7 @@
 	background-color: rgba(30,30,45,1);
 }
 
-.Rectangle-four {
+.Rectangle-two {
 	border-radius: 8px;
 	position: absolute;
 	left: 4px;
@@ -423,7 +388,7 @@
 	height: 48px;
 }
 
-.Rectangle-five {
+.Rectangle-three {
 	border-radius: 8px;
 	position: absolute;
 	left: 186px;
@@ -475,7 +440,7 @@
 	background-color: rgba(30,30,45,1);
 }
 
-.Rectangle-six {
+.Rectangle-four {
 	border-radius: 31655100px;
 	position: relative;
 	width: 8px;
@@ -541,7 +506,7 @@
 	height: 224px;
 }
 
-.Rectangle-seven {
+.Rectangle-five {
 	border-radius: 8px;
 	position: absolute;
 	left: 0px;
@@ -589,7 +554,7 @@
 	border-width: 1px;
 }
 
-.Rectangle-eight {
+.Rectangle-six {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 0px;
@@ -600,7 +565,7 @@
 	border-bottom-width: 1px;
 }
 
-.Rectangle-nine {
+.Rectangle-seven {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
 	left: 0px;
@@ -778,7 +743,7 @@
 	height: 241px;
 }
 
-.Rectangle-ten {
+.Rectangle-eight {
 	border-radius: 8px;
 	position: absolute;
 	left: 0px;
@@ -1381,21 +1346,55 @@
 	background-image: url('Images/a7cbea03c3ede4393bcbc9625fb966ea.svg');
 }
 
-.Frame-60 {
+.Group-2 {
 	border-radius: 0px 0px 0px 0px;
 	position: absolute;
-	left: 1082px;
-	width: 121px;
+	left: 1081px;
+	width: 707px;
 	top: 974px;
-	height: 59px;
+	height: 54px;
+}
+
+.Rectangle-nine {
+	border-radius: 8px;
+	position: absolute;
+	left: 0px;
+	width: 483px;
+	top: 4px;
+	height: 50px;
+	background-color: rgba(44,44,64,1);
+	border-color: rgba(63,63,79,1);
+	border-width: 1px;
+}
+
+.Group-1 {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 498px;
+	width: 209px;
+	top: 0px;
+	height: 50px;
 }
 
 .IMAGE-five {
 	border-radius: 31655100px;
 	position: absolute;
-	left: 36px;
+	left: 159px;
 	width: 50px;
-	top: 3px;
+	top: 0px;
+	height: 50px;
+	background-image: url('Images/ae810c8ac29c0c51e8004d1845c117bb.png');
+	background-size: contain;
+	border-color: rgba(0,0,0,1);
+	border-width: 1px;
+}
+
+.IMAGE-six {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 44px;
+	width: 50px;
+	top: 0px;
 	height: 50px;
 	background-image: url('Images/46cee6f3024790c76f7e63b1f2e08e67.png');
 	background-size: contain;
@@ -1407,7 +1406,7 @@
 	position: absolute;
 	left: 0px;
 	width: auto;
-	top: 16px;
+	top: 13px;
 	height: 24px;
 	margin: 1px 1px 1px 1px;
 	color: rgba(255,255,255,1);
@@ -1417,51 +1416,16 @@
 	-unity-text-align: upper-center;
 }
 
-.Frame-59 {
-	border-radius: 0px 0px 0px 0px;
+.or {
 	position: absolute;
-	left: 97px;
-	width: 24px;
-	top: 0px;
-	height: 59px;
-}
-
-.arrow-up {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 0px;
-	width: 24px;
-	top: 0px;
+	left: 114px;
+	width: auto;
+	top: 13px;
 	height: 24px;
-	overflow: hidden;
-}
-
-.Vector-eight {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: -2.08%;
-	right: 10.42%;
-	top: 23.48%;
-	bottom: 22.35%;
-	background-image: url('Images/2d1542824481159272dbfb66a01d6c52.svg');
-}
-
-.arrow-down {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 0px;
-	width: 24px;
-	top: 35px;
-	height: 24px;
-	overflow: hidden;
-}
-
-.Vector-nine {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: -2.08%;
-	right: 10.42%;
-	top: 23.46%;
-	bottom: 22.37%;
-	background-image: url('Images/ac5cae9db506ad78d9a80b50cfc68e59.svg');
+	margin: 1px 1px 1px 1px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
 }

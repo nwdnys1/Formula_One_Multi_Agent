@@ -83,7 +83,7 @@
 	left: 89.11%;
 	right: 8.65%;
 	top: 88.52%;
-	bottom: 7.53%;
+	bottom: 7.50%;
 	--box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 	background-image: url('Images/f1ba67c52bb84acaa8427dc00e1c799c.svg');
 }
@@ -113,4 +113,18 @@
 	height: 167px;
 	background-image: url('Images/77ed9c1785056b24ebeaadf3653dc2ee.png');
 	background-size: cover;
+}
+
+.Morale-Optimistic {
+	position: absolute;
+	left: 1366px;
+	width: 414px;
+	top: 607px;
+	height: 56px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(170,34,26,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: middle-right;
 }

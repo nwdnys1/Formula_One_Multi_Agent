@@ -1,0 +1,178 @@
+﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
+        <Style src="Feature Race Strategy.uss" />
+        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
+            <unity:VisualElement id="1:2" name="Feature Race Strategy" class="unity-base-override Feature-Race-Strategy unity-viewport" picking-mode="Ignore">
+                <unity:VisualElement id="1:10" name="Frame 11" class="unity-base-override Frame-11" picking-mode="Ignore">
+                    <unity:VisualElement id="1:11" name="Rectangle" class="unity-base-override Rectangle-one" picking-mode="Ignore" />
+                </unity:VisualElement>
+                <unity:VisualElement id="1:12" name="Rectangle" class="unity-base-override Rectangle-two" picking-mode="Ignore" />
+                <unity:VisualElement id="1:13" name="Rectangle" class="unity-base-override Rectangle-three" picking-mode="Ignore" />
+                <unity:Label id="1:14" name="Send" class="unity-base-override Send" picking-mode="Ignore" text="Send" />
+                <unity:Label id="1:15" name="Type your message..." class="unity-base-override Type-your-message" picking-mode="Ignore" text="Type your message..." />
+                <unity:VisualElement id="1:16" name="Frame" class="unity-base-override Frame-one" picking-mode="Ignore">
+                    <unity:VisualElement id="1:17" name="Frame 9" class="unity-base-override Frame-9" picking-mode="Ignore">
+                        <unity:Label id="1:18" name="T" class="unity-base-override T" picking-mode="Ignore" text="T" />
+                    </unity:VisualElement>
+                    <unity:VisualElement id="1:19" name="Frame 10" class="unity-base-override Frame-10" picking-mode="Ignore">
+                        <unity:Label id="1:20" name="Team Discussion" class="unity-base-override Team-Discussion" picking-mode="Ignore" text="Team Discussion" />
+                        <unity:Label id="1:21" name="3 members" class="unity-base-override n-3-members" picking-mode="Ignore" text="3 members" />
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="1:22" name="Frame" class="unity-base-override Frame-two" picking-mode="Ignore">
+                    <unity:VisualElement id="1:23" name="IMAGE" class="unity-base-override IMAGE-one" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:24" name="Frame 3" class="unity-base-override Frame-3" picking-mode="Ignore">
+                        <unity:Label id="1:25" name="Strategist" class="unity-base-override Strategist" picking-mode="Ignore" text="Strategist" />
+                        <unity:VisualElement id="1:26" name="Frame 2" class="unity-base-override Frame-2" picking-mode="Ignore">
+                            <unity:Label id="1:27" name="Has everyone reviewed the latest setup changes?" class="unity-base-override Has-everyone-reviewed-the-latest-setup-changes" picking-mode="Ignore" text="Has everyone reviewed the latest setup changes?" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="1:28" name="Frame" class="unity-base-override Frame-three" picking-mode="Ignore">
+                    <unity:VisualElement id="1:29" name="IMAGE" class="unity-base-override IMAGE-two" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:30" name="Frame 5" class="unity-base-override Frame-5" picking-mode="Ignore">
+                        <unity:Label id="1:31" name="Hamilton" class="unity-base-override Hamilton" picking-mode="Ignore" text="Hamilton" />
+                        <unity:VisualElement id="1:32" name="Frame 4" class="unity-base-override Frame-4" picking-mode="Ignore">
+                            <unity:Label id="1:33" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-one" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="1:34" name="Frame" class="unity-base-override Frame-four" picking-mode="Ignore">
+                    <unity:VisualElement id="1:35" name="IMAGE" class="unity-base-override IMAGE-three" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:36" name="Frame 7" class="unity-base-override Frame-7" picking-mode="Ignore">
+                        <unity:Label id="1:37" name="Wolff (You)" class="unity-base-override Wolff-You" picking-mode="Ignore" text="Wolff (You)" />
+                        <unity:VisualElement id="1:38" name="Frame 6" class="unity-base-override Frame-6" picking-mode="Ignore">
+                            <unity:Label id="1:39" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-two" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="1:40" name="Frame 40" class="unity-base-override Frame-40" picking-mode="Ignore">
+                    <unity:VisualElement id="1:41" name="Rectangle" class="unity-base-override Rectangle-four" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:42" name="Rectangle" class="unity-base-override Rectangle-five" picking-mode="Ignore" />
+                    <unity:Label id="1:43" name="Track Detail" class="unity-base-override Track-Detail" picking-mode="Ignore" text="Track Detail" />
+                    <unity:Label id="1:44" name="Strategy" class="unity-base-override Strategy" picking-mode="Ignore" text="Strategy" />
+                </unity:VisualElement>
+                <unity:VisualElement id="1:45" name="Frame 39" class="unity-base-override Frame-39" picking-mode="Ignore">
+                    <unity:VisualElement id="1:46" name="Rectangle" class="unity-base-override Rectangle-six" picking-mode="Ignore" />
+                    <unity:Label id="1:47" name="LIVE" class="unity-base-override LIVE" picking-mode="Ignore" text="LIVE" />
+                    <unity:Label id="1:48" name="LAP" class="unity-base-override LAP" picking-mode="Ignore" text="LAP" />
+                    <unity:Label id="1:49" name="1" class="unity-base-override n-1-one" picking-mode="Ignore" text="1" />
+                    <unity:Label id="1:50" name="/ 58" class="unity-base-override n-58" picking-mode="Ignore" text="/ 58" />
+                </unity:VisualElement>
+                <unity:VisualElement id="1:51" name="Frame 55" class="unity-base-override Frame-55" picking-mode="Ignore">
+                    <unity:VisualElement id="1:52" name="Rectangle" class="unity-base-override Rectangle-seven" picking-mode="Ignore" />
+                    <unity:Label id="1:53" name="Current Strategy" class="unity-base-override Current-Strategy" picking-mode="Ignore" text="Current Strategy" />
+                </unity:VisualElement>
+                <unity:VisualElement id="1:54" name="IMAGE" class="unity-base-override IMAGE-four" picking-mode="Ignore" />
+                <unity:VisualElement id="1:55" name="Frame 46" class="unity-base-override Frame-46" picking-mode="Ignore">
+                    <unity:VisualElement id="1:56" name="Rectangle" class="unity-base-override Rectangle-eight" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:57" name="Rectangle" class="unity-base-override Rectangle-nine" picking-mode="Ignore" />
+                    <unity:VisualElement id="1:58" name="Frame 45" class="unity-base-override Frame-45" picking-mode="Ignore">
+                        <unity:Label id="1:59" name="Driver Morale" class="unity-base-override Driver-Morale" picking-mode="Ignore" text="Driver Morale" />
+                        <unity:Label id="1:60" name="Optimistic" class="unity-base-override Optimistic" picking-mode="Ignore" text="Optimistic" />
+                    </unity:VisualElement>
+                    <unity:VisualElement id="1:61" name="Frame 43" class="unity-base-override Frame-43" picking-mode="Ignore">
+                        <unity:Label id="1:62" name="Fuel Boost Left" class="unity-base-override Fuel-Boost-Left" picking-mode="Ignore" text="Fuel Boost Left" />
+                        <unity:VisualElement id="1:63" name="Frame 41" class="unity-base-override Frame-41" picking-mode="Ignore">
+                            <unity:Label id="1:64" name="1" class="unity-base-override n-1-two" picking-mode="Ignore" text="1" />
+                            <unity:Label id="1:65" name="/1" class="unity-base-override n-1-three" picking-mode="Ignore" text="/1" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                    <unity:VisualElement id="1:66" name="Frame 44" class="unity-base-override Frame-44" picking-mode="Ignore">
+                        <unity:Label id="1:67" name="ERS Boost Left" class="unity-base-override ERS-Boost-Left" picking-mode="Ignore" text="ERS Boost Left" />
+                        <unity:VisualElement id="1:68" name="Frame 42" class="unity-base-override Frame-42" picking-mode="Ignore">
+                            <unity:Label id="1:69" name="0" class="unity-base-override n-0" picking-mode="Ignore" text="0" />
+                            <unity:Label id="1:70" name="/1" class="unity-base-override n-1-four" picking-mode="Ignore" text="/1" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="1:71" name="Frame 54" class="unity-base-override Frame-54" picking-mode="Ignore">
+                    <unity:VisualElement id="1:72" name="Frame 53" class="unity-base-override Frame-53" picking-mode="Ignore">
+                        <unity:VisualElement id="1:73" name="Rectangle" class="unity-base-override Rectangle-ten" picking-mode="Ignore" />
+                        <unity:Label id="1:74" name="Compounds Left" class="unity-base-override Compounds-Left" picking-mode="Ignore" text="Compounds Left" />
+                    </unity:VisualElement>
+                    <unity:VisualElement id="1:75" name="Frame 52" class="unity-base-override Frame-52" picking-mode="Ignore">
+                        <unity:VisualElement id="1:76" name="Frame 47" class="unity-base-override Frame-47" picking-mode="Ignore">
+                            <unity:VisualElement id="1:77" name="tyresSoft" class="unity-base-override tyresSoft" picking-mode="Ignore">
+                                <unity:VisualElement id="1:78" name="Ellipse 1183" class="unity-base-override Ellipse-1183" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:79" name="Subtraction 763" class="unity-base-override Subtraction-763" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:80" name="Path 6225" class="unity-base-override Path-6225" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="1:81" name="Frame 34" class="unity-base-override Frame-34" picking-mode="Ignore">
+                                <unity:Label id="1:82" name="2" class="unity-base-override n-2-one" picking-mode="Ignore" text="2" />
+                                <unity:Label id="1:83" name="/2" class="unity-base-override n-2-two" picking-mode="Ignore" text="/2" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:84" name="Frame 48" class="unity-base-override Frame-48" picking-mode="Ignore">
+                            <unity:VisualElement id="1:85" name="tyresMedium" class="unity-base-override tyresMedium" picking-mode="Ignore">
+                                <unity:VisualElement id="1:86" name="Ellipse 1183-2" class="unity-base-override Ellipse-1183-2" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:87" name="Subtraction 763-2" class="unity-base-override Subtraction-763-2" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:88" name="Path 6226" class="unity-base-override Path-6226" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="1:89" name="Frame 35" class="unity-base-override Frame-35" picking-mode="Ignore">
+                                <unity:Label id="1:90" name="2" class="unity-base-override n-2-three" picking-mode="Ignore" text="2" />
+                                <unity:Label id="1:91" name="/2" class="unity-base-override n-2-four" picking-mode="Ignore" text="/2" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:92" name="Frame 49" class="unity-base-override Frame-49" picking-mode="Ignore">
+                            <unity:VisualElement id="1:93" name="tyresHard" class="unity-base-override tyresHard" picking-mode="Ignore">
+                                <unity:VisualElement id="1:94" name="Ellipse 1183-3" class="unity-base-override Ellipse-1183-3" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:95" name="Subtraction 763-3" class="unity-base-override Subtraction-763-3" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:96" name="Path 6227" class="unity-base-override Path-6227" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="1:97" name="Frame 36" class="unity-base-override Frame-36" picking-mode="Ignore">
+                                <unity:Label id="1:98" name="2" class="unity-base-override n-2-five" picking-mode="Ignore" text="2" />
+                                <unity:Label id="1:99" name="/2" class="unity-base-override n-2-six" picking-mode="Ignore" text="/2" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:100" name="Frame 50" class="unity-base-override Frame-50" picking-mode="Ignore">
+                            <unity:VisualElement id="1:101" name="tyresIntermediate" class="unity-base-override tyresIntermediate" picking-mode="Ignore">
+                                <unity:VisualElement id="1:102" name="Ellipse 1183-4" class="unity-base-override Ellipse-1183-4" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:103" name="Subtraction 763-4" class="unity-base-override Subtraction-763-4" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:104" name="Path 6229" class="unity-base-override Path-6229" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="1:105" name="Frame 37" class="unity-base-override Frame-37" picking-mode="Ignore">
+                                <unity:Label id="1:106" name="1" class="unity-base-override n-1-five" picking-mode="Ignore" text="1" />
+                                <unity:Label id="1:107" name="/1" class="unity-base-override n-1-six" picking-mode="Ignore" text="/1" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:108" name="Frame 51" class="unity-base-override Frame-51" picking-mode="Ignore">
+                            <unity:VisualElement id="1:109" name="tyresWet" class="unity-base-override tyresWet" picking-mode="Ignore">
+                                <unity:VisualElement id="1:110" name="Ellipse 1183-5" class="unity-base-override Ellipse-1183-5" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:111" name="Subtraction 763-5" class="unity-base-override Subtraction-763-5" picking-mode="Ignore" />
+                                <unity:VisualElement id="1:112" name="Path 6228" class="unity-base-override Path-6228" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                            <unity:VisualElement id="1:113" name="Frame 38" class="unity-base-override Frame-38" picking-mode="Ignore">
+                                <unity:Label id="1:114" name="1" class="unity-base-override n-1-seven" picking-mode="Ignore" text="1" />
+                                <unity:Label id="1:115" name="/1" class="unity-base-override n-1-eight" picking-mode="Ignore" text="/1" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+                <unity:VisualElement id="1:116" name="Frame 58" class="unity-base-override Frame-58" picking-mode="Ignore">
+                    <unity:VisualElement id="1:117" name="Frame 57" class="unity-base-override Frame-57" picking-mode="Ignore">
+                        <unity:VisualElement id="1:118" name="Frame 1" class="unity-base-override Frame-1" picking-mode="Ignore">
+                            <unity:VisualElement id="1:119" name="Vector" class="unity-base-override Vector-one" picking-mode="Ignore" />
+                            <unity:VisualElement id="1:120" name="Group" class="unity-base-override Group" picking-mode="Ignore">
+                                <unity:VisualElement id="1:121" name="Vector" class="unity-base-override Vector-two" picking-mode="Ignore" />
+                            </unity:VisualElement>
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                    <unity:VisualElement id="1:122" name="Frame 56" class="unity-base-override Frame-56" picking-mode="Ignore">
+                        <unity:VisualElement id="1:123" name="arrow_left" class="unity-base-override arrow-left" picking-mode="Ignore">
+                            <unity:VisualElement id="1:124" name="Vector" class="unity-base-override Vector-three" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:125" name="camera" class="unity-base-override camera" picking-mode="Ignore">
+                            <unity:VisualElement id="1:126" name="Vector" class="unity-base-override Vector-four" picking-mode="Ignore" />
+                            <unity:VisualElement id="1:127" name="Vector" class="unity-base-override Vector-five" picking-mode="Ignore" />
+                            <unity:VisualElement id="1:128" name="Vector" class="unity-base-override Vector-six" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                        <unity:VisualElement id="1:129" name="arrow_right" class="unity-base-override arrow-right" picking-mode="Ignore">
+                            <unity:VisualElement id="1:130" name="Vector" class="unity-base-override Vector-seven" picking-mode="Ignore" />
+                        </unity:VisualElement>
+                    </unity:VisualElement>
+                </unity:VisualElement>
+            </unity:VisualElement>
+        </unity:VisualElement>
+    </unity:VisualElement>
+</unity:UXML>

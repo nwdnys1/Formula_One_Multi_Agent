@@ -1,0 +1,3867 @@
+.unity-base-override {
+	background-color: initial;
+	border-width: initial;
+	overflow: initial;
+	padding: initial;
+	margin: initial;
+	-unity-font-definition: initial;
+	justify-content: center;
+	align-items: center;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+.unity-viewport {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.Feature-Race-Track-Detail {
+	border-radius: 0px 0px 0px 0px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+}
+
+.Frame-40 {
+	border-radius: 12px;
+	position: absolute;
+	left: 137px;
+	width: 370px;
+	top: 76px;
+	height: 56px;
+	background-color: rgba(30,30,45,1);
+}
+
+.Rectangle-one {
+	border-radius: 8px;
+	position: absolute;
+	left: 4px;
+	width: 180px;
+	top: 4px;
+	height: 48px;
+}
+
+.Rectangle-two {
+	border-radius: 8px;
+	position: absolute;
+	left: 186px;
+	width: 180px;
+	top: 4px;
+	height: 48px;
+	background-color: rgba(67,24,209,1);
+}
+
+.Strategy {
+	position: absolute;
+	left: 59px;
+	width: auto;
+	top: 14px;
+	height: 24px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Track-Detail {
+	position: absolute;
+	left: 221px;
+	width: auto;
+	top: 15px;
+	height: 24px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 16px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-center;
+}
+
+.Frame-39 {
+	border-radius: 12px;
+	position: absolute;
+	left: 1589px;
+	width: 219px;
+	top: 73px;
+	height: 62px;
+	background-color: rgba(30,30,45,1);
+}
+
+.Rectangle-three {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 13px;
+	width: 8px;
+	top: 27px;
+	height: 8px;
+	opacity: 0.56;
+	background-color: rgba(114,239,75,1);
+}
+
+.LIVE {
+	position: absolute;
+	left: 33px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(114,239,75,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.LAP {
+	position: absolute;
+	left: 82px;
+	width: auto;
+	top: 20px;
+	height: 21px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 14px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-1-one {
+	position: absolute;
+	left: 127px;
+	width: auto;
+	top: 16px;
+	height: 30px;
+	color: rgba(196,193,79,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-58 {
+	position: absolute;
+	left: 152px;
+	width: auto;
+	top: 16px;
+	height: 30px;
+	color: rgba(166,166,177,1);
+	white-space: nowrap;
+	font-size: 20px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-58 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 834px;
+	width: 227px;
+	top: 979px;
+	height: 50px;
+}
+
+.Frame-57 {
+	border-radius: 10px;
+	position: absolute;
+	left: 0px;
+	width: 80px;
+	top: 0px;
+	height: 50px;
+	background-color: rgba(255,255,255,1);
+}
+
+.Frame-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25px;
+	width: 29px;
+	top: 10px;
+	height: 30px;
+}
+
+.Vector-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 29px;
+	top: 0px;
+	height: 30px;
+	background-image: url('Images/cee27b7e5794cd757186c4bb5f4091ea.svg');
+}
+
+.Group-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 15.53%;
+	right: 56.76%;
+	top: 59.40%;
+	bottom: 17.25%;
+	opacity: 0.40;
+}
+
+.Vector-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: -24.45%;
+	top: 0%;
+	bottom: -14.20%;
+	background-image: url('Images/d7c441e73710f385520b600bc31838e0.svg');
+}
+
+.Frame-56 {
+	border-radius: 10px;
+	position: absolute;
+	left: 87px;
+	width: 140px;
+	top: 0px;
+	height: 50px;
+	background-color: rgba(44,44,64,1);
+}
+
+.arrow-left {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 12px;
+	width: 24px;
+	top: 13px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.48%;
+	right: 22.35%;
+	top: 5.87%;
+	bottom: 2.46%;
+	background-image: url('Images/601e98f31edc22c22ef6e9460f13f485.svg');
+}
+
+.camera {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 55px;
+	width: 30px;
+	top: 10px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.Vector-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 23.33%;
+	top: 33.33%;
+	bottom: 10%;
+	background-image: url('Images/1e6a63aa71853a520e9dc3344965e581.svg');
+}
+
+.Vector-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 83.38%;
+	right: -0.04%;
+	top: 41.71%;
+	bottom: 18.29%;
+	background-image: url('Images/8edcb28873ef2eba7aa357514aad82b0.svg');
+}
+
+.Vector-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -0.04%;
+	right: 43.38%;
+	top: 12.50%;
+	bottom: 74.17%;
+	opacity: 0.40;
+	background-image: url('Images/c738b4814d42846cc2e9a763430947b1.svg');
+}
+
+.arrow-right {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 104px;
+	width: 24px;
+	top: 13px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.Vector-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.46%;
+	right: 22.37%;
+	top: 5.87%;
+	bottom: 2.46%;
+	background-image: url('Images/52df5d41707d8b48a696579edfd60cff.svg');
+}
+
+.Frame-67 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 968px;
+	width: 720px;
+	top: 241px;
+	height: 640px;
+}
+
+.Rectangle-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 656px;
+	top: 32px;
+	height: 53px;
+	border-color: rgba(83,83,83,1);
+	border-bottom-width: 1px;
+}
+
+.Rectangle-five {
+	border-radius: 31655100px;
+	position: absolute;
+	left: 32px;
+	width: 8px;
+	top: 46px;
+	height: 8px;
+	opacity: 0.56;
+	background-color: rgba(114,239,75,1);
+}
+
+.TRACK-CONDITIONS {
+	position: absolute;
+	left: 52px;
+	width: auto;
+	top: 31px;
+	height: 36px;
+	margin: 1px 1px 1px 1px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 24px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Frame-66 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0px;
+	width: 720px;
+	top: 0px;
+	height: 640px;
+}
+
+.Rectangle-six {
+	border-radius: 20px;
+	position: absolute;
+	left: 0px;
+	width: 720px;
+	top: 0px;
+	height: 640px;
+}
+
+.Rectangle-seven {
+	border-radius: 8px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 117px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-eight {
+	border-radius: 0px 8px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 117px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-59 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 602px;
+	top: 136px;
+	height: 29px;
+}
+
+.Circuit-Temperature {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-30-C {
+	position: absolute;
+	left: 542px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 187px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 187px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-60 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 599px;
+	top: 207px;
+	height: 29px;
+}
+
+.Air-Temperature {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-25-C {
+	position: absolute;
+	left: 542px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 258px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 258px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-61 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 603px;
+	top: 277px;
+	height: 29px;
+}
+
+.Rainfall {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-0-mm {
+	position: absolute;
+	left: 533px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 328px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 328px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-62 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 604px;
+	top: 348px;
+	height: 29px;
+}
+
+.Wind-Speed {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-5-km-h {
+	position: absolute;
+	left: 517px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 399px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 399px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-63 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 604px;
+	top: 418px;
+	height: 29px;
+}
+
+.Wind-Direction {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.North {
+	position: absolute;
+	left: 530px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 469px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 469px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-64 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 599px;
+	top: 488px;
+	height: 29px;
+}
+
+.Grip-Level {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.n-50 {
+	position: absolute;
+	left: 548px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.Rectangle-nineteen {
+	border-radius: 0px 0px 0px 8px;
+	position: absolute;
+	left: 32px;
+	width: 327px;
+	top: 539px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Rectangle-twenty {
+	border-radius: 0px 0px 8px 0px;
+	position: absolute;
+	left: 361px;
+	width: 327px;
+	top: 539px;
+	height: 68px;
+	background-color: rgba(22,23,32,1);
+}
+
+.Frame-65 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 64px;
+	width: 610px;
+	top: 559px;
+	height: 29px;
+}
+
+.Rubber-Particles {
+	position: absolute;
+	left: 0px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(175,177,178,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
+}
+
+.Medium {
+	position: absolute;
+	left: 507px;
+	width: auto;
+	top: 0px;
+	height: 29px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 19px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-right;
+}
+
+.n-248-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 165px;
+	width: 603px;
+	top: 272px;
+	height: 594px;
+	overflow: hidden;
+}
+
+.circuit-Yas-Marina-L-Eng {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -0.02%;
+	right: 0.05%;
+	top: 0.25%;
+	bottom: 1.74%;
+}
+
+.Yas-Marina-Circuit {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 78.53%;
+	right: 0.17%;
+	top: 0%;
+	bottom: 95.03%;
+}
+
+.YASMARINA {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0.17%;
+	top: 0%;
+	bottom: 49.27%;
+}
+
+.Circuit {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 76.96%;
+	right: 0%;
+	top: 73.73%;
+	bottom: 0%;
+}
+
+.circuit-Yas-Marina {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1.96%;
+	right: 1.85%;
+	top: 6.43%;
+	bottom: 25.04%;
+}
+
+.Group-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Path-55 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 26.63%;
+	right: 38.04%;
+	top: 16.09%;
+	bottom: 40.61%;
+}
+
+.Path-54-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 3.04%;
+	right: 2.77%;
+	top: 7.23%;
+	bottom: 7.46%;
+}
+
+.Path-54-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.19%;
+	right: 1.92%;
+	top: 7.23%;
+	bottom: 4.97%;
+}
+
+.Path-54-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.19%;
+	right: 1.92%;
+	top: 5.99%;
+	bottom: 6.21%;
+}
+
+.Path-54-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.61%;
+	right: 2.35%;
+	top: 6.61%;
+	bottom: 6.84%;
+}
+
+.Path-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.96%;
+	right: 85.50%;
+	top: 25.79%;
+	bottom: 18.87%;
+}
+
+.Path-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.61%;
+	right: 63.71%;
+	top: 14.09%;
+	bottom: 6.84%;
+}
+
+.Path-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.95%;
+	right: 26.13%;
+	top: 6.61%;
+	bottom: 92.09%;
+}
+
+.Path-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.61%;
+	right: 96.19%;
+	top: 80.98%;
+	bottom: 12.13%;
+}
+
+.Path-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 13.78%;
+	right: 75.71%;
+	top: 6.67%;
+	bottom: 73.55%;
+}
+
+.Path-54-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 73.87%;
+	right: 2.35%;
+	top: 6.61%;
+	bottom: 80.49%;
+}
+
+.Group-6-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 34.94%;
+	right: 63.34%;
+	top: 23.96%;
+	bottom: 73.53%;
+}
+
+.Rectangle-2-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 22.50%;
+	bottom: 44.16%;
+}
+
+.Rectangle-2-Copy-4-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 11.25%;
+	right: 55.42%;
+	top: 44.59%;
+	bottom: 22.08%;
+}
+
+.Rectangle-2-Copy-7-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.50%;
+	right: 44.16%;
+	top: 66.67%;
+	bottom: 0%;
+}
+
+.Rectangle-2-Copy-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.08%;
+	right: 44.58%;
+	top: 11.25%;
+	bottom: 55.41%;
+}
+
+.Rectangle-2-Copy-5-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 33.34%;
+	bottom: 33.33%;
+}
+
+.Rectangle-2-Copy-9-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 44.58%;
+	right: 22.08%;
+	top: 55.42%;
+	bottom: 11.25%;
+}
+
+.Rectangle-2-Copy-3-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 44.16%;
+	right: 22.50%;
+	top: 0%;
+	bottom: 66.66%;
+}
+
+.Rectangle-2-Copy-6-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 55.42%;
+	right: 11.25%;
+	top: 22.08%;
+	bottom: 44.58%;
+}
+
+.Rectangle-2-Copy-10-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 44.17%;
+	bottom: 22.50%;
+}
+
+.Group-2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 34.38%;
+	right: 60.46%;
+	top: 13.97%;
+	bottom: 75.10%;
+}
+
+.Page-1-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 70.51%;
+	right: 4.83%;
+	top: 84.66%;
+	bottom: 1.37%;
+}
+
+.F1-car {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 13.38%;
+	top: 0%;
+	bottom: 16.56%;
+}
+
+.Shape-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.58%;
+	right: 66.46%;
+	top: 8.13%;
+	bottom: 69.77%;
+}
+
+.Shape-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 49.37%;
+	right: 23.91%;
+	top: 69.32%;
+	bottom: 11.59%;
+}
+
+.Shape-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 11.73%;
+	right: 59.83%;
+	top: 0%;
+	bottom: 81.53%;
+}
+
+.Shape-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 16.90%;
+	right: 19.44%;
+	top: 16.11%;
+	bottom: 23.16%;
+}
+
+.Oval-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 14.37%;
+	right: 78.41%;
+	top: 16.81%;
+	bottom: 78.04%;
+}
+
+.Shape-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 60.76%;
+	right: 17.18%;
+	top: 82.12%;
+	bottom: 0.85%;
+}
+
+.Oval-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 58.99%;
+	right: 33.79%;
+	top: 76.62%;
+	bottom: 18.24%;
+}
+
+.Group-Copy-8-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 19.09%;
+	right: 77.49%;
+	top: 14.28%;
+	bottom: 80.75%;
+}
+
+.Oval-Copy-2-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Oval-Copy-2-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Oval-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 13.64%;
+	right: 19.69%;
+	top: 16.67%;
+	bottom: 16.67%;
+}
+
+.Oval-Copy-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 33.33%;
+	bottom: 33.33%;
+}
+
+.DRSDET-ZONE2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 10.37%;
+	right: 81.99%;
+	top: 10.77%;
+	bottom: 84.47%;
+}
+
+.DRSACT-ZONE2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0.91%;
+	right: 92.95%;
+	top: 38.51%;
+	bottom: 53.79%;
+}
+
+.DRSDET-ZONE1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 93.85%;
+	right: 0.41%;
+	top: 16.98%;
+	bottom: 75.32%;
+}
+
+.DRSACT-ZONE1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 47.13%;
+	right: 45.10%;
+	top: 0%;
+	bottom: 95.23%;
+}
+
+.Group-Copy-8-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 93.45%;
+	right: 3.13%;
+	top: 9.73%;
+	bottom: 85.30%;
+}
+
+.Oval-Copy-2-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Oval-Copy-2-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Oval-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 13.64%;
+	right: 19.69%;
+	top: 16.67%;
+	bottom: 16.67%;
+}
+
+.Oval-Copy-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 33.33%;
+	bottom: 33.33%;
+}
+
+.Group-Copy-7 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 31.34%;
+	right: 65.24%;
+	top: 4.76%;
+	bottom: 90.27%;
+}
+
+.Oval-Copy-2-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Oval-Copy-2-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Oval-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 13.64%;
+	right: 19.69%;
+	top: 16.67%;
+	bottom: 16.67%;
+}
+
+.Oval-Copy-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 33.33%;
+	bottom: 33.33%;
+}
+
+.SPEEDTRAP {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.75%;
+	right: 61.88%;
+	top: 1.73%;
+	bottom: 96.44%;
+}
+
+.S1-Sector1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 65.49%;
+	right: 29.45%;
+	top: 36.14%;
+	bottom: 58.16%;
+}
+
+.S2-Sector2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 3.21%;
+	right: 91.58%;
+	top: 23.20%;
+	bottom: 71.10%;
+}
+
+.S3-Sector3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 14.59%;
+	right: 80.17%;
+	top: 70.47%;
+	bottom: 23.83%;
+}
+
+.Oval-Copy-6-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 59.83%;
+	right: 37.32%;
+	top: 24.64%;
+	bottom: 71.22%;
+}
+
+.Oval-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 35.29%;
+	right: 34.94%;
+	top: 26.73%;
+	bottom: 29%;
+}
+
+.Oval-Copy-7 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 71.23%;
+	right: 25.93%;
+	top: 30.43%;
+	bottom: 65.43%;
+}
+
+.Oval-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 34.12%;
+	right: 34.12%;
+	top: 27.72%;
+	bottom: 30%;
+}
+
+.Oval-Copy-13 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 62.11%;
+	right: 35.04%;
+	top: 44.51%;
+	bottom: 51.35%;
+}
+
+.Oval-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 36.33%;
+	right: 36.04%;
+	top: 26.73%;
+	bottom: 30%;
+}
+
+.Oval-Copy-21 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 46.72%;
+	right: 50.43%;
+	top: 60.66%;
+	bottom: 35.20%;
+}
+
+.Oval-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 39.61%;
+	right: 43.89%;
+	top: 27.72%;
+	bottom: 30%;
+}
+
+.Oval-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 19.37%;
+	right: 77.78%;
+	top: 3.93%;
+	bottom: 91.93%;
+}
+
+.Vector-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 34.77%;
+	right: 34.77%;
+	top: 26.73%;
+	bottom: 29%;
+}
+
+.Oval-Copy-2-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 19.09%;
+	right: 78.06%;
+	top: 9.32%;
+	bottom: 86.54%;
+}
+
+.Oval-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 34.63%;
+	right: 34.63%;
+	top: 26.73%;
+	bottom: 29.03%;
+}
+
+.Oval-Copy-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 97.15%;
+	right: 0%;
+	top: 3.10%;
+	bottom: 92.75%;
+}
+
+.Oval-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 35.75%;
+	right: 36.27%;
+	top: 27.72%;
+	bottom: 30%;
+}
+
+.Oval-Copy-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 84.90%;
+	right: 12.25%;
+	top: 10.97%;
+	bottom: 84.89%;
+}
+
+.Oval-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 34.63%;
+	right: 34.63%;
+	top: 26.73%;
+	bottom: 29.03%;
+}
+
+.Oval-Copy-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 90.31%;
+	right: 6.84%;
+	top: 16.35%;
+	bottom: 79.50%;
+}
+
+.Oval-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 35.89%;
+	right: 35.13%;
+	top: 27.72%;
+	bottom: 29%;
+}
+
+.Oval-Copy-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 13.11%;
+	right: 84.05%;
+	top: 17.18%;
+	bottom: 78.68%;
+}
+
+.Oval-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 20.72%;
+	right: 21.04%;
+	top: 26.73%;
+	bottom: 29%;
+}
+
+.Oval-Copy-20 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.84%;
+	right: 92.31%;
+	top: 83.44%;
+	bottom: 12.42%;
+}
+
+.Oval-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 21.49%;
+	right: 22.05%;
+	top: 26.73%;
+	bottom: 30%;
+}
+
+.Oval-Copy-24 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 10.26%;
+	right: 86.89%;
+	top: 63.15%;
+	bottom: 32.71%;
+}
+
+.Oval-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 21.05%;
+	right: 21.14%;
+	top: 27.72%;
+	bottom: 29%;
+}
+
+.Oval-Copy-28 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 12.25%;
+	right: 84.90%;
+	top: 54.45%;
+	bottom: 41.41%;
+}
+
+.Oval-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 20.50%;
+	right: 20.64%;
+	top: 26.73%;
+	bottom: 29.03%;
+}
+
+.Oval-Copy-29 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 16.24%;
+	right: 80.91%;
+	top: 40.79%;
+	bottom: 55.07%;
+}
+
+.Oval-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.52%;
+	right: 22.29%;
+	top: 27.72%;
+	bottom: 30%;
+}
+
+.Oval-Copy-30-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 19.09%;
+	right: 78.06%;
+	top: 58.59%;
+	bottom: 37.27%;
+}
+
+.Oval-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 20.45%;
+	right: 20.78%;
+	top: 26.73%;
+	bottom: 29%;
+}
+
+.Oval-Copy-30-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 28.77%;
+	right: 68.38%;
+	top: 53.21%;
+	bottom: 42.65%;
+}
+
+.Oval-twenty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-19-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 20.50%;
+	right: 20.64%;
+	top: 26.73%;
+	bottom: 29.03%;
+}
+
+.Oval-Copy-31 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.65%;
+	right: 73.50%;
+	top: 27.54%;
+	bottom: 68.32%;
+}
+
+.Oval-twenty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 17.44%;
+	right: 16.91%;
+	top: 26.73%;
+	bottom: 29%;
+}
+
+.Oval-Copy-32 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 28.77%;
+	right: 68.38%;
+	top: 9.32%;
+	bottom: 86.54%;
+}
+
+.Oval-twenty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.34%;
+	right: 25.77%;
+	top: 26.73%;
+	bottom: 30%;
+}
+
+.Oval-Copy-27 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 17.66%;
+	right: 79.49%;
+	top: 86.34%;
+	bottom: 9.52%;
+}
+
+.Oval-twenty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 20.31%;
+	right: 20.13%;
+	top: 27.72%;
+	bottom: 30%;
+}
+
+.Oval-Copy-25 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5.98%;
+	right: 91.17%;
+	top: 95.86%;
+	bottom: 0%;
+}
+
+.Oval-twenty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 20.81%;
+	right: 20.95%;
+	top: 26.73%;
+	bottom: 29%;
+}
+
+.Oval-Copy-26 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 97.15%;
+	top: 91.72%;
+	bottom: 4.14%;
+}
+
+.Oval-twenty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.n-00-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 25.62%;
+	right: 29.90%;
+	top: 27.72%;
+	bottom: 30%;
+}
+
+.elevation-Yas-Marina {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 77.54%;
+	bottom: 0%;
+}
+
+.Group-8 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Min-9-3m {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5.39%;
+	right: 92%;
+	top: 57.65%;
+	bottom: 32.02%;
+}
+
+.Max-20-0m {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 18.42%;
+	right: 78.30%;
+	top: 37.36%;
+	bottom: 52.54%;
+}
+
+.Path-58-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.18%;
+	right: 0.25%;
+	top: 52.11%;
+	bottom: 14.21%;
+	opacity: 0.06;
+}
+
+.Path-58-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.18%;
+	right: 0.14%;
+	top: 53.68%;
+	bottom: 21.58%;
+}
+
+.Path-58-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.18%;
+	right: 0.14%;
+	top: 51.05%;
+	bottom: 24.21%;
+}
+
+.Path-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 35.81%;
+	right: 49.12%;
+	top: 66.84%;
+	bottom: 25.26%;
+}
+
+.Path-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 60.01%;
+	right: 30.17%;
+	top: 70%;
+	bottom: 27.37%;
+}
+
+.Group-6-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0.09%;
+	right: 2.48%;
+	top: 92.71%;
+	bottom: 1.15%;
+}
+
+.n-1-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 11.26%;
+	right: 88.26%;
+	top: 9.84%;
+	bottom: 2.08%;
+}
+
+.n-2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 15.98%;
+	right: 83.22%;
+	top: 7.77%;
+	bottom: 2.08%;
+}
+
+.n-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.06%;
+	right: 72.09%;
+	top: 9.84%;
+	bottom: 0%;
+}
+
+.n-6 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 28.48%;
+	right: 70.62%;
+	top: 7.77%;
+	bottom: 0.06%;
+}
+
+.n-7 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 31.14%;
+	right: 68.04%;
+	top: 9.84%;
+	bottom: 2.08%;
+}
+
+.n-8 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 53.01%;
+	right: 46.10%;
+	top: 7.77%;
+	bottom: 0%;
+}
+
+.n-9 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 54.47%;
+	right: 44.64%;
+	top: 7.77%;
+	bottom: 0.06%;
+}
+
+.n-10 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 58.44%;
+	right: 39.86%;
+	top: 7.77%;
+	bottom: 0%;
+}
+
+.n-11 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 71.14%;
+	right: 27.56%;
+	top: 9.84%;
+	bottom: 2.08%;
+}
+
+.n-12 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 72.75%;
+	right: 26.15%;
+	top: 37.82%;
+	bottom: 2.08%;
+}
+
+.n-13 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 74.20%;
+	right: 24.67%;
+	top: 37.82%;
+	bottom: 0.69%;
+}
+
+.n-14 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 75.95%;
+	right: 22.32%;
+	top: 9.84%;
+	bottom: 2.08%;
+}
+
+.n-15 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 80.35%;
+	right: 17.97%;
+	top: 9.84%;
+	bottom: 0%;
+}
+
+.n-16 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 82.67%;
+	right: 15.62%;
+	top: 7.77%;
+	bottom: 0.06%;
+}
+
+.n-17 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 85.06%;
+	right: 13.33%;
+	top: 9.84%;
+	bottom: 2.08%;
+}
+
+.n-18 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 87.34%;
+	right: 10.95%;
+	top: 7.77%;
+	bottom: 0%;
+}
+
+.n-19-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 89.38%;
+	right: 8.90%;
+	top: 7.77%;
+	bottom: 0.06%;
+}
+
+.n-20 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 94.84%;
+	right: 3.24%;
+	top: 7.77%;
+	bottom: 0%;
+}
+
+.n-21 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 98.49%;
+	right: 0%;
+	top: 7.77%;
+	bottom: 2.08%;
+}
+
+.n-3-copy-2 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 18.58%;
+	right: 80.56%;
+	top: 7.77%;
+	bottom: 0%;
+}
+
+.n-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.34%;
+	right: 76.74%;
+	top: 9.84%;
+	bottom: 2.08%;
+}
+
+.Turn {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 96.90%;
+	top: 0.65%;
+	bottom: 23.04%;
+}
+
+.Page-1-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 3.71%;
+	right: 95.71%;
+	top: 0%;
+	bottom: 16.66%;
+}
+
+.Group-6-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 98.65%;
+	right: 0.11%;
+	top: 88.42%;
+	bottom: 0%;
+}
+
+.Rectangle-2-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 0%;
+	bottom: 83.33%;
+}
+
+.Rectangle-2-Copy-4-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 16.67%;
+	bottom: 66.67%;
+}
+
+.Rectangle-2-Copy-7-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 33.33%;
+	bottom: 50%;
+}
+
+.Rectangle-2-Copy-11 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 50%;
+	bottom: 33.33%;
+}
+
+.Rectangle-2-Copy-14 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 66.67%;
+	bottom: 16.67%;
+}
+
+.Rectangle-2-Copy-17 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 66.67%;
+	top: 83.33%;
+	bottom: 0%;
+}
+
+.Rectangle-2-Copy-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 0%;
+	bottom: 83.33%;
+}
+
+.Rectangle-2-Copy-5-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 16.67%;
+	bottom: 66.67%;
+}
+
+.Rectangle-2-Copy-9-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 33.33%;
+	bottom: 50%;
+}
+
+.Rectangle-2-Copy-12 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 50%;
+	bottom: 33.33%;
+}
+
+.Rectangle-2-Copy-15 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 66.67%;
+	bottom: 16.67%;
+}
+
+.Rectangle-2-Copy-18 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 33.33%;
+	right: 33.33%;
+	top: 83.33%;
+	bottom: 0%;
+}
+
+.Rectangle-2-Copy-3-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 0%;
+	bottom: 83.33%;
+}
+
+.Rectangle-2-Copy-6-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 16.67%;
+	bottom: 66.67%;
+}
+
+.Rectangle-2-Copy-10-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 33.33%;
+	bottom: 50%;
+}
+
+.Rectangle-2-Copy-13 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 50%;
+	bottom: 33.33%;
+}
+
+.Rectangle-2-Copy-16 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 66.67%;
+	bottom: 16.67%;
+}
+
+.Rectangle-2-Copy-19 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 66.67%;
+	right: 0%;
+	top: 83.33%;
+	bottom: 0%;
+}
+
+.Group-2-Copy-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.34%;
+	right: 0.09%;
+	top: 51.58%;
+	bottom: 11.32%;
+}
+
+.Group-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Line {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 14.82%;
+	right: 85.06%;
+	top: 17.73%;
+	bottom: 6.38%;
+}
+
+.Line-Copy {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 12.14%;
+	right: 87.74%;
+	top: 35.46%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 18.69%;
+	right: 81.19%;
+	top: 24.82%;
+	bottom: 6.38%;
+}
+
+.Line-Copy-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 23.45%;
+	right: 76.43%;
+	top: 54.92%;
+	bottom: 7.13%;
+}
+
+.Line-Copy-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 71.67%;
+	right: 28.21%;
+	top: 60.28%;
+	bottom: 6.38%;
+}
+
+.Line-Copy-7 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 7.08%;
+	right: 92.80%;
+	top: 62.02%;
+	bottom: 4.65%;
+}
+
+.Line-Copy-8 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.62%;
+	right: 72.26%;
+	top: 51.38%;
+	bottom: 8.20%;
+}
+
+.Line-Copy-17 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 70.18%;
+	right: 29.70%;
+	top: 58.47%;
+	bottom: 8.20%;
+}
+
+.Line-Copy-18 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 55.89%;
+	right: 43.99%;
+	top: 65.56%;
+	bottom: 8.20%;
+}
+
+.Line-Copy-19 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 73.75%;
+	right: 26.13%;
+	top: 70.92%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-20 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 78.21%;
+	right: 21.67%;
+	top: 70.92%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-22 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 80.60%;
+	right: 19.29%;
+	top: 70.92%;
+	bottom: 6.31%;
+}
+
+.Line-Copy-23 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 82.98%;
+	right: 16.90%;
+	top: 70.92%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-24 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 85.36%;
+	right: 14.52%;
+	top: 70.92%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-25 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 87.44%;
+	right: 12.44%;
+	top: 70.92%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-21 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 93.39%;
+	right: 6.49%;
+	top: 63.83%;
+	bottom: 2.84%;
+}
+
+.Line-Copy-26 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 96.67%;
+	right: 3.21%;
+	top: 67.38%;
+	bottom: 6.38%;
+}
+
+.Line-Copy-15 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 68.69%;
+	right: 31.19%;
+	top: 65.56%;
+	bottom: 8.20%;
+}
+
+.Line-Copy-10 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 51.43%;
+	right: 48.45%;
+	top: 62.02%;
+	bottom: 4.65%;
+}
+
+.Line-Copy-9 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 49.94%;
+	right: 49.94%;
+	top: 69.09%;
+	bottom: 6.44%;
+}
+
+.Line-Copy-6 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 24.94%;
+	right: 74.94%;
+	top: 58.48%;
+	bottom: 8.19%;
+}
+
+.Line-Copy-14 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 16.16%;
+	right: 83.72%;
+	top: 12.41%;
+	bottom: 7.09%;
+}
+
+.Line-Copy-11 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 2.17%;
+	right: 97.71%;
+	top: 69.15%;
+	bottom: 7.45%;
+}
+
+.level-lines-hor {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 92.91%;
+	bottom: 0%;
+}
+
+.blue-color-level {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Path-2-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Rectangle-3-Copy-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 77.08%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Rectangle-3-Copy-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.92%;
+	right: 33.04%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Group-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 71.07%;
+	right: 27.62%;
+	top: 42.55%;
+	bottom: 41.85%;
+}
+
+.Oval-Copy-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 6.49%;
+	right: 92.21%;
+	top: 53.19%;
+	bottom: 31.21%;
+}
+
+.Oval-Copy-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.02%;
+	right: 71.67%;
+	top: 35.46%;
+	bottom: 48.94%;
+}
+
+.Oval-Copy-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 69.58%;
+	right: 29.11%;
+	top: 42.55%;
+	bottom: 41.85%;
+}
+
+.Oval-Copy-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 55.29%;
+	right: 43.40%;
+	top: 49.65%;
+	bottom: 34.76%;
+}
+
+.Oval-Copy-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-twenty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 73.15%;
+	right: 25.54%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Oval-Copy-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-twenty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 77.62%;
+	right: 21.07%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Oval-Copy-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-twenty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-twenty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 80%;
+	right: 18.69%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Oval-Copy-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-thirty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-ten {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 82.38%;
+	right: 16.31%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Oval-Copy-twenty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-thirty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-twenty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-eleven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 84.76%;
+	right: 13.93%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Oval-Copy-twenty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-thirty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-twenty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-twelve {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 86.84%;
+	right: 11.85%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Oval-Copy-twenty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-thirty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-forty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-forty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-twenty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-thirteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 92.79%;
+	right: 5.90%;
+	top: 49.65%;
+	bottom: 34.76%;
+}
+
+.Oval-Copy-twenty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-forty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-forty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-forty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-twenty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-fourteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 96.07%;
+	right: 2.62%;
+	top: 53.19%;
+	bottom: 31.21%;
+}
+
+.Oval-Copy-twenty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-forty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-forty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-forty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-thirty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-fifteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 68.09%;
+	right: 30.60%;
+	top: 49.65%;
+	bottom: 34.76%;
+}
+
+.Oval-Copy-thirty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-forty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-forty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-thirty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-sixteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 50.83%;
+	right: 47.86%;
+	top: 46.10%;
+	bottom: 38.30%;
+}
+
+.Oval-Copy-thirty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-fifty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-thirty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-seventeen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 49.34%;
+	right: 49.35%;
+	top: 53.19%;
+	bottom: 31.21%;
+}
+
+.Oval-Copy-thirty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-fifty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-thirty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-eighteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 24.34%;
+	right: 74.35%;
+	top: 46.10%;
+	bottom: 38.30%;
+}
+
+.Oval-Copy-thirty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-fifty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-fifty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-thirty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-nineteen {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 22.85%;
+	right: 75.84%;
+	top: 39.01%;
+	bottom: 45.39%;
+}
+
+.Oval-Copy-thirty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-sixty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-forty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-twenty {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 14.22%;
+	right: 84.47%;
+	top: 0%;
+	bottom: 84.40%;
+}
+
+.Oval-Copy-forty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-sixty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-forty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-twenty-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 11.54%;
+	right: 87.15%;
+	top: 17.73%;
+	bottom: 66.67%;
+}
+
+.Oval-Copy-forty-three {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-sixty-seven {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty-eight {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-forty-four {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Group-twenty-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 18.09%;
+	right: 80.60%;
+	top: 17.73%;
+	bottom: 66.67%;
+}
+
+.Oval-Copy-forty-five {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-sixty-nine {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.55%;
+	right: 4.55%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Vector-seventy {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -6.60%;
+	right: 6.60%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Vector-seventy-one {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: -2.06%;
+	right: 11.15%;
+	top: 4.53%;
+	bottom: 4.53%;
+}
+
+.Oval-Copy-forty-six {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 27.27%;
+	right: 27.27%;
+	top: 27.27%;
+	bottom: 27.27%;
+}
+
+.Oval-Copy-6-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 45.98%;
+	right: 52.71%;
+	top: 56.74%;
+	bottom: 27.66%;
+}
+
+.Elevation {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 89.52%;
+	right: 1.12%;
+	top: 0%;
+	bottom: 94.21%;
+}
+
+.Line-Copy-12 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 99.91%;
+	right: 0%;
+	top: 37.37%;
+	bottom: 11.58%;
+}
+
+.Line-Copy-13 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 4.22%;
+	right: 95.68%;
+	top: 37.37%;
+	bottom: 11.58%;
+}
+
+.Group-7 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 5.84%;
+	right: 92.83%;
+	top: 72.59%;
+	bottom: 24.25%;
+}
+
+.Page-1-Copy-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.Group-3 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 19.14%;
+	right: 79.52%;
+	top: 51.47%;
+	bottom: 45.24%;
+}
+
+.Page-1-Copy-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.sea {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 95.78%;
+	top: 60.96%;
+	bottom: 11.58%;
+}
+
+.Path-2-two {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 90.42%;
+	bottom: 0%;
+}
+
+.SEALEVEL {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1.48%;
+	right: 19.15%;
+	top: 0%;
+	bottom: 61.33%;
+}
+
+.Path-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 85.15%;
+	bottom: 9.68%;
+}
+
+.Path-5-Copy-4 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 80.36%;
+	bottom: 14.47%;
+}
+
+.Path-5-Copy-5 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 75.57%;
+	bottom: 19.26%;
+}

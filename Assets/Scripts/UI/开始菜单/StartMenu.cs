@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using Cursor = UnityEngine.Cursor;
 
 public class StartMenu : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class StartMenu : MonoBehaviour
 
     private void OnEnable()
     {
+        // 确保鼠标可见
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None; // 解锁鼠标
+
         _uiDocument = GetComponent<UIDocument>();
 
         // 获取按钮引用 - 根据新的UXML结构
@@ -30,7 +35,7 @@ public class StartMenu : MonoBehaviour
 
     private void OnStartButtonClicked(ClickEvent evt)
     {
-        SceneManager.LoadScene("采访室");
+        SceneManager.LoadScene("赛场");
     }
 
     private void OnQuitButtonClicked(ClickEvent evt)

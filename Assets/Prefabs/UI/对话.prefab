@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 45841131995084906}
   - component: {fileID: 5039867033990683643}
   - component: {fileID: 7125233122082616731}
-  - component: {fileID: 3678145572032547057}
   m_Layer: 0
   m_Name: "\u5BF9\u8BDD"
   m_TagString: Untagged
@@ -65,16 +64,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bbe66249a94714aa7a08ce6fe002db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpeed: 0.05
---- !u!114 &3678145572032547057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2658451980253646984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28c6db36ee019b542b152bdad0987f00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  WolffUI: {fileID: 0}
+  HamUI: {fileID: 0}
+  JournalistUI: {fileID: 0}
+  HornerUI: {fileID: 0}
+  VerstappenUI: {fileID: 0}
+  ReportUI: {fileID: 0}

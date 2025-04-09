@@ -2,7 +2,7 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class InterviewDialog : MonoBehaviour
+public class InterviewUI : MonoBehaviour
 {
     [Header("角色UI文档")]
     public UIDocument WolffUI;
@@ -23,13 +23,7 @@ public class InterviewDialog : MonoBehaviour
 
     private void Awake()
     {
-        // 初始化时隐藏所有UI
-        if (WolffUI != null) WolffUI.rootVisualElement.style.display = DisplayStyle.None;
-        if (HamUI != null) HamUI.rootVisualElement.style.display = DisplayStyle.None;
-        if (JournalistUI != null) JournalistUI.rootVisualElement.style.display = DisplayStyle.None;
-        if (HornerUI != null) HornerUI.rootVisualElement.style.display = DisplayStyle.None;
-        if (VerstappenUI != null) VerstappenUI.rootVisualElement.style.display = DisplayStyle.None;
-        if (ReportUI != null) ReportUI.rootVisualElement.style.display = DisplayStyle.None;
+        HideAll();
     }
 
     // 显示指定角色的UI
@@ -43,9 +37,7 @@ public class InterviewDialog : MonoBehaviour
         {
             case "Wolff":
                 _currentRoot = WolffUI.rootVisualElement;
-                _inputField = _currentRoot.Q<TextField>("Input");
-                print(_inputField);
-                print(_currentRoot);
+                _inputField = _currentRoot.Q<TextField>("Contents");
                 break;
             case "汉密尔顿":
                 _currentRoot = HamUI.rootVisualElement;
@@ -78,18 +70,23 @@ public class InterviewDialog : MonoBehaviour
 
     // 显示对话文本（所有UI通用）
     public void ShowDialogue(string text)
-    {   
+    {
         //print(_dialogueText);
         if (_dialogueText != null)
         {
             _dialogueText.text = text;
             _dialogueText.style.display = DisplayStyle.Flex;
         }
+        else
+        {
+            _inputField.value = text;
+            _inputField.style.display = DisplayStyle.Flex;
+        }
     }
 
     // 隐藏对话文本
     public void HideDialogue()
-    {   
+    {
         if (_dialogueText != null)
         {
             _dialogueText.style.display = DisplayStyle.None;
@@ -114,10 +111,10 @@ public class InterviewDialog : MonoBehaviour
             _inputField.RegisterCallback<KeyDownEvent>(e =>
             {
                 if (e.keyCode == KeyCode.Return)
-                {   
+                {
                     print("输入内容: " + _inputField.value);
                     onSubmit?.Invoke(_inputField.value);
-                    HideInputField();
+                    //HideInputField();
                 }
             });
         }

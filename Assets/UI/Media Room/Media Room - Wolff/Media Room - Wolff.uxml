@@ -6,7 +6,7 @@
                 <unity:VisualElement id="1:3" name="Rectangle 2" picking-mode="Ignore" class="unity-base-override Rectangle-2" />
                 <unity:VisualElement id="1:4" name="Rectangle 1" picking-mode="Ignore" class="unity-base-override Rectangle-1" />
                 <unity:Label id="1:5" name="Toto wolff (You)" picking-mode="Ignore" text="TOTO WOLFF  (YOU)" class="unity-base-override Toto-wolff-You" />
-                <unity:TextField id="input" name="Input" text="Please Input:" class="unity-base-override Please-Input" />
+                <unity:TextField id="input" name="Contents" text="Please Input:" class="unity-base-override Please-Input" />
                 <unity:VisualElement id="1:7" name="Union 1032" picking-mode="Ignore" class="unity-base-override Union-1032" />
                 <unity:Label id="1:8" name="media interview" picking-mode="Ignore" text="MEDIA INTERVIEW" class="unity-base-override media-interview" />
                 <unity:VisualElement id="1:9" name="wolff-Photoroom 1" picking-mode="Ignore" class="unity-base-override wolff-Photoroom-1" />

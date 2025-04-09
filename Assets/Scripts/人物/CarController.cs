@@ -189,7 +189,6 @@ public class CarController : MonoBehaviour
         if (ersActive)
         {
             ersTimer += Time.deltaTime;
-            print($"ERS计时器: {ersTimer:F1}/{ersDuration:F1}秒");
             if (ersTimer >= ersDuration)
             {
                 DeactivateERS();

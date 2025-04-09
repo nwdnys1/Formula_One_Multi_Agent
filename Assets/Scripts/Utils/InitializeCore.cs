@@ -26,6 +26,9 @@ public static class InitializeCore
 
     private static void EnsureDefaultSceneLoaded()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;// Ω‚À¯ Û±Í
+
         if (SceneManager.GetActiveScene().name == DEFAULT_SCENE)
             return;
 

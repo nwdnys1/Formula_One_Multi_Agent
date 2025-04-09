@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1;">
+        <engine:Label text="开始会议" style="position: absolute; top: 520px; left: 1226px; height: 36px; width: 72px;" />
+        <engine:Button text="F" name="Button" style="position: absolute; top: 511px; left: 1172px; height: 47px; width: 43px;" />
+    </engine:VisualElement>
+</engine:UXML>

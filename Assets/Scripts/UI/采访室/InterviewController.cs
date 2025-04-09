@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class InterviewController : MonoBehaviour
 {
-    InterviewDialog dialog;
+    InterviewUI dialog;
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
     public UIDocument driverParaUI;
@@ -21,7 +21,7 @@ public class InterviewController : MonoBehaviour
 
     private void Awake()
     {
-        dialog = GetComponent<InterviewDialog>();
+        dialog = GetComponent<InterviewUI>();
         // 确保DialogUI组件已正确设置
         if (dialog == null)
         {
@@ -56,12 +56,17 @@ public class InterviewController : MonoBehaviour
     {
         client.Send(JsonStr.media_interview_start, (response) =>
         {
+
             JsonData json = JsonMapper.ToObject(response);
+            // 切换摄像机
+            cm.SetCamera(cameras[json["sender"].ToString()]);
             // 处理服务器返回的JSON数据
             dialog.ShowCharacterUI(json["sender"].ToString());
             dialog.ShowDialogue(json["content"].ToString());
-            // 切换摄像机
-            cm.SetCamera(cameras[json["sender"].ToString()]);
+            if (json.ContainsKey("attitude"))
+            {
+                UpdateAttitude(json["attitude"].ToString());
+            }
         }, (r) =>
         { InterviewChat(); });
 
@@ -100,6 +105,18 @@ public class InterviewController : MonoBehaviour
             dialog._currentRoot.Q<Label>("Contents").text = news["content"].ToString();
 
         }, null);
+    }
+
+    private void UpdateAttitude(string attitude)
+    {
+        Label label = dialog._currentRoot.Q<Label>("Morale");
+        if (label == null)
+        {
+            Debug.LogError("没有心态");
+            return;
+        }
+        print("心态变化");
+        label.text = attitude;
     }
     private void Update()
     {

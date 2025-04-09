@@ -1,22 +1,22 @@
-﻿<unity:UXML xmlns:unity="UnityEngine.UIElements">
-    <unity:VisualElement id="0:0" name="Document" class="unity-base-override unity-viewport" picking-mode="Ignore">
-        <Style src="Meeting Room - Pre - Wolff Input.uss" />
-        <unity:VisualElement id="0:1" name="Page 1" class="unity-base-override unity-viewport" picking-mode="Ignore">
-            <unity:VisualElement id="4:2" name="Meeting Room - Pre - Wolff Input" class="unity-base-override Meeting-Room-Pre-Wolff-Input unity-viewport" picking-mode="Ignore">
-                <unity:VisualElement id="4:3" name="Rectangle 2" class="unity-base-override Rectangle-2" picking-mode="Ignore" />
-                <unity:VisualElement id="4:4" name="Rectangle 1" class="unity-base-override Rectangle-1" picking-mode="Ignore" />
-                <unity:Label id="4:5" name="Toto wolff (You)" class="unity-base-override Toto-wolff-You" picking-mode="Ignore" text="TOTO WOLFF  (YOU)" />
-                <unity:Label id="4:6" name="Input" class="unity-base-override Input" picking-mode="Ignore" text="Input" />
-                <unity:VisualElement id="4:7" name="Union 1032" class="unity-base-override Union-1032" picking-mode="Ignore" />
-                <unity:Label id="4:8" name="Pre - Match Briefing" class="unity-base-override Pre-Match-Briefing" picking-mode="Ignore" text="PRE - MATCH BRIEFING" />
-                <unity:VisualElement id="4:9" name="wolff-Photoroom 1" class="unity-base-override wolff-Photoroom-1" picking-mode="Ignore" />
-                <unity:VisualElement id="4:17" name="Frame 1" class="unity-base-override Frame-1" picking-mode="Ignore">
-                    <unity:VisualElement id="4:10" name="IMAGE" class="unity-base-override IMAGE-one" picking-mode="Ignore" />
-                    <unity:Label id="4:11" name="To" class="unity-base-override To" picking-mode="Ignore" text="To" />
-                    <unity:VisualElement id="4:12" name="IMAGE" class="unity-base-override IMAGE-two" picking-mode="Ignore" />
-                    <unity:Label id="4:13" name="or" class="unity-base-override or-one" picking-mode="Ignore" text="or" />
-                    <unity:VisualElement id="4:14" name="IMAGE" class="unity-base-override IMAGE-three" picking-mode="Ignore" />
-                    <unity:Label id="4:15" name="or" class="unity-base-override or-two" picking-mode="Ignore" text="or" />
+<unity:UXML xmlns:unity="UnityEngine.UIElements">
+    <unity:VisualElement id="0:0" name="Document" picking-mode="Ignore" class="unity-base-override unity-viewport">
+        <Style src="project://database/Assets/UI/Meeting%20Room%20-%20Pre/Meeting%20Room%20-%20Pre%20-%20Wolff%20Input/Meeting%20Room%20-%20Pre%20-%20Wolff%20Input.uss?fileID=7433441132597879392&amp;guid=a681c42dcb7ae2e4a8ac70c323346b4c&amp;type=3#Meeting Room - Pre - Wolff Input" />
+        <unity:VisualElement id="0:1" name="Page 1" picking-mode="Ignore" class="unity-base-override unity-viewport">
+            <unity:VisualElement id="4:2" name="Meeting Room - Pre - Wolff Input" picking-mode="Ignore" class="unity-base-override Meeting-Room-Pre-Wolff-Input unity-viewport">
+                <unity:VisualElement id="4:3" name="Rectangle 2" picking-mode="Ignore" class="unity-base-override Rectangle-2" />
+                <unity:VisualElement id="4:4" name="Rectangle 1" picking-mode="Ignore" class="unity-base-override Rectangle-1" />
+                <unity:Label id="4:5" name="Toto wolff (You)" picking-mode="Ignore" text="TOTO WOLFF  (YOU)" class="unity-base-override Toto-wolff-You" />
+                <unity:TextField id="4:6" name="Contents" class="unity-base-override Input" />
+                <unity:VisualElement id="4:7" name="Union 1032" picking-mode="Ignore" class="unity-base-override Union-1032" />
+                <unity:Label id="4:8" name="Pre - Match Briefing" picking-mode="Ignore" text="PRE - MATCH BRIEFING" class="unity-base-override Pre-Match-Briefing" />
+                <unity:VisualElement id="4:9" name="wolff-Photoroom 1" picking-mode="Ignore" class="unity-base-override wolff-Photoroom-1" />
+                <unity:VisualElement id="4:17" name="Frame 1" picking-mode="Ignore" class="unity-base-override Frame-1">
+                    <unity:Button id="4:10" name="Strat"  class="unity-base-override IMAGE-one" />
+                    <unity:Label id="4:11" name="To" picking-mode="Ignore" text="To" class="unity-base-override To" />
+                    <unity:Button id="4:12" name="Ham"  class="unity-base-override IMAGE-two" />
+                    <unity:Label id="4:13" name="or" picking-mode="Ignore" text="or" class="unity-base-override or-one" />
+                    <unity:Button id="4:14" name="Mech"  class="unity-base-override IMAGE-three" />
+                    <unity:Label id="4:15" name="or" picking-mode="Ignore" text="or" class="unity-base-override or-two" />
                 </unity:VisualElement>
             </unity:VisualElement>
         </unity:VisualElement>

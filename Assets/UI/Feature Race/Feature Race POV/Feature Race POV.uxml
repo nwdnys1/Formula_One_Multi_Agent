@@ -7,7 +7,7 @@
                     <unity:VisualElement id="14:293" name="Frame 1" class="unity-base-override Frame-1-one" picking-mode="Ignore">
                         <unity:Label id="14:295" name="RACE" class="unity-base-override RACE" picking-mode="Ignore" text="RACE" />
                     </unity:VisualElement>
-                    <unity:VisualElement id="14:297" name="List" class="unity-base-override List" picking-mode="Ignore">
+                    <unity:VisualElement id="14:297" name="Rank" class="unity-base-override List" picking-mode="Ignore">
                         <unity:VisualElement id="14:298" name="Row1" class="unity-base-override Row-one" picking-mode="Ignore">
                             <unity:VisualElement id="14:299" name="Team" class="unity-base-override Team-one" picking-mode="Ignore">
                                 <unity:VisualElement id="I14:299;2:1722" name="Redbull800x800 1" class="unity-base-override Redbull800x800-1-one" picking-mode="Ignore" />
@@ -304,23 +304,23 @@
                             <unity:Label id="14:486" name="OPTIMISTIC" class="unity-base-override OPTIMISTIC" picking-mode="Ignore" text="OPTIMISTIC" />
                         </unity:VisualElement>
                         <unity:VisualElement id="15:1167" name="Frame 64" class="unity-base-override Frame-64" picking-mode="Ignore">
-                            <unity:Label id="14:487" name="FUEL" class="unity-base-override FUEL" picking-mode="Ignore" text="FUEL" />
-                            <unity:Label id="14:488" name="1" class="unity-base-override n-1-three" picking-mode="Ignore" text="1" />
+                            <unity:Label id="14:487" name="1" class="unity-base-override FUEL" picking-mode="Ignore" text="FUEL" />
+                            <unity:Label id="14:488" name="FUEL" class="unity-base-override n-1-three" picking-mode="Ignore" text="1" />
                             <unity:Label id="14:489" name="/1" class="unity-base-override n-1-four" picking-mode="Ignore" text="/1" />
                         </unity:VisualElement>
                         <unity:VisualElement id="15:1168" name="Frame 65" class="unity-base-override Frame-65" picking-mode="Ignore">
-                            <unity:Label id="14:490" name="ERS" class="unity-base-override ERS" picking-mode="Ignore" text="ERS" />
-                            <unity:Label id="14:491" name="1" class="unity-base-override n-1-five" picking-mode="Ignore" text="1" />
+                            <unity:Label id="14:490" name="1" class="unity-base-override ERS" picking-mode="Ignore" text="ERS" />
+                            <unity:Label id="14:491" name="ERS" class="unity-base-override n-1-five" picking-mode="Ignore" text="1" />
                             <unity:Label id="14:492" name="/1" class="unity-base-override n-1-six" picking-mode="Ignore" text="/1" />
                         </unity:VisualElement>
                         <unity:VisualElement id="15:1165" name="Frame 62" class="unity-base-override Frame-62" picking-mode="Ignore">
                             <unity:Label id="14:484" name="TIRES" class="unity-base-override TIRES" picking-mode="Ignore" text="TIRES" />
                             <unity:VisualElement id="14:560" name="Tyres" class="unity-base-override Tyres-twenty-one" picking-mode="Ignore">
-                                <unity:Label id="I14:560;2:1095" name="M" class="unity-base-override M-twenty-one" picking-mode="Ignore" text="H" />
+                                <unity:Label id="I14:560;2:1095" name="TyreType" class="unity-base-override M-twenty-one" picking-mode="Ignore" text="H" />
                             </unity:VisualElement>
                         </unity:VisualElement>
                     </unity:VisualElement>
-                    <unity:Label id="15:1182" name="100%" class="unity-base-override n-100" picking-mode="Ignore" text="100%" />
+                    <unity:Label id="15:1182" name="TyreWear" class="unity-base-override n-100" picking-mode="Ignore" text="100%" />
                 </unity:VisualElement>
             </unity:VisualElement>
         </unity:VisualElement>

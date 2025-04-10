@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
-  m_Name: "1\u53F7"
+  m_Name: "Leclerc"
   m_EditorClassIdentifier: 
-  topSpeed: 80
-  acceleration: 50
-  drsEffectiveness: 0.5
-  carCornering: 3.5
-  frontWingAngle: 5
-  rearWingAngle: 12.5
+  topSpeed: 80.01
+  acceleration: 47.84
+  drsEffectiveness: 0.51
+  carCornering: 3.27
+  frontWingAngle: 2.01
+  rearWingAngle: 12.94
   antiRollDistribution: 0.3
-  tyreCamber: -3.2
-  toeOut: 0.7
+  tyreCamber: -2.55
+  toeOut: 0.57
   bestFrontWingAngle: 5
   bestRearWingAngle: 12.5
   bestAntiRollDistribution: 0.3
   bestTyreCamber: -3.2
   bestToeOut: 0.7
-  oversteerRating: 1
+  oversteerRating: 2
   brakingStabilityRating: 1
-  corneringRating: 1
-  tractionRating: 1
-  straightsRating: 1
+  corneringRating: 3
+  tractionRating: 5
+  straightsRating: 2
   tyreType: 1
   wearRate: 1
   currentWear: 100

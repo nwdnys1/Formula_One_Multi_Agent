@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
-  m_Name: "1\u53F7"
+  m_Name: "Bottas"
   m_EditorClassIdentifier: 
-  topSpeed: 80
-  acceleration: 50
-  drsEffectiveness: 0.5
-  carCornering: 3.5
-  frontWingAngle: 5
-  rearWingAngle: 12.5
-  antiRollDistribution: 0.3
-  tyreCamber: -3.2
-  toeOut: 0.7
+  topSpeed: 81.62
+  acceleration: 51.65
+  drsEffectiveness: 0.46
+  carCornering: 3.64
+  frontWingAngle: 4.71
+  rearWingAngle: 14.13
+  antiRollDistribution: 0.27
+  tyreCamber: -2.62
+  toeOut: 0.48
   bestFrontWingAngle: 5
   bestRearWingAngle: 12.5
   bestAntiRollDistribution: 0.3
   bestTyreCamber: -3.2
   bestToeOut: 0.7
-  oversteerRating: 1
-  brakingStabilityRating: 1
-  corneringRating: 1
-  tractionRating: 1
+  oversteerRating: 3
+  brakingStabilityRating: 4
+  corneringRating: 5
+  tractionRating: 2
   straightsRating: 1
   tyreType: 1
   wearRate: 1

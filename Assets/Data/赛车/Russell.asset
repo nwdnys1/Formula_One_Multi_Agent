@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
-  m_Name: "1\u53F7"
+  m_Name: "Russell"
   m_EditorClassIdentifier: 
-  topSpeed: 80
-  acceleration: 50
-  drsEffectiveness: 0.5
-  carCornering: 3.5
-  frontWingAngle: 5
-  rearWingAngle: 12.5
-  antiRollDistribution: 0.3
-  tyreCamber: -3.2
-  toeOut: 0.7
+  topSpeed: 79.84
+  acceleration: 49.01
+  drsEffectiveness: 0.57
+  carCornering: 3.37
+  frontWingAngle: 5.47
+  rearWingAngle: 11.81
+  antiRollDistribution: 0.25
+  tyreCamber: -2.67
+  toeOut: 0.73
   bestFrontWingAngle: 5
   bestRearWingAngle: 12.5
   bestAntiRollDistribution: 0.3
@@ -28,9 +28,9 @@ MonoBehaviour:
   bestToeOut: 0.7
   oversteerRating: 1
   brakingStabilityRating: 1
-  corneringRating: 1
-  tractionRating: 1
-  straightsRating: 1
+  corneringRating: 2
+  tractionRating: 4
+  straightsRating: 4
   tyreType: 1
   wearRate: 1
   currentWear: 100

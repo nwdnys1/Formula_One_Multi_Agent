@@ -2163,7 +2163,7 @@
 	position: absolute;
 	left: 0px;
 	width: auto;
-	top: 0px;
+	top: 6px;
 	height: 33px;
 	color: rgba(255,255,255,1);
 	white-space: nowrap;
@@ -2561,9 +2561,9 @@
 
 .DRS {
 	position: absolute;
-	left: 0px;
+	left: 2px;
 	width: auto;
-	top: 4px;
+	top: 8px;
 	height: 24px;
 	color: rgba(255,255,255,1);
 	white-space: nowrap;
@@ -2753,7 +2753,7 @@
 	position: absolute;
 	left: 298px;
 	width: auto;
-	top: 66px;
+	top: 70px;
 	height: 33px;
 	color: rgba(255,255,255,1);
 	white-space: normal;

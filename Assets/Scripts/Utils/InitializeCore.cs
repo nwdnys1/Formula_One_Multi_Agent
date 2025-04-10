@@ -1,4 +1,4 @@
-// InitializeCore.cs
+ï»¿// InitializeCore.cs
 using UnityEngine;
 using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
@@ -7,13 +7,13 @@ using UnityEditor;
 
 public static class InitializeCore
 {
-    private const string DEFAULT_SCENE = "¿ªÊ¼²Ëµ¥";
+    private const string DEFAULT_SCENE = "å¼€å§‹èœå•";
     private const string INITIALIZATION_TAG = "[Initialization]";
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initialize()
     {
-        Debug.Log($"{INITIALIZATION_TAG} ¿ªÊ¼ÏµÍ³³õÊ¼»¯...");
+        Debug.Log($"{INITIALIZATION_TAG} å¼€å§‹ç³»ç»Ÿåˆå§‹åŒ–...");
 
 #if UNITY_EDITOR
         if (!EditorApplication.isPlayingOrWillChangePlaymode)
@@ -27,24 +27,24 @@ public static class InitializeCore
     private static void EnsureDefaultSceneLoaded()
     {
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;// ½âËøÊó±ê
+        Cursor.lockState = CursorLockMode.None;// è§£é”é¼ æ ‡
 
         if (SceneManager.GetActiveScene().name == DEFAULT_SCENE)
             return;
 
         if (!Application.CanStreamedLevelBeLoaded(DEFAULT_SCENE))
         {
-            Debug.LogError($"{INITIALIZATION_TAG} ´íÎó£ºÄ¬ÈÏ³¡¾° {DEFAULT_SCENE} Î´Ìí¼Óµ½Build Settings£¡");
+            Debug.LogError($"{INITIALIZATION_TAG} é”™è¯¯ï¼šé»˜è®¤åœºæ™¯ {DEFAULT_SCENE} æœªæ·»åŠ åˆ°Build Settingsï¼");
             return;
         }
 
-        Debug.Log($"{INITIALIZATION_TAG} ÕıÔÚ¼ÓÔØÄ¬ÈÏ³¡¾° {DEFAULT_SCENE}...");
+        Debug.Log($"{INITIALIZATION_TAG} æ­£åœ¨åŠ è½½é»˜è®¤åœºæ™¯ {DEFAULT_SCENE}...");
         SceneManager.LoadScene(DEFAULT_SCENE);
     }
 
     private static void InitializeSystems()
     {
-        // ÔÚÕâÀïÌí¼ÓÆäËûĞèÒªÔÚÓÎÏ·¿ªÊ¼Ç°³õÊ¼»¯µÄÏµÍ³
-        // ÀıÈç£ºInputSystem¡¢AudioSystem¡¢´æµµÏµÍ³µÈ
+        // åœ¨è¿™é‡Œæ·»åŠ å…¶ä»–éœ€è¦åœ¨æ¸¸æˆå¼€å§‹å‰åˆå§‹åŒ–çš„ç³»ç»Ÿ
+        // ä¾‹å¦‚ï¼šInputSystemã€AudioSystemã€å­˜æ¡£ç³»ç»Ÿç­‰
     }
 }

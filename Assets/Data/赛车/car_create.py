@@ -58,7 +58,7 @@ MonoBehaviour:
   corneringRating: rating_3
   tractionRating: rating_4
   straightsRating: rating_5
-  tyreType: 1
+  tyreType: 0
   wearRate: 1
   currentWear: 100
   hardTyreLife: 40

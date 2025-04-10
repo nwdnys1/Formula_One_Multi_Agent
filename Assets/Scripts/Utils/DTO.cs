@@ -9,7 +9,7 @@ namespace DTO
             "\"scene_type\": \"media_interview\", " +
             "\"scene_data\": {" +
                 "\"sender\": \"unity\", " +
-                "\"receiver\": [\"journalist\", \"Verstappen\", \"Hamilton\", \"Horner\"], " +
+                "\"receiver\": [\"Journalist\", \"Verstappen\", \"Hamilton\", \"Horner\"], " +
                 "\"signal\": \"media_interview_start\"" +
             "}" +
         "}";
@@ -20,7 +20,7 @@ namespace DTO
                     "\"scene_type\": \"media_interview\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"Wolff\", " +
-                        "\"receiver\": [\"journalist\"], " +
+                        "\"receiver\": [\"Journalist\"], " +
                         "\"content\": \"" + content + "\", " +
                         "\"signal\": \"chat\"" +
                     "}" +
@@ -32,7 +32,7 @@ namespace DTO
                 "\"scene_type\": \"media_interview\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": \"journalist\", " +
+                    "\"receiver\": \"Journalist\", " +
                     "\"signal\": \"media_interview_end\"" +
                 "}" +
             "}";

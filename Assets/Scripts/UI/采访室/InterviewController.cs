@@ -35,7 +35,7 @@ public class InterviewController : MonoBehaviour
         {
             Debug.LogError("SocketClient is not assigned in the inspector.");
         }
-        cameras.Add("journalist", reporterCamera);
+        cameras.Add("Journalist", reporterCamera);
         cameras.Add("Horner", hornerCamera);
         cameras.Add("Verstappen", verstappenCamera);
         cameras.Add("Hamilton", hamiltonCamera);

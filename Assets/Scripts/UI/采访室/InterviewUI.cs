@@ -42,7 +42,7 @@ public class InterviewUI : MonoBehaviour
             case "Hamilton":
                 _currentRoot = HamUI.rootVisualElement;
                 break;
-            case "journalist":
+            case "Journalist":
                 _currentRoot = JournalistUI.rootVisualElement;
                 break;
             case "Horner":

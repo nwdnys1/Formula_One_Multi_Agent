@@ -10,7 +10,7 @@
                     <unity:VisualElement id="14:297" name="Rank" class="unity-base-override List" picking-mode="Ignore">
                         <unity:VisualElement id="14:298" name="Row1" class="unity-base-override Row-one" picking-mode="Ignore">
                             <unity:VisualElement id="14:299" name="Team" class="unity-base-override Team-one" picking-mode="Ignore">
-                                <unity:VisualElement id="I14:299;2:1722" name="Redbull800x800 1" class="unity-base-override Redbull800x800-1-one" picking-mode="Ignore" />
+                                <unity:Image id="I14:299;2:1722" name="Logo" class="unity-base-override" picking-mode="Ignore" />
                             </unity:VisualElement>
                             <unity:Label id="14:300" name="driver_name" class="unity-base-override VER-one" picking-mode="Ignore" text="VER" />
                             <unity:Label id="14:301" name="1" class="unity-base-override n-1-one" picking-mode="Ignore" text="1" />
@@ -21,7 +21,7 @@
                         </unity:VisualElement>
                         <unity:VisualElement id="14:306" name="Row2" class="unity-base-override Row-two" picking-mode="Ignore">
                             <unity:VisualElement id="14:307" name="Team" class="unity-base-override Team-two" picking-mode="Ignore">
-                                <unity:VisualElement id="I14:307;2:1722" name="Redbull800x800 1" class="unity-base-override Redbull800x800-1-two" picking-mode="Ignore" />
+                                <unity:Image id="I14:307;2:1722" name="Logo" class="unity-base-override Redbull800x800-1-two" picking-mode="Ignore" />
                             </unity:VisualElement>
                             <unity:Label id="14:308" name="driver_name" class="unity-base-override VER-two" picking-mode="Ignore" text="PER" />
                             <unity:Label id="14:309" name="2" class="unity-base-override n-2" picking-mode="Ignore" text="2" />

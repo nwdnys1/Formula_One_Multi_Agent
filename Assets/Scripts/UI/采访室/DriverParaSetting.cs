@@ -37,17 +37,10 @@ public class DriverParaSetting : MonoBehaviour
         // 设置显示值
         overallRateLabel.text = driverData.overallRate.ToString();
 
-        // 转换心态值为可读文本
-        string attitudeText = driverData.attitude switch
-        {
-            DriverPara.AttitudeType.Aggressive => "激进",
-            DriverPara.AttitudeType.Balanced => "平衡",
-            DriverPara.AttitudeType.Conservative => "保守",
-            _ => "未知"
-        };
-        attitudeLabel.text = attitudeText;
 
-        accidentRateLabel.text = $"{driverData.accidentRate*100:F1}%";
+        attitudeLabel.text = driverData.attitude;
+
+        accidentRateLabel.text = $"{driverData.accidentRate * 100:F1}%";
     }
 
 

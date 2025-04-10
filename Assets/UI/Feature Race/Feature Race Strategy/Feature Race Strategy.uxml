@@ -19,27 +19,27 @@
                 <unity:VisualElement id="1:22" name="Frame" class="unity-base-override Frame-two" picking-mode="Ignore">
                     <unity:VisualElement id="1:23" name="IMAGE" class="unity-base-override IMAGE-one" picking-mode="Ignore" />
                     <unity:VisualElement id="1:24" name="Frame 3" class="unity-base-override Frame-3" picking-mode="Ignore">
-                        <unity:Label id="1:25" name="Strategist" class="unity-base-override Strategist" picking-mode="Ignore" text="Strategist" />
+                        <unity:Label id="1:25" name="Strategist213421" class="unity-base-override Strategist" picking-mode="Ignore" text="Strategist" />
                         <unity:VisualElement id="1:26" name="Frame 2" class="unity-base-override Frame-2" picking-mode="Ignore">
-                            <unity:Label id="1:27" name="Has everyone reviewed the latest setup changes?" class="unity-base-override Has-everyone-reviewed-the-latest-setup-changes" picking-mode="Ignore" text="Has everyone reviewed the latest setup changes?" />
+                            <unity:Label id="1:27" name="Strategist" class="unity-base-override Has-everyone-reviewed-the-latest-setup-changes" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                 </unity:VisualElement>
                 <unity:VisualElement id="1:28" name="Frame" class="unity-base-override Frame-three" picking-mode="Ignore">
                     <unity:VisualElement id="1:29" name="IMAGE" class="unity-base-override IMAGE-two" picking-mode="Ignore" />
                     <unity:VisualElement id="1:30" name="Frame 5" class="unity-base-override Frame-5" picking-mode="Ignore">
-                        <unity:Label id="1:31" name="Hamilton" class="unity-base-override Hamilton" picking-mode="Ignore" text="Hamilton" />
+                        <unity:Label id="1:31" name="Hamilton1231" class="unity-base-override Hamilton" picking-mode="Ignore" text="Hamilton" />
                         <unity:VisualElement id="1:32" name="Frame 4" class="unity-base-override Frame-4" picking-mode="Ignore">
-                            <unity:Label id="1:33" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-one" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
+                            <unity:Label id="1:33" name="Hamilton" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-one" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                 </unity:VisualElement>
                 <unity:VisualElement id="1:34" name="Frame" class="unity-base-override Frame-four" picking-mode="Ignore">
                     <unity:VisualElement id="1:35" name="IMAGE" class="unity-base-override IMAGE-three" picking-mode="Ignore" />
                     <unity:VisualElement id="1:36" name="Frame 7" class="unity-base-override Frame-7" picking-mode="Ignore">
-                        <unity:Label id="1:37" name="Wolff (You)" class="unity-base-override Wolff-You" picking-mode="Ignore" text="Wolff (You)" />
+                        <unity:Label id="1:37" name="(You)" class="unity-base-override Wolff-You" picking-mode="Ignore" text="Wolff (You)" />
                         <unity:VisualElement id="1:38" name="Frame 6" class="unity-base-override Frame-6" picking-mode="Ignore">
-                            <unity:Label id="1:39" name="Yes, the new wing configuration looks promising" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-two" picking-mode="Ignore" text="Yes, the new wing configuration looks promising" />
+                            <unity:Label id="1:39" name="Wolff" class="unity-base-override Yes-the-new-wing-configuration-looks-promising-two" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                 </unity:VisualElement>
@@ -173,7 +173,7 @@
                     </unity:VisualElement>
                 </unity:VisualElement>
                 <unity:VisualElement id="15:11" name="Group 2" class="unity-base-override Group-2" picking-mode="Ignore">
-                    <unity:TextField id="1:12" name="Rectangle" class="unity-base-override Rectangle-nine"  />
+                    <unity:TextField id="1:12" name="Input" class="unity-base-override Rectangle-nine"  />
                     <unity:VisualElement id="15:10" name="Group 1" class="unity-base-override Group-1" picking-mode="Ignore">
                         <unity:VisualElement id="15:2" name="IMAGE" class="unity-base-override IMAGE-four" picking-mode="Ignore" />
                         <unity:VisualElement id="13:132" name="IMAGE" class="unity-base-override IMAGE-five" picking-mode="Ignore" />

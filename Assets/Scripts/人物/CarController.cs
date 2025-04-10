@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
+using DTO;
+using LitJson;
 
 
 
@@ -9,6 +11,7 @@ public class CarController : MonoBehaviour
     public string carId;
     private CarPara para;
     SocketClient client = SocketClient.Instance;
+    public RaceController controller;
 
     [Header("导航设置")]
     public Transform checkpointsParent;
@@ -26,7 +29,7 @@ public class CarController : MonoBehaviour
     private bool _isBraking = false;
 
     [Header("轮胎系统")]
-    public CarPara.TyreType tyreType = CarPara.TyreType.Hard; // 轮胎类型
+    public string tyreType = "medium"; // 轮胎类型
     public float currentTyreWear = 100f; // 当前轮胎磨损率(0-100%)
     public float tyreWearEffectThreshold = 30f; // 磨损影响性能的阈值
     public float maxSpeedReduction = 0.3f; // 最大速度减少比例(30%)
@@ -67,7 +70,7 @@ public class CarController : MonoBehaviour
 
     [Header("比赛策略")]
     public int[] pitStopLaps = { 5, 10 }; // 进站圈数
-    public CarPara.TyreType[] tyreTypes = { CarPara.TyreType.Hard, CarPara.TyreType.Medium }; // 进站轮胎类型
+    public string[] tyreTypes = { "hard", "medium", "soft" }; // 轮胎策略
     public int fuelLap = 1; // 进站加油圈数
     public int ERSLap = 1; // 进站充电圈数
 
@@ -169,7 +172,7 @@ public class CarController : MonoBehaviour
             {
                 float currentTime = Time.time;
                 ckptTime = currentTime - _raceStartTime;
-                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime,pitCnt,tyreType.ToString(),currentTyreWear,null);
+                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime, pitCnt, tyreType.ToString(), currentTyreWear, para.logoTexture);
                 ckptTime = currentTime;
 
                 // 检查是否需要释放fuel或ERS
@@ -248,13 +251,13 @@ public class CarController : MonoBehaviour
         float wearRate = 0f;
         switch (tyreType)
         {
-            case CarPara.TyreType.Hard:
+            case "hard":
                 wearRate = 40f; // Hard轮胎40圈磨损完
                 break;
-            case CarPara.TyreType.Medium:
+            case "medium":
                 wearRate = 32f; // Medium轮胎32圈磨损完
                 break;
-            case CarPara.TyreType.Soft:
+            case "soft":
                 wearRate = 25f; // Soft轮胎25圈磨损完
                 break;
         }
@@ -332,15 +335,15 @@ public class CarController : MonoBehaviour
                 _nextPitStopIndex++;
 
                 // 更换轮胎
-                if (_nextPitStopIndex <= tyreTypes.Length)
+                if (_nextPitStopIndex <= tyreTypes.Length - 1)
                 {
-                    tyreType = tyreTypes[_nextPitStopIndex - 1];
+                    tyreType = tyreTypes[_nextPitStopIndex];
                     currentTyreWear = 100f; // 重置轮胎磨损
                     Debug.Log($"进站换胎，新轮胎类型: {tyreType}");
                 }
 
                 _agent.SetDestination(_checkpoints[2].position);
-            
+
             }
             else
             {
@@ -460,7 +463,10 @@ public class CarController : MonoBehaviour
         Debug.Log("安全车出动！");
 
         // 4. 赛车从赛道上消失
-        //RemoveCarFromRace();
+        RemoveCarFromRace();
+
+        // 发送给llm
+        controller.onAccident("Latifi");
     }
 
     private void SpinCar()

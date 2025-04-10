@@ -54,7 +54,7 @@ public class RaceTimeManager : MonoBehaviour
     }
     private void Start()
     {
-        InvokeRepeating("update2LLM", 5f, 15f);
+        InvokeRepeating("update2LLM", 5f, 60f);
     }
 
     public void UpdateCarCheckpoint(string carId, int lapIdx, int ckptIdx, float time, int pitCnt, string tyreType, float tyreWear, Texture2D logo)
@@ -63,7 +63,7 @@ public class RaceTimeManager : MonoBehaviour
         // 查找现有数据
         int existingIndex = _rankingData.FindIndex(c => c.carId == carId);
 
-        var newData = new CarRaceData(carId, lapIdx, ckptIdx, time, null, pitCnt, tyreType, tyreWear);
+        var newData = new CarRaceData(carId, lapIdx, ckptIdx, time, logo, pitCnt, tyreType, tyreWear);
 
         if (existingIndex >= 0)
         {
@@ -144,10 +144,9 @@ public class RaceTimeManager : MonoBehaviour
         for (int i = 0; i < _rankingData.Count; i++)
         {
             var data = _rankingData[i];
-            string[] tyreData = new string[2];
-            tyreData[0] = data.tyreType;
-            tyreData[1] = (data.tyreWear/100f).ToString("F1");
-            JsonData json = JsonMapper.ToJson(tyreData);
+            JsonData json = new JsonData();
+            json.Add(data.tyreType);
+            json.Add((data.tyreWear/100).ToString("F1"));
             tyre[data.carId] = json;
         }
         return tyre;

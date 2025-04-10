@@ -1,14 +1,13 @@
-using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using DTO;
 using LitJson;
-using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
 
 public class RaceController : MonoBehaviour
 {
     public RaceUI raceUI;
+    public CarController targetCar;
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
     ParaManager para = ParaManager.Instance;
@@ -63,10 +62,44 @@ public class RaceController : MonoBehaviour
 
 
     }
+    public void onAccident(string carId)
+    {
+        client.Send(JsonStr.accident_occurred(carId), (response) =>
+        {
+            JsonData json = JsonMapper.ToObject(response);
+            if (json.ContainsKey("strategy"))
+            {
+                int[] pits = new int[json["strategy"]["pit_stop_laps"].Count];
+                for (int i = 0; i < pits.Length; i++)
+                {
+                    pits[i] = int.Parse(json["strategy"]["pit_stop_laps"][i].ToString());
+                }
+                string[] tyres = new string[json["strategy"]["tyre_strategy"].Count];
+                for (int i = 0; i < tyres.Length; i++)
+                {
+                    tyres[i] = json["strategy"]["tyre_strategy"][i].ToString();
+                }
+                // tyres解析为枚举
+                string[] tyreTypes = new string[tyres.Length];
+                for (int i = 0; i < tyres.Length; i++)
+                {
+                    tyreTypes[i] = json["strategy"]["tyre_strategy"][i].ToString();
+                }
+                targetCar.pitStopLaps = pits;
+                targetCar.tyreTypes = tyreTypes;
+                targetCar.fuelLap = int.Parse(json["strategy"]["fuel_release_laps"].ToString());
+                targetCar.ERSLap = int.Parse(json["strategy"]["ers_release_laps"].ToString());
+            }
+            else if (json.ContainsKey("attitude"))
+            {
+                targetCar.attitude = json["attitude"].ToString();
+            }
+        }, null);
+    }
     private void MeetingChoose()
     {
-        
-        
+
+
     }
     private void MeetingEnd()
     {
@@ -74,7 +107,7 @@ public class RaceController : MonoBehaviour
         {
             JsonData json = JsonMapper.ToObject(response);
             // 处理服务器返回的JSON数据
-            
+
 
         }, null);
     }

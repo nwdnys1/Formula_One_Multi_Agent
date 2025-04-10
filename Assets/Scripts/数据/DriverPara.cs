@@ -6,8 +6,7 @@ public class DriverPara : ScriptableObject
     [Header("Driver Attributes")]
     [Range(0, 100)] public float overallRate = 50f;
 
-    public enum AttitudeType { Aggressive, Balanced, Conservative }
-    public AttitudeType attitude = AttitudeType.Balanced;
+    public string attitude = "Balanced"; // 车手心态
 
     [Range(0f, 1f)] public float accidentRate = 0.1f;
 
@@ -16,13 +15,13 @@ public class DriverPara : ScriptableObject
     {
         switch (attitude)
         {
-            case AttitudeType.Aggressive:
+            case "Optimistic":
                 accidentRate = Mathf.Clamp(accidentRate, 0.15f, 1f);
                 break;
-            case AttitudeType.Balanced:
+            case "Balanced":
                 accidentRate = Mathf.Clamp(accidentRate, 0.05f, 0.3f);
                 break;
-            case AttitudeType.Conservative:
+            case "Cautious":
                 accidentRate = Mathf.Clamp(accidentRate, 0f, 0.1f);
                 break;
         }

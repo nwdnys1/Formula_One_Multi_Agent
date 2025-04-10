@@ -7,7 +7,7 @@ public class PitStopWidget : MonoBehaviour
 
     [Header("Input Parameters")]
     public int[] pitStopLaps = { 15, 30 }; // 换胎的圈数
-    public string[] tyreStrategy = { "Hard", "Medium", "Soft" }; // 轮胎策略
+    public string[] tyreStrategy = { "hard", "medium", "soft" }; // 轮胎策略
     public int fuel_release_laps = 12;
     public int ERS_release_laps = 8;
     public int totalLaps = 58; // 总圈数
@@ -151,9 +151,9 @@ public class PitStopWidget : MonoBehaviour
 
         var tyreColorMap = new System.Collections.Generic.Dictionary<string, Color>
         {
-            { "Hard", HardColor },
-            { "Medium", MediumColor },
-            { "Soft", SoftColor }
+            { "hard", HardColor },
+            { "medium", MediumColor },
+            { "soft", SoftColor }
         };
 
         int currentTyreIndex = 0;

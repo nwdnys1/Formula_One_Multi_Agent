@@ -63,10 +63,9 @@ public class CarPara : ScriptableObject
 
 
     // 轮胎参数
-    public enum TyreType { Hard, Medium, Soft }
 
     [Header("Tyre Attributes")]
-    public TyreType tyreType = TyreType.Medium;
+    public string tyreType = "medium";
     [Range(0f, 1f)] public float wearRate = 1f;
     [Range(0f, 100f)] public float currentWear = 100f;
 
@@ -79,9 +78,9 @@ public class CarPara : ScriptableObject
     {
         switch (tyreType)
         {
-            case TyreType.Hard: return hardTyreLife;
-            case TyreType.Medium: return mediumTyreLife;
-            case TyreType.Soft: return softTyreLife;
+            case "hard": return hardTyreLife;
+            case "medium": return mediumTyreLife;
+            case "soft": return softTyreLife;
             default: return mediumTyreLife;
         }
     }

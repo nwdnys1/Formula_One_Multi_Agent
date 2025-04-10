@@ -1365,7 +1365,11 @@
 	background-color: rgba(44,44,64,1);
 	border-color: rgba(63,63,79,1);
 	border-width: 1px;
+	font-size: 10px;
+	-unity-font: url('Fonts/Formula1-Regular.otf');
+	-unity-text-align: upper-left;
 }
+
 
 .Group-1 {
 	border-radius: 31655100px;

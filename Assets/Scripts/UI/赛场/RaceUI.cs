@@ -1,7 +1,9 @@
 ﻿using System.Linq;
-using Trackman;
 using UnityEngine;
 using UnityEngine.UIElements;
+using DTO;
+using LitJson;
+using System.Collections.Generic;
 
 public class RaceUI : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class RaceUI : MonoBehaviour
     public UIDocument StrategyUI;
     public UIDocument TrackUI;
     public PitStopWidget PitUI;
+    SocketClient client = SocketClient.Instance;
 
     private VisualElement POVRoot;
     private VisualElement StrategyRoot;
@@ -31,6 +34,10 @@ public class RaceUI : MonoBehaviour
     private Label fuelStrat;
     private Label moraleStrat;
     private Label lapStrat;
+    private TextField _inputField; // 输入框
+    private Label wolff;
+    private Label hamilton;
+    private Label strategist;
 
     //track
     private Label trackTemp;
@@ -80,6 +87,10 @@ public class RaceUI : MonoBehaviour
         fuelStrat = StrategyRoot.Q<Label>("Fuel");
         moraleStrat = StrategyRoot.Q<Label>("Morale");
         lapStrat = StrategyRoot.Q<Label>("Lap");
+        _inputField = StrategyRoot.Q<TextField>("Input");
+        wolff = StrategyRoot.Q<Label>("Wolff");
+        hamilton = StrategyRoot.Q<Label>("Hamilton");
+        strategist = StrategyRoot.Q<Label>("Strategist");
 
         //track
         trackTemp = TrackRoot.Q<Label>("TrackTemp");
@@ -109,6 +120,45 @@ public class RaceUI : MonoBehaviour
         POVRoot.style.display = DisplayStyle.None;
         StrategyRoot.style.display = DisplayStyle.None;
         TrackRoot.style.display = DisplayStyle.None;
+
+        ShowInputField((input) =>
+        {
+            wolff.text = input;
+            string strat = JsonMapper.ToJson(strat2Json());
+            client.Send(JsonStr.strategy_update(input, strat), (response) =>
+            {
+                JsonData json = JsonMapper.ToObject(response);
+                strategist.text = json["content"].ToString();
+                int[] pits = new int[json["strategy"]["pit_stop_laps"].Count];
+                for (int i = 0; i < pits.Length; i++)
+                {
+                    pits[i] = int.Parse(json["strategy"]["pit_stop_laps"][i].ToString());
+                }
+                string[] tyres = new string[json["strategy"]["tyre_strategy"].Count];
+                for (int i = 0; i < tyres.Length; i++)
+                {
+                    tyres[i] = json["strategy"]["tyre_strategy"][i].ToString();
+                }
+                // tyres解析为枚举
+                string[] tyreTypes = new string[tyres.Length];
+                for (int i = 0; i < tyres.Length; i++)
+                {
+                    tyreTypes[i] = json["strategy"]["tyre_strategy"][i].ToString();
+                }
+                targetCar.pitStopLaps = pits;
+                targetCar.tyreTypes = tyreTypes;
+                targetCar.fuelLap = int.Parse(json["strategy"]["fuel_release_laps"].ToString());
+                targetCar.ERSLap = int.Parse(json["strategy"]["ers_release_laps"].ToString());
+            }, (r) =>
+            {
+                client.Send(JsonStr.attitude_update(input, targetCar.attitude), (response) =>
+                {
+                    JsonData json = JsonMapper.ToObject(response);
+                    hamilton.text = json["content"].ToString();
+                    targetCar.attitude = json["attitude"].ToString();
+                }, null);
+            });
+        });
     }
     private void Update()
     {
@@ -136,7 +186,25 @@ public class RaceUI : MonoBehaviour
             StrategyRoot.style.display = DisplayStyle.None;
         }
     }
-
+    private JsonData strat2Json()
+    {
+        JsonData json = new JsonData();
+        JsonData pits = new JsonData();
+        JsonData tyres = new JsonData();
+        foreach (var item in targetCar.tyreTypes)
+        {
+            tyres.Add(item);
+        }
+        foreach (var item in targetCar.pitStopLaps)
+        {
+            pits.Add(item);
+        }
+        json["pit_stop_laps"] = pits;
+        json["tyre_strategy"] = tyres;
+        json["fuel_release_laps"] = targetCar.fuelLap;
+        json["ERS_release_laps"] = targetCar.ERSLap;
+        return json;
+    }
     private void UpdateParametersDisplay()
     {
 
@@ -189,13 +257,37 @@ public class RaceUI : MonoBehaviour
         var row = _listContainer.Q<VisualElement>("Row" + position);
 
         // 更新子元素
-        row.Q<Label>("driver_name").text = data.driverName;
+        row.Q<Label>("driver_name").text = data.driverName.Substring(0, 3).ToUpper(); // 车手简称 (VER/HAM/LEC等)
         row.Q<Label>($"+1.000").text = $"+{data.gap:F3}";
         row.Q<Label>("M").text = data.tireType;
+        if (row.Q<Image>("Logo") != null)
+        { row.Q<Image>("Logo").image = data.logo; }
 
         //// 动态加载车队图标（示例）
         //var teamIcon = row.Q<VisualElement>("Team").Q<VisualElement>();
         //teamIcon.style.backgroundImage = Resources.Load<Texture2D>($"Icons/Teams/{data.teamId}");
+    }
+
+    // 显示输入框（仅WolffUI可用）
+    public void ShowInputField(System.Action<string> onSubmit)
+    {
+
+        if (_inputField != null)
+        {
+            _inputField.value = "";
+            _inputField.Q(TextField.textInputUssName).Focus();
+            _inputField.style.display = DisplayStyle.Flex;
+
+            _inputField.RegisterCallback<KeyDownEvent>(e =>
+            {
+                if (e.keyCode == KeyCode.Return)
+                {
+                    print("输入内容: " + _inputField.value);
+                    onSubmit?.Invoke(_inputField.value);
+                    _inputField.value = "";
+                }
+            });
+        }
     }
 
 }

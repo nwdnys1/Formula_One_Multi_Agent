@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "1\u53F7"
   m_EditorClassIdentifier: 
   overallRate: 50
-  attitude: 2
-  accidentRate: 0
+  attitude: Optimistic
+  accidentRate: 1

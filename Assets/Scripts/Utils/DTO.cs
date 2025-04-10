@@ -230,7 +230,7 @@ namespace DTO
                         "\"sender\": \"Wolff\", " +
                         "\"receiver\": \"Strategist\", " +
                         "\"content\": \"" + content + "\", " +
-                        "\"strategy\": \"" + strategy + "\", " +
+                        "\"strategy\": " + strategy + ", " +
                         "\"signal\": \"strategy_update\"" +
                     "}" +
                 "}";

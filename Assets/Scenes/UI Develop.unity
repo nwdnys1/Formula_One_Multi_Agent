@@ -1366,7 +1366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1292563999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,26 +1380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiDocument: {fileID: 1292564001}
-  pitStopLaps: 0f0000001e000000
-  pitStopLaps2: 0c00000020000000
-  pitStopLaps3: 0a000000
-  tyreStrategy:
-  - hard
-  - medium
-  - soft
-  tyreStrategy2:
-  - hard
-  - medium
-  - soft
-  tyreStrategy3:
-  - hard
-  - soft
-  fuel_release_laps: 12
-  fuel_release_laps2: 10
-  fuel_release_laps3: 8
-  ERS_release_laps: 8
-  ERS_release_laps2: 6
-  ERS_release_laps3: 4
+  fuelReleaseLaps: 0c0000000a00000008000000
+  ERSReleaseLaps: 080000000600000004000000
   totalLaps: 58
 --- !u!114 &1292564000
 MonoBehaviour:
@@ -1408,7 +1390,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292563998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaa4e5d0dd7bf25488b120aa854832eb, type: 3}
   m_Name: 

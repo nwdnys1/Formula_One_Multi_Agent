@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carParas:
   - {fileID: 11400000, guid: 3eb56c7d5fb65fa4b9722a2a6bfebb21, type: 2}
+  - {fileID: 11400000, guid: 92f79c31037feac449d98f0cdc5145d2, type: 2}
+  - {fileID: 11400000, guid: b6774d3f498a521489321a701f37c8c7, type: 2}
+  - {fileID: 11400000, guid: 1c3341f03f5ac7544a8379f7bb80dab6, type: 2}
   driverParas:
   - {fileID: 11400000, guid: 402da90b1ac41ae49b683806f3aa81ca, type: 2}

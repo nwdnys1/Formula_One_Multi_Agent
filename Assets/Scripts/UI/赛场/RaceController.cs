@@ -4,16 +4,14 @@ using Cinemachine;
 using DTO;
 using LitJson;
 using UnityEngine.UIElements;
-using UnityEngine.InputSystem;
-using UnityEngine.WSA;
 using Cursor = UnityEngine.Cursor;
 
 public class RaceController : MonoBehaviour
 {
-    MeetingUI dialog;
+    public RaceUI raceUI;
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
-    public UIDocument driverParaUI;
+    ParaManager para = ParaManager.Instance;
     public CinemachineVirtualCamera playerCamera;
     public CinemachineVirtualCamera strategistCamera;
     public CinemachineVirtualCamera mechanicCamera;
@@ -21,121 +19,59 @@ public class RaceController : MonoBehaviour
     public CinemachineVirtualCamera wolffCamera;
     public CinemachineVirtualCamera quanjing;
     public Dictionary<string, CinemachineVirtualCamera> cameras = new Dictionary<string, CinemachineVirtualCamera>();
-    public ChairController chair;
-    public GameObject StandWolff;
-    public GameObject SitWolff;
 
     private void Awake()
     {
-        dialog = GetComponent<MeetingUI>();
-        // 确保DialogUI组件已正确设置
-        if (dialog == null)
-        {
-            Debug.LogError("DialogUI is not assigned in the inspector.");
-        }
-        if (driverParaUI == null)
-        {
-            Debug.LogError("DriverParaUI is not assigned in the inspector.");
-        }
 
+        raceUI = GetComponent<RaceUI>();
+        if (raceUI == null)
+        {
+            Debug.LogError("RaceUI is not assigned in the inspector.");
+        }
 
     }
 
     private void Start()
     {
-        cameras.Add("汉密尔顿", hamiltonCamera);
-        cameras.Add("Wolff", wolffCamera);
-        cameras.Add("梅奔车队策略师", strategistCamera);
-        cameras.Add("梅奔车队机械师", mechanicCamera);
-        SitWolff.SetActive(false);
-        cm.SetCamera(playerCamera);
-
-
+        RaceStart();
     }
 
-    private void MeetingStart()
+    private void RaceStart()
     {
-        print("开始会议");
-        chair.interactionText.SetActive(false);
-        StandWolff.SetActive(false);
-        SitWolff.SetActive(true);
-        cm.SetCamera(quanjing);
+        print("开始比赛");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        client.Send(JsonStr.before_meeting_start, (response) =>
-        { }, (r) => MeetingReplay());
+        client.Send(JsonStr.race_start, (response) =>
+        { }, (r) => EnvUpdate());
 
     }
-    private void MeetingReplay()
+    private void EnvUpdate()
     {
 
-        client.Send(JsonStr.meeting_replay, (response) =>
+        client.Send(JsonStr.weather_update, (response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
-            // 切换摄像机
-            cm.SetCamera(cameras[json["sender"].ToString()]);
-            // 处理服务器返回的JSON数据
-            dialog.ShowCharacterUI(json["sender"].ToString());
-            dialog.ShowDialogue(json["content"].ToString());
-        }, (r) => MeetingChoose());
+            float track_temp = float.Parse(json["track_conditions"]["circuit_temperature"].ToString());
+            float air_temp = float.Parse(json["track_conditions"]["air_temperature"].ToString());
+            float rainfall = float.Parse(json["track_conditions"]["rainfall"].ToString());
+            float wind_speed = float.Parse(json["track_conditions"]["wind_speed"].ToString());
+            string wind_direction = json["track_conditions"]["wind_direction"].ToString();
+            para.GetEnvPara().trackTemperature = track_temp;
+            para.GetEnvPara().airTemperature = air_temp;
+            para.GetEnvPara().rainfall = rainfall;
+            para.GetEnvPara().windSpeed = wind_speed;
+            para.GetEnvPara().windDirection = wind_direction;
+
+
+        }, (r) => { });
 
 
     }
     private void MeetingChoose()
     {
         cm.SetCamera(cameras["Wolff"]);
-        dialog.ShowCharacterUI("Wolff");
-        dialog.ShowInputFieldByButton("请输入对话内容",
-                (input) =>
-                {
-                    string sendStr = JsonStr.meeting_chat(input, "梅奔车队机械师");
-                    // 发送输入的内容到服务器
-                    client.Send(sendStr, (response) =>
-                    {
-                        JsonData json = JsonMapper.ToObject(response);
-                        // 处理服务器返回的JSON数据
-                        dialog.ShowCharacterUI(json["sender"].ToString());
-                        dialog.ShowDialogue(json["content"].ToString());
-                        // 切换摄像机
-                        cm.SetCamera(cameras[json["sender"].ToString()]);
-                    }, (r) => MeetingEnd());
-                },
-                (input) =>
-                {
-                    client.Send(JsonStr.meeting_strategy, (response) =>
-                    {
-                        JsonData json = JsonMapper.ToObject(response);
-                        // 处理服务器返回的JSON数据
-                        dialog.ShowCharacterUI(json["sender"].ToString());
-                        dialog.ShowDialogue(json["content"].ToString());
-                        // 切换摄像机
-                        cm.SetCamera(cameras[json["sender"].ToString()]);
-                        //处理策略
-                        if (json.ContainsKey("strategy"))
-                            print("策略:" + json["strategy"].ToString());
-                        else
-                            print("策略:无");
-                    }, (r) => MeetingEnd());
-                },
-                (input) =>
-                {
-                    client.Send(JsonStr.meeting_attitude, (response) =>
-                    {
-                        JsonData json = JsonMapper.ToObject(response);
-                        // 处理服务器返回的JSON数据
-                        dialog.ShowCharacterUI(json["sender"].ToString());
-                        dialog.ShowDialogue(json["content"].ToString());
-                        // 切换摄像机
-                        cm.SetCamera(cameras[json["sender"].ToString()]);
-                        //处理心态
-                        if (json.ContainsKey("attitude"))
-                            print("心态:" + json["attitude"].ToString());
-                        else
-                            print("心态:无");
-                    }, (r) => MeetingEnd());
-                }
-            );
+        
     }
     private void MeetingEnd()
     {
@@ -143,20 +79,13 @@ public class RaceController : MonoBehaviour
         {
             JsonData json = JsonMapper.ToObject(response);
             // 处理服务器返回的JSON数据
-            dialog.ShowCharacterUI("report");
-            JsonData news = json["summary"];
-            dialog._currentRoot.Q<Label>("Title").text = news["title"].ToString();
-            dialog._currentRoot.Q<Label>("Contents").text = news["content"].ToString();
+            
 
         }, null);
     }
 
     private void Update()
     {
-        // 检测玩家是否在范围内并按下F键
-        if (chair.isInRange && Input.GetKeyDown(KeyCode.F))
-        {
-            MeetingStart();
-        }
+        
     }
 }

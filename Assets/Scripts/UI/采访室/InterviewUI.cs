@@ -1,14 +1,14 @@
-using UnityEditor.Rendering;
+ï»¿using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class InterviewUI : MonoBehaviour
 {
-    [Header("½ÇÉ«UIÎÄµµ")]
+    [Header("è§’è‰²UIæ–‡æ¡£")]
     public UIDocument WolffUI;
     public UIDocument HamUI;
-    public UIDocument JournalistUI;  // ¼ÇÕßUI
-    public UIDocument HornerUI;  // ÆäËû½ÇÉ«...
+    public UIDocument JournalistUI;  // è®°è€…UI
+    public UIDocument HornerUI;  // å…¶ä»–è§’è‰²...
     public UIDocument VerstappenUI;
     public UIDocument ReportUI;
 
@@ -26,49 +26,49 @@ public class InterviewUI : MonoBehaviour
         HideAll();
     }
 
-    // ÏÔÊ¾Ö¸¶¨½ÇÉ«µÄUI
+    // æ˜¾ç¤ºæŒ‡å®šè§’è‰²çš„UI
     public void ShowCharacterUI(string characterName)
     {
-        // ÏÈÒş²ØËùÓĞUI
+        // å…ˆéšè—æ‰€æœ‰UI
         HideAll();
 
-        // ¸ù¾İ½ÇÉ«ÃûÏÔÊ¾¶ÔÓ¦µÄUI
+        // æ ¹æ®è§’è‰²åæ˜¾ç¤ºå¯¹åº”çš„UI
         switch (characterName)
         {
             case "Wolff":
                 _currentRoot = WolffUI.rootVisualElement;
                 _inputField = _currentRoot.Q<TextField>("Contents");
                 break;
-            case "ººÃÜ¶û¶Ù":
+            case "æ±‰å¯†å°”é¡¿":
                 _currentRoot = HamUI.rootVisualElement;
                 break;
-            case "¼ÇÕß":
+            case "è®°è€…":
                 _currentRoot = JournalistUI.rootVisualElement;
                 break;
-            case "»ôÄÉ":
+            case "éœçº³":
                 _currentRoot = HornerUI.rootVisualElement;
                 break;
-            case "Î¬Ë¹ËşÅË":
+            case "ç»´æ–¯å¡”æ½˜":
                 _currentRoot = VerstappenUI.rootVisualElement;
                 break;
             case "report":
                 _currentRoot = ReportUI.rootVisualElement;
                 break;
             default:
-                Debug.LogWarning($"Î´ÕÒµ½½ÇÉ«UI: {characterName}");
+                Debug.LogWarning($"æœªæ‰¾åˆ°è§’è‰²UI: {characterName}");
                 return;
         }
 
         _currentCharacter = characterName;
         _currentRoot.style.display = DisplayStyle.Flex;
 
-        // ²éÕÒ¹«¹²ÔªËØ
+        // æŸ¥æ‰¾å…¬å…±å…ƒç´ 
         _dialogueText = _currentRoot.Q<Label>("Contents");
         _optionsContainer = _currentRoot.Q<VisualElement>("optionsContainer");
         _title = _currentRoot.Q<Label>("Title");
     }
 
-    // ÏÔÊ¾¶Ô»°ÎÄ±¾£¨ËùÓĞUIÍ¨ÓÃ£©
+    // æ˜¾ç¤ºå¯¹è¯æ–‡æœ¬ï¼ˆæ‰€æœ‰UIé€šç”¨ï¼‰
     public void ShowDialogue(string text)
     {
         //print(_dialogueText);
@@ -84,7 +84,7 @@ public class InterviewUI : MonoBehaviour
         }
     }
 
-    // Òş²Ø¶Ô»°ÎÄ±¾
+    // éšè—å¯¹è¯æ–‡æœ¬
     public void HideDialogue()
     {
         if (_dialogueText != null)
@@ -93,12 +93,12 @@ public class InterviewUI : MonoBehaviour
         }
     }
 
-    // ÏÔÊ¾ÊäÈë¿ò£¨½öWolffUI¿ÉÓÃ£©
+    // æ˜¾ç¤ºè¾“å…¥æ¡†ï¼ˆä»…WolffUIå¯ç”¨ï¼‰
     public void ShowInputField(string placeholder, System.Action<string> onSubmit)
     {
         if (_currentCharacter != "Wolff")
         {
-            Debug.LogWarning("Ö»ÓĞWolff½ÇÉ«¿ÉÒÔÊ¹ÓÃÊäÈë¹¦ÄÜ");
+            Debug.LogWarning("åªæœ‰Wolffè§’è‰²å¯ä»¥ä½¿ç”¨è¾“å…¥åŠŸèƒ½");
             return;
         }
         print(_inputField);
@@ -112,7 +112,7 @@ public class InterviewUI : MonoBehaviour
             {
                 if (e.keyCode == KeyCode.Return)
                 {
-                    print("ÊäÈëÄÚÈİ: " + _inputField.value);
+                    print("è¾“å…¥å†…å®¹: " + _inputField.value);
                     onSubmit?.Invoke(_inputField.value);
                     //HideInputField();
                 }
@@ -120,7 +120,7 @@ public class InterviewUI : MonoBehaviour
         }
     }
 
-    // Òş²ØÊäÈë¿ò
+    // éšè—è¾“å…¥æ¡†
     public void HideInputField()
     {
         if (_inputField != null)
@@ -129,7 +129,7 @@ public class InterviewUI : MonoBehaviour
         }
     }
 
-    // ÏÔÊ¾Ñ¡Ïî£¨ËùÓĞUIÍ¨ÓÃ£©
+    // æ˜¾ç¤ºé€‰é¡¹ï¼ˆæ‰€æœ‰UIé€šç”¨ï¼‰
     public void ShowOptions(string[] options, System.Action<int> callback)
     {
         if (_optionsContainer != null)
@@ -157,7 +157,7 @@ public class InterviewUI : MonoBehaviour
         HideOptions();
     }
 
-    // Òş²ØÑ¡Ïî
+    // éšè—é€‰é¡¹
     public void HideOptions()
     {
         if (_optionsContainer != null)
@@ -166,14 +166,14 @@ public class InterviewUI : MonoBehaviour
         }
     }
 
-    // Òş²ØËùÓĞUIÔªËØ
+    // éšè—æ‰€æœ‰UIå…ƒç´ 
     public void HideAll()
     {
         HideDialogue();
         HideInputField();
         HideOptions();
 
-        // Òş²ØËùÓĞ½ÇÉ«UI
+        // éšè—æ‰€æœ‰è§’è‰²UI
         if (WolffUI != null) WolffUI.rootVisualElement.style.display = DisplayStyle.None;
         if (HamUI != null) HamUI.rootVisualElement.style.display = DisplayStyle.None;
         if (JournalistUI != null) JournalistUI.rootVisualElement.style.display = DisplayStyle.None;

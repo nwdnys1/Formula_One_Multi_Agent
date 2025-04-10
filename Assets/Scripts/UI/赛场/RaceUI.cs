@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
 public class RaceUI : MonoBehaviour
@@ -14,22 +12,22 @@ public class RaceUI : MonoBehaviour
     private VisualElement TrackRoot;
 
     //POV
-    private Label carIdLabel;
-    private Label speedLabel;
-    private Label accelerationLabel;
     private Label tyreTypeLabel;
     private Label tyreWearLabel;
     private Label ersStatusLabel;
     private Label fuelStatusLabel;
-    private Label checkpointLabel;
-    private Label segmentTypeLabel;
+    private Label attitudeLabel;
+    private Label lapLabel;
+    private Label trackTempLabel;
+    private Label airTempLabel;
     private VisualElement _listContainer;
-    private RaceCarData[] _currentStandings = new RaceCarData[20];
+    private CarRank[] _currentStandings = new CarRank[20];
 
     public CarController targetCar;
+    private ParaManager para = ParaManager.Instance;
 
     [System.Serializable]
-    public class RaceCarData
+    public class CarRank
     {
         public string driverName; // 车手简称 (VER/HAM/LEC等)
         public string teamId;     // 车队标识 (Redbull/Ferrari等)
@@ -39,7 +37,8 @@ public class RaceUI : MonoBehaviour
     }
 
     private void OnEnable()
-    {
+    {   
+
         //root
         POVRoot = POVUI.rootVisualElement;
         StrategyRoot = StrategyUI.rootVisualElement;
@@ -49,13 +48,17 @@ public class RaceUI : MonoBehaviour
         tyreTypeLabel = POVRoot.Q<Label>("TyreType");
         ersStatusLabel = POVRoot.Q<Label>("ERS");
         fuelStatusLabel = POVRoot.Q<Label>("FUEL");
+        attitudeLabel = POVRoot.Q<Label>("Attitude");
+        lapLabel = POVRoot.Q<Label>("Lap");
+        trackTempLabel = POVRoot.Q<Label>("TrackTemp");
+        airTempLabel = POVRoot.Q<Label>("AirTemp");
 
         _listContainer = POVRoot.Q<VisualElement>("Rank");
 
         // 初始化数据
         for (int i = 0; i < 20; i++)
         {
-            _currentStandings[i] = new RaceCarData
+            _currentStandings[i] = new CarRank
             {
                 driverName = "---",
                 teamId = "Unknown",
@@ -74,46 +77,41 @@ public class RaceUI : MonoBehaviour
 
     private void UpdateParametersDisplay()
     {
-        // 基本信息
-        //speedLabel.text = $"{targetCar.GetComponent<NavMeshAgent>().velocity.magnitude * 3.6f:F1} km/h";
-        //accelerationLabel.text = $"{targetCar.acceleration:F1} m/s²";
 
-        // 轮胎状态
-        tyreTypeLabel.text = targetCar.tyreType.ToString();
+        // 赛车参数
+        tyreTypeLabel.text = targetCar.tyreType.ToString().ToUpper()[0].ToString(); // 轮胎类型 (S/M/H)
         tyreWearLabel.text = $"{targetCar.currentTyreWear:F1} %"; // 轮胎磨损百分比
-
-        // 性能增强状态
         ersStatusLabel.text = targetCar.ersAvailable ? "1" : "0";
         fuelStatusLabel.text = targetCar.fuelReleaseAvailable ? "1" : "0";
+        attitudeLabel.text = targetCar.attitude;
+        lapLabel.text = targetCar.lapCount.ToString(); // 当前圈数  
 
-        // 导航信息
-        //checkpointLabel.text = $"{targetCar._currentIndex + 1}/{targetCar._checkpoints.Length}";
-        //segmentTypeLabel.text = targetCar._currentSegmentType.ToString();
+        // 环境参数
+        trackTempLabel.text = $"{para.GetEnvPara().trackTemperature} °C"; // 赛道温度
+        airTempLabel.text = $"{para.GetEnvPara().airTemperature} °C"; // 空气温度
+
+
+
     }
 
-    public void UpdateRanks(RaceCarData[] newStandings)
+    public void UpdateRanks(CarRank[] newStandings)
     {
-        // 数据校验
-        if (newStandings.Length != 20)
-        {
-            Debug.LogError("必须提供20个赛车数据！");
-            return;
-        }
+        int len = newStandings.Length;
 
         // 更新数据
-        System.Array.Copy(newStandings, _currentStandings, 20);
+        System.Array.Copy(newStandings, _currentStandings, len);
 
         // 刷新UI
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < len; i++)
         {
             UpdateSingleRow(i + 1, _currentStandings[i]);
         }
     }
-    private void UpdateSingleRow(int position, RaceCarData data)
+
+    private void UpdateSingleRow(int position, CarRank data)
     {
         // 获取对应行元素
         var row = _listContainer.Q<VisualElement>("Row" + position);
-        print(row);
 
         // 更新子元素
         row.Q<Label>("driver_name").text = data.driverName;

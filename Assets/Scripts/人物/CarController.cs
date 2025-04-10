@@ -6,22 +6,12 @@ using Cinemachine;
 
 public class CarController : MonoBehaviour
 {
-    [System.Serializable]
-    public class TrackSegment
-    {
-        public enum SegmentType { Straight, Corner }
-        public SegmentType type;
-        public int startCheckpointIndex;
-        public int endCheckpointIndex;
-    }
-
     public string carId;
     private CarPara para;
 
     [Header("导航设置")]
     public Transform checkpointsParent;
     public float arrivalDistance = 1f;
-    public TrackSegment[] trackSegments; // 在Inspector中设置每个赛道段的类型
 
     [Header("性能参数")]
     public float straightTopSpeed = 320f / 3.6f;
@@ -32,7 +22,6 @@ public class CarController : MonoBehaviour
     public Transform[] _checkpoints;
     public int _currentIndex = 0;
     private NavMeshAgent _agent;
-    public TrackSegment.SegmentType _currentSegmentType;
     private bool _isBraking = false;
 
     [Header("轮胎系统")]
@@ -59,6 +48,7 @@ public class CarController : MonoBehaviour
 
     [Header("车手事故参数")]
     public string driverId; // 车手ID
+    public string attitude; // 车手心态
     public float accidentRate; // 事故率(0-1)
     public float accidentCheckInterval = 10f; // 事故检测间隔(秒)
     private float accidentCheckTimer = 0f;
@@ -67,12 +57,16 @@ public class CarController : MonoBehaviour
     [Header("虚拟相机")]
     public CinemachineVirtualCamera car3rd;
 
-    // 在CarController类中添加
-    private float _raceStartTime;
-    private float _lastCheckpointTime;
+    [Header("比赛设置")]
+    public int totalLaps = 2; // 总圈数
+    public int lapCount = 0; // 当前圈数(0=第1圈)
+    public bool raceFinished = false; // 比赛是否完成
+    public float _raceStartTime; // 比赛开始时间
+    public float ckptTime; // 当前检查点时间
+
 
     void Start()
-    {   CameraManager.Instance.SetCamera(car3rd);
+    {
         // 从管理器获取赛车参数
         para = ParaManager.Instance.getCarPara(carId);
 
@@ -88,7 +82,7 @@ public class CarController : MonoBehaviour
         if (driverPara != null)
         {
             accidentRate = driverPara.accidentRate;
-            Debug.Log($"车手{driverId}事故率: {accidentRate * 100}%");
+            attitude = driverPara.attitude.ToString();
         }
         else
         {
@@ -101,7 +95,7 @@ public class CarController : MonoBehaviour
         //_agent.acceleration = acceleration;
 
         _raceStartTime = Time.time;
-        _lastCheckpointTime = _raceStartTime;
+        ckptTime = _raceStartTime;
 
         // 初始化检查点
         if (checkpointsParent != null)
@@ -118,7 +112,6 @@ public class CarController : MonoBehaviour
             }
 
             // 确定初始赛道段类型
-            UpdateCurrentSegmentType();
             SetNextDestination();
         }
         else
@@ -131,7 +124,7 @@ public class CarController : MonoBehaviour
 
     void Update()
     {
-        if (_agent.pathPending || _checkpoints == null || _currentIndex >= _checkpoints.Length)
+        if (raceFinished || _agent.pathPending || _checkpoints == null)
             return;
 
         if (currentTyreWear <= 0)
@@ -157,21 +150,30 @@ public class CarController : MonoBehaviour
         if (distanceToTarget <= arrivalDistance)
         {
             float currentTime = Time.time;
-            float checkpointTime = currentTime - _lastCheckpointTime;
-            RaceTimeManager.Instance.UpdateCarCheckpoint(carId, _currentIndex, checkpointTime);
-            _lastCheckpointTime = currentTime;
+            ckptTime = currentTime - _raceStartTime;
+            RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime);
+            ckptTime = currentTime;
 
             _currentIndex++;
-            if (_currentIndex < _checkpoints.Length)
+            // 检查是否完成一圈
+            if (_currentIndex >= _checkpoints.Length)
             {
-                UpdateCurrentSegmentType();
-                SetNextDestination();
+                _currentIndex = 0; // 重置检查点索引
+                lapCount++; // 增加圈数
+
+                Debug.Log($"车辆{carId}完成第{lapCount}圈！");
+
+                // 检查比赛是否结束
+                if (lapCount >= totalLaps)
+                {
+                    raceFinished = true;
+                    _agent.isStopped = true;
+                    Debug.Log($"车辆{carId}已完成比赛！");
+                    return;
+                }
             }
-            else
-            {
-                Debug.Log("已完成所有检查点！");
-                _agent.isStopped = true;
-            }
+            // 设置下一个目标点
+            SetNextDestination();
         }
 
         // 检测按键输入
@@ -206,18 +208,6 @@ public class CarController : MonoBehaviour
         }
     }
 
-
-    private void UpdateCurrentSegmentType()
-    {
-        foreach (var segment in trackSegments)
-        {
-            if (_currentIndex >= segment.startCheckpointIndex && _currentIndex < segment.endCheckpointIndex)
-            {
-                _currentSegmentType = segment.type;
-                break;
-            }
-        }
-    }
     // 更新轮胎磨损
     private void UpdateTyreWear()
     {
@@ -246,7 +236,14 @@ public class CarController : MonoBehaviour
 
     private void UpdateSpeedLimit()
     {
-        float targetSpeed = _currentSegmentType == TrackSegment.SegmentType.Straight ? straightTopSpeed : cornerTopSpeed;
+
+        // 计算到下一个检查点的距离
+        float distanceToNextCheckpoint = Vector3.Distance(transform.position, _checkpoints[_currentIndex].position);
+
+        // 判断当前是直道还是弯道（距离检查点10m内为弯道）
+        bool isCorner = distanceToNextCheckpoint <= 10f;
+
+        float targetSpeed = isCorner ? cornerTopSpeed : straightTopSpeed;
         float realAcceleration = acceleration;
         if (_isBraking)
         {
@@ -277,7 +274,7 @@ public class CarController : MonoBehaviour
     {
         // 根据当前速度和减速度计算刹车距离
         float currentSpeed = _agent.velocity.magnitude;
-        return (currentSpeed * currentSpeed) / (2 * brakingDeceleration) * 0.5f; // 1.2为安全系数
+        return (currentSpeed * currentSpeed) / (2 * brakingDeceleration) * 1.0f; // 1.2为安全系数
     }
 
     private void SetNextDestination()
@@ -342,7 +339,6 @@ public class CarController : MonoBehaviour
         if (accidentCheckTimer >= accidentCheckInterval)
         {
             accidentCheckTimer = 0f;
-            print($"车手{driverId}事故检测");
             CheckForAccident();
             //// 只在弯道检测事故
             //if (_currentSegmentType == TrackSegment.SegmentType.Corner)

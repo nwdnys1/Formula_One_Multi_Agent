@@ -1,10 +1,10 @@
-using UnityEditor.Rendering;
+ï»¿using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class MeetingUI : MonoBehaviour
 {
-    [Header("½ÇÉ«UIÎÄµµ")]
+    [Header("è§’è‰²UIæ–‡æ¡£")]
     public UIDocument WolffUI;
     public UIDocument HamUI;
     public UIDocument StrategistUI;
@@ -21,37 +21,37 @@ public class MeetingUI : MonoBehaviour
 
     private void Awake()
     {
-        // ³õÊ¼»¯Ê±Òş²ØËùÓĞUI
+        // åˆå§‹åŒ–æ—¶éšè—æ‰€æœ‰UI
         HideAll();
     }
     private void Start()
     {
-        // ²éÕÒ°´Å¥
+        // æŸ¥æ‰¾æŒ‰é’®
         toMechanic = WolffUI.rootVisualElement.Q<Button>("Mech");
         toStrategist = WolffUI.rootVisualElement.Q<Button>("Strat");
         toHamilton = WolffUI.rootVisualElement.Q<Button>("Ham");
 
     }
-    // ÏÔÊ¾Ö¸¶¨½ÇÉ«µÄUI
+    // æ˜¾ç¤ºæŒ‡å®šè§’è‰²çš„UI
     public void ShowCharacterUI(string characterName)
     {
-        // ÏÈÒş²ØËùÓĞUI
+        // å…ˆéšè—æ‰€æœ‰UI
         HideAll();
 
-        // ¸ù¾İ½ÇÉ«ÃûÏÔÊ¾¶ÔÓ¦µÄUI
+        // æ ¹æ®è§’è‰²åæ˜¾ç¤ºå¯¹åº”çš„UI
         switch (characterName)
         {
             case "Wolff":
                 _currentRoot = WolffUI.rootVisualElement;
                 _inputField = _currentRoot.Q<TextField>("Contents");
                 break;
-            case "ººÃÜ¶û¶Ù":
+            case "æ±‰å¯†å°”é¡¿":
                 _currentRoot = HamUI.rootVisualElement;
                 break;
-            case "Ã·±¼³µ¶Ó»úĞµÊ¦":
+            case "æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ":
                 _currentRoot = MechanicUI.rootVisualElement;
                 break;
-            case "Ã·±¼³µ¶Ó²ßÂÔÊ¦":
+            case "æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ":
                 _currentRoot = StrategistUI.rootVisualElement;
                 break;
             case "report":
@@ -59,17 +59,17 @@ public class MeetingUI : MonoBehaviour
                 _titleText = _currentRoot.Q<Label>("Title");
                 break;
             default:
-                Debug.LogWarning($"Î´ÕÒµ½½ÇÉ«UI: {characterName}");
+                Debug.LogWarning($"æœªæ‰¾åˆ°è§’è‰²UI: {characterName}");
                 return;
         }
 
         _currentRoot.style.display = DisplayStyle.Flex;
 
-        // ²éÕÒ¹«¹²ÔªËØ
+        // æŸ¥æ‰¾å…¬å…±å…ƒç´ 
         _dialogueText = _currentRoot.Q<Label>("Contents");
     }
 
-    // ÏÔÊ¾¶Ô»°ÎÄ±¾£¨ËùÓĞUIÍ¨ÓÃ£©
+    // æ˜¾ç¤ºå¯¹è¯æ–‡æœ¬ï¼ˆæ‰€æœ‰UIé€šç”¨ï¼‰
     public void ShowDialogue(string text)
     {
         //print(_dialogueText);
@@ -85,7 +85,7 @@ public class MeetingUI : MonoBehaviour
         }
     }
 
-    // Òş²Ø¶Ô»°ÎÄ±¾
+    // éšè—å¯¹è¯æ–‡æœ¬
     public void HideDialogue()
     {
         if (_dialogueText != null)
@@ -96,13 +96,13 @@ public class MeetingUI : MonoBehaviour
 
 
 
-    // Òş²ØËùÓĞUIÔªËØ
+    // éšè—æ‰€æœ‰UIå…ƒç´ 
     public void HideAll()
     {
         HideDialogue();
 
 
-        // Òş²ØËùÓĞ½ÇÉ«UI
+        // éšè—æ‰€æœ‰è§’è‰²UI
         if (WolffUI != null) WolffUI.rootVisualElement.style.display = DisplayStyle.None;
         if (HamUI != null) HamUI.rootVisualElement.style.display = DisplayStyle.None;
         if (StrategistUI != null) StrategistUI.rootVisualElement.style.display = DisplayStyle.None;
@@ -110,7 +110,7 @@ public class MeetingUI : MonoBehaviour
         if (ReportUI != null) ReportUI.rootVisualElement.style.display = DisplayStyle.None;
     }
 
-    // ÏÔÊ¾ÊäÈë¿ò£¨½öWolffUI¿ÉÓÃ£©
+    // æ˜¾ç¤ºè¾“å…¥æ¡†ï¼ˆä»…WolffUIå¯ç”¨ï¼‰
     public void ShowInputField(string placeholder, System.Action<string> onSubmit)
     {
 
@@ -124,30 +124,30 @@ public class MeetingUI : MonoBehaviour
             {
                 if (e.keyCode == KeyCode.Return)
                 {
-                    print("ÊäÈëÄÚÈİ: " + _inputField.value);
+                    print("è¾“å…¥å†…å®¹: " + _inputField.value);
                     onSubmit?.Invoke(_inputField.value);
                     //HideInputField();
                 }
             });
         }
     }
-    // ÏÔÊ¾ÊäÈë¿ò µ«ÊÇ²»ÊÇ»Ø³µ´¥·¢ ¶øÊÇ°´Å¥´¥·¢
+    // æ˜¾ç¤ºè¾“å…¥æ¡† ä½†æ˜¯ä¸æ˜¯å›è½¦è§¦å‘ è€Œæ˜¯æŒ‰é’®è§¦å‘
     public void ShowInputFieldByButton(
         string placeholder,
-        System.Action<string> onMechanic, // ¶ÔÓ¦toMechanic
-        System.Action<string> onStrategist, // ¶ÔÓ¦toStrategist
-        System.Action<string> onHamilton  // ¶ÔÓ¦toHamilton
+        System.Action<string> onMechanic, // å¯¹åº”toMechanic
+        System.Action<string> onStrategist, // å¯¹åº”toStrategist
+        System.Action<string> onHamilton  // å¯¹åº”toHamilton
     )
     {
         if (_inputField == null) return;
 
-        // ³õÊ¼»¯ÊäÈë¿ò
+        // åˆå§‹åŒ–è¾“å…¥æ¡†
         _inputField.value = "";
         _inputField.label = placeholder;
         _inputField.style.display = DisplayStyle.Flex;
         _inputField.Focus();
 
-        // °ó¶¨°´Å¥ÊÂ¼ş
+        // ç»‘å®šæŒ‰é’®äº‹ä»¶
         toMechanic.clicked += () => OnButtonPressed(onMechanic);
         toStrategist.clicked += () => OnButtonPressed(onStrategist);
         toHamilton.clicked += () => OnButtonPressed(onHamilton);
@@ -157,16 +157,16 @@ public class MeetingUI : MonoBehaviour
     {
         if (string.IsNullOrEmpty(_inputField.value))
         {
-            Debug.LogWarning("ÊäÈëÄÚÈİ²»ÄÜÎª¿Õ");
+            Debug.LogWarning("è¾“å…¥å†…å®¹ä¸èƒ½ä¸ºç©º");
             return;
         }
 
-        // Ö´ĞĞ»Øµ÷²¢Òş²ØÊäÈë¿ò
+        // æ‰§è¡Œå›è°ƒå¹¶éšè—è¾“å…¥æ¡†
         callback?.Invoke(_inputField.value);
         HideInputField();
     }
 
-    // Òş²ØÊäÈë¿ò
+    // éšè—è¾“å…¥æ¡†
     public void HideInputField()
     {
         if (_inputField != null)

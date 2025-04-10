@@ -14,7 +14,7 @@ public class ParaManager : MonoBehaviour
     private Dictionary<string, CarPara> carParasCurrent = new Dictionary<string, CarPara>();
     [Header("Environment Parameters")]
     public EnvPara envParaPreset;
-    private EnvPara envPara;
+    public EnvPara envPara;
 
     public EnvPara GetEnvPara()
     {
@@ -78,17 +78,17 @@ public class ParaManager : MonoBehaviour
             foreach (DriverPara config in paraList.driverParas)
             {
                 driverParasPreset.Add(config.name, config);
-                print(config.name);
+
             }
 
             foreach (CarPara config in paraList.carParas)
             {
                 carParasPreset.Add(config.name, config);
-                print(config.name);
             }
             // ¸³Öµ
             driverParasCurrent = new Dictionary<string, DriverPara>(driverParasPreset);
             carParasCurrent = new Dictionary<string, CarPara>(carParasPreset);
+            envPara = Instantiate(envParaPreset);
         }
         else
         {

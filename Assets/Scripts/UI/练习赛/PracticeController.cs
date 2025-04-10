@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections.Generic;
 using Cinemachine;
 using DTO;
@@ -16,7 +16,7 @@ public class PracticeController : MonoBehaviour
     private void Awake()
     {
         dialogUI = GetComponent<InterviewUI>();
-        // È·±£DialogUI×é¼şÒÑÕıÈ·ÉèÖÃ
+        // ç¡®ä¿DialogUIç»„ä»¶å·²æ­£ç¡®è®¾ç½®
         if (dialogUI == null)
         {
             Debug.LogError("DialogUI is not assigned in the inspector.");
@@ -32,7 +32,7 @@ public class PracticeController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        dialogUI.ShowOptions(new string[] { "¿ªÊ¼Á·Ï°Èü" }, (index) =>
+        dialogUI.ShowOptions(new string[] { "å¼€å§‹ç»ƒä¹ èµ›" }, (index) =>
         {
             if (index == 0)
             {
@@ -45,20 +45,20 @@ public class PracticeController : MonoBehaviour
         client.Send(JsonStr.practice_session_start, (response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
-            // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+            // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
             switch (json["sender"].ToString())
             {
-                case "Ã·±¼³µ¶Ó»úĞµÊ¦":
+                case "æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ":
                     foreach (JsonData tuning in json["tuning_data"])
                     {
                         Debug.Log(tuning.ToString());
                     }
                     break;
-                case "ººÃÜ¶û¶Ù":
+                case "æ±‰å¯†å°”é¡¿":
                     Debug.Log(json["tuning_data"].ToString());
                     break;
                 default:
-                    Debug.Log("Î´Öª³¡¾°ÀàĞÍ");
+                    Debug.Log("æœªçŸ¥åœºæ™¯ç±»å‹");
                     break;
             }
 

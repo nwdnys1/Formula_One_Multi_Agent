@@ -232,10 +232,10 @@
                     <unity:VisualElement id="14:458" name="Inner Stripe" class="unity-base-override Inner-Stripe" picking-mode="Ignore" />
                     <unity:VisualElement id="14:459" name="Outer Stripe" class="unity-base-override Outer-Stripe" picking-mode="Ignore" />
                     <unity:VisualElement id="14:460" name="Count" class="unity-base-override Count" picking-mode="Ignore">
-                        <unity:Label id="14:461" name="1" class="unity-base-override n-1-two" picking-mode="Ignore" text="1" />
-                        <unity:Label id="14:462" name="/58" class="unity-base-override n-58" picking-mode="Ignore" text="/58" />
+                        <unity:Label id="14:461" name="Lap" class="unity-base-override n-1-two" text="1" />
+                        <unity:Label id="14:462" name="/58" class="unity-base-override n-58" picking-mode="Ignore" text="/3" />
                     </unity:VisualElement>
-                    <unity:Label id="14:463" name="LAP" class="unity-base-override LAP" picking-mode="Ignore" text="LAP" />
+                    <unity:Label id="14:463" name="LAPtext" class="unity-base-override LAP" picking-mode="Ignore" text="LAP" />
                 </unity:VisualElement>
                 <unity:VisualElement id="15:1178" name="Frame 75" class="unity-base-override Frame-75" picking-mode="Ignore">
                     <unity:VisualElement id="14:464" name="Rectangle" class="unity-base-override Rectangle-one" picking-mode="Ignore" />
@@ -248,11 +248,11 @@
                         <unity:VisualElement id="15:1176" name="Frame 73" class="unity-base-override Frame-73" picking-mode="Ignore">
                             <unity:VisualElement id="15:1172" name="Frame 69" class="unity-base-override Frame-69" picking-mode="Ignore">
                                 <unity:Label id="14:468" name="TRACK TEMPERATURE" class="unity-base-override TRACK-TEMPERATURE" picking-mode="Ignore" text="TRACK TEMPERATURE" />
-                                <unity:Label id="14:469" name="28.2°C" class="unity-base-override n-28-2-C" picking-mode="Ignore" text="28.2°C" />
+                                <unity:Label id="14:469" name="TrackTemp" class="unity-base-override n-28-2-C"  text="28.2°C" />
                             </unity:VisualElement>
                             <unity:VisualElement id="15:1173" name="Frame 70" class="unity-base-override Frame-70" picking-mode="Ignore">
                                 <unity:Label id="14:471" name="AIR TEMPERATURE" class="unity-base-override AIR-TEMPERATURE" picking-mode="Ignore" text="AIR TEMPERATURE" />
-                                <unity:Label id="14:472" name="24.8°C" class="unity-base-override n-24-8-C" picking-mode="Ignore" text="24.8°C" />
+                                <unity:Label id="14:472" name="AirTemp" class="unity-base-override n-24-8-C" text="24.8°C" />
                             </unity:VisualElement>
                             <unity:VisualElement id="15:1174" name="Frame 71" class="unity-base-override Frame-71" picking-mode="Ignore">
                                 <unity:Label id="14:474" name="TRACK GRIP" class="unity-base-override TRACK-GRIP" picking-mode="Ignore" text="TRACK GRIP" />
@@ -301,7 +301,7 @@
                         </unity:VisualElement>
                         <unity:VisualElement id="15:1166" name="Frame 63" class="unity-base-override Frame-63" picking-mode="Ignore">
                             <unity:Label id="14:485" name="MORALE" class="unity-base-override MORALE" picking-mode="Ignore" text="MORALE" />
-                            <unity:Label id="14:486" name="OPTIMISTIC" class="unity-base-override OPTIMISTIC" picking-mode="Ignore" text="OPTIMISTIC" />
+                            <unity:Label id="14:486" name="Attitude" class="unity-base-override OPTIMISTIC" text="OPTIMISTIC" />
                         </unity:VisualElement>
                         <unity:VisualElement id="15:1167" name="Frame 64" class="unity-base-override Frame-64" picking-mode="Ignore">
                             <unity:Label id="14:487" name="1" class="unity-base-override FUEL" picking-mode="Ignore" text="FUEL" />

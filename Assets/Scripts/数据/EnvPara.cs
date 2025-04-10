@@ -9,5 +9,8 @@ public class EnvPara : ScriptableObject
     [Range(0, 1)] public float rainfall = 0f; // 降雨量(0-1)
     [Range(0, 1)] public float rubberAmount = 0.5f; // 橡胶颗粒量(0-1)
     [Range(0, 50)] public float windSpeed = 10f; // 风速(km/h)
-    [Range(0, 360)] public float windDirection = 0f; // 风向(度)
+    [Range(0, 360)] public string windDirection = "N"; // 风向(度)
+
+
+    
 }

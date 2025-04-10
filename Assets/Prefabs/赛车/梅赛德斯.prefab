@@ -594,7 +594,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 11
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 8873899382682755921}
   m_Follow: {fileID: 6436038237409687714}
@@ -687,62 +687,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a05ecef5bc7a24e855fb0312cbcbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carId: "1\u53F7"
+  carId: "4\u53F7"
   checkpointsParent: {fileID: 0}
   arrivalDistance: 20
-  trackSegments:
-  - type: 1
-    startCheckpointIndex: 1
-    endCheckpointIndex: 2
-  - type: 0
-    startCheckpointIndex: 2
-    endCheckpointIndex: 3
-  - type: 1
-    startCheckpointIndex: 3
-    endCheckpointIndex: 4
-  - type: 0
-    startCheckpointIndex: 4
-    endCheckpointIndex: 5
-  - type: 1
-    startCheckpointIndex: 5
-    endCheckpointIndex: 6
-  - type: 0
-    startCheckpointIndex: 6
-    endCheckpointIndex: 7
-  - type: 1
-    startCheckpointIndex: 7
-    endCheckpointIndex: 8
-  - type: 0
-    startCheckpointIndex: 8
-    endCheckpointIndex: 9
-  - type: 1
-    startCheckpointIndex: 9
-    endCheckpointIndex: 10
-  - type: 0
-    startCheckpointIndex: 10
-    endCheckpointIndex: 11
-  - type: 1
-    startCheckpointIndex: 11
-    endCheckpointIndex: 12
-  - type: 0
-    startCheckpointIndex: 12
-    endCheckpointIndex: 13
-  - type: 1
-    startCheckpointIndex: 13
-    endCheckpointIndex: 14
-  - type: 0
-    startCheckpointIndex: 14
-    endCheckpointIndex: 15
-  - type: 1
-    startCheckpointIndex: 15
-    endCheckpointIndex: 16
   straightTopSpeed: 320
   cornerTopSpeed: 180
   acceleration: 15
   brakingDeceleration: 20
   _checkpoints: []
   _currentIndex: 0
-  _currentSegmentType: 0
   tyreType: 0
   currentTyreWear: 100
   tyreWearEffectThreshold: 30
@@ -760,9 +713,20 @@ MonoBehaviour:
   fuelTimer: 0
   fuelActive: 0
   driverId: "1\u53F7"
+  attitude: 
   accidentRate: 0
   accidentCheckInterval: 10
   car3rd: {fileID: 5015325599446273871}
+  totalLaps: 2
+  lapCount: 0
+  raceFinished: 0
+  _raceStartTime: 0
+  ckptTime: 0
+  pitStopLaps: 0100000002000000
+  tyreTypes: 0100000002000000
+  fuelLap: 1
+  ERSLap: 2
+  pitStop: {fileID: 0}
 --- !u!1 &4356494505716844094
 GameObject:
   m_ObjectHideFlags: 0

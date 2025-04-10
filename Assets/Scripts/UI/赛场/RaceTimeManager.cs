@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using DTO;
+using LitJson;
 
 public class RaceTimeManager : MonoBehaviour
 {
     public static RaceTimeManager Instance { get; private set; }
+    SocketClient client = SocketClient.Instance;
 
     public struct CarRaceData
     {
@@ -90,7 +93,38 @@ public class RaceTimeManager : MonoBehaviour
             }
         }
         raceUI.UpdateRanks(carRanks);
+        string ranks = Ranks2Json(_rankingData).ToString();
+        // 发送给llm进行更新
+        client.Send(JsonStr.Grid_Position_upadate(ranks), (response) => { }, null);
+        string times = Time2Json(_rankingData).ToString();
+        // 发送给llm进行更新
+        client.Send(JsonStr.Lap_Time_upadate(times), (response) => { }, null);
     }
+
+    // 将rankings转换为jsondata
+    public JsonData Ranks2Json(List<CarRaceData> raceData)
+    {
+        JsonData ranks = new JsonData();
+        for (int i = 0; i < _rankingData.Count; i++)
+        {
+            var data = _rankingData[i];
+            ranks[data.carId] = i + 1; // 1-based ranking
+        }
+        return ranks;
+    }
+    // 将圈速转换为jsondata 时间格式形如1：00.000
+    public JsonData Time2Json(List<CarRaceData> raceData)
+    {
+        JsonData time = new JsonData();
+        for (int i = 0; i < _rankingData.Count; i++)
+        {
+            var data = _rankingData[i];
+            time[data.carId] = data.ckptTime.ToString("00") + ":" + (data.ckptTime % 1).ToString("F3").Substring(2); // 1:00.000
+        }
+        return time;
+    }
+
+
 
     // 核心排序逻辑
     private int FindInsertPosition(CarRaceData newData)

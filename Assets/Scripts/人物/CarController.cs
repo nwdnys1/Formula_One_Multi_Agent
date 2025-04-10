@@ -8,6 +8,7 @@ public class CarController : MonoBehaviour
 {
     public string carId;
     private CarPara para;
+    SocketClient client = SocketClient.Instance;
 
     [Header("导航设置")]
     public Transform checkpointsParent;
@@ -63,6 +64,18 @@ public class CarController : MonoBehaviour
     public bool raceFinished = false; // 比赛是否完成
     public float _raceStartTime; // 比赛开始时间
     public float ckptTime; // 当前检查点时间
+
+    [Header("比赛策略")]
+    public int[] pitStopLaps = { 5, 10 }; // 进站圈数
+    public CarPara.TyreType[] tyreTypes = { CarPara.TyreType.Hard, CarPara.TyreType.Medium }; // 进站轮胎类型
+    public int fuelLap = 1; // 进站加油圈数
+    public int ERSLap = 1; // 进站充电圈数
+
+    [Header("进站设置")]
+    public Transform pitStop; // 单独的进站点
+    private bool _isPitting = false; // 是否正在进站
+    private int _nextPitStopIndex = 0; // 下一个进站策略的索引
+
 
 
     void Start()
@@ -134,7 +147,9 @@ public class CarController : MonoBehaviour
         }
 
         // 检查是否到达当前目标点
-        float distanceToTarget = Vector3.Distance(transform.position, _checkpoints[_currentIndex].position);
+        float distanceToTarget = _isPitting
+             ? Vector3.Distance(transform.position, pitStop.position)
+             : Vector3.Distance(transform.position, _checkpoints[_currentIndex].position);
 
         // 根据距离决定是否需要刹车
         _isBraking = distanceToTarget < CalculateBrakingDistance();
@@ -149,27 +164,43 @@ public class CarController : MonoBehaviour
         // 检查是否到达检查点
         if (distanceToTarget <= arrivalDistance)
         {
-            float currentTime = Time.time;
-            ckptTime = currentTime - _raceStartTime;
-            RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime);
-            ckptTime = currentTime;
-
-            _currentIndex++;
-            // 检查是否完成一圈
-            if (_currentIndex >= _checkpoints.Length)
+            if (!_isPitting)
             {
-                _currentIndex = 0; // 重置检查点索引
-                lapCount++; // 增加圈数
+                float currentTime = Time.time;
+                ckptTime = currentTime - _raceStartTime;
+                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime);
+                ckptTime = currentTime;
 
-                Debug.Log($"车辆{carId}完成第{lapCount}圈！");
-
-                // 检查比赛是否结束
-                if (lapCount >= totalLaps)
+                // 检查是否需要释放fuel或ERS
+                if (fuelLap == lapCount && _currentIndex == 4) // 假设检查点5释放fuel
                 {
-                    raceFinished = true;
-                    _agent.isStopped = true;
-                    Debug.Log($"车辆{carId}已完成比赛！");
-                    return;
+                    ActivateFuelRelease();
+
+                }
+
+                if (ERSLap == lapCount && _currentIndex == 4) // 假设检查点5激活ERS
+                {
+                    ActivateERS();
+
+                }
+
+                _currentIndex++;
+                // 检查是否完成一圈
+                if (_currentIndex >= _checkpoints.Length)
+                {
+                    _currentIndex = 0; // 重置检查点索引
+                    lapCount++; // 增加圈数
+
+                    Debug.Log($"车辆{carId}完成第{lapCount}圈！");
+
+                    // 检查比赛是否结束
+                    if (lapCount >= totalLaps)
+                    {
+                        raceFinished = true;
+                        _agent.isStopped = true;
+                        Debug.Log($"车辆{carId}已完成比赛！");
+                        return;
+                    }
                 }
             }
             // 设置下一个目标点
@@ -244,6 +275,7 @@ public class CarController : MonoBehaviour
         bool isCorner = distanceToNextCheckpoint <= 10f;
 
         float targetSpeed = isCorner ? cornerTopSpeed : straightTopSpeed;
+        targetSpeed = _isPitting ? 80 : targetSpeed; // 进站时速度为80km/h
         float realAcceleration = acceleration;
         if (_isBraking)
         {
@@ -281,7 +313,39 @@ public class CarController : MonoBehaviour
     {
         if (_currentIndex < _checkpoints.Length)
         {
-            _agent.SetDestination(_checkpoints[_currentIndex].position);
+            // 检查是否需要进站
+            bool shouldPitThisLap = _nextPitStopIndex < pitStopLaps.Length && lapCount == pitStopLaps[_nextPitStopIndex];
+
+            // 如果是最后一个检查点且需要进站，则设置目标为进站点
+            if (shouldPitThisLap && _currentIndex == 0 && !_isPitting)
+            {
+                _isPitting = true;
+                _agent.SetDestination(pitStop.position);
+            }
+            // 如果是进站完成，则设置目标为下一圈的第三个检查点
+            else if (_isPitting && Vector3.Distance(transform.position, pitStop.position) <= arrivalDistance)
+            {
+                _isPitting = false;
+                _currentIndex = 2;
+                _nextPitStopIndex++;
+
+                // 更换轮胎
+                if (_nextPitStopIndex <= tyreTypes.Length)
+                {
+                    tyreType = tyreTypes[_nextPitStopIndex - 1];
+                    currentTyreWear = 100f; // 重置轮胎磨损
+                    Debug.Log($"进站换胎，新轮胎类型: {tyreType}");
+                }
+
+                _agent.SetDestination(_checkpoints[2].position);
+
+            
+            }
+            else
+            {
+                // 正常设置下一个检查点
+                _agent.SetDestination(_checkpoints[_currentIndex].position);
+            }
         }
     }
 

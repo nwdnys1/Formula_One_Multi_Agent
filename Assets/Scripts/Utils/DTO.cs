@@ -221,15 +221,69 @@ namespace DTO
         }
 
 
-        public static string strategy_update = "";
+        public static string strategy_update(string content, string strategy)
+        {
+            return
+                "{" +
+                    "\"scene_type\": \"race\", " +
+                    "\"scene_data\": {" +
+                        "\"sender\": \"Wolff\", " +
+                        "\"receiver\": \"Strategist\", " +
+                        "\"content\": \"" + content + "\", " +
+                        "\"strategy\": \"" + strategy + "\", " +
+                        "\"signal\": \"strategy_update\"" +
+                    "}" +
+                "}";
+        }
 
-        public static string attitude_update = "";
+        public static string attitude_update(string content, string attitude)
+        {
+            return
+                "{" +
+                    "\"scene_type\": \"race\", " +
+                    "\"scene_data\": {" +
+                        "\"sender\": \"Wolff\", " +
+                        "\"receiver\": \"Hamilton\", " +
+                        "\"content\": \"" + content + "\", " +
+                        "\"attitude\": \"" + attitude + "\", " +
+                        "\"signal\": \"attitude_update\"" +
+                    "}" +
+                "}";
+        }
 
-        public static string overtake_occurred = "";
+        public static string accident_occurred(string driver)
+        {
+            return
+                "{" +
+                    "\"scene_type\": \"race\", " +
+                    "\"scene_data\": {" +
+                        "\"sender\": \"unity\", " +
+                        "\"receiver\": [\"Wolff\", \"Hamilton\", \"Strategist\"], " +
+                        "\"signal\": \"accident_occurred\", " +
+                        "\"accident_driver\": \"" + driver + "\"" +
+                    "}" +
+                "}";
+        }
 
-        public static string after_meeting_start = "";
+        public static string after_meeting_start =
+            "{" +
+                "\"scene_type\": \"after_meeting\", " +
+                "\"scene_data\": {" +
+                    "\"sender\": \"unity\", " +
+                    "\"receiver\": [\"Wolff\", \"Hamilton\", \"Mechanic\", \"Strategist\"], " +
+                    "\"signal\": \"after_meeting_start\"" +
+                "}" +
+            "}";
 
-        public static string after_meeting_end = "";
+        public static string after_meeting_end =
+            "{" +
+                "\"scene_type\": \"after_meeting\", " +
+                "\"scene_data\": {" +
+                    "\"sender\": \"unity\", " +
+                    "\"receiver\": [\"Wolff\", \"Hamilton\", \"Mechanic\", \"Strategist\"], " +
+                    "\"signal\": \"after_meeting_end\"" +
+                "}" +
+            "}";
 
     }
 

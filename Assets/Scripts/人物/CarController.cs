@@ -75,6 +75,7 @@ public class CarController : MonoBehaviour
     public Transform pitStop; // 单独的进站点
     private bool _isPitting = false; // 是否正在进站
     private int _nextPitStopIndex = 0; // 下一个进站策略的索引
+    public int pitCnt = 0; // 进站次数
 
 
 
@@ -168,7 +169,7 @@ public class CarController : MonoBehaviour
             {
                 float currentTime = Time.time;
                 ckptTime = currentTime - _raceStartTime;
-                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime);
+                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime,pitCnt,tyreType.ToString(),currentTyreWear,null);
                 ckptTime = currentTime;
 
                 // 检查是否需要释放fuel或ERS
@@ -326,6 +327,7 @@ public class CarController : MonoBehaviour
             else if (_isPitting && Vector3.Distance(transform.position, pitStop.position) <= arrivalDistance)
             {
                 _isPitting = false;
+                pitCnt++;
                 _currentIndex = 2;
                 _nextPitStopIndex++;
 
@@ -338,7 +340,6 @@ public class CarController : MonoBehaviour
                 }
 
                 _agent.SetDestination(_checkpoints[2].position);
-
             
             }
             else

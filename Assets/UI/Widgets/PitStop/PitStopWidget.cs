@@ -7,7 +7,7 @@ public class PitStopWidget : MonoBehaviour
 
     [Header("Input Parameters")]
     public int[] pitStopLaps = { 15, 30 }; // 换胎的圈数
-    public string[] tyreStrategy = { "hard", "medium", "soft" }; // 轮胎策略
+    public string[] tyreStrategy = { "Hard", "Medium", "Soft" }; // 轮胎策略
     public int fuel_release_laps = 12;
     public int ERS_release_laps = 8;
     public int totalLaps = 58; // 总圈数
@@ -38,6 +38,14 @@ public class PitStopWidget : MonoBehaviour
         }
 
         Debug.Log("Root Visual Element found. Generating lap display.");
+        GenerateLapDisplay();
+    }
+
+    public void UpdateStrategy(int[] newPitStops, string[] tyreTypes)
+    {
+        pitStopLaps = newPitStops;
+        tyreStrategy = tyreTypes;
+        lapContainer.Clear();
         GenerateLapDisplay();
     }
 
@@ -139,13 +147,13 @@ public class PitStopWidget : MonoBehaviour
             return;
         }
 
-        Debug.Log("lapContainer found. Starting to generate lap display.");
+        
 
         var tyreColorMap = new System.Collections.Generic.Dictionary<string, Color>
         {
-            { "hard", HardColor },
-            { "medium", MediumColor },
-            { "soft", SoftColor }
+            { "Hard", HardColor },
+            { "Medium", MediumColor },
+            { "Soft", SoftColor }
         };
 
         int currentTyreIndex = 0;
@@ -204,7 +212,6 @@ public class PitStopWidget : MonoBehaviour
             }
         }
 
-        Debug.Log("Lap display generation completed.");
     }
 
     private bool IsPitStopLap(int lap)

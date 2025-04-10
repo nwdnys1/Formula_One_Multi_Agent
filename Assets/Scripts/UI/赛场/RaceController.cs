@@ -12,14 +12,9 @@ public class RaceController : MonoBehaviour
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
     ParaManager para = ParaManager.Instance;
-    public CinemachineVirtualCamera playerCamera;
-    public CinemachineVirtualCamera strategistCamera;
-    public CinemachineVirtualCamera mechanicCamera;
-    public CinemachineVirtualCamera hamiltonCamera;
-    public CinemachineVirtualCamera wolffCamera;
-    public CinemachineVirtualCamera quanjing;
-    public Dictionary<string, CinemachineVirtualCamera> cameras = new Dictionary<string, CinemachineVirtualCamera>();
-
+    [Header("摄像机")]
+    public CinemachineVirtualCamera[] cameras = new CinemachineVirtualCamera[6];
+    public int currentCameraIndex = 0;
     private void Awake()
     {
 
@@ -70,7 +65,7 @@ public class RaceController : MonoBehaviour
     }
     private void MeetingChoose()
     {
-        cm.SetCamera(cameras["Wolff"]);
+        
         
     }
     private void MeetingEnd()
@@ -86,6 +81,24 @@ public class RaceController : MonoBehaviour
 
     private void Update()
     {
-        
+        // 按左右方向键切换摄像机 顺序遍历cameras
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            currentCameraIndex--;
+            if (currentCameraIndex < 0)
+            {
+                currentCameraIndex = cameras.Length - 1;
+            }
+            cm.SetCamera(cameras[currentCameraIndex]);
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            currentCameraIndex++;
+            if (currentCameraIndex >= cameras.Length)
+            {
+                currentCameraIndex = 0;
+            }
+            cm.SetCamera(cameras[currentCameraIndex]);
+        }
     }
 }

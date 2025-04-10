@@ -233,7 +233,7 @@
                     <unity:VisualElement id="14:459" name="Outer Stripe" class="unity-base-override Outer-Stripe" picking-mode="Ignore" />
                     <unity:VisualElement id="14:460" name="Count" class="unity-base-override Count" picking-mode="Ignore">
                         <unity:Label id="14:461" name="Lap" class="unity-base-override n-1-two" text="1" />
-                        <unity:Label id="14:462" name="/58" class="unity-base-override n-58" picking-mode="Ignore" text="/3" />
+                        <unity:Label id="14:462" name="/58" class="unity-base-override n-58" picking-mode="Ignore" text="/58" />
                     </unity:VisualElement>
                     <unity:Label id="14:463" name="LAPtext" class="unity-base-override LAP" picking-mode="Ignore" text="LAP" />
                 </unity:VisualElement>

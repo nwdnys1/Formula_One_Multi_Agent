@@ -9,7 +9,7 @@ namespace DTO
             "\"scene_type\": \"media_interview\", " +
             "\"scene_data\": {" +
                 "\"sender\": \"unity\", " +
-                "\"receiver\": [\"¼ÇÕß\", \"Î¬Ë¹ËşÅË\", \"ººÃÜ¶û¶Ù\", \"»ôÄÉ\"], " +
+                "\"receiver\": [\"è®°è€…\", \"ç»´æ–¯å¡”æ½˜\", \"æ±‰å¯†å°”é¡¿\", \"éœçº³\"], " +
                 "\"signal\": \"media_interview_start\"" +
             "}" +
         "}";
@@ -20,7 +20,7 @@ namespace DTO
                     "\"scene_type\": \"media_interview\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"Wolff\", " +
-                        "\"receiver\": [\"¼ÇÕß\"], " +
+                        "\"receiver\": [\"è®°è€…\"], " +
                         "\"content\": \"" + content + "\", " +
                         "\"signal\": \"chat\"" +
                     "}" +
@@ -43,7 +43,7 @@ namespace DTO
                     "\"scene_type\": \"practice_session\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Ã·±¼³µ¶Ó²ßÂÔÊ¦\", \"ººÃÜ¶û¶Ù\"], " +
+                        "\"receiver\": [\"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\", \"æ±‰å¯†å°”é¡¿\"], " +
                         "\"signal\": \"practice_session_start\"" +
                     "}" +
                 "}";
@@ -54,7 +54,7 @@ namespace DTO
                     "\"scene_type\": \"before_meeting\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Wolff\", \"ººÃÜ¶û¶Ù\", \"Ã·±¼³µ¶Ó»úĞµÊ¦\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\"], " +
+                        "\"receiver\": [\"Wolff\", \"æ±‰å¯†å°”é¡¿\", \"æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\"], " +
                         "\"signal\": \"before_meeting_start\"" +
                     "}" +
                 "}";
@@ -64,7 +64,7 @@ namespace DTO
                     "\"scene_type\": \"before_meeting\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Wolff\", \"ººÃÜ¶û¶Ù\", \"Ã·±¼³µ¶Ó»úĞµÊ¦\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\"], " +
+                        "\"receiver\": [\"Wolff\", \"æ±‰å¯†å°”é¡¿\", \"æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\"], " +
                         "\"signal\": \"meeting_replay\"" +
                     "}" +
                 "}";
@@ -74,7 +74,7 @@ namespace DTO
                     "\"scene_type\": \"before_meeting\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Wolff\", \"ººÃÜ¶û¶Ù\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\"], " +
+                        "\"receiver\": [\"Wolff\", \"æ±‰å¯†å°”é¡¿\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\"], " +
                         "\"signal\": \"meeting_strategy\"" +
                     "}" +
                 "}";
@@ -85,7 +85,7 @@ namespace DTO
                 "\"scene_type\": \"before_meeting\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": [\"Wolff\", \"ººÃÜ¶û¶Ù\"], " +
+                    "\"receiver\": [\"Wolff\", \"æ±‰å¯†å°”é¡¿\"], " +
                     "\"signal\": \"meeting_attitude\"" +
                 "}" +
             "}";
@@ -108,7 +108,7 @@ namespace DTO
                 "\"scene_type\": \"before_meeting\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": [\"Wolff\", \"ººÃÜ¶û¶Ù\", \"Ã·±¼³µ¶Ó»úĞµÊ¦\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\"], " +
+                    "\"receiver\": [\"Wolff\", \"æ±‰å¯†å°”é¡¿\", \"æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\"], " +
                     "\"signal\": \"before_meeting_end\"" +
                 "}" +
             "}";
@@ -119,7 +119,7 @@ namespace DTO
                 "\"scene_type\": \"race\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": [\"ººÃÜ¶û¶Ù\", \"Wolff\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\"], " +
+                    "\"receiver\": [\"æ±‰å¯†å°”é¡¿\", \"Wolff\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\"], " +
                     "\"signal\": \"race_start\"" +
                "}" +
             "}";
@@ -213,7 +213,7 @@ namespace DTO
                     "\"scene_type\": \"race\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"Wolff\", " +
-                        "\"receiver\": [\"ººÃÜ¶û¶Ù\", \"Ã·±¼³µ¶Ó»úĞµÊ¦\", \"Ã·±¼³µ¶Ó²ßÂÔÊ¦\"], " +
+                        "\"receiver\": [\"æ±‰å¯†å°”é¡¿\", \"æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ\", \"æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ\"], " +
                         "\"content\": \"" + content + "\", " +
                         "\"signal\": \"chat\"" +
                     "}" +

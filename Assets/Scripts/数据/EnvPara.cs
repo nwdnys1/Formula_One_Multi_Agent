@@ -3,13 +3,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnvPara", menuName = "Scriptable Objects/Environment Parameters")]
 public class EnvPara : ScriptableObject
 {
-    [Range(0, 100)] public float trackTemperature = 25f; // ÈüµÀÎÂ¶È(¡ãC)
-    [Range(-20, 50)] public float airTemperature = 20f; // ¿ÕÆøÎÂ¶È(¡ãC)
-    [Range(0, 1)] public float trackGrip = 0.8f; // ÈüµÀ×¥µØÁ¦(0-1)
-    [Range(0, 1)] public float rainfall = 0f; // ½µÓêÁ¿(0-1)
-    [Range(0, 1)] public float rubberAmount = 0.5f; // Ïğ½º¿ÅÁ£Á¿(0-1)
-    [Range(0, 50)] public float windSpeed = 10f; // ·çËÙ(km/h)
-    [Range(0, 360)] public string windDirection = "N"; // ·çÏò(¶È)
+    [Range(0, 100)] public float trackTemperature = 25f; // èµ›é“æ¸©åº¦(Â°C)
+    [Range(-20, 50)] public float airTemperature = 20f; // ç©ºæ°”æ¸©åº¦(Â°C)
+    [Range(0, 1)] public float trackGrip = 0.8f; // èµ›é“æŠ“åœ°åŠ›(0-1)
+    [Range(0, 1)] public float rainfall = 0f; // é™é›¨é‡(0-1)
+    [Range(0, 1)] public float rubberAmount = 0.5f; // æ©¡èƒ¶é¢—ç²’é‡(0-1)
+    [Range(0, 50)] public float windSpeed = 10f; // é£é€Ÿ(km/h)
+    [Range(0, 360)] public string windDirection = "N"; // é£å‘(åº¦)
 
 
     

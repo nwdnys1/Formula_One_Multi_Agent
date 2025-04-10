@@ -38,7 +38,7 @@ public class RaceController : MonoBehaviour
 
     private void RaceStart()
     {
-        print("¿ªÊ¼±ÈÈü");
+        print("å¼€å§‹æ¯”èµ›");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
@@ -78,7 +78,7 @@ public class RaceController : MonoBehaviour
         client.Send(JsonStr.before_meeting_end, (string response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
-            // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+            // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
             
 
         }, null);

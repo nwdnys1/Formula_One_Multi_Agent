@@ -123,14 +123,14 @@ public class SocketClient : MonoBehaviour
                 int bytesRead = _stream.Read(buffer, 0, buffer.Length);
                 if (bytesRead == 0)
                 {
-                    // Á¬½ÓÒÑ¹Ø±Õ
+                    // è¿žæŽ¥å·²å…³é—­
                     break;
                 }
 
                 string receivedString = Encoding.UTF8.GetString(buffer, 0, bytesRead).TrimEnd('\0');
-                print("received:" + receivedString); // ´òÓ¡½ÓÊÕµ½µÄ×Ö·û´®
+                print("received:" + receivedString); // æ‰“å°æŽ¥æ”¶åˆ°çš„å­—ç¬¦ä¸²
 
-                bool isEnd = receivedString.Contains("finally_end"); // ÅÐ¶ÏÊÇ·ñÎª½áÊø±êÖ¾
+                bool isEnd = receivedString.Contains("finally_end"); // åˆ¤æ–­æ˜¯å¦ä¸ºç»“æŸæ ‡å¿—
 
                 if (isEnd)
                 {
@@ -138,7 +138,7 @@ public class SocketClient : MonoBehaviour
                     _nextCallback = null;
 
                 }
-                // ÔÚÖ÷Ïß³ÌÖ´ÐÐ»Øµ÷
+                // åœ¨ä¸»çº¿ç¨‹æ‰§è¡Œå›žè°ƒ
                 if (_currentCallback != null)
                 {
                     UnityMainThreadDispatcher.Instance.Enqueue(() =>

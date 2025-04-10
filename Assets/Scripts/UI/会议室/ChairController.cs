@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ChairController : MonoBehaviour
 {
-    public GameObject interactionText; // ÏÔÊ¾"°´F¿ªÊ¼»áÒé"µÄUIÎÄ±¾
+    public GameObject interactionText; // æ˜¾ç¤º"æŒ‰Få¼€å§‹ä¼šè®®"çš„UIæ–‡æœ¬
     public bool isInRange = false;
 
     private void OnTriggerEnter(Collider other)

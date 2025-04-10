@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CarPara", menuName = "Scriptable Objects/CarPara")]
 public class CarPara : ScriptableObject
 {
-    // Èü³µĞÔÄÜ
+    // èµ›è½¦æ€§èƒ½
     [Header("Speed Attributes")]
     [Tooltip("Top speed in km/h")]
     public float topSpeed = 320f / 3.6f;
@@ -19,7 +19,7 @@ public class CarPara : ScriptableObject
     [Tooltip("Cornering ability in G")]
     public float carCornering = 3.5f;
 
-    // Èü³µµ÷Ğ£
+    // èµ›è½¦è°ƒæ ¡
     [Header("Setup Parameters")]
     [Range(0f, 10f)] public float frontWingAngle = 5f;
     [Range(8f, 18f)] public float rearWingAngle = 12.5f;
@@ -44,14 +44,14 @@ public class CarPara : ScriptableObject
     public void CalculateTuningRatings()
     {
 
-        // ¼ÆËã¸÷²ÎÊıÆ¥Åä¶È£¨0-1£¬1±íÊ¾ÍêÈ«Æ¥Åä£©
+        // è®¡ç®—å„å‚æ•°åŒ¹é…åº¦ï¼ˆ0-1ï¼Œ1è¡¨ç¤ºå®Œå…¨åŒ¹é…ï¼‰
         float frontWingMatch = 1 - Mathf.Abs(frontWingAngle - bestFrontWingAngle) / 10f;
         float rearWingMatch = 1 - Mathf.Abs(rearWingAngle - bestRearWingAngle) / 10f;
         float antiRollMatch = 1 - Mathf.Abs(antiRollDistribution - bestAntiRollDistribution) / 2f;
         float camberMatch = 1 - Mathf.Abs(tyreCamber - bestTyreCamber) / 1.5f;
         float toeOutMatch = 1 - Mathf.Abs(toeOut - bestToeOut);
 
-        // ¼ÆËã5¸öÆÀ·Ö£¨»ùÓÚÓ°Ïì²ÎÊı¼ÓÈ¨£©
+        // è®¡ç®—5ä¸ªè¯„åˆ†ï¼ˆåŸºäºå½±å“å‚æ•°åŠ æƒï¼‰
         oversteerRating = Mathf.Clamp((int)((frontWingMatch * 0.5f + camberMatch * 0.5f) * 5f + 0.5f), 1, 5);
         brakingStabilityRating = Mathf.Clamp((int)((antiRollMatch * 0.6f + camberMatch * 0.4f) * 5f + 0.5f), 1, 5);
         corneringRating = Mathf.Clamp((int)((frontWingMatch * 0.7f + toeOutMatch * 0.3f) * 5f + 0.5f), 1, 5);
@@ -62,7 +62,7 @@ public class CarPara : ScriptableObject
     }
 
 
-    // ÂÖÌ¥²ÎÊı
+    // è½®èƒå‚æ•°
     public enum TyreType { Hard, Medium, Soft }
 
     [Header("Tyre Attributes")]
@@ -92,7 +92,7 @@ public class CarPara : ScriptableObject
         currentWear = Mathf.Clamp(currentWear - wearPerSecond * deltaTime, 0f, 100f);
     }
 
-    // ÈüÖĞ²ÎÊı
+    // èµ›ä¸­å‚æ•°
 
     [Header("ERS System")]
     public bool ersAvailable = true;

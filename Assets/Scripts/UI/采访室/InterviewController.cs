@@ -22,7 +22,7 @@ public class InterviewController : MonoBehaviour
     private void Awake()
     {
         dialog = GetComponent<InterviewUI>();
-        // È·±£DialogUI×é¼şÒÑÕıÈ·ÉèÖÃ
+        // ç¡®ä¿DialogUIç»„ä»¶å·²æ­£ç¡®è®¾ç½®
         if (dialog == null)
         {
             Debug.LogError("DialogUI is not assigned in the inspector.");
@@ -35,19 +35,19 @@ public class InterviewController : MonoBehaviour
         {
             Debug.LogError("SocketClient is not assigned in the inspector.");
         }
-        cameras.Add("¼ÇÕß", reporterCamera);
-        cameras.Add("»ôÄÉ", hornerCamera);
-        cameras.Add("Î¬Ë¹ËşÅË", verstappenCamera);
-        cameras.Add("ººÃÜ¶û¶Ù", hamiltonCamera);
+        cameras.Add("è®°è€…", reporterCamera);
+        cameras.Add("éœçº³", hornerCamera);
+        cameras.Add("ç»´æ–¯å¡”æ½˜", verstappenCamera);
+        cameras.Add("æ±‰å¯†å°”é¡¿", hamiltonCamera);
         cameras.Add("Wolff", wolffCamera);
     }
 
     private void Start()
     {
-        // È«¾°ÊÓ½Ç
+        // å…¨æ™¯è§†è§’
         cm.SetCamera(quanjing);
 
-        // ¿ªÊ¼²É·Ã
+        // å¼€å§‹é‡‡è®¿
         InterviewStart();
 
     }
@@ -58,9 +58,9 @@ public class InterviewController : MonoBehaviour
         {
 
             JsonData json = JsonMapper.ToObject(response);
-            // ÇĞ»»ÉãÏñ»ú
+            // åˆ‡æ¢æ‘„åƒæœº
             cm.SetCamera(cameras[json["sender"].ToString()]);
-            // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+            // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
             dialog.ShowCharacterUI(json["sender"].ToString());
             dialog.ShowDialogue(json["content"].ToString());
             if (json.ContainsKey("attitude"))
@@ -75,17 +75,17 @@ public class InterviewController : MonoBehaviour
     {
         cm.SetCamera(cameras["Wolff"]);
         dialog.ShowCharacterUI("Wolff");
-        dialog.ShowInputField("ÇëÊäÈë²É·ÃÄÚÈİ", (input) =>
+        dialog.ShowInputField("è¯·è¾“å…¥é‡‡è®¿å†…å®¹", (input) =>
         {
             string sendStr = JsonStr.media_interview_chat(input);
-            // ·¢ËÍÊäÈëµÄÄÚÈİµ½·şÎñÆ÷
+            // å‘é€è¾“å…¥çš„å†…å®¹åˆ°æœåŠ¡å™¨
             client.Send(sendStr, (response) =>
             {
                 JsonData json = JsonMapper.ToObject(response);
-                // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+                // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
                 dialog.ShowCharacterUI(json["sender"].ToString());
                 dialog.ShowDialogue(json["content"].ToString());
-                // ÇĞ»»ÉãÏñ»ú
+                // åˆ‡æ¢æ‘„åƒæœº
                 cm.SetCamera(cameras[json["sender"].ToString()]);
             }, (r) =>
             { InterviewEnd(); });
@@ -98,7 +98,7 @@ public class InterviewController : MonoBehaviour
         {
             print("response:" + response);
             JsonData json = JsonMapper.ToObject(response);
-            // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+            // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
             dialog.ShowCharacterUI("report");
             JsonData news = json["news_article"];
             dialog._currentRoot.Q<Label>("Title").text = news["title"].ToString();
@@ -112,10 +112,10 @@ public class InterviewController : MonoBehaviour
         Label label = dialog._currentRoot.Q<Label>("Morale");
         if (label == null)
         {
-            Debug.LogError("Ã»ÓĞĞÄÌ¬");
+            Debug.LogError("æ²¡æœ‰å¿ƒæ€");
             return;
         }
-        print("ĞÄÌ¬±ä»¯");
+        print("å¿ƒæ€å˜åŒ–");
         label.text = attitude;
     }
     private void Update()

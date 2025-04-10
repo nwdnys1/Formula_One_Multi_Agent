@@ -28,7 +28,7 @@ public class MeetingController : MonoBehaviour
     private void Awake()
     {
         dialog = GetComponent<MeetingUI>();
-        // È·±£DialogUI×é¼şÒÑÕıÈ·ÉèÖÃ
+        // ç¡®ä¿DialogUIç»„ä»¶å·²æ­£ç¡®è®¾ç½®
         if (dialog == null)
         {
             Debug.LogError("DialogUI is not assigned in the inspector.");
@@ -43,10 +43,10 @@ public class MeetingController : MonoBehaviour
 
     private void Start()
     {
-        cameras.Add("ººÃÜ¶û¶Ù", hamiltonCamera);
+        cameras.Add("æ±‰å¯†å°”é¡¿", hamiltonCamera);
         cameras.Add("Wolff", wolffCamera);
-        cameras.Add("Ã·±¼³µ¶Ó²ßÂÔÊ¦", strategistCamera);
-        cameras.Add("Ã·±¼³µ¶Ó»úĞµÊ¦", mechanicCamera);
+        cameras.Add("æ¢…å¥”è½¦é˜Ÿç­–ç•¥å¸ˆ", strategistCamera);
+        cameras.Add("æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ", mechanicCamera);
         SitWolff.SetActive(false);
         cm.SetCamera(playerCamera);
 
@@ -55,7 +55,7 @@ public class MeetingController : MonoBehaviour
 
     private void MeetingStart()
     {
-        print("¿ªÊ¼»áÒé");
+        print("å¼€å§‹ä¼šè®®");
         chair.interactionText.SetActive(false);
         StandWolff.SetActive(false);
         SitWolff.SetActive(true);
@@ -73,9 +73,9 @@ public class MeetingController : MonoBehaviour
         client.Send(JsonStr.meeting_replay, (response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
-            // ÇĞ»»ÉãÏñ»ú
+            // åˆ‡æ¢æ‘„åƒæœº
             cm.SetCamera(cameras[json["sender"].ToString()]);
-            // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+            // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
             dialog.ShowCharacterUI(json["sender"].ToString());
             dialog.ShowDialogue(json["content"].ToString());
         }, (r) => MeetingChoose());
@@ -86,18 +86,18 @@ public class MeetingController : MonoBehaviour
     {
         cm.SetCamera(cameras["Wolff"]);
         dialog.ShowCharacterUI("Wolff");
-        dialog.ShowInputFieldByButton("ÇëÊäÈë¶Ô»°ÄÚÈİ",
+        dialog.ShowInputFieldByButton("è¯·è¾“å…¥å¯¹è¯å†…å®¹",
                 (input) =>
                 {
-                    string sendStr = JsonStr.meeting_chat(input, "Ã·±¼³µ¶Ó»úĞµÊ¦");
-                    // ·¢ËÍÊäÈëµÄÄÚÈİµ½·şÎñÆ÷
+                    string sendStr = JsonStr.meeting_chat(input, "æ¢…å¥”è½¦é˜Ÿæœºæ¢°å¸ˆ");
+                    // å‘é€è¾“å…¥çš„å†…å®¹åˆ°æœåŠ¡å™¨
                     client.Send(sendStr, (response) =>
                     {
                         JsonData json = JsonMapper.ToObject(response);
-                        // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+                        // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
                         dialog.ShowCharacterUI(json["sender"].ToString());
                         dialog.ShowDialogue(json["content"].ToString());
-                        // ÇĞ»»ÉãÏñ»ú
+                        // åˆ‡æ¢æ‘„åƒæœº
                         cm.SetCamera(cameras[json["sender"].ToString()]);
                     }, (r) => MeetingEnd());
                 },
@@ -106,16 +106,16 @@ public class MeetingController : MonoBehaviour
                     client.Send(JsonStr.meeting_strategy, (response) =>
                     {
                         JsonData json = JsonMapper.ToObject(response);
-                        // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+                        // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
                         dialog.ShowCharacterUI(json["sender"].ToString());
                         dialog.ShowDialogue(json["content"].ToString());
-                        // ÇĞ»»ÉãÏñ»ú
+                        // åˆ‡æ¢æ‘„åƒæœº
                         cm.SetCamera(cameras[json["sender"].ToString()]);
-                        //´¦Àí²ßÂÔ
+                        //å¤„ç†ç­–ç•¥
                         if (json.ContainsKey("strategy"))
-                            print("²ßÂÔ:" + json["strategy"].ToString());
+                            print("ç­–ç•¥:" + json["strategy"].ToString());
                         else
-                            print("²ßÂÔ:ÎŞ");
+                            print("ç­–ç•¥:æ— ");
                     }, (r) => MeetingEnd());
                 },
                 (input) =>
@@ -123,16 +123,16 @@ public class MeetingController : MonoBehaviour
                     client.Send(JsonStr.meeting_attitude, (response) =>
                     {
                         JsonData json = JsonMapper.ToObject(response);
-                        // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+                        // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
                         dialog.ShowCharacterUI(json["sender"].ToString());
                         dialog.ShowDialogue(json["content"].ToString());
-                        // ÇĞ»»ÉãÏñ»ú
+                        // åˆ‡æ¢æ‘„åƒæœº
                         cm.SetCamera(cameras[json["sender"].ToString()]);
-                        //´¦ÀíĞÄÌ¬
+                        //å¤„ç†å¿ƒæ€
                         if (json.ContainsKey("attitude"))
-                            print("ĞÄÌ¬:" + json["attitude"].ToString());
+                            print("å¿ƒæ€:" + json["attitude"].ToString());
                         else
-                            print("ĞÄÌ¬:ÎŞ");
+                            print("å¿ƒæ€:æ— ");
                     }, (r) => MeetingEnd());
                 }
             );
@@ -142,7 +142,7 @@ public class MeetingController : MonoBehaviour
         client.Send(JsonStr.before_meeting_end, (string response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
-            // ´¦Àí·şÎñÆ÷·µ»ØµÄJSONÊı¾İ
+            // å¤„ç†æœåŠ¡å™¨è¿”å›çš„JSONæ•°æ®
             dialog.ShowCharacterUI("report");
             JsonData news = json["summary"];
             dialog._currentRoot.Q<Label>("Title").text = news["title"].ToString();
@@ -153,7 +153,7 @@ public class MeetingController : MonoBehaviour
 
     private void Update()
     {
-        // ¼ì²âÍæ¼ÒÊÇ·ñÔÚ·¶Î§ÄÚ²¢°´ÏÂF¼ü
+        // æ£€æµ‹ç©å®¶æ˜¯å¦åœ¨èŒƒå›´å†…å¹¶æŒ‰ä¸‹Fé”®
         if (chair.isInRange && Input.GetKeyDown(KeyCode.F))
         {
             MeetingStart();

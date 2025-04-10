@@ -29,7 +29,7 @@ public class ParaManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"Î´ÕÒµ½½ÇÉ«ÅäÖÃ: {id}");
+            Debug.LogError($"æœªæ‰¾åˆ°è§’è‰²é…ç½®: {id}");
             return null;
         }
     }
@@ -42,7 +42,7 @@ public class ParaManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"Î´ÕÒµ½Èü³µÅäÖÃ: {id}");
+            Debug.LogError($"æœªæ‰¾åˆ°èµ›è½¦é…ç½®: {id}");
             return null;
         }
     }
@@ -51,7 +51,7 @@ public class ParaManager : MonoBehaviour
     {
         if (!driverParasCurrent.ContainsKey(id))
         {
-            Debug.LogError($"Î´ÕÒµ½½ÇÉ«ÅäÖÃ: {id}");
+            Debug.LogError($"æœªæ‰¾åˆ°è§’è‰²é…ç½®: {id}");
             return;
         }
         driverParasCurrent[id] = config;
@@ -61,7 +61,7 @@ public class ParaManager : MonoBehaviour
     {
         if (!carParasCurrent.ContainsKey(id))
         {
-            Debug.LogError($"Î´ÕÒµ½Èü³µÅäÖÃ: {id}");
+            Debug.LogError($"æœªæ‰¾åˆ°èµ›è½¦é…ç½®: {id}");
             return;
         }
         carParasCurrent[id] = config;
@@ -74,7 +74,7 @@ public class ParaManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // ´Ó×Ê²ú³õÊ¼»¯×Öµä
+            // ä»èµ„äº§åˆå§‹åŒ–å­—å…¸
             foreach (DriverPara config in paraList.driverParas)
             {
                 driverParasPreset.Add(config.name, config);
@@ -85,7 +85,7 @@ public class ParaManager : MonoBehaviour
             {
                 carParasPreset.Add(config.name, config);
             }
-            // ¸³Öµ
+            // èµ‹å€¼
             driverParasCurrent = new Dictionary<string, DriverPara>(driverParasPreset);
             carParasCurrent = new Dictionary<string, CarPara>(carParasPreset);
             envPara = Instantiate(envParaPreset);

@@ -146,9 +146,9 @@
 	flex-wrap: nowrap;
 	--item-spacing: 16;
 	position: absolute;
-	left: 1081px;
+	left: 1080px;
 	width: 703px;
-	top: 305px;
+	top: 447px;
 	height: auto;
 }
 
@@ -196,7 +196,7 @@
 	flex-wrap: wrap;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 100px;
 	align-self: stretch;
 	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
 	background-color: rgba(44,44,64,1);
@@ -205,11 +205,10 @@
 
 .Has-everyone-reviewed-the-latest-setup-changes {
 	position: relative;
-	width: 100%;
-	height: auto;
-	flex-grow: 1;
+	width: 602px;
+	height: 63px;
 	color: rgba(166,166,177,1);
-	white-space: nowrap;
+	white-space: normal;
 	font-size: 14px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-left;
@@ -223,9 +222,9 @@
 	flex-wrap: nowrap;
 	--item-spacing: 16;
 	position: absolute;
-	left: 1081px;
+	left: 1080px;
 	width: 703px;
-	top: 407px;
+	top: 596px;
 	height: auto;
 }
 
@@ -273,7 +272,7 @@
 	flex-wrap: wrap;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 100px;
 	align-self: stretch;
 	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
 	background-color: rgba(44,44,64,1);
@@ -282,11 +281,10 @@
 
 .Yes-the-new-wing-configuration-looks-promising-one {
 	position: relative;
-	width: 100%;
-	height: auto;
-	flex-grow: 1;
+	width: 602px;
+	height: 68px;
 	color: rgba(166,166,177,1);
-	white-space: nowrap;
+	white-space: normal;
 	font-size: 14px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-left;
@@ -300,10 +298,10 @@
 	flex-wrap: nowrap;
 	--item-spacing: 16;
 	position: absolute;
-	left: 1081px;
+	left: 1080px;
 	width: 703px;
-	top: 505px;
-	height: auto;
+	top: 298px;
+	height: 125px;
 }
 
 .IMAGE-three {
@@ -321,10 +319,11 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
+	flex-wrap: wrap;
 	--item-spacing: 4;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 125px;
 	flex-grow: 1;
 }
 
@@ -350,7 +349,7 @@
 	flex-wrap: wrap;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 100px;
 	align-self: stretch;
 	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
 	background-color: rgba(44,44,64,1);
@@ -359,11 +358,10 @@
 
 .Yes-the-new-wing-configuration-looks-promising-two {
 	position: relative;
-	width: 100%;
-	height: auto;
-	flex-grow: 1;
+	width: 602px;
+	height: 68px;
 	color: rgba(166,166,177,1);
-	white-space: nowrap;
+	white-space: normal;
 	font-size: 14px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-left;
@@ -402,7 +400,7 @@
 	position: absolute;
 	left: 45px;
 	width: auto;
-	top: 20px;
+	top: 14px;
 	height: 24px;
 	color: rgba(166,166,177,1);
 	white-space: nowrap;
@@ -415,13 +413,26 @@
 	position: absolute;
 	left: 235px;
 	width: auto;
-	top: 20px;
+	top: 15px;
 	height: 24px;
 	color: rgba(166,166,177,1);
 	white-space: nowrap;
 	font-size: 16px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-center;
+}
+
+.Strategy-bar{
+	position: absolute;
+	left: 180px;
+	width: auto;
+	top: 110px;
+	height: 54px;
+	color: rgba(255,255,255,1);
+	white-space: nowrap;
+	font-size: 36px;
+	-unity-font: url('Fonts/Formula1-Medium.otf');
+	-unity-text-align: upper-left;
 }
 
 .Frame-39 {
@@ -454,7 +465,6 @@
 	position: relative;
 	width: auto;
 	height: 21px;
-	top: 3px;
 	margin-right: 12px;
 	color: rgba(114,239,75,1);
 	white-space: nowrap;
@@ -467,7 +477,6 @@
 	position: relative;
 	width: auto;
 	height: 21px;
-	top: 3px;
 	margin-right: 12px;
 	color: rgba(166,166,177,1);
 	white-space: nowrap;
@@ -481,7 +490,6 @@
 	width: auto;
 	height: 30px;
 	margin-right: 12px;
-	top: 3px;
 	color: rgba(196,193,79,1);
 	white-space: nowrap;
 	font-size: 20px;
@@ -494,7 +502,6 @@
 	width: auto;
 	height: 30px;
 	color: rgba(166,166,177,1);
-	top: 3px;
 	white-space: nowrap;
 	font-size: 20px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
@@ -533,30 +540,6 @@
 	font-size: 36px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-left;
-}
-
-.Strategy-bar{
-	position: absolute;
-	left: 180px;
-	width: auto;
-	top: 110px;
-	height: 54px;
-	color: rgba(255,255,255,1);
-	white-space: nowrap;
-	font-size: 36px;
-	-unity-font: url('Fonts/Formula1-Medium.otf');
-	-unity-text-align: upper-left;
-}
-
-.IMAGE-four {
-	border-radius: 0px 0px 0px 0px;
-	position: absolute;
-	left: 203px;
-	width: 672px;
-	top: 560px;
-	height: 46px;
-	background-image: url('Images/edb864bf3396a213baeb1cd8aae79a66.png');
-	background-size: contain;
 }
 
 .Frame-46 {
@@ -1393,7 +1376,7 @@
 	height: 50px;
 }
 
-.IMAGE-five {
+.IMAGE-four {
 	border-radius: 31655100px;
 	position: absolute;
 	left: 159px;
@@ -1406,7 +1389,7 @@
 	border-width: 1px;
 }
 
-.IMAGE-six {
+.IMAGE-five {
 	border-radius: 31655100px;
 	position: absolute;
 	left: 44px;

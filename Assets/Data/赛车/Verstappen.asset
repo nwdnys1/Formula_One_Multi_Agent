@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
-  m_Name: "1\u53F7"
+  m_Name: "Verstappen"
   m_EditorClassIdentifier: 
-  topSpeed: 80
-  acceleration: 50
-  drsEffectiveness: 0.5
-  carCornering: 3.5
-  frontWingAngle: 5
-  rearWingAngle: 12.5
-  antiRollDistribution: 0.3
-  tyreCamber: -3.2
-  toeOut: 0.7
+  topSpeed: 81.51
+  acceleration: 52.5
+  drsEffectiveness: 0.59
+  carCornering: 3.23
+  frontWingAngle: 4.73
+  rearWingAngle: 14.8
+  antiRollDistribution: 0.37
+  tyreCamber: -3.04
+  toeOut: 0.48
   bestFrontWingAngle: 5
   bestRearWingAngle: 12.5
   bestAntiRollDistribution: 0.3
   bestTyreCamber: -3.2
   bestToeOut: 0.7
   oversteerRating: 1
-  brakingStabilityRating: 1
+  brakingStabilityRating: 5
   corneringRating: 1
   tractionRating: 1
-  straightsRating: 1
-  tyreType: 1
+  straightsRating: 3
+  tyreType: 0
   wearRate: 1
   currentWear: 100
   hardTyreLife: 40
@@ -45,3 +45,4 @@ MonoBehaviour:
   fuelSpeedBoost: 7.5
   fuelAccelerationBoost: 1
   fuelDuration: 120
+  logoTexture: {fileID: 0}

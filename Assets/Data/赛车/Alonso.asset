@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
-  m_Name: "1\u53F7"
+  m_Name: Alonso
   m_EditorClassIdentifier: 
-  topSpeed: 80
-  acceleration: 50
-  drsEffectiveness: 0.5
+  topSpeed: 78.84
+  acceleration: 50.03
+  drsEffectiveness: 0.43
   carCornering: 3.5
-  frontWingAngle: 5
-  rearWingAngle: 12.5
-  antiRollDistribution: 0.3
-  tyreCamber: -3.2
-  toeOut: 0.7
+  frontWingAngle: 2.34
+  rearWingAngle: 13.47
+  antiRollDistribution: 0.28
+  tyreCamber: -2.8
+  toeOut: 0.78
   bestFrontWingAngle: 5
   bestRearWingAngle: 12.5
   bestAntiRollDistribution: 0.3
   bestTyreCamber: -3.2
   bestToeOut: 0.7
-  oversteerRating: 1
-  brakingStabilityRating: 1
-  corneringRating: 1
+  oversteerRating: 5
+  brakingStabilityRating: 4
+  corneringRating: 3
   tractionRating: 1
-  straightsRating: 1
-  tyreType: 1
+  straightsRating: 2
+  tyreType: 0
   wearRate: 1
   currentWear: 100
   hardTyreLife: 40
@@ -45,3 +45,4 @@ MonoBehaviour:
   fuelSpeedBoost: 7.5
   fuelAccelerationBoost: 1
   fuelDuration: 120
+  logoTexture: {fileID: 2800000, guid: 77ac8a452eecf704582e9407c476c91a, type: 3}

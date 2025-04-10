@@ -25,20 +25,20 @@ public class InterviewController : MonoBehaviour
         // 确保DialogUI组件已正确设置
         if (dialog == null)
         {
-            Debug.LogError("DialogUI is not assigned in the inspector.");
+            Debug.LogWarning("DialogUI is not assigned in the inspector.");
         }
         if (driverParaUI == null)
         {
-            Debug.LogError("DriverParaUI is not assigned in the inspector.");
+            Debug.LogWarning("DriverParaUI is not assigned in the inspector.");
         }
         if (client == null)
         {
             Debug.LogError("SocketClient is not assigned in the inspector.");
         }
-        cameras.Add("记者", reporterCamera);
-        cameras.Add("霍纳", hornerCamera);
-        cameras.Add("维斯塔潘", verstappenCamera);
-        cameras.Add("汉密尔顿", hamiltonCamera);
+        cameras.Add("Journalist", reporterCamera);
+        cameras.Add("Horner", hornerCamera);
+        cameras.Add("Verstappen", verstappenCamera);
+        cameras.Add("Hamilton", hamiltonCamera);
         cameras.Add("Wolff", wolffCamera);
     }
 

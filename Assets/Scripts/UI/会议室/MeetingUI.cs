@@ -45,13 +45,13 @@ public class MeetingUI : MonoBehaviour
                 _currentRoot = WolffUI.rootVisualElement;
                 _inputField = _currentRoot.Q<TextField>("Contents");
                 break;
-            case "汉密尔顿":
+            case "Hamilton":
                 _currentRoot = HamUI.rootVisualElement;
                 break;
-            case "梅奔车队机械师":
+            case "Mechanic":
                 _currentRoot = MechanicUI.rootVisualElement;
                 break;
-            case "梅奔车队策略师":
+            case "Strategist":
                 _currentRoot = StrategistUI.rootVisualElement;
                 break;
             case "report":

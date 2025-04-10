@@ -9,7 +9,7 @@ namespace DTO
             "\"scene_type\": \"media_interview\", " +
             "\"scene_data\": {" +
                 "\"sender\": \"unity\", " +
-                "\"receiver\": [\"记者\", \"维斯塔潘\", \"汉密尔顿\", \"霍纳\"], " +
+                "\"receiver\": [\"Journalist\", \"Verstappen\", \"Hamilton\", \"Horner\"], " +
                 "\"signal\": \"media_interview_start\"" +
             "}" +
         "}";
@@ -20,7 +20,7 @@ namespace DTO
                     "\"scene_type\": \"media_interview\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"Wolff\", " +
-                        "\"receiver\": [\"记者\"], " +
+                        "\"receiver\": [\"Journalist\"], " +
                         "\"content\": \"" + content + "\", " +
                         "\"signal\": \"chat\"" +
                     "}" +
@@ -32,7 +32,7 @@ namespace DTO
                 "\"scene_type\": \"media_interview\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": \"journalist\", " +
+                    "\"receiver\": \"Journalist\", " +
                     "\"signal\": \"media_interview_end\"" +
                 "}" +
             "}";
@@ -43,7 +43,7 @@ namespace DTO
                     "\"scene_type\": \"practice_session\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"梅奔车队策略师\", \"汉密尔顿\"], " +
+                        "\"receiver\": [\"Strategist\", \"Hamilton\"], " +
                         "\"signal\": \"practice_session_start\"" +
                     "}" +
                 "}";
@@ -54,7 +54,7 @@ namespace DTO
                     "\"scene_type\": \"before_meeting\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Wolff\", \"汉密尔顿\", \"梅奔车队机械师\", \"梅奔车队策略师\"], " +
+                        "\"receiver\": [\"Wolff\", \"Hamilton\", \"Mechanic\", \"Strategist\"], " +
                         "\"signal\": \"before_meeting_start\"" +
                     "}" +
                 "}";
@@ -64,7 +64,7 @@ namespace DTO
                     "\"scene_type\": \"before_meeting\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Wolff\", \"汉密尔顿\", \"梅奔车队机械师\", \"梅奔车队策略师\"], " +
+                        "\"receiver\": [\"Wolff\", \"Hamilton\", \"Mechanic\", \"Strategist\"], " +
                         "\"signal\": \"meeting_replay\"" +
                     "}" +
                 "}";
@@ -74,7 +74,7 @@ namespace DTO
                     "\"scene_type\": \"before_meeting\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"unity\", " +
-                        "\"receiver\": [\"Wolff\", \"汉密尔顿\", \"梅奔车队策略师\"], " +
+                        "\"receiver\": [\"Wolff\", \"Hamilton\", \"Strategist\"], " +
                         "\"signal\": \"meeting_strategy\"" +
                     "}" +
                 "}";
@@ -85,7 +85,7 @@ namespace DTO
                 "\"scene_type\": \"before_meeting\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": [\"Wolff\", \"汉密尔顿\"], " +
+                    "\"receiver\": [\"Wolff\", \"Hamilton\"], " +
                     "\"signal\": \"meeting_attitude\"" +
                 "}" +
             "}";
@@ -108,7 +108,7 @@ namespace DTO
                 "\"scene_type\": \"before_meeting\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": [\"Wolff\", \"汉密尔顿\", \"梅奔车队机械师\", \"梅奔车队策略师\"], " +
+                    "\"receiver\": [\"Wolff\", \"Hamilton\", \"Mechanic\", \"Strategist\"], " +
                     "\"signal\": \"before_meeting_end\"" +
                 "}" +
             "}";
@@ -119,7 +119,7 @@ namespace DTO
                 "\"scene_type\": \"race\", " +
                 "\"scene_data\": {" +
                     "\"sender\": \"unity\", " +
-                    "\"receiver\": [\"汉密尔顿\", \"Wolff\", \"梅奔车队策略师\", \"梅奔车队策略师\"], " +
+                    "\"receiver\": [\"Hamilton\", \"Wolff\", \"Strategist\", \"Strategist\"], " +
                     "\"signal\": \"race_start\"" +
                "}" +
             "}";
@@ -213,7 +213,7 @@ namespace DTO
                     "\"scene_type\": \"race\", " +
                     "\"scene_data\": {" +
                         "\"sender\": \"Wolff\", " +
-                        "\"receiver\": [\"汉密尔顿\", \"梅奔车队机械师\", \"梅奔车队策略师\"], " +
+                        "\"receiver\": [\"Hamilton\", \"Mechanic\", \"Strategist\"], " +
                         "\"content\": \"" + content + "\", " +
                         "\"signal\": \"chat\"" +
                     "}" +

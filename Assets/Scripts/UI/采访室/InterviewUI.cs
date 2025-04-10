@@ -7,7 +7,7 @@ public class InterviewUI : MonoBehaviour
     [Header("角色UI文档")]
     public UIDocument WolffUI;
     public UIDocument HamUI;
-    public UIDocument JournalistUI;  // 记者UI
+    public UIDocument JournalistUI;  // journalistUI
     public UIDocument HornerUI;  // 其他角色...
     public UIDocument VerstappenUI;
     public UIDocument ReportUI;
@@ -39,16 +39,16 @@ public class InterviewUI : MonoBehaviour
                 _currentRoot = WolffUI.rootVisualElement;
                 _inputField = _currentRoot.Q<TextField>("Contents");
                 break;
-            case "汉密尔顿":
+            case "Hamilton":
                 _currentRoot = HamUI.rootVisualElement;
                 break;
-            case "记者":
+            case "Journalist":
                 _currentRoot = JournalistUI.rootVisualElement;
                 break;
-            case "霍纳":
+            case "Horner":
                 _currentRoot = HornerUI.rootVisualElement;
                 break;
-            case "维斯塔潘":
+            case "Verstappen":
                 _currentRoot = VerstappenUI.rootVisualElement;
                 break;
             case "report":

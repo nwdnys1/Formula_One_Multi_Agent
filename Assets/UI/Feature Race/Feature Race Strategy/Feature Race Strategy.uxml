@@ -59,7 +59,7 @@
                 <unity:VisualElement id="1:51" name="Frame 55" class="unity-base-override Frame-55" picking-mode="Ignore">
                     <unity:VisualElement id="1:52" name="Rectangle" class="unity-base-override Rectangle-five" picking-mode="Ignore" />
                     <unity:Label id="1:53" name="Current Strategy" class="unity-base-override Current-Strategy" picking-mode="Ignore" text="Current Strategy" />
-                               <!-- 容器，用于显示所有圈数 -->
+                        <!-- 容器，用于显示所有圈数 -->
                     <unity:VisualElement name="lapContainer" class="Strategy-bar" style="display: absolute; flex-direction: row; align-items: center; z-index: 100">
                         <!-- 这里会动态生成每一圈的元素 -->
                     </unity:VisualElement>
@@ -175,8 +175,8 @@
                 <unity:VisualElement id="15:11" name="Group 2" class="unity-base-override Group-2" picking-mode="Ignore">
                     <unity:VisualElement id="1:12" name="Rectangle" class="unity-base-override Rectangle-nine" picking-mode="Ignore" />
                     <unity:VisualElement id="15:10" name="Group 1" class="unity-base-override Group-1" picking-mode="Ignore">
-                        <unity:VisualElement id="15:2" name="IMAGE" class="unity-base-override IMAGE-five" picking-mode="Ignore" />
-                        <unity:VisualElement id="13:132" name="IMAGE" class="unity-base-override IMAGE-six" picking-mode="Ignore" />
+                        <unity:VisualElement id="15:2" name="IMAGE" class="unity-base-override IMAGE-four" picking-mode="Ignore" />
+                        <unity:VisualElement id="13:132" name="IMAGE" class="unity-base-override IMAGE-five" picking-mode="Ignore" />
                         <unity:Label id="13:134" name="To" class="unity-base-override To" picking-mode="Ignore" text="To" />
                         <unity:Label id="15:8" name="or" class="unity-base-override or" picking-mode="Ignore" text="or" />
                     </unity:VisualElement>

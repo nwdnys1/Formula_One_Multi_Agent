@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f726f73e6e7042b5d2fb448b7acfc, type: 3}
-  m_Name: Hamilton
+  m_Name: Russell
   m_EditorClassIdentifier: 
-  topSpeed: 81.35
-  acceleration: 47.94
-  drsEffectiveness: 0.5
-  carCornering: 3.7
-  frontWingAngle: 5.36
-  rearWingAngle: 14.12
-  antiRollDistribution: 0.34
-  tyreCamber: -2.81
-  toeOut: 0.48
+  topSpeed: 80.85
+  acceleration: 52.8
+  drsEffectiveness: 0.42
+  carCornering: 3.6
+  frontWingAngle: 2.91
+  rearWingAngle: 14.53
+  antiRollDistribution: 0.35
+  tyreCamber: -3.09
+  toeOut: 0.55
   bestFrontWingAngle: 5
   bestRearWingAngle: 12.5
   bestAntiRollDistribution: 0.3
@@ -28,7 +28,7 @@ MonoBehaviour:
   bestToeOut: 0.7
   oversteerRating: 2
   brakingStabilityRating: 3
-  corneringRating: 4
+  corneringRating: 1
   tractionRating: 5
   straightsRating: 5
   tyreType: 0
@@ -45,4 +45,4 @@ MonoBehaviour:
   fuelSpeedBoost: 7.5
   fuelAccelerationBoost: 1
   fuelDuration: 120
-  logoTexture: {fileID: 2800000, guid: b22249dee8b99fe42a59bed1693db624, type: 3}
+  logoTexture: {fileID: 2800000, guid: 3e958f80b4520b345b7459813d6c2979, type: 3}

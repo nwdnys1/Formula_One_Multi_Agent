@@ -72,6 +72,7 @@ MonoBehaviour:
   fuelSpeedBoost: 7.5
   fuelAccelerationBoost: 1
   fuelDuration: 120
+  logoTexture: {fileID: 0}
 """
 
 # Unity 的 YAML 文件保存路径

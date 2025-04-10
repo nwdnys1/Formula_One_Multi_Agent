@@ -1,4 +1,4 @@
-锘縰sing UnityEngine;
+using UnityEngine;
 
 public class BasicRigidBodyPush : MonoBehaviour
 {

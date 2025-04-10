@@ -43,10 +43,10 @@ public class MeetingController : MonoBehaviour
 
     private void Start()
     {
-        cameras.Add("汉密尔顿", hamiltonCamera);
+        cameras.Add("Hamilton", hamiltonCamera);
         cameras.Add("Wolff", wolffCamera);
-        cameras.Add("梅奔车队策略师", strategistCamera);
-        cameras.Add("梅奔车队机械师", mechanicCamera);
+        cameras.Add("Strategist", strategistCamera);
+        cameras.Add("Mechanic", mechanicCamera);
         SitWolff.SetActive(false);
         cm.SetCamera(playerCamera);
 
@@ -89,7 +89,7 @@ public class MeetingController : MonoBehaviour
         dialog.ShowInputFieldByButton("请输入对话内容",
                 (input) =>
                 {
-                    string sendStr = JsonStr.meeting_chat(input, "梅奔车队机械师");
+                    string sendStr = JsonStr.meeting_chat(input, "Mechanic");
                     // 发送输入的内容到服务器
                     client.Send(sendStr, (response) =>
                     {

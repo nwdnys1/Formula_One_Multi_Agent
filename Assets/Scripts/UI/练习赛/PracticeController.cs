@@ -48,13 +48,13 @@ public class PracticeController : MonoBehaviour
             // 处理服务器返回的JSON数据
             switch (json["sender"].ToString())
             {
-                case "梅奔车队机械师":
+                case "Mechanic":
                     foreach (JsonData tuning in json["tuning_data"])
                     {
                         Debug.Log(tuning.ToString());
                     }
                     break;
-                case "汉密尔顿":
+                case "Hamilton":
                     Debug.Log(json["tuning_data"].ToString());
                     break;
                 default:

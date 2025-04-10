@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using Cursor = UnityEngine.Cursor;
@@ -9,21 +9,21 @@ public class StartMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        // È·±£Êó±ê¿É¼û
+        // ç¡®ä¿é¼ æ ‡å¯è§
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None; // ½âËøÊó±ê
+        Cursor.lockState = CursorLockMode.None; // è§£é”é¼ æ ‡
 
         _uiDocument = GetComponent<UIDocument>();
 
-        // »ñÈ¡°´Å¥ÒıÓÃ - ¸ù¾İĞÂµÄUXML½á¹¹
+        // è·å–æŒ‰é’®å¼•ç”¨ - æ ¹æ®æ–°çš„UXMLç»“æ„
         var startButton = _uiDocument.rootVisualElement.Q<Label>("Start");
         var quitButton = _uiDocument.rootVisualElement.Q<Label>("Quit");
         if (startButton == null || quitButton == null)
         {
-            Debug.LogError("°´Å¥Î´ÕÒµ½£¬Çë¼ì²éUXMLÎÄ¼şÖĞµÄÃû³ÆÊÇ·ñÕıÈ·¡£");
+            Debug.LogError("æŒ‰é’®æœªæ‰¾åˆ°ï¼Œè¯·æ£€æŸ¥UXMLæ–‡ä»¶ä¸­çš„åç§°æ˜¯å¦æ­£ç¡®ã€‚");
             return;
         }
-        // Ìí¼Óµã»÷ÊÂ¼ş - ÏÖÔÚÊ¹ÓÃLabelµÄRegisterCallback
+        // æ·»åŠ ç‚¹å‡»äº‹ä»¶ - ç°åœ¨ä½¿ç”¨Labelçš„RegisterCallback
         startButton.RegisterCallback<ClickEvent>(OnStartButtonClicked);
         quitButton.RegisterCallback<ClickEvent>(OnQuitButtonClicked);
     }
@@ -35,12 +35,12 @@ public class StartMenu : MonoBehaviour
 
     private void OnStartButtonClicked(ClickEvent evt)
     {
-        SceneManager.LoadScene("Èü³¡");
+        SceneManager.LoadScene("èµ›åœº");
     }
 
     private void OnQuitButtonClicked(ClickEvent evt)
     {
-        Debug.Log("ÍË³öÓÎÏ·°´Å¥±»µã»÷");
+        Debug.Log("é€€å‡ºæ¸¸æˆæŒ‰é’®è¢«ç‚¹å‡»");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

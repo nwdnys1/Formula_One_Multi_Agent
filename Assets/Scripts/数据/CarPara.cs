@@ -105,4 +105,7 @@ public class CarPara : ScriptableObject
     public float fuelSpeedBoost = 7.5f; // km/h
     public float fuelAccelerationBoost = 1f; // m/s^2
     public float fuelDuration = 120f; // seconds
+
+    [Header("LOGO")]
+    public Texture2D logoTexture;
 }

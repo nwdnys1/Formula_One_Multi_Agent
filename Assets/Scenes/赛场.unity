@@ -785,6 +785,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: "1\u53F7"
       objectReference: {fileID: 0}
+    - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: pitStop
+      value: 
+      objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: driverId
       value: "1\u53F7"
@@ -1810,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_StoppingDistance
@@ -1820,6 +1828,10 @@ PrefabInstance:
       propertyPath: carId
       value: "2\u53F7"
       objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: pitStop
+      value: 
+      objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: driverId
       value: "1\u53F7"
@@ -2542,23 +2554,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1570201766}
+    m_TransformParent: {fileID: 1269544701}
     m_Modifications:
     - target: {fileID: 1637587025848809664, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_Name
-      value: 17
+      value: "\u8FDB\u7AD9\u70B9"
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -555.6
+      value: 1072.5
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.352768
+      value: -3.3527985
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.78006
+      value: -92.1
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3363,6 +3375,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 740816603}
   - {fileID: 1570201766}
   - {fileID: 1940193259}
   - {fileID: 504650995}
@@ -3922,7 +3935,6 @@ Transform:
   - {fileID: 1312825610}
   - {fileID: 1049574171}
   - {fileID: 1366101165}
-  - {fileID: 740816603}
   m_Father: {fileID: 1269544701}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1571437121 stripped
@@ -4078,7 +4090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4086,7 +4098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 18.3
       objectReference: {fileID: 0}
     - target: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4777,14 +4789,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2002064674}
     m_Modifications:
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
       value: -122.07
       objectReference: {fileID: 0}
@@ -4824,38 +4828,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4112795247271429064, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_Name
       value: "3\u53F7"
       objectReference: {fileID: 0}
-    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: carId
-      value: "3\u53F7"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: ersAvailable
+    - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: pitStop
+      value: 
+      objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
       value: 
       objectReference: {fileID: 1570201766}
-    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: fuelReleaseAvailable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: accidentCheckInterval
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4913,18 +4901,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: "4\u53F7"
       objectReference: {fileID: 0}
-    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: m_Priority
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: carId
-      value: "4\u53F7"
-      objectReference: {fileID: 0}
+      propertyPath: pitStop
+      value: 
+      objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
       value: 
       objectReference: {fileID: 1570201766}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'pitStopLaps.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'pitStopLaps.Array.data[1]'
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

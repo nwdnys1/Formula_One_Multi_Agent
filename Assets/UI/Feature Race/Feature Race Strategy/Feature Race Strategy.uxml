@@ -59,7 +59,7 @@
                 <unity:VisualElement id="1:51" name="Frame 55" class="unity-base-override Frame-55" picking-mode="Ignore">
                     <unity:VisualElement id="1:52" name="Rectangle" class="unity-base-override Rectangle-five" picking-mode="Ignore" />
                     <unity:Label id="1:53" name="Current Strategy" class="unity-base-override Current-Strategy" picking-mode="Ignore" text="Current Strategy" />
-                                                <!-- 容器，用于显示所有圈数 -->
+                               <!-- 容器，用于显示所有圈数 -->
                     <unity:VisualElement name="lapContainer" class="Strategy-bar" style="display: absolute; flex-direction: row; align-items: center; z-index: 100">
                         <!-- 这里会动态生成每一圈的元素 -->
                     </unity:VisualElement>

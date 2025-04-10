@@ -12,6 +12,7 @@
                 <unity:VisualElement id="1:11" name="Abu Dhabi 🇦🇪" class="unity-base-override Abu-Dhabi-two" picking-mode="Ignore">
                     <unity:VisualElement id="I1:11;1003:3689" name="Layout" class="unity-base-override Layout" picking-mode="Ignore" />
                 </unity:VisualElement>
+                <unity:VisualElement id="31:4" name="unnamed-Photoroom 1" class="unity-base-override unnamed-Photoroom-1" picking-mode="Ignore" />
             </unity:VisualElement>
         </unity:VisualElement>
     </unity:VisualElement>

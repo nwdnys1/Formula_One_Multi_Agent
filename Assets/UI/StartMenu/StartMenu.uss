@@ -61,7 +61,7 @@
 	position: absolute;
 	left: 1501px;
 	width: 185px;
-	top: 560px;
+	top: 512px;
 	height: 71px;
 	text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 	color: rgba(255,255,255,1);
@@ -76,7 +76,7 @@
 	position: relative;
 	left: 26.09%;
 	right: 57.86%;
-	top: -206px;
+	top: -170px;
 	height: 94px;
 	align-self: flex-start;
 	width: 16.05%;
@@ -112,4 +112,15 @@
 	top: 12.50%;
 	bottom: 10.70%;
 	background-image: url('Images/5b7af8d09640d3cb6ec823015412d5ee.svg');
+}
+
+.unnamed-Photoroom-1 {
+	border-radius: 0px 0px 0px 0px;
+	position: absolute;
+	left: 1298px;
+	width: 388px;
+	top: -37px;
+	height: 388px;
+	background-image: url('Images/c02a10f1e283fe50befc160e39bc9e07.png');
+	background-size: cover;
 }

@@ -11,7 +11,7 @@ public class DriverPara : ScriptableObject
 
     [Range(0f, 1f)] public float accidentRate = 0.1f;
 
-    // 根据心态自动调整事故率
+    // 鏍规嵁蹇冩�佽嚜鍔ㄨ皟鏁翠簨鏁呯巼
     private void OnValidate()
     {
         switch (attitude)

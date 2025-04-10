@@ -11,11 +11,11 @@ public class RaceTimeManager : MonoBehaviour
 
     public struct CarRaceData
     {
-        public string carId;        // ³µÁ¾ID
-        public int lapIdx;      // µ±Ç°ÊÇµÚ¼¸È¦
-        public int ckptIdx;     // µ±Ç°È¦µÄµÚ¼¸¸ö¼ì²éµã
-        public float ckptTime;  // µ½´ïµ±Ç°¼ì²éµãµÄÊ±¼ä
-        public Texture2D logo;   // ³µ¶Ólogo
+        public string carId;        // è½¦è¾†ID
+        public int lapIdx;      // å½“å‰æ˜¯ç¬¬å‡ åœˆ
+        public int ckptIdx;     // å½“å‰åœˆçš„ç¬¬å‡ ä¸ªæ£€æŸ¥ç‚¹
+        public float ckptTime;  // åˆ°è¾¾å½“å‰æ£€æŸ¥ç‚¹çš„æ—¶é—´
+        public Texture2D logo;   // è½¦é˜Ÿlogo
         public CarRaceData(string id, int lap, int ckpt, float time, Texture2D teamlogo)
         {
             carId = id;
@@ -28,7 +28,7 @@ public class RaceTimeManager : MonoBehaviour
     [SerializeField]
     private List<CarRaceData> _rankingData = new List<CarRaceData>();
     [SerializeField]
-    private List<float> fastestTime = new List<float>();// ¼ÇÂ¼Ã¿¸ö¼ì²éµãµÄ×î¿ìÊ±¼ä Èç¹ûÊÇµÚ¶şÈ¦ ¾ÍÊÇ16+i
+    private List<float> fastestTime = new List<float>();// è®°å½•æ¯ä¸ªæ£€æŸ¥ç‚¹çš„æœ€å¿«æ—¶é—´ å¦‚æœæ˜¯ç¬¬äºŒåœˆ å°±æ˜¯16+i
     public RaceUI raceUI;
 
     private void Awake()
@@ -49,7 +49,7 @@ public class RaceTimeManager : MonoBehaviour
 
     public void UpdateCarCheckpoint(string carId, int lapIdx, int ckptIdx, float time)
     {
-        // ²éÕÒÏÖÓĞÊı¾İ
+        // æŸ¥æ‰¾ç°æœ‰æ•°æ®
         int existingIndex = _rankingData.FindIndex(c => c.carId == carId);
 
         var newData = new CarRaceData(carId, lapIdx, ckptIdx, time, null);
@@ -59,11 +59,11 @@ public class RaceTimeManager : MonoBehaviour
             _rankingData.RemoveAt(existingIndex);
         }
 
-        // ²åÈëµ½ÕıÈ·Î»ÖÃÒÔ±£³ÖÅÅĞò
+        // æ’å…¥åˆ°æ­£ç¡®ä½ç½®ä»¥ä¿æŒæ’åº
         int insertPos = FindInsertPosition(newData);
         _rankingData.Insert(insertPos, newData);
 
-        // ¸üĞÂUI
+        // æ›´æ–°UI
         RaceUI.CarRank[] carRanks = new RaceUI.CarRank[_rankingData.Count];
         for (int i = 0; i < _rankingData.Count; i++)
         {
@@ -74,8 +74,8 @@ public class RaceTimeManager : MonoBehaviour
                 carRanks[i] = new RaceUI.CarRank
                 {
                     driverName = data.carId,
-                    teamId = "Unknown", // ÕâÀï¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿öÉèÖÃ³µ¶ÓID
-                    tireType = "M",     // ÕâÀï¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿öÉèÖÃÂÖÌ¥ÀàĞÍ
+                    teamId = "Unknown", // è¿™é‡Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µè®¾ç½®è½¦é˜ŸID
+                    tireType = "M",     // è¿™é‡Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µè®¾ç½®è½®èƒç±»å‹
                     gap = gap,
                     logo = data.logo,
                 };
@@ -85,8 +85,8 @@ public class RaceTimeManager : MonoBehaviour
                 carRanks[i] = new RaceUI.CarRank
                 {
                     driverName = data.carId,
-                    teamId = "Unknown", // ÕâÀï¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿öÉèÖÃ³µ¶ÓID
-                    tireType = "M",     // ÕâÀï¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿öÉèÖÃÂÖÌ¥ÀàĞÍ
+                    teamId = "Unknown", // è¿™é‡Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µè®¾ç½®è½¦é˜ŸID
+                    tireType = "M",     // è¿™é‡Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µè®¾ç½®è½®èƒç±»å‹
                     gap = 0,
                     logo = data.logo,
                 };
@@ -94,14 +94,14 @@ public class RaceTimeManager : MonoBehaviour
         }
         raceUI.UpdateRanks(carRanks);
         string ranks = Ranks2Json(_rankingData).ToString();
-        // ·¢ËÍ¸øllm½øĞĞ¸üĞÂ
+        // ï¿½ï¿½ï¿½Í¸ï¿½llmï¿½ï¿½ï¿½Ğ¸ï¿½ï¿½ï¿½
         client.Send(JsonStr.Grid_Position_upadate(ranks), (response) => { }, null);
         string times = Time2Json(_rankingData).ToString();
-        // ·¢ËÍ¸øllm½øĞĞ¸üĞÂ
+        // ï¿½ï¿½ï¿½Í¸ï¿½llmï¿½ï¿½ï¿½Ğ¸ï¿½ï¿½ï¿½
         client.Send(JsonStr.Lap_Time_upadate(times), (response) => { }, null);
     }
 
-    // ½«rankings×ª»»Îªjsondata
+    // ï¿½ï¿½rankings×ªï¿½ï¿½Îªjsondata
     public JsonData Ranks2Json(List<CarRaceData> raceData)
     {
         JsonData ranks = new JsonData();
@@ -112,7 +112,7 @@ public class RaceTimeManager : MonoBehaviour
         }
         return ranks;
     }
-    // ½«È¦ËÙ×ª»»Îªjsondata Ê±¼ä¸ñÊ½ĞÎÈç1£º00.000
+    // ï¿½ï¿½È¦ï¿½ï¿½×ªï¿½ï¿½Îªjsondata Ê±ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½00.000
     public JsonData Time2Json(List<CarRaceData> raceData)
     {
         JsonData time = new JsonData();
@@ -126,26 +126,27 @@ public class RaceTimeManager : MonoBehaviour
 
 
 
-    // ºËĞÄÅÅĞòÂß¼­
+
+    // æ ¸å¿ƒæ’åºé€»è¾‘
     private int FindInsertPosition(CarRaceData newData)
     {
         for (int i = 0; i < _rankingData.Count; i++)
         {
             var current = _rankingData[i];
 
-            // ±È½ÏÈ¦Êı
+            // æ¯”è¾ƒåœˆæ•°
             if (newData.lapIdx > current.lapIdx)
                 return i;
 
             if (newData.lapIdx == current.lapIdx)
             {
-                // ±È½Ï¼ì²éµã
+                // æ¯”è¾ƒæ£€æŸ¥ç‚¹
                 if (newData.ckptIdx > current.ckptIdx)
                     return i;
 
                 if (newData.ckptIdx == current.ckptIdx)
                 {
-                    // ±È½ÏÊ±¼ä
+                    // æ¯”è¾ƒæ—¶é—´
                     if (newData.ckptTime < current.ckptTime)
                         return i;
                 }
@@ -154,13 +155,13 @@ public class RaceTimeManager : MonoBehaviour
         return _rankingData.Count;
     }
 
-    // »ñÈ¡µ±Ç°ÅÅÃû£¨´ÓµÚÒ»Ãûµ½×îºóÒ»ÃûµÄË³Ğò£©
+    // è·å–å½“å‰æ’åï¼ˆä»ç¬¬ä¸€ååˆ°æœ€åä¸€åçš„é¡ºåºï¼‰
     public List<CarRaceData> GetRaceRanking()
     {
-        return new List<CarRaceData>(_rankingData); // ·µ»Ø¸±±¾
+        return new List<CarRaceData>(_rankingData); // è¿”å›å‰¯æœ¬
     }
 
-    // »ñÈ¡Ö¸¶¨³µÁ¾µÄÅÅÃû£¨1-based£©
+    // è·å–æŒ‡å®šè½¦è¾†çš„æ’åï¼ˆ1-basedï¼‰
     public int GetCarRanking(string carId)
     {
         int index = _rankingData.FindIndex(c => c.carId == carId);

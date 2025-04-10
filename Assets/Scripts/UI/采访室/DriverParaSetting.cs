@@ -14,12 +14,12 @@ public class DriverParaSetting : MonoBehaviour
     }
     private void Update()
     {
-        DisplayDriver("1ºÅ");
+        DisplayDriver("1å·");
     }
 
     private void InitializeUI()
     {
-        DisplayDriver("1ºÅ");
+        DisplayDriver("1å·");
 
 
     }
@@ -28,22 +28,22 @@ public class DriverParaSetting : MonoBehaviour
     {
         var driverData = ParaManager.Instance.getDriverPara(driverId);
 
-        // »ñÈ¡UIÔªËØÒıÓÃ
+        // è·å–UIå…ƒç´ å¼•ç”¨
         var root = _uiDocument.rootVisualElement;
         var overallRateLabel = root.Q<Label>("overallRateLabel");
         var attitudeLabel = root.Q<Label>("attitudeLabel");
         var accidentRateLabel = root.Q<Label>("accidentRateLabel");
 
-        // ÉèÖÃÏÔÊ¾Öµ
+        // è®¾ç½®æ˜¾ç¤ºå€¼
         overallRateLabel.text = driverData.overallRate.ToString();
 
-        // ×ª»»ĞÄÌ¬ÖµÎª¿É¶ÁÎÄ±¾
+        // è½¬æ¢å¿ƒæ€å€¼ä¸ºå¯è¯»æ–‡æœ¬
         string attitudeText = driverData.attitude switch
         {
-            DriverPara.AttitudeType.Aggressive => "¼¤½ø",
-            DriverPara.AttitudeType.Balanced => "Æ½ºâ",
-            DriverPara.AttitudeType.Conservative => "±£ÊØ",
-            _ => "Î´Öª"
+            DriverPara.AttitudeType.Aggressive => "æ¿€è¿›",
+            DriverPara.AttitudeType.Balanced => "å¹³è¡¡",
+            DriverPara.AttitudeType.Conservative => "ä¿å®ˆ",
+            _ => "æœªçŸ¥"
         };
         attitudeLabel.text = attitudeText;
 

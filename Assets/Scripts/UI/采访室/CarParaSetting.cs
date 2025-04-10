@@ -4,11 +4,11 @@ using UnityEngine.UIElements;
 public class CarParametersUI : MonoBehaviour
 {
     private UIDocument _uiDocument;
-    private string carId = "1ºÅ";
+    private string carId = "1å·";
 
     private CarPara currentCarPara;
 
-    // ²ÎÊıÏÔÊ¾±êÇ©
+    // å‚æ•°æ˜¾ç¤ºæ ‡ç­¾
     private Label topSpeedValue;
     private Label accelerationValue;
     private Label drsEffectivenessValue;
@@ -18,32 +18,32 @@ public class CarParametersUI : MonoBehaviour
     private Label currentWearValue;
     private Label maxLapsValue;
 
-    // µ÷Ğ£²ÎÊıÏÔÊ¾±êÇ©
+    // è°ƒæ ¡å‚æ•°æ˜¾ç¤ºæ ‡ç­¾
     private Label frontWingValue;
     private Label rearWingValue;
     private Label antiRollValue;
     private Label camberValue;
     private Label toeOutValue;
 
-    // µ÷Ğ£½á¹û±êÇ©
+    // è°ƒæ ¡ç»“æœæ ‡ç­¾
     private Label oversteerRating;
     private Label brakingStabilityRating;
 
     private void OnEnable()
     {
-        // »ñÈ¡Èü³µ²ÎÊı
+        // è·å–èµ›è½¦å‚æ•°
         currentCarPara = ParaManager.Instance.getCarPara(carId);
         if (currentCarPara == null)
         {
-            Debug.LogError($"ÎŞ·¨ÕÒµ½Èü³µID: {carId}");
+            Debug.LogError($"æ— æ³•æ‰¾åˆ°èµ›è½¦ID: {carId}");
             return;
         }
 
-        // »ñÈ¡UIÔªËØ
+        // è·å–UIå…ƒç´ 
         _uiDocument = GetComponent<UIDocument>();
         var root = _uiDocument.rootVisualElement;
 
-        // »ñÈ¡ÏÔÊ¾±êÇ©
+        // è·å–æ˜¾ç¤ºæ ‡ç­¾
         topSpeedValue = root.Q<Label>("topSpeedValue");
         accelerationValue = root.Q<Label>("accelerationValue");
         drsEffectivenessValue = root.Q<Label>("drsEffectivenessValue");
@@ -53,29 +53,29 @@ public class CarParametersUI : MonoBehaviour
         currentWearValue = root.Q<Label>("currentWearValue");
         maxLapsValue = root.Q<Label>("maxLapsValue");
 
-        // »ñÈ¡µ÷Ğ£²ÎÊıÏÔÊ¾±êÇ©
+        // è·å–è°ƒæ ¡å‚æ•°æ˜¾ç¤ºæ ‡ç­¾
         frontWingValue = root.Q<Label>("frontWingValue");
         rearWingValue = root.Q<Label>("rearWingValue");
         antiRollValue = root.Q<Label>("antiRollValue");
         camberValue = root.Q<Label>("camberValue");
         toeOutValue = root.Q<Label>("toeOutValue");
 
-        // »ñÈ¡µ÷Ğ£½á¹û±êÇ©
+        // è·å–è°ƒæ ¡ç»“æœæ ‡ç­¾
         oversteerRating = root.Q<Label>("oversteerRating");
         brakingStabilityRating = root.Q<Label>("brakingStabilityRating");
 
-        // ³õÊ¼»¯UI
+        // åˆå§‹åŒ–UI
         UpdateAllParametersDisplay();
     }
 
     private void Update()
     {
-        // ÕâÀï¿ÉÒÔÌí¼ÓÊµÊ±¸üĞÂÂß¼­£¬ÀıÈç¸ù¾İÈü³µ×´Ì¬¸üĞÂ²ÎÊı
+        // è¿™é‡Œå¯ä»¥æ·»åŠ å®æ—¶æ›´æ–°é€»è¾‘ï¼Œä¾‹å¦‚æ ¹æ®èµ›è½¦çŠ¶æ€æ›´æ–°å‚æ•°
         UpdateAllParametersDisplay();
     }
 
     /// <summary>
-    /// ¸üĞÂËùÓĞ²ÎÊıÏÔÊ¾
+    /// æ›´æ–°æ‰€æœ‰å‚æ•°æ˜¾ç¤º
     /// </summary>
     public void UpdateAllParametersDisplay()
     {
@@ -85,7 +85,7 @@ public class CarParametersUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸üĞÂÈü³µ»ù±¾²ÎÊıÏÔÊ¾
+    /// æ›´æ–°èµ›è½¦åŸºæœ¬å‚æ•°æ˜¾ç¤º
     /// </summary>
     private void UpdateCarParametersDisplay()
     {
@@ -101,7 +101,7 @@ public class CarParametersUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸üĞÂµ÷Ğ£²ÎÊıÏÔÊ¾
+    /// æ›´æ–°è°ƒæ ¡å‚æ•°æ˜¾ç¤º
     /// </summary>
     private void UpdateSetupParametersDisplay()
     {
@@ -113,7 +113,7 @@ public class CarParametersUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸üĞÂµ÷Ğ£½á¹ûÆÀ¼ÛÏÔÊ¾
+    /// æ›´æ–°è°ƒæ ¡ç»“æœè¯„ä»·æ˜¾ç¤º
     /// </summary>
     private void UpdateSetupRatingsDisplay()
     {
@@ -122,35 +122,35 @@ public class CarParametersUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ĞŞ¸ÄÈü³µµ÷Ğ£²ÎÊı
+    /// ä¿®æ”¹èµ›è½¦è°ƒæ ¡å‚æ•°
     /// </summary>
-    /// <param name="frontWing">Ç°Òí½Ç¶È (0-10)</param>
-    /// <param name="rearWing">ºóÒí½Ç¶È (8-18)</param>
-    /// <param name="antiRoll">·ÀÇã¸Ë·Ö²¼ (0.1-0.9)</param>
-    /// <param name="camber">ÂÖÌ¥ÍâÇã½Ç (-3.5 - -2)</param>
-    /// <param name="toeOut">Ç°Êø½Ç (0-1)</param>
+    /// <param name="frontWing">å‰ç¿¼è§’åº¦ (0-10)</param>
+    /// <param name="rearWing">åç¿¼è§’åº¦ (8-18)</param>
+    /// <param name="antiRoll">é˜²å€¾æ†åˆ†å¸ƒ (0.1-0.9)</param>
+    /// <param name="camber">è½®èƒå¤–å€¾è§’ (-3.5 - -2)</param>
+    /// <param name="toeOut">å‰æŸè§’ (0-1)</param>
     public void ModifySetupParameters(float frontWing, float rearWing, float antiRoll, float camber, float toeOut)
     {
-        // Ó¦ÓÃĞÂµÄµ÷Ğ£²ÎÊı
+        // åº”ç”¨æ–°çš„è°ƒæ ¡å‚æ•°
         currentCarPara.frontWingAngle = Mathf.Clamp(frontWing, 0f, 10f);
         currentCarPara.rearWingAngle = Mathf.Clamp(rearWing, 8f, 18f);
         currentCarPara.antiRollDistribution = Mathf.Clamp(antiRoll, 0.1f, 0.9f);
         currentCarPara.tyreCamber = Mathf.Clamp(camber, -3.5f, -2f);
         currentCarPara.toeOut = Mathf.Clamp(toeOut, 0f, 1f);
 
-        // ¸üĞÂ¹ÜÀíÆ÷ÖĞµÄ²ÎÊı
+        // æ›´æ–°ç®¡ç†å™¨ä¸­çš„å‚æ•°
         ParaManager.Instance.setCarPara(carId, currentCarPara);
 
-        // ¸üĞÂUIÏÔÊ¾
+        // æ›´æ–°UIæ˜¾ç¤º
         UpdateSetupParametersDisplay();
         UpdateSetupRatingsDisplay();
     }
 
     /// <summary>
-    /// ĞŞ¸Äµ¥¸öµ÷Ğ£²ÎÊı
+    /// ä¿®æ”¹å•ä¸ªè°ƒæ ¡å‚æ•°
     /// </summary>
-    /// <param name="parameterType">²ÎÊıÀàĞÍÃ¶¾Ù</param>
-    /// <param name="value">²ÎÊıÖµ</param>
+    /// <param name="parameterType">å‚æ•°ç±»å‹æšä¸¾</param>
+    /// <param name="value">å‚æ•°å€¼</param>
     public void ModifySingleSetupParameter(SetupParameterType parameterType, float value)
     {
         switch (parameterType)
@@ -178,7 +178,7 @@ public class CarParametersUI : MonoBehaviour
     }
 
     /// <summary>
-    /// »ñÈ¡µ±Ç°Èü³µ²ÎÊı
+    /// è·å–å½“å‰èµ›è½¦å‚æ•°
     /// </summary>
     public CarPara GetCurrentCarParameters()
     {
@@ -186,7 +186,7 @@ public class CarParametersUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ÉèÖÃÏÔÊ¾µÄÈü³µID
+    /// è®¾ç½®æ˜¾ç¤ºçš„èµ›è½¦ID
     /// </summary>
     public void SetCarId(string newCarId)
     {
@@ -197,7 +197,7 @@ public class CarParametersUI : MonoBehaviour
 }
 
 /// <summary>
-/// µ÷Ğ£²ÎÊıÀàĞÍÃ¶¾Ù
+/// è°ƒæ ¡å‚æ•°ç±»å‹æšä¸¾
 /// </summary>
 public enum SetupParameterType
 {

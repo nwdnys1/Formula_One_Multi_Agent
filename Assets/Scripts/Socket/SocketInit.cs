@@ -13,7 +13,7 @@ public class SocketInit : MonoBehaviour
     void Start()
     {
 
-        // 连接到服务器
+        // 杩炴帴鍒版湇鍔″櫒
         SocketClient.Instance.Connect("127.0.0.1", 8888, (success) =>
         {
             if (success)

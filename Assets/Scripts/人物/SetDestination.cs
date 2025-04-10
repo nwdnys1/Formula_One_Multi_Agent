@@ -8,15 +8,15 @@ public class MoveToMouseClick : MonoBehaviour
 
     void Start()
     {
-        _agent = GetComponent<NavMeshAgent>(); // »ñÈ¡ NavMeshAgent ×é¼ş
-        _animator = GetComponent<Animator>();  // »ñÈ¡ Animator ×é¼ş
+        _agent = GetComponent<NavMeshAgent>(); // è·å– NavMeshAgent ç»„ä»¶
+        _animator = GetComponent<Animator>();  // è·å– Animator ç»„ä»¶
     }
 
     void Update()
     {
 
 
-        // ÉèÖÃ¶¯»­µÄ Speed ²ÎÊıÎª NavMeshAgent µÄËÙ¶È
+        // è®¾ç½®åŠ¨ç”»çš„ Speed å‚æ•°ä¸º NavMeshAgent çš„é€Ÿåº¦
         if (_animator != null)
         {
             _animator.SetFloat(Animator.StringToHash("Speed"), _agent.velocity.magnitude);
@@ -26,16 +26,16 @@ public class MoveToMouseClick : MonoBehaviour
             Debug.Log("Agent Destination: " + _agent.destination);
 
         }
-        if (Input.GetMouseButtonDown(0)) // ¼ì²âÊó±ê×ó¼üµã»÷
+        if (Input.GetMouseButtonDown(0)) // æ£€æµ‹é¼ æ ‡å·¦é”®ç‚¹å‡»
         {
-            // »ñÈ¡Êó±êµã»÷µÄÆÁÄ»Î»ÖÃ
+            // è·å–é¼ æ ‡ç‚¹å‡»çš„å±å¹•ä½ç½®
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            // ÉäÏß¼ì²âÊó±êµã»÷Î»ÖÃÊÇ·ñÓëµØÃæÅö×²
+            // å°„çº¿æ£€æµ‹é¼ æ ‡ç‚¹å‡»ä½ç½®æ˜¯å¦ä¸åœ°é¢ç¢°æ’
             if (Physics.Raycast(ray, out hit))
             {
-                // ÉèÖÃ NavMeshAgent µÄÄ¿±êÎ»ÖÃÎªÊó±êµã»÷µÄÊÀ½ç×ø±ê
+                // è®¾ç½® NavMeshAgent çš„ç›®æ ‡ä½ç½®ä¸ºé¼ æ ‡ç‚¹å‡»çš„ä¸–ç•Œåæ ‡
                 _agent.SetDestination(hit.point);
                 Debug.Log("Hit Point: " + hit.point);
             }

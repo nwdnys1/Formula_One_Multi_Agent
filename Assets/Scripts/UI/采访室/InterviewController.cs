@@ -75,7 +75,7 @@ public class InterviewController : MonoBehaviour
     {
         cm.SetCamera(cameras["Wolff"]);
         dialog.ShowCharacterUI("Wolff");
-        dialog.ShowInputField("请输入采访内容", (input) =>
+        dialog.ShowInputField("Input Your Words", (input) =>
         {
             string sendStr = JsonStr.media_interview_chat(input);
             // 发送输入的内容到服务器

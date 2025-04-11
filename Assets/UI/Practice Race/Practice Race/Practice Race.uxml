@@ -13,30 +13,30 @@
                             <unity:VisualElement id="1:114" name="Frame 13" class="unity-base-override Frame-13" picking-mode="Ignore">
                                 <unity:Label id="1:115" name="Front Wing Angle" class="unity-base-override Front-Wing-Angle" picking-mode="Ignore" text="Front Wing Angle" />
                                 <unity:VisualElement id="1:116" name="Rectangle" class="unity-base-override Rectangle-two" picking-mode="Ignore" />
-                                <unity:Label id="1:117" name="FWA" class="unity-base-override n-6" picking-mode="Ignore" text="6°" />
+                                <unity:Label id="1:117" name="FWA" class="unity-base-override n-6" picking-mode="Ignore" text="" />
                             </unity:VisualElement>
                             <unity:VisualElement id="1:118" name="Frame 14" class="unity-base-override Frame-14" picking-mode="Ignore">
                                 <unity:Label id="1:119" name="Rear Wing Angle" class="unity-base-override Rear-Wing-Angle" picking-mode="Ignore" text="Rear Wing Angle" />
                                 <unity:VisualElement id="1:120" name="Rectangle" class="unity-base-override Rectangle-three" picking-mode="Ignore" />
-                                <unity:Label id="1:121" name="RWA" class="unity-base-override n-12" picking-mode="Ignore" text="12°" />
+                                <unity:Label id="1:121" name="RWA" class="unity-base-override n-12" picking-mode="Ignore" text="" />
                             </unity:VisualElement>
                             <unity:VisualElement id="1:122" name="Frame 19" class="unity-base-override Frame-19" picking-mode="Ignore">
                                 <unity:VisualElement id="1:123" name="Frame 15" class="unity-base-override Frame-15" picking-mode="Ignore">
                                     <unity:Label id="1:124" name="Anti-Roll Distribution" class="unity-base-override Anti-Roll-Distribution" picking-mode="Ignore" text="Anti-Roll Distribution" />
                                     <unity:VisualElement id="1:125" name="Rectangle" class="unity-base-override Rectangle-four" picking-mode="Ignore" />
                                 </unity:VisualElement>
-                                <unity:Label id="1:126" name="ARD" class="unity-base-override n-4-6" picking-mode="Ignore" text="4:6" />
+                                <unity:Label id="1:126" name="ARD" class="unity-base-override n-4-6" picking-mode="Ignore" text="" />
                             </unity:VisualElement>
                             <unity:VisualElement id="1:127" name="Frame 16" class="unity-base-override Frame-16" picking-mode="Ignore">
                                 <unity:Label id="1:128" name="Tyre Camber" class="unity-base-override Tyre-Camber" picking-mode="Ignore" text="Tyre Camber" />
                                 <unity:VisualElement id="1:129" name="Rectangle" class="unity-base-override Rectangle-five" picking-mode="Ignore" />
-                                <unity:Label id="1:130" name="TC" class="unity-base-override n-3-00" picking-mode="Ignore" text="-3.00°" />
+                                <unity:Label id="1:130" name="TC" class="unity-base-override n-3-00" picking-mode="Ignore" text="" />
                             </unity:VisualElement>
                         </unity:VisualElement>
                         <unity:VisualElement id="1:131" name="Frame" class="unity-base-override Frame-two" picking-mode="Ignore">
                             <unity:Label id="1:132" name="Toe-Out" class="unity-base-override Toe-Out" picking-mode="Ignore" text="Toe-Out" />
                             <unity:VisualElement id="1:133" name="Frame 17" class="unity-base-override Frame-17" picking-mode="Ignore">
-                                <unity:Label id="1:134" name="TO" class="unity-base-override n-0-50" picking-mode="Ignore" text="0.50°" />
+                                <unity:Label id="1:134" name="TO" class="unity-base-override n-0-50" picking-mode="Ignore" text="" />
                             </unity:VisualElement>
                         </unity:VisualElement>
                     </unity:VisualElement>
@@ -49,27 +49,27 @@
                     <unity:VisualElement id="1:140" name="Frame 23" class="unity-base-override Frame-23" picking-mode="Ignore">
                         <unity:Label id="1:141" name="Oversteer123" class="unity-base-override Oversteer" picking-mode="Ignore" text="Oversteer" />
                         <unity:VisualElement id="1:142" name="Rectangle" class="unity-base-override Rectangle-eight" picking-mode="Ignore" />
-                        <unity:Label id="1:143" name="Oversteer" class="unity-base-override Medium-one" picking-mode="Ignore" text="Medium" />
+                        <unity:Label id="1:143" name="Oversteer" class="unity-base-override Medium-one" picking-mode="Ignore" text="" />
                     </unity:VisualElement>
                     <unity:VisualElement id="1:144" name="Frame 24" class="unity-base-override Frame-24" picking-mode="Ignore">
                         <unity:Label id="1:145" name="Braking Stabilit2131y" class="unity-base-override Braking-Stability" picking-mode="Ignore" text="Braking Stability" />
                         <unity:VisualElement id="1:146" name="Rectangle" class="unity-base-override Rectangle-nine" picking-mode="Ignore" />
-                        <unity:Label id="1:147" name="Braking Stability" class="unity-base-override High-one" picking-mode="Ignore" text="High" />
+                        <unity:Label id="1:147" name="Braking Stability" class="unity-base-override High-one" picking-mode="Ignore" text="" />
                     </unity:VisualElement>
                     <unity:VisualElement id="1:148" name="Frame 25" class="unity-base-override Frame-25" picking-mode="Ignore">
                         <unity:Label id="1:149" name="Cornerin123g" class="unity-base-override Cornering" picking-mode="Ignore" text="Cornering" />
                         <unity:VisualElement id="1:150" name="Rectangle" class="unity-base-override Rectangle-ten" picking-mode="Ignore" />
-                        <unity:Label id="1:151" name="Cornering" class="unity-base-override High-two" picking-mode="Ignore" text="High" />
+                        <unity:Label id="1:151" name="Cornering" class="unity-base-override High-two" picking-mode="Ignore" text="" />
                     </unity:VisualElement>
                     <unity:VisualElement id="1:152" name="Frame 26" class="unity-base-override Frame-26" picking-mode="Ignore">
                         <unity:Label id="1:153" name="Tra213ction" class="unity-base-override Traction" picking-mode="Ignore" text="Traction" />
                         <unity:VisualElement id="1:154" name="Rectangle" class="unity-base-override Rectangle-eleven" picking-mode="Ignore" />
-                        <unity:Label id="1:155" name="Traction" class="unity-base-override Medium-two" picking-mode="Ignore" text="Medium" />
+                        <unity:Label id="1:155" name="Traction" class="unity-base-override Medium-two" picking-mode="Ignore" text="" />
                     </unity:VisualElement>
                     <unity:VisualElement id="1:156" name="Frame" class="unity-base-override Frame-three" picking-mode="Ignore">
                         <unity:Label id="1:157" name="StraigSADhts" class="unity-base-override Straights" picking-mode="Ignore" text="Straights" />
                         <unity:VisualElement id="1:158" name="Frame 27" class="unity-base-override Frame-27" picking-mode="Ignore">
-                            <unity:Label id="1:159" name="Straights" class="unity-base-override Low" picking-mode="Ignore" text="Low" />
+                            <unity:Label id="1:159" name="Straights" class="unity-base-override Low" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                 </unity:VisualElement>
@@ -82,23 +82,23 @@
                         <unity:VisualElement id="1:166" name="Frame 29" class="unity-base-override Frame-29" picking-mode="Ignore">
                             <unity:Label id="1:167" name="SADDS" class="unity-base-override Top-Speed" picking-mode="Ignore" text="Top Speed" />
                             <unity:VisualElement id="1:168" name="Rectangle" class="unity-base-override Rectangle-fifteen" picking-mode="Ignore" />
-                            <unity:Label id="1:169" name="Top Speed" class="unity-base-override n-322-05-km-h" picking-mode="Ignore" text="322.05 km/h" />
+                            <unity:Label id="1:169" name="Top Speed" class="unity-base-override n-322-05-km-h" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                         <unity:VisualElement id="1:170" name="Frame 30" class="unity-base-override Frame-30" picking-mode="Ignore">
                             <unity:Label id="1:171" name="" class="unity-base-override Acceleration" picking-mode="Ignore" text="Acceleration" />
                             <unity:VisualElement id="1:172" name="Rectangle" class="unity-base-override Rectangle-sixteen" picking-mode="Ignore" />
-                            <unity:Label id="1:173" name="Acceleration" class="unity-base-override n-1-832-G" picking-mode="Ignore" text="1.832 G" />
+                            <unity:Label id="1:173" name="Acceleration" class="unity-base-override n-1-832-G" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                         <unity:VisualElement id="1:174" name="Frame 31" class="unity-base-override Frame-31" picking-mode="Ignore">
                             <unity:Label id="1:175" name="" class="unity-base-override DRS-Effectiveness" picking-mode="Ignore" text="DRS Effectiveness" />
                             <unity:VisualElement id="1:176" name="Rectangle" class="unity-base-override Rectangle-seventeen" picking-mode="Ignore" />
-                            <unity:Label id="1:177" name="DRS Effectiveness" class="unity-base-override n-53-1" picking-mode="Ignore" text="53.1%" />
+                            <unity:Label id="1:177" name="DRS Effectiveness" class="unity-base-override n-53-1" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                     <unity:VisualElement id="1:178" name="Frame" class="unity-base-override Frame-five" picking-mode="Ignore">
                         <unity:Label id="1:179" name="" class="unity-base-override Car-Cornering" picking-mode="Ignore" text="Car Cornering" />
                         <unity:VisualElement id="1:180" name="Frame 32" class="unity-base-override Frame-32" picking-mode="Ignore">
-                            <unity:Label id="1:181" name="Car Cornering" class="unity-base-override n-3-586-G" picking-mode="Ignore" text="3.586 G" />
+                            <unity:Label id="1:181" name="Car Cornering" class="unity-base-override n-3-586-G" picking-mode="Ignore" text="" />
                         </unity:VisualElement>
                     </unity:VisualElement>
                 </unity:VisualElement>

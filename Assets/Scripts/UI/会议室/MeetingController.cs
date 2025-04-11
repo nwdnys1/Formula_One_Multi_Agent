@@ -78,7 +78,7 @@ public class MeetingController : MonoBehaviour
     {
         cm.SetCamera(cameras["Wolff"]);
         meetingUI.ShowCharacterUI("Wolff");
-        meetingUI.ShowInputFieldByButton("请输入对话内容",
+        meetingUI.ShowInputFieldByButton("Input Your Words",
                 (input) =>
                 {
                     string sendStr = JsonStr.meeting_chat(input, "Mechanic");

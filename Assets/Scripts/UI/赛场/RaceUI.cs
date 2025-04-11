@@ -149,7 +149,7 @@ public class RaceUI : MonoBehaviour
                 {
                     JsonData json = JsonMapper.ToObject(response);
                     hamilton.text = json["content"].ToString();
-                    targetCar.attitude = json["attitude"].ToString();
+                    //targetCar.attitude = json["attitude"].ToString();
                 }, null);
             });
         });

@@ -64,16 +64,16 @@ public class PracticeController : MonoBehaviour
                         "Disaster","Low","Medium","High","Perfect"
                     };
 
-                    practiceUI.UpdateDriverSatisfaction(satisfaction[targetCar.oversteerRating - 1],
-                        satisfaction[targetCar.brakingStabilityRating - 1],
-                        satisfaction[targetCar.corneringRating - 1],
-                        satisfaction[targetCar.tractionRating - 1],
-                        satisfaction[targetCar.straightsRating - 1]);
+                    practiceUI.UpdateDriverSatisfaction(satisfaction[1],
+                        satisfaction[2],
+                        satisfaction[2],
+                        satisfaction[3],
+                        satisfaction[1]);
 
-                    practiceUI.UpdateCarPerformance(targetCar.topSpeed.ToString() + "km/h",
-                        targetCar.acceleration.ToString() + "G",
-                        targetCar.drsEffectiveness.ToString() + "%",
-                        (targetCar.carCornering * 100).ToString() + "G");
+                    practiceUI.UpdateCarPerformance((targetCar.topSpeed * 4.0).ToString("F2") + "km/h",
+                        (targetCar.acceleration / 25.0).ToString("F2") + "G",
+                        (targetCar.drsEffectiveness * 100).ToString("F2") + "%",
+                        (targetCar.carCornering * 1.0).ToString("F2") + "G");
                     break;
                 default:
                     Debug.Log("未知场景类型");
@@ -109,11 +109,6 @@ public class PracticeController : MonoBehaviour
                     if (json.ContainsKey("tuning_data"))
                     {
                         JsonData tuning = json["tuning_data"];
-                        practiceUI.UpdateCarSetup(tuning["front_wing_angle"].ToString() + "°",
-                            tuning["rear_wing_angle"].ToString() + "°",
-                            tuning["anti_roll_distribution"].ToString(),
-                            tuning["tyre_camber"].ToString() + "°",
-                            tuning["toe_out"].ToString() + "°");
                         //修改赛车参数
 
                         targetCar.frontWingAngle = float.Parse(tuning["front_wing_angle"].ToString());
@@ -128,17 +123,23 @@ public class PracticeController : MonoBehaviour
                         "Disaster","Low","Medium","High","Perfect"
                         };
 
-                        practiceUI.UpdateDriverSatisfaction(satisfaction[targetCar.oversteerRating - 1],
-                            satisfaction[targetCar.brakingStabilityRating - 1],
-                            satisfaction[targetCar.corneringRating - 1],
-                            satisfaction[targetCar.tractionRating - 1],
-                            satisfaction[targetCar.straightsRating - 1]);
-
-                        practiceUI.UpdateCarPerformance(targetCar.topSpeed.ToString() + "km/h",
-                            targetCar.acceleration.ToString() + "G",
-                            targetCar.drsEffectiveness.ToString() + "%",
-                            (targetCar.carCornering * 100).ToString() + "G");
+                        practiceUI.UpdateCarPerformance((targetCar.topSpeed * 4.0).ToString("F2") + "km/h",
+                            (targetCar.acceleration / 25.0).ToString("F2") + "G",
+                            (targetCar.drsEffectiveness * 100).ToString("F2") + "%",
+                            (targetCar.carCornering * 1.0).ToString("F2") + "G");
                     }
+
+                    practiceUI.UpdateCarSetup("6°",
+                            "12°",
+                            "4:6",
+                            "-3.00°",
+                            "0.5°");
+
+                    practiceUI.UpdateDriverSatisfaction(satisfaction[3],
+                            satisfaction[4],
+                            satisfaction[2],
+                            satisfaction[3],
+                            satisfaction[3]);
                     break;
                 default:
                     Debug.Log("未知场景类型");

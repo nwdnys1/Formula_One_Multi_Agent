@@ -499,7 +499,7 @@ public class CarController : MonoBehaviour
         Debug.Log("安全车出动！");
 
         // 4. 赛车从赛道上消失
-        Invoke("RemoveCarFromRace", 100);
+        Invoke("RemoveCarFromRace", 3);
 
         // 发送给llm
         controller.onAccident("Latifi");

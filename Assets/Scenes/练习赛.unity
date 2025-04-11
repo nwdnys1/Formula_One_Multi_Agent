@@ -802,6 +802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693866698018349230}
   - component: {fileID: 4160273452940561190}
+  - component: {fileID: 6556486122962015845}
   m_Layer: 0
   m_Name: camera
   m_TagString: Untagged
@@ -809,6 +810,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6556486122962015845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556486122962015844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0bcf977788be5448ae4bd5f68aa107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 4160273452940561190}
+  shakeSpeed: 1
+  shakeAmount: 0.1
 --- !u!4 &7150851417626077098
 Transform:
   m_ObjectHideFlags: 3

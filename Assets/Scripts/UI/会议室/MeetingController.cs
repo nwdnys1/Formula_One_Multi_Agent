@@ -7,35 +7,31 @@ using UnityEngine.UIElements;
 using UnityEngine.InputSystem;
 using UnityEngine.WSA;
 using Cursor = UnityEngine.Cursor;
+using UnityEngine.SceneManagement;
 
 public class MeetingController : MonoBehaviour
 {
-    MeetingUI dialog;
+    MeetingUI meetingUI;
+    public PitStopWidgetTrible pitUI;
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
-    public UIDocument driverParaUI;
-    public CinemachineVirtualCamera playerCamera;
     public CinemachineVirtualCamera strategistCamera;
     public CinemachineVirtualCamera mechanicCamera;
     public CinemachineVirtualCamera hamiltonCamera;
     public CinemachineVirtualCamera wolffCamera;
     public CinemachineVirtualCamera quanjing;
     public Dictionary<string, CinemachineVirtualCamera> cameras = new Dictionary<string, CinemachineVirtualCamera>();
-    public ChairController chair;
-    public GameObject StandWolff;
-    public GameObject SitWolff;
+    public string carId = "Hamilton";
+    ParaManager paraManager = ParaManager.Instance;
+    CarPara targetCar;
 
     private void Awake()
     {
-        dialog = GetComponent<MeetingUI>();
+        meetingUI = GetComponent<MeetingUI>();
         // 确保DialogUI组件已正确设置
-        if (dialog == null)
+        if (meetingUI == null)
         {
             Debug.LogError("DialogUI is not assigned in the inspector.");
-        }
-        if (driverParaUI == null)
-        {
-            Debug.LogError("DriverParaUI is not assigned in the inspector.");
         }
 
 
@@ -43,26 +39,22 @@ public class MeetingController : MonoBehaviour
 
     private void Start()
     {
+        targetCar = paraManager.getCarPara(carId);
         cameras.Add("Hamilton", hamiltonCamera);
         cameras.Add("Wolff", wolffCamera);
         cameras.Add("Strategist", strategistCamera);
         cameras.Add("Mechanic", mechanicCamera);
-        SitWolff.SetActive(false);
-        cm.SetCamera(playerCamera);
-
+        cm.SetCamera(quanjing);
+        MeetingStart();
 
     }
 
     private void MeetingStart()
     {
         print("开始会议");
-        chair.interactionText.SetActive(false);
-        StandWolff.SetActive(false);
-        SitWolff.SetActive(true);
         cm.SetCamera(quanjing);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
         client.Send(JsonStr.before_meeting_start, (response) =>
         { }, (r) => MeetingReplay());
 
@@ -76,8 +68,8 @@ public class MeetingController : MonoBehaviour
             // 切换摄像机
             cm.SetCamera(cameras[json["sender"].ToString()]);
             // 处理服务器返回的JSON数据
-            dialog.ShowCharacterUI(json["sender"].ToString());
-            dialog.ShowDialogue(json["content"].ToString());
+            meetingUI.ShowCharacterUI(json["sender"].ToString());
+            meetingUI.ShowDialogue(json["content"].ToString());
         }, (r) => MeetingChoose());
 
 
@@ -85,8 +77,8 @@ public class MeetingController : MonoBehaviour
     private void MeetingChoose()
     {
         cm.SetCamera(cameras["Wolff"]);
-        dialog.ShowCharacterUI("Wolff");
-        dialog.ShowInputFieldByButton("请输入对话内容",
+        meetingUI.ShowCharacterUI("Wolff");
+        meetingUI.ShowInputFieldByButton("请输入对话内容",
                 (input) =>
                 {
                     string sendStr = JsonStr.meeting_chat(input, "Mechanic");
@@ -95,8 +87,8 @@ public class MeetingController : MonoBehaviour
                     {
                         JsonData json = JsonMapper.ToObject(response);
                         // 处理服务器返回的JSON数据
-                        dialog.ShowCharacterUI(json["sender"].ToString());
-                        dialog.ShowDialogue(json["content"].ToString());
+                        meetingUI.ShowCharacterUI(json["sender"].ToString());
+                        meetingUI.ShowDialogue(json["content"].ToString());
                         // 切换摄像机
                         cm.SetCamera(cameras[json["sender"].ToString()]);
                     }, (r) => MeetingEnd());
@@ -107,15 +99,64 @@ public class MeetingController : MonoBehaviour
                     {
                         JsonData json = JsonMapper.ToObject(response);
                         // 处理服务器返回的JSON数据
-                        dialog.ShowCharacterUI(json["sender"].ToString());
-                        dialog.ShowDialogue(json["content"].ToString());
+                        meetingUI.ShowCharacterUI(json["sender"].ToString());
+                        meetingUI.ShowDialogue(json["content"].ToString());
                         // 切换摄像机
                         cm.SetCamera(cameras[json["sender"].ToString()]);
                         //处理策略
                         if (json.ContainsKey("strategy"))
-                            print("策略:" + json["strategy"].ToString());
+                        {
+                            switch (json["sender"].ToString())
+                            {
+                                case "Strategist":
+                                    JsonData strategies = json["strategy"];
+                                    int[][] pits = new int[strategies.Count][];
+                                    string[][] tyres = new string[strategies.Count][];
+                                    int[] fuels = new int[strategies.Count];
+                                    int[] ers = new int[strategies.Count];
+                                    for (int i = 0; i < strategies.Count; i++)
+                                    {
+                                        pits[i] = new int[strategies[i]["pit_stop_laps"].Count];
+                                        tyres[i] = new string[strategies[i]["tyre_strategy"].Count];
+                                        for (int j = 0; j < strategies[i]["pit_stop_laps"].Count; j++)
+                                        {
+                                            pits[i][j] = int.Parse(strategies[i]["pit_stop_laps"][j].ToString());
+                                        }
+                                        for (int j = 0; j < strategies[i]["tyre_strategy"].Count; j++)
+                                        {
+                                            tyres[i][j] = strategies[i]["tyre_strategy"][j].ToString();
+                                        }
+                                        fuels[i] = int.Parse(strategies[i]["fuel_release_laps"].ToString());
+                                        ers[i] = int.Parse(strategies[i]["ers_release_laps"].ToString());
+                                    }
+                                    pitUI.UpdateStrategy(pits, tyres, fuels, ers);
+                                    break;
+                                case "Hamilton":
+                                    JsonData strategy = json["strategy"];
+                                    int[] pit = new int[strategy["pit_stop_laps"].Count];
+                                    string[] tyre = new string[strategy["tyre_strategy"].Count];
+                                    for (int j = 0; j < strategy["pit_stop_laps"].Count; j++)
+                                    {
+                                        pit[j] = int.Parse(strategy["pit_stop_laps"][j].ToString());
+                                    }
+                                    for (int j = 0; j < strategy["tyre_strategy"].Count; j++)
+                                    {
+                                        tyre[j] = strategy["tyre_strategy"][j].ToString();
+                                    }
+                                    targetCar.pitStopLaps = pit;
+                                    targetCar.tyreTypes = tyre;
+                                    targetCar.fuelLap = int.Parse(strategy["fuel_release_laps"].ToString());
+                                    targetCar.ERSLap = int.Parse(strategy["ers_release_laps"].ToString());
+                                    break;
+                                default:
+                                    print("策略:无");
+                                    break;
+                            }
+                        }
                         else
+                        {
                             print("策略:无");
+                        }
                     }, (r) => MeetingEnd());
                 },
                 (input) =>
@@ -124,8 +165,8 @@ public class MeetingController : MonoBehaviour
                     {
                         JsonData json = JsonMapper.ToObject(response);
                         // 处理服务器返回的JSON数据
-                        dialog.ShowCharacterUI(json["sender"].ToString());
-                        dialog.ShowDialogue(json["content"].ToString());
+                        meetingUI.ShowCharacterUI(json["sender"].ToString());
+                        meetingUI.ShowDialogue(json["content"].ToString());
                         // 切换摄像机
                         cm.SetCamera(cameras[json["sender"].ToString()]);
                         //处理心态
@@ -143,20 +184,16 @@ public class MeetingController : MonoBehaviour
         {
             JsonData json = JsonMapper.ToObject(response);
             // 处理服务器返回的JSON数据
-            dialog.ShowCharacterUI("report");
+            meetingUI.ShowCharacterUI("report");
             JsonData news = json["summary"];
-            dialog._currentRoot.Q<Label>("Title").text = news["title"].ToString();
-            dialog._currentRoot.Q<Label>("Contents").text = news["content"].ToString();
+            meetingUI._currentRoot.Q<Label>("Title").text = news["title"].ToString();
+            meetingUI._currentRoot.Q<Label>("Contents").text = news["content"].ToString();
 
-        }, null);
+        }, (r) => { SceneManager.LoadScene("赛场"); });
     }
 
     private void Update()
     {
-        // 检测玩家是否在范围内并按下F键
-        if (chair.isInRange && Input.GetKeyDown(KeyCode.F))
-        {
-            MeetingStart();
-        }
+
     }
 }

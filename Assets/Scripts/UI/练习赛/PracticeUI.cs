@@ -1,9 +1,11 @@
+using Figma;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class PracticeUI : MonoBehaviour
 {
-    private UIDocument _uiDocument;
+    public UIDocument practiceUI;
+    public UIDocument waitingUI;
 
     // Car Setup Elements
     private Label _frontWingAngleLabel;
@@ -31,9 +33,10 @@ public class PracticeUI : MonoBehaviour
 
     private void Awake()
     {
-        _uiDocument = GetComponent<UIDocument>();
 
-        var root = _uiDocument.rootVisualElement;
+
+        var root = practiceUI.rootVisualElement;
+        waitingUI.rootVisualElement.SetDisplay(false);
 
         // Initialize all UI elements
         InitializeCarSetupElements(root);
@@ -41,20 +44,24 @@ public class PracticeUI : MonoBehaviour
         InitializeCarPerformanceElements(root);
         InitializeTeamDiscussionElements(root);
     }
+    public void ShowWaitingUI(bool show)
+    {
+        waitingUI.rootVisualElement.SetDisplay(show);
+    }
 
     private void InitializeCarSetupElements(VisualElement root)
     {
-        _frontWingAngleLabel = root.Q<Label>("Front-Wing-Angle");
-        _rearWingAngleLabel = root.Q<Label>("Rear-Wing-Angle");
-        _antiRollDistributionLabel = root.Q<Label>("Anti-Roll-Distribution");
-        _tyreCamberLabel = root.Q<Label>("Tyre-Camber");
-        _toeOutLabel = root.Q<Label>("Toe-Out");
+        _frontWingAngleLabel = root.Q<Label>("FWA");
+        _rearWingAngleLabel = root.Q<Label>("RWA");
+        _antiRollDistributionLabel = root.Q<Label>("ARD");
+        _tyreCamberLabel = root.Q<Label>("TC");
+        _toeOutLabel = root.Q<Label>("TO");
     }
 
     private void InitializeDriverSatisfactionElements(VisualElement root)
     {
         _oversteerLabel = root.Q<Label>("Oversteer");
-        _brakingStabilityLabel = root.Q<Label>("Braking-Stability");
+        _brakingStabilityLabel = root.Q<Label>("Braking Stability");
         _corneringLabel = root.Q<Label>("Cornering");
         _tractionLabel = root.Q<Label>("Traction");
         _straightsLabel = root.Q<Label>("Straights");
@@ -62,16 +69,16 @@ public class PracticeUI : MonoBehaviour
 
     private void InitializeCarPerformanceElements(VisualElement root)
     {
-        _topSpeedLabel = root.Q<Label>("Top-Speed");
+        _topSpeedLabel = root.Q<Label>("Top Speed");
         _accelerationLabel = root.Q<Label>("Acceleration");
-        _drsEffectivenessLabel = root.Q<Label>("DRS-Effectiveness");
-        _carCorneringLabel = root.Q<Label>("Car-Cornering");
+        _drsEffectivenessLabel = root.Q<Label>("DRS Effectiveness");
+        _carCorneringLabel = root.Q<Label>("Car Cornering");
     }
 
     private void InitializeTeamDiscussionElements(VisualElement root)
     {
-        _mechanicMessageLabel = root.Q<Label>("Has-everyone-reviewed-the-latest-setup-changes");
-        _hamiltonMessageLabel = root.Q<Label>("Yes-the-new-wing-configuration-looks-promising");
+        _mechanicMessageLabel = root.Q<Label>("Mechanic");
+        _hamiltonMessageLabel = root.Q<Label>("Hamilton");
     }
 
     // Method 1: Update Car Setup Parameters
@@ -111,7 +118,10 @@ public class PracticeUI : MonoBehaviour
     // Method 4: Update Team Discussion
     public void UpdateTeamDiscussion(string mechanicMessage, string hamiltonMessage)
     {
-        _mechanicMessageLabel.text = mechanicMessage;
-        _hamiltonMessageLabel.text = hamiltonMessage;
+        if (mechanicMessage != null)
+            _mechanicMessageLabel.text = mechanicMessage;
+
+        if (hamiltonMessage != null)
+            _hamiltonMessageLabel.text = hamiltonMessage;
     }
 }

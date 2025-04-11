@@ -41,6 +41,12 @@ public class CarPara : ScriptableObject
     public int tractionRating = 1; //1-5
     public int straightsRating = 1; //1-5
 
+    [Header("比赛策略")]
+    public int[] pitStopLaps = { 5, 10 }; // 进站圈数
+    public string[] tyreTypes = { "hard", "medium", "soft" }; // 轮胎策略
+    public int fuelLap = 1; // 进站加油圈数
+    public int ERSLap = 1; // 进站充电圈数
+
     public void CalculateTuningRatings()
     {
 

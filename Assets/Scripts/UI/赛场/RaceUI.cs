@@ -209,7 +209,7 @@ public class RaceUI : MonoBehaviour
     {
 
         // 赛车参数
-        tyreTypeLabel.text = targetCar.tyreType.ToString().ToUpper()[0].ToString(); // 轮胎类型 (S/M/H)
+        tyreTypeLabel.text = targetCar.tyreType.ToUpper().Substring(0, 1); // 轮胎类型 (S/M/H)
         tyreWearLabel.text = $"{targetCar.currentTyreWear:F1} %"; // 轮胎磨损百分比
         ersStatusLabel.text = targetCar.ersAvailable ? "1" : "0";
         fuelStatusLabel.text = targetCar.fuelReleaseAvailable ? "1" : "0";
@@ -261,7 +261,9 @@ public class RaceUI : MonoBehaviour
         row.Q<Label>($"+1.000").text = $"+{data.gap:F3}";
         row.Q<Label>("M").text = data.tireType;
         if (row.Q<Image>("Logo") != null)
-        { row.Q<Image>("Logo").image = data.logo; }
+        {
+            row.Q<Image>("Logo").image = data.logo;
+        }
 
         //// 动态加载车队图标（示例）
         //var teamIcon = row.Q<VisualElement>("Team").Q<VisualElement>();

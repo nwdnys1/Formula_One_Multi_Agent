@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using DTO;
 using LitJson;
-
+using UnityEngine.SceneManagement;
 public class RaceTimeManager : MonoBehaviour
 {
     public static RaceTimeManager Instance { get; private set; }
@@ -19,7 +19,8 @@ public class RaceTimeManager : MonoBehaviour
         public int pitCount; // 进站次数
         public string tyreType; // 轮胎类型
         public float tyreWear; // 轮胎磨损
-        public CarRaceData(string id, int lap, int ckpt, float time, Texture2D teamlogo, int pitCnt, string tyreType, float tyreWear)
+        public bool finished; // 是否完成比赛
+        public CarRaceData(string id, int lap, int ckpt, float time, Texture2D teamlogo, int pitCnt, string tyreType, float tyreWear, bool finished)
         {
             carId = id;
             lapIdx = lap;
@@ -29,6 +30,7 @@ public class RaceTimeManager : MonoBehaviour
             pitCount = pitCnt;
             this.tyreType = tyreType;
             this.tyreWear = tyreWear;
+            this.finished = finished;
         }
     }
     [SerializeField]
@@ -57,13 +59,13 @@ public class RaceTimeManager : MonoBehaviour
         InvokeRepeating("update2LLM", 5f, 60f);
     }
 
-    public void UpdateCarCheckpoint(string carId, int lapIdx, int ckptIdx, float time, int pitCnt, string tyreType, float tyreWear, Texture2D logo)
+    public void UpdateCarCheckpoint(string carId, int lapIdx, int ckptIdx, float time, int pitCnt, string tyreType, float tyreWear, Texture2D logo, bool finished)
     {
 
         // 查找现有数据
         int existingIndex = _rankingData.FindIndex(c => c.carId == carId);
 
-        var newData = new CarRaceData(carId, lapIdx, ckptIdx, time, logo, pitCnt, tyreType, tyreWear);
+        var newData = new CarRaceData(carId, lapIdx, ckptIdx, time, logo, pitCnt, tyreType, tyreWear, finished);
 
         if (existingIndex >= 0)
         {
@@ -84,7 +86,7 @@ public class RaceTimeManager : MonoBehaviour
             {
                 carRanks[i] = new RaceUI.CarRank
                 {
-                    driverName = data.carId.Substring(0, 3).ToUpper(), // 取车手ID的前3个字符作为车手名字
+                    driverName = data.carId, // 取车手ID的前3个字符作为车手名字
                     teamId = "Unknown", // 这里可以根据实际情况设置车队ID
                     tireType = "M",     // 这里可以根据实际情况设置轮胎类型
                     gap = gap,
@@ -105,7 +107,20 @@ public class RaceTimeManager : MonoBehaviour
         }
         raceUI.UpdateRanks(carRanks);
 
-
+        // 检查所有车辆是否完成比赛
+        bool allFinished = true;
+        foreach (var carData in _rankingData)
+        {
+            if (!carData.finished)
+            {
+                allFinished = false;
+                break;
+            }
+        }
+        if (allFinished)
+        {
+            SceneManager.LoadScene("赛后会议室");
+        }
     }
 
     public JsonData Ranks2Json(List<CarRaceData> raceData)
@@ -146,7 +161,7 @@ public class RaceTimeManager : MonoBehaviour
             var data = _rankingData[i];
             JsonData json = new JsonData();
             json.Add(data.tyreType);
-            json.Add((data.tyreWear/100).ToString("F1"));
+            json.Add((data.tyreWear / 100).ToString("F1"));
             tyre[data.carId] = json;
         }
         return tyre;

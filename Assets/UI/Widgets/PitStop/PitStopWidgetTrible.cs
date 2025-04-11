@@ -26,7 +26,6 @@ public class PitStopWidgetTrible : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("PitStopWidget OnEnable called.");
 
         if (uiDocument == null)
         {
@@ -42,10 +41,22 @@ public class PitStopWidgetTrible : MonoBehaviour
             return;
         }
 
-        Debug.Log("Root Visual Element found. Generating lap display.");
         GenerateLapDisplay();
     }
 
+    public void UpdateStrategy(int[][] newPitStops, string[][] tyreTypes, int[] fuels, int[] ers)
+    {
+        pitStopLaps = newPitStops;
+        tyreStrategies = tyreTypes;
+        fuelReleaseLaps = fuels;
+        ERSReleaseLaps = ers;
+        foreach (var item in lapContainers)
+        {
+            item.Clear();
+        }
+        GenerateLapDisplay();
+    }
+   
     private void AddMarkers(VisualElement lapElement, int lapNumber, string markerType)
     {
         var marker = new Label
@@ -156,7 +167,6 @@ public class PitStopWidgetTrible : MonoBehaviour
 
     private void GenerateLapDisplay()
     {
-        Debug.Log("lapContainer found. Starting to generate lap display.");
 
         lapContainers = new List<VisualElement>(new VisualElement[3]); // 初始化 List，大小为 3
 
@@ -165,6 +175,5 @@ public class PitStopWidgetTrible : MonoBehaviour
             GenerateLapDisplayForStrategy(i);
         }
 
-        Debug.Log("Lap display generation completed.");
     }
 }

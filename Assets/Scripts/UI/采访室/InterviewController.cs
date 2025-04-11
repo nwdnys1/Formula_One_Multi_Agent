@@ -4,13 +4,14 @@ using Cinemachine;
 using DTO;
 using LitJson;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class InterviewController : MonoBehaviour
 {
     InterviewUI dialog;
     SocketClient client = SocketClient.Instance;
     CameraManager cm = CameraManager.Instance;
-    public UIDocument driverParaUI;
+
     public CinemachineVirtualCamera reporterCamera;
     public CinemachineVirtualCamera hornerCamera;
     public CinemachineVirtualCamera verstappenCamera;
@@ -27,10 +28,7 @@ public class InterviewController : MonoBehaviour
         {
             Debug.LogWarning("DialogUI is not assigned in the inspector.");
         }
-        if (driverParaUI == null)
-        {
-            Debug.LogWarning("DriverParaUI is not assigned in the inspector.");
-        }
+
         if (client == null)
         {
             Debug.LogError("SocketClient is not assigned in the inspector.");
@@ -44,8 +42,10 @@ public class InterviewController : MonoBehaviour
 
     private void Start()
     {
+        dialog.HideAll();
         // 全景视角
         cm.SetCamera(quanjing);
+
 
         // 开始采访
         InterviewStart();
@@ -104,7 +104,7 @@ public class InterviewController : MonoBehaviour
             dialog._currentRoot.Q<Label>("Title").text = news["title"].ToString();
             dialog._currentRoot.Q<Label>("Contents").text = news["content"].ToString();
 
-        }, null);
+        }, (r) => { SceneManager.LoadScene("练习赛"); });
     }
 
     private void UpdateAttitude(string attitude)

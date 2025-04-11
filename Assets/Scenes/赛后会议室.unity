@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: c78cb4d1ee6f76c4e9ac7e7794ca4615, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 1784b0b1e3f051c448ad92edbcbcefd6, type: 3}
   m_SortingOrder: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: e3e3ea22579364d41b31e6f030fd7fc2, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 88050f00ff650ce4e89e2be5915661e3, type: 3}
   m_SortingOrder: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c55503c53715a49945247578dffd58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1355619018}
+  interactionText: {fileID: 0}
   isInRange: 0
 --- !u!65 &1025816708
 BoxCollider:
@@ -2565,7 +2565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: fbb0b41222adfc04aa69f2fa80ff41d0, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 8209c93d7006a594593a0409f69bff86, type: 3}
   m_SortingOrder: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
@@ -2664,7 +2664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: ad06bcc3c73da7048b7564f38769a43e, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: c15c4649f9d251e4ba86b3f1127dd2b7, type: 3}
   m_SortingOrder: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
@@ -2836,7 +2836,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1235045057}
   - component: {fileID: 1235045058}
-  - component: {fileID: 1235045059}
   m_Layer: 0
   m_Name: "\u7B56\u7565\u5E08"
   m_TagString: Untagged
@@ -2873,78 +2872,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 272a895cb93497a4cb7649a81fbd8fbe, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 164d2db4825e3df429c9f85bbc7aac7f, type: 3}
   m_SortingOrder: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
   m_WorldSpaceHeight: 1080
---- !u!114 &1235045059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235045056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3962995e999a7674f9e647106722f3ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiDocument: {fileID: 1235045058}
-  fuelReleaseLaps: 0c0000000a00000008000000
-  ERSReleaseLaps: 080000000600000004000000
-  totalLaps: 58
---- !u!1 &1355619018
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1355619020}
-  - component: {fileID: 1355619019}
-  m_Layer: 0
-  m_Name: "\u6309F\u5F00\u59CB"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1355619019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355619018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: ec9c5a23c4719dd4686783b3d7a3fb05, type: 2}
-  m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: bc09eba0192ab9a45a65332bd7667500, type: 3}
-  m_SortingOrder: 0
-  m_WorldSpaceSizeMode: 1
-  m_WorldSpaceWidth: 1920
-  m_WorldSpaceHeight: 1080
---- !u!4 &1355619020
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355619018}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2058300109}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1540805081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3279,9 +3211,6 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 45841131995084906, guid: 3e643a0fc2881924e9fa0cf24698c44a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1355619020}
-    - targetCorrespondingSourceObject: {fileID: 45841131995084906, guid: 3e643a0fc2881924e9fa0cf24698c44a, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1036954100}
     - targetCorrespondingSourceObject: {fileID: 45841131995084906, guid: 3e643a0fc2881924e9fa0cf24698c44a, type: 3}
       insertIndex: -1
@@ -3317,7 +3246,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2990618601578635524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de89cc09627f94647a38103b558b2969, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b9f64042377db24fb3d3745834b32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   WolffUI: {fileID: 157996059}
@@ -3334,10 +3263,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2990618601578635524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbd7b63e61d588a4091e5d879e0f85a3, type: 3}
+  m_Script: {fileID: 11500000, guid: c0e2d49ebf776dd49bcdd7dc0650cfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pitUI: {fileID: 1235045059}
+  pitUI: {fileID: 0}
   strategistCamera: {fileID: 79209128}
   mechanicCamera: {fileID: 1045912898}
   hamiltonCamera: {fileID: 448462268}

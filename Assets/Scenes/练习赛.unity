@@ -317,7 +317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 591397102a1e0e543be7d8f33e303066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carParaUI: {fileID: 1460261213}
+  practiceUI: {fileID: 933224424}
+  carId: Hamilton
 --- !u!114 &933224424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3b6ef38ee827714498e20f9134237fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  practiceUI: {fileID: 1460261213}
+  waitingUI: {fileID: 1274162919}
 --- !u!1 &1274162917
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,13 +343,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1274162918}
   - component: {fileID: 1274162919}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: "\u7B49\u5F85"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1274162918
 Transform:
   m_ObjectHideFlags: 0

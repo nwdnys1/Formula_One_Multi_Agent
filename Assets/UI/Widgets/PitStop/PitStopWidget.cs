@@ -21,7 +21,6 @@ public class PitStopWidget : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("PitStopWidget OnEnable called.");
 
         if (uiDocument == null)
         {
@@ -36,8 +35,6 @@ public class PitStopWidget : MonoBehaviour
             Debug.LogError("Root Visual Element is null. Check if the UXML file is correctly assigned to UIDocument.");
             return;
         }
-
-        Debug.Log("Root Visual Element found. Generating lap display.");
         GenerateLapDisplay();
     }
 

@@ -3,6 +3,7 @@ using Cinemachine;
 using DTO;
 using LitJson;
 using Cursor = UnityEngine.Cursor;
+using UnityEngine.SceneManagement;
 
 public class RaceController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class RaceController : MonoBehaviour
     [Header("摄像机")]
     public CinemachineVirtualCamera[] cameras = new CinemachineVirtualCamera[6];
     public int currentCameraIndex = 0;
+    public bool hasAccident = false;
+    public GameObject safeCar;
     private void Awake()
     {
 
@@ -64,6 +67,8 @@ public class RaceController : MonoBehaviour
     }
     public void onAccident(string carId)
     {
+        hasAccident = true;
+        safeCar.SetActive(true);// 显示安全车
         client.Send(JsonStr.accident_occurred(carId), (response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
@@ -132,6 +137,12 @@ public class RaceController : MonoBehaviour
                 currentCameraIndex = 0;
             }
             cm.SetCamera(cameras[currentCameraIndex]);
+        }
+        // 按下esc键退出比赛
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("赛后会议室");
+
         }
     }
 }

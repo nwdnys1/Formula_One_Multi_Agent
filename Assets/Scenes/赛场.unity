@@ -179,7 +179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &46834055
 Transform:
   m_ObjectHideFlags: 0
@@ -453,7 +453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -468,12 +472,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -481,11 +497,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -638,6 +670,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2002064674}
     m_Modifications:
+    - target: {fileID: 1986980648319885801, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: CameraDistance
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986980648319885801, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: ShoulderOffset.y
+      value: 0.74
+      objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2000008
@@ -698,10 +738,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 840777095}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
       value: 
+      objectReference: {fileID: 980298159}
+    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_ComponentOwner
+      value: 
+      objectReference: {fileID: 109115499}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: carId
       value: Hamilton
@@ -711,12 +767,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: totalLaps
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -724,54 +796,158 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: pitStopLaps.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
+      objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.006348443
+      value: 0.00003228583
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15976408
+      value: 4.499999
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.042896613
+      value: -12.499778
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.79250115
+      value: -0.9851111
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6054162
+      value: -0.17191927
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.05846668
+      value: 0.00000038066847
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.044664543
+      value: -0.00000006851035
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -51.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 158.927
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1986980648319885801, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+    - {fileID: 7071729498169348633, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8101338925172095467, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       insertIndex: -1
       addedObject: {fileID: 980298159}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1019453754912840916, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 109115502}
+    - targetCorrespondingSourceObject: {fileID: 1019453754912840916, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 109115501}
   m_SourcePrefab: {fileID: 100100000, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
 --- !u!4 &109115493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
   m_PrefabInstance: {fileID: 109115492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &109115494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1019453754912840916, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+  m_PrefabInstance: {fileID: 109115492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &109115495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+  m_PrefabInstance: {fileID: 109115492}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &109115496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+  m_PrefabInstance: {fileID: 109115492}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a05ecef5bc7a24e855fb0312cbcbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &109115499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8875266070589586986, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+  m_PrefabInstance: {fileID: 109115492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &109115501
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109115494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damping: {x: 0.1, y: 0.5, z: 0.3}
+  ShoulderOffset: {x: 0, y: 5, z: 0}
+  VerticalArmLength: 0.4
+  CameraSide: 1
+  CameraDistance: 15
+  CameraCollisionFilter:
+    serializedVersion: 2
+    m_Bits: 0
+  IgnoreTag: 
+  CameraRadius: 0.2
+  DampingIntoCollision: 0
+  DampingFromCollision: 2
+--- !u!114 &109115502
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109115494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &114206336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1023,7 +1199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -120.9
+      value: 240.9
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1031,11 +1207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -767.8
+      value: -883.8
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.034637965
+      value: 0.9492743
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1043,7 +1219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99939996
+      value: 0.31444925
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1055,7 +1231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 176.03
+      value: 36.655
       objectReference: {fileID: 0}
     - target: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1067,20 +1243,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_Name
-      value: "1\u53F7"
+      value: "\u5B89\u5168\u8F66"
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Height
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: avoidancePriority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: carId
+      value: "1\u53F7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: car3rd
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: pitStop
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: driverId
-      value: "1\u53F7"
+      value: "\u5B89\u5168\u8F66"
       objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: isSafeCar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
       value: 0
@@ -1097,37 +1313,47 @@ PrefabInstance:
       propertyPath: accidentCheckInterval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: pitStopLaps.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.006395662
+      value: -0.006205653
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15976408
+      value: -0.15976527
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.042842355
+      value: -0.043243248
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.79250115
+      value: 0.7925021
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6054162
+      value: -0.6054156
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.05846668
+      value: 0.058462087
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.044664543
+      value: 0.04466091
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8101338925172095467, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+    - {fileID: 1948084629784532809, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+    - {fileID: 4112795247271429064, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198203182}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
 --- !u!1 &191377505
@@ -1145,7 +1371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &191377506
 Transform:
   m_ObjectHideFlags: 0
@@ -1160,6 +1386,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 341133306}
+  - {fileID: 1817254630}
+  - {fileID: 1064943932}
   - {fileID: 1793607509}
   - {fileID: 1577697055}
   - {fileID: 352165932}
@@ -1185,7 +1413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &212808478
 Transform:
   m_ObjectHideFlags: 0
@@ -1447,7 +1675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -1462,12 +1694,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -1475,11 +1719,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1839,7 +2099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &352165932
 Transform:
   m_ObjectHideFlags: 0
@@ -2236,7 +2496,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -2251,12 +2515,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -2264,11 +2540,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2328,6 +2620,7 @@ GameObject:
   - component: {fileID: 437536254}
   - component: {fileID: 437536255}
   - component: {fileID: 437536256}
+  - component: {fileID: 437536258}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -2368,7 +2661,8 @@ MonoBehaviour:
   POVUI: {fileID: 1520136699}
   StrategyUI: {fileID: 1489766805}
   TrackUI: {fileID: 46834056}
-  targetCar: {fileID: 1434173207}
+  PitUI: {fileID: 1489766806}
+  targetCar: {fileID: 109115496}
 --- !u!114 &437536256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,12 +2676,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raceUI: {fileID: 437536255}
-  playerCamera: {fileID: 0}
-  strategistCamera: {fileID: 0}
-  mechanicCamera: {fileID: 0}
-  hamiltonCamera: {fileID: 0}
-  wolffCamera: {fileID: 0}
-  quanjing: {fileID: 0}
+  targetCar: {fileID: 109115496}
+  cameras:
+  - {fileID: 109115495}
+  - {fileID: 341133307}
+  - {fileID: 1817254631}
+  - {fileID: 1064943933}
+  - {fileID: 1793607510}
+  - {fileID: 1577697056}
+  currentCameraIndex: 0
+  hasAccident: 0
+  safeCar: {fileID: 2146888697}
+--- !u!114 &437536258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437536253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbf1f8039460f04aa3dd29cc7bc60f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fastestTime: []
+  raceUI: {fileID: 437536255}
 --- !u!1 &442162413 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7960302385332179272, guid: 0ed1c094cf633c0448043b042b679623, type: 3}
@@ -2643,7 +2956,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -2658,12 +2975,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -2671,11 +3000,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2719,6 +3064,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
   m_PrefabInstance: {fileID: 457703259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &463779224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463779226}
+  - component: {fileID: 463779225}
+  m_Layer: 0
+  m_Name: SocketClient
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &463779225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463779224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c2b7dd631b46343b0c0587f8ec4212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &463779226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463779224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &493919898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3170,7 +3559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &594407700
 Transform:
   m_ObjectHideFlags: 0
@@ -3391,7 +3780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -3406,12 +3799,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -3419,11 +3824,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3768,7 +4189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112795247271429064, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_Name
@@ -3776,7 +4197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -3791,12 +4216,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -3804,11 +4241,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3852,6 +4305,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
   m_PrefabInstance: {fileID: 741477395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &753230124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753230126}
+  - component: {fileID: 753230125}
+  m_Layer: 0
+  m_Name: SocketClient
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &753230125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753230124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c2b7dd631b46343b0c0587f8ec4212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &753230126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753230124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &763900490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4262,6 +4759,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b1e305dd1721f104ea41bb92cb0ccbe1, type: 3}
   m_PrefabInstance: {fileID: 828244525}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &840777095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6436038237409687714, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+  m_PrefabInstance: {fileID: 109115492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &846322477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4572,7 +5074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -4587,12 +5093,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -4600,11 +5118,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4825,7 +5359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112795247271429064, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_Name
@@ -4833,7 +5367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -4848,12 +5386,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -4861,11 +5411,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5042,7 +5608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -5057,12 +5627,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -5070,11 +5652,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5184,7 +5782,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -5199,12 +5801,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -5212,11 +5826,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5450,7 +6080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -5465,12 +6099,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -5478,11 +6124,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5588,6 +6250,78 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
+--- !u!1 &1064943931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064943932}
+  - component: {fileID: 1064943933}
+  m_Layer: 0
+  m_Name: Overtake Camera 2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1064943932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064943931}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.09997539, y: -0.3227837, z: 0.034316905, w: -0.94055194}
+  m_LocalPosition: {x: -247.80457, y: 35.821903, z: -1060.4874}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1611412274}
+  m_Father: {fileID: 191377506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064943933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064943931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 1611412274}
 --- !u!4 &1132411346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
@@ -5659,7 +6393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -5674,12 +6412,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -5687,11 +6437,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5801,7 +6567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -5816,12 +6586,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -5829,11 +6611,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5943,12 +6741,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 390452239}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: carId
       value: Albon
@@ -5958,12 +6760,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -5971,11 +6785,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5991,19 +6821,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.79250115
+      value: -0.9939233
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6054162
+      value: 0.10998218
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.05846668
+      value: -0.0044903876
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.044664543
+      value: -0.00049688714
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -6018,6 +6848,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3515210531021898295, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
   m_PrefabInstance: {fileID: 1193434602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1198203181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1237611358}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+      propertyPath: m_Name
+      value: Safety Car
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+--- !u!4 &1198203182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f1501c47155fee40923544cd651d089, type: 3}
+  m_PrefabInstance: {fileID: 1198203181}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1220267968
 PrefabInstance:
@@ -6102,7 +6994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1241110438
 Transform:
   m_ObjectHideFlags: 0
@@ -6352,7 +7244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -6367,12 +7263,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -6380,11 +7288,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6599,15 +7523,48 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2255341321787816740, guid: 09881baef5e226a47b6e9f41a826d9c0, type: 3}
---- !u!114 &1434173207 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-  m_PrefabInstance: {fileID: 2097124892}
+--- !u!1 &1399573130
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399573131}
+  - component: {fileID: 1399573132}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399573131
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399573130}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.09997539, y: 0.3227837, z: -0.034316905, w: -0.94055194}
+  m_LocalPosition: {x: -644.4125, y: 96.36568, z: 624.3275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1817254630}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399573132
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399573130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a05ecef5bc7a24e855fb0312cbcbd9, type: 3}
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1434173209 stripped
@@ -6934,13 +7891,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1489766802}
   - component: {fileID: 1489766805}
+  - component: {fileID: 1489766806}
   m_Layer: 0
   m_Name: "\u7B56\u7565"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1489766802
 Transform:
   m_ObjectHideFlags: 0
@@ -6975,6 +7933,27 @@ MonoBehaviour:
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
   m_WorldSpaceHeight: 1080
+--- !u!114 &1489766806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489766801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38ea97eb36563a4aa0c7a000153a1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDocument: {fileID: 1489766805}
+  pitStopLaps: 0f0000001e000000
+  tyreStrategy:
+  - hard
+  - medium
+  - soft
+  fuel_release_laps: 12
+  ERS_release_laps: 8
+  totalLaps: 58
 --- !u!1001 &1506500107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7273,6 +8252,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
+--- !u!1 &1611412273
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611412274}
+  - component: {fileID: 1611412275}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611412274
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611412273}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.09997539, y: 0.3227837, z: -0.034316905, w: -0.94055194}
+  m_LocalPosition: {x: -644.4125, y: 96.36568, z: 624.3275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064943932}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611412275
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611412273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1611808085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
@@ -7664,7 +8687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1714011470
 Transform:
   m_ObjectHideFlags: 0
@@ -7897,7 +8920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112795247271429064, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_Name
@@ -7905,7 +8928,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -7920,12 +8947,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: driverId
       value: "1\u53F7"
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -7933,11 +8972,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
-      value: 10
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8091,7 +9146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -8106,12 +9165,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -8119,15 +9190,31 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
+      objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0062786746
+      value: -0.006354085
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8135,7 +9222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.042901456
+      value: -0.042794257
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8306,6 +9393,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
   m_PrefabInstance: {fileID: 1462283578}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1817254629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817254630}
+  - component: {fileID: 1817254631}
+  m_Layer: 0
+  m_Name: Overtake Camera 2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1817254630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817254629}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.09997539, y: -0.3227837, z: 0.034316905, w: -0.94055194}
+  m_LocalPosition: {x: -247.80457, y: 35.821903, z: -1060.4874}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1399573131}
+  m_Father: {fileID: 191377506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1817254631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817254629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 1399573131}
 --- !u!4 &1867034486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5988287987534228090, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
@@ -8673,7 +9832,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -8688,12 +9851,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -8701,11 +9876,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8815,7 +10006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694093068118979247, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LookAt
@@ -8830,12 +10025,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740816603}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
-      propertyPath: driverId
-      value: "1\u53F7"
+      propertyPath: safeCar
+      value: 
+      objectReference: {fileID: 2146888697}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: attitude
+      value: Cautious
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: driverId
+      value: "\u5B89\u5168\u8F66"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: ersAvailable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
@@ -8843,11 +10050,27 @@ PrefabInstance:
       objectReference: {fileID: 1570201766}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: fuelReleaseAvailable
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: tyreTypes.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: accidentCheckInterval
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[0]'
+      value: hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[1]'
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: 'tyreTypes.Array.data[2]'
+      value: soft
       objectReference: {fileID: 0}
     - target: {fileID: 8192396385512254503, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8939,6 +10162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4112795247271429064, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: m_Name
       value: "4\u53F7"
@@ -8947,10 +10174,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5015325599446273871, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: pitStop
       value: 
       objectReference: {fileID: 740816603}
+    - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 437536256}
     - target: {fileID: 6906945364834238163, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
       propertyPath: checkpointsParent
       value: 
@@ -9025,52 +10260,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2489afec0bd848b4e9e0e93d484ed194, type: 3}
---- !u!1 &2121064150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2121064151}
-  - component: {fileID: 2121064154}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2121064151
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121064150}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74, y: 0, z: 137.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2121064154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121064150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cbf1f8039460f04aa3dd29cc7bc60f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fastestTime: []
-  raceUI: {fileID: 437536255}
 --- !u!1 &2126705876
 GameObject:
   m_ObjectHideFlags: 0
@@ -9202,8 +10391,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126705876}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7062216, z: -0, w: -0.7079909}
-  m_LocalPosition: {x: 403.16086, y: -0.19999838, z: 141.45622}
+  m_LocalRotation: {x: 0.12171722, y: -0.69570696, z: 0.12141314, w: 0.6974494}
+  m_LocalPosition: {x: 344.49222, y: 5.3917184, z: 135.05058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9305,6 +10494,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b1e305dd1721f104ea41bb92cb0ccbe1, type: 3}
   m_PrefabInstance: {fileID: 2145467758}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2146888697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4162890915735625897, guid: 4a0a33e825e07a64e87b4a6bc386c550, type: 3}
+  m_PrefabInstance: {fileID: 187265419}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7714525915111442188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9378,4 +10572,5 @@ SceneRoots:
   - {fileID: 857595324}
   - {fileID: 55514294}
   - {fileID: 2002064674}
-  - {fileID: 2121064151}
+  - {fileID: 463779226}
+  - {fileID: 753230126}

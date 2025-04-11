@@ -26,7 +26,6 @@ public class CarController : MonoBehaviour
     public Transform[] _checkpoints;
     public int _currentIndex = 0;
     private NavMeshAgent _agent;
-    private bool _isBraking = false;
 
     [Header("轮胎系统")]
     public string tyreType = "medium"; // 轮胎类型
@@ -54,7 +53,7 @@ public class CarController : MonoBehaviour
     public string driverId; // 车手ID
     public string attitude; // 车手心态
     public float accidentRate; // 事故率(0-1)
-    public float accidentCheckInterval = 10f; // 事故检测间隔(秒)
+    public float accidentCheckInterval = 3f; // 事故检测间隔(秒)
     private float accidentCheckTimer = 0f;
     private DriverPara driverPara;
 
@@ -70,7 +69,7 @@ public class CarController : MonoBehaviour
 
     [Header("比赛策略")]
     public int[] pitStopLaps = { 5, 10 }; // 进站圈数
-    public string[] tyreTypes = { "hard", "medium", "soft" }; // 轮胎策略
+    public string[] tyreTypes = { "hard", "medium" }; // 轮胎策略
     public int fuelLap = 1; // 进站加油圈数
     public int ERSLap = 1; // 进站充电圈数
 
@@ -80,10 +79,18 @@ public class CarController : MonoBehaviour
     private int _nextPitStopIndex = 0; // 下一个进站策略的索引
     public int pitCnt = 0; // 进站次数
 
+    [Header("安全车")]
+    public bool isSafeCar = false; // 是否安全车
+    public GameObject safeCar;
+
 
 
     void Start()
     {
+        if (isSafeCar)
+        {
+            _currentIndex = 2;
+        }
         // 从管理器获取赛车参数
         para = ParaManager.Instance.getCarPara(carId);
 
@@ -92,7 +99,12 @@ public class CarController : MonoBehaviour
         acceleration = para.acceleration;
         tyreType = para.tyreType;
         // 弯道速度基于过弯能力计算
-        //cornerTopSpeed = para.topSpeed * (para.carCornering / 5f); // 假设5G为基准
+        cornerTopSpeed = para.topSpeed * (para.carCornering / 5f); // 假设5G为基准
+        pitStopLaps = para.pitStopLaps;
+        tyreTypes = para.tyreTypes;
+        fuelLap = para.fuelLap;
+        ERSLap = para.ERSLap;
+
 
         // 获取车手参数
         driverPara = ParaManager.Instance.getDriverPara(driverId);
@@ -155,8 +167,6 @@ public class CarController : MonoBehaviour
              ? Vector3.Distance(transform.position, pitStop.position)
              : Vector3.Distance(transform.position, _checkpoints[_currentIndex].position);
 
-        // 根据距离决定是否需要刹车
-        _isBraking = distanceToTarget < CalculateBrakingDistance();
 
         // 应用当前速度限制
         UpdateTyreWear();
@@ -168,11 +178,30 @@ public class CarController : MonoBehaviour
         // 检查是否到达检查点
         if (distanceToTarget <= arrivalDistance)
         {
+            if (isSafeCar)
+            {
+                if (lapCount == 1 && _currentIndex == 1)
+                {
+                    gameObject.SetActive(false);
+                    controller.hasAccident = false;
+                    Debug.Log($"安全车已退出赛道");
+                }
+                _currentIndex++;
+                // 检查是否完成一圈
+                if (_currentIndex >= _checkpoints.Length)
+                {
+                    _currentIndex = 0; // 重置检查点索引
+                    lapCount++; // 增加圈数
+
+                }
+                SetNextDestination();
+                return;
+            }
             if (!_isPitting)
             {
                 float currentTime = Time.time;
                 ckptTime = currentTime - _raceStartTime;
-                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime, pitCnt, tyreType.ToString(), currentTyreWear, para.logoTexture);
+                RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime, pitCnt, tyreType.ToString(), currentTyreWear, para.logoTexture,raceFinished);
                 ckptTime = currentTime;
 
                 // 检查是否需要释放fuel或ERS
@@ -202,6 +231,7 @@ public class CarController : MonoBehaviour
                     {
                         raceFinished = true;
                         _agent.isStopped = true;
+                        RaceTimeManager.Instance.UpdateCarCheckpoint(carId, lapCount, _currentIndex, ckptTime, pitCnt, tyreType.ToString(), currentTyreWear, para.logoTexture, true);
                         Debug.Log($"车辆{carId}已完成比赛！");
                         return;
                     }
@@ -271,38 +301,44 @@ public class CarController : MonoBehaviour
 
     private void UpdateSpeedLimit()
     {
-
-        // 计算到下一个检查点的距离
+        // 1. 计算到下一个检查点的距离
         float distanceToNextCheckpoint = Vector3.Distance(transform.position, _checkpoints[_currentIndex].position);
 
-        // 判断当前是直道还是弯道（距离检查点10m内为弯道）
+        // 2. 判断当前是直道还是弯道（距离检查点10m内为弯道）
         bool isCorner = distanceToNextCheckpoint <= 10f;
 
+        // 3. 设置基础目标速度（直道/弯道/进站）
         float targetSpeed = isCorner ? cornerTopSpeed : straightTopSpeed;
-        targetSpeed = _isPitting ? 80 : targetSpeed; // 进站时速度为80km/h
-        float realAcceleration = acceleration;
-        if (_isBraking)
+        targetSpeed = _isPitting ? 80f / 3.6f : targetSpeed; // 进站时80km/h → 转换为m/s
+        targetSpeed = isSafeCar ? 80f / 3.6f : targetSpeed; // 安全车时80km/h → 转换为m/s
+
+        // 如果非安全车距离安全车距离小于10m 减速为80km/h
+        if (!isSafeCar && Vector3.Distance(transform.position, safeCar.transform.position) <= 100f)
         {
-            // 刹车逻辑
-            _agent.speed = Mathf.Max(0, _agent.speed - brakingDeceleration * Time.deltaTime);
+            targetSpeed = 80f / 3.6f; // 转换为m/s
         }
-        else
+
+        // 4. 动态调整速度：加速或减速到目标速度
+        if (targetSpeed > _agent.speed)
         {
-            // 加速逻辑
-            // 计算当前轮胎磨损对速度的影响 线性
+            // 加速阶段：应用轮胎磨损、ERS、油量加成
             float wearEffect = Mathf.Clamp01((100f - currentTyreWear) / (100f - tyreWearEffectThreshold));
             float speedReduction = wearEffect * maxSpeedReduction;
             targetSpeed *= (1 - speedReduction);
 
-            // 应用ERS加成
-            targetSpeed += ersActive ? ersSpeedBoost / 3.6f : 0; // 转换为m/s
-            realAcceleration += ersActive ? ersAccelerationBoost : 0;
+            // ERS和油量加成（仅加速时生效）
+            targetSpeed += ersActive ? ersSpeedBoost / 3.6f : 0f; // 转换为m/s
+            float effectiveAcceleration = acceleration;
+            effectiveAcceleration += ersActive ? ersAccelerationBoost : 0f;
+            effectiveAcceleration += fuelActive ? fuelAccelerationBoost : 0f;
 
-            // 应用油量释放加成
-            targetSpeed += fuelActive ? fuelSpeedBoost / 3.6f : 0; // 转换为m/s
-            realAcceleration += fuelActive ? fuelAccelerationBoost : 0;
-
-            _agent.speed = Mathf.Min(targetSpeed, _agent.speed + acceleration * Time.deltaTime);
+            // 加速到目标速度
+            _agent.speed = Mathf.Min(targetSpeed, _agent.speed + effectiveAcceleration * Time.deltaTime);
+        }
+        else
+        {
+            // 减速阶段：以固定减速度（brakingDeceleration）平滑减速到目标速度
+            _agent.speed = Mathf.Max(targetSpeed, _agent.speed - brakingDeceleration * Time.deltaTime);
         }
     }
 
@@ -335,9 +371,9 @@ public class CarController : MonoBehaviour
                 _nextPitStopIndex++;
 
                 // 更换轮胎
-                if (_nextPitStopIndex <= tyreTypes.Length - 1)
+                if (_nextPitStopIndex <= tyreTypes.Length )
                 {
-                    tyreType = tyreTypes[_nextPitStopIndex];
+                    tyreType = tyreTypes[_nextPitStopIndex-1];
                     currentTyreWear = 100f; // 重置轮胎磨损
                     Debug.Log($"进站换胎，新轮胎类型: {tyreType}");
                 }

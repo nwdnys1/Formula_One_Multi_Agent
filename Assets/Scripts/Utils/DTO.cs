@@ -49,6 +49,21 @@ namespace DTO
                 "}";
 
 
+        public static string practice_session_update(string tuning_results)
+        {
+            return
+                "{" +
+                    "\"scene_type\": \"practice_session\", " +
+                    "\"scene_data\": {" +
+                        "\"sender\": \"unity\", " +
+                        "\"receiver\": \"Hamilton\", " +
+                        "\"tuning_results\": " + tuning_results + "," +
+                        "\"signal\": \"practice_session_update\"" +
+                    "}" +
+                "}";
+        }
+
+
         public static string before_meeting_start =
                 "{" +
                     "\"scene_type\": \"before_meeting\", " +
@@ -288,17 +303,17 @@ namespace DTO
     }
 
     [Serializable]
-    public class SceneData
-    {
-        public string sender;
-        public string receiver;
-        public string content;
-    }
+public class SceneData
+{
+    public string sender;
+    public string receiver;
+    public string content;
+}
 
-    [Serializable]
-    public class RequestData
-    {
-        public string scene_type;
-        public SceneData scene_data;
-    }
+[Serializable]
+public class RequestData
+{
+    public string scene_type;
+    public SceneData scene_data;
+}
 }

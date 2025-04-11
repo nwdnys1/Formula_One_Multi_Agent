@@ -282,13 +282,13 @@ public class CarController : MonoBehaviour
         switch (tyreType)
         {
             case "hard":
-                wearRate = 40f; // Hard轮胎40圈磨损完
+                wearRate = 5f; // Hard轮胎40圈磨损完
                 break;
             case "medium":
-                wearRate = 32f; // Medium轮胎32圈磨损完
+                wearRate = 7f; // Medium轮胎32圈磨损完
                 break;
             case "soft":
-                wearRate = 25f; // Soft轮胎25圈磨损完
+                wearRate = 10f; // Soft轮胎25圈磨损完
                 break;
         }
 
@@ -499,7 +499,7 @@ public class CarController : MonoBehaviour
         Debug.Log("安全车出动！");
 
         // 4. 赛车从赛道上消失
-        RemoveCarFromRace();
+        Invoke("RemoveCarFromRace", 100);
 
         // 发送给llm
         controller.onAccident("Latifi");

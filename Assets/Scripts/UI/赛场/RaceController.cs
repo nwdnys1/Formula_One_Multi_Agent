@@ -38,6 +38,7 @@ public class RaceController : MonoBehaviour
         print("开始比赛");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        cm.SetCamera(cameras[0]);
 
         client.Send(JsonStr.race_start, (response) =>
         { }, (r) => EnvUpdate());

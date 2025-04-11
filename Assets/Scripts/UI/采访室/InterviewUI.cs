@@ -114,7 +114,7 @@ public class InterviewUI : MonoBehaviour
                 {
                     print("输入内容: " + _inputField.value);
                     onSubmit?.Invoke(_inputField.value);
-                    //HideInputField();
+                    _inputField.value = "";
                 }
             });
         }

@@ -1069,11 +1069,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1577697055}
   - {fileID: 341133306}
+  - {fileID: 1793607509}
   - {fileID: 1817254630}
   - {fileID: 1064943932}
-  - {fileID: 1793607509}
-  - {fileID: 1577697055}
   - {fileID: 352165932}
   - {fileID: 594407700}
   - {fileID: 1241110438}
@@ -1475,8 +1475,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341133302}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09997539, y: -0.3227837, z: 0.034316905, w: -0.94055194}
-  m_LocalPosition: {x: -247.80457, y: 35.821903, z: -1060.4874}
+  m_LocalRotation: {x: 0.01398489, y: 0.38918483, z: -0.0059216083, w: 0.9210345}
+  m_LocalPosition: {x: -230.63062, y: 4.77873, z: -685.5407}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2033,11 +2033,11 @@ MonoBehaviour:
   targetCar: {fileID: 109115496}
   cameras:
   - {fileID: 109115495}
+  - {fileID: 1577697056}
   - {fileID: 341133307}
+  - {fileID: 1793607510}
   - {fileID: 1817254631}
   - {fileID: 1064943933}
-  - {fileID: 1793607510}
-  - {fileID: 1577697056}
   currentCameraIndex: 0
   hasAccident: 0
   safeCar: {fileID: 2146888697}
@@ -4900,7 +4900,7 @@ GameObject:
   - component: {fileID: 1064943932}
   - component: {fileID: 1064943933}
   m_Layer: 0
-  m_Name: Overtake Camera 2 (2)
+  m_Name: Overtake Camera 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4914,8 +4914,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064943931}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09997539, y: -0.3227837, z: 0.034316905, w: -0.94055194}
-  m_LocalPosition: {x: -247.80457, y: 35.821903, z: -1060.4874}
+  m_LocalRotation: {x: -0.24424917, y: -0.3278522, z: 0.088171795, w: -0.90833974}
+  m_LocalPosition: {x: -474.14746, y: 297.232, z: 56.138077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6509,8 +6509,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577697051}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0732285, y: -0.6057706, z: 0.056132507, w: 0.79027134}
-  m_LocalPosition: {x: 293.88568, y: 22.111816, z: 11.401947}
+  m_LocalRotation: {x: 0.024516813, y: 0.70660925, z: -0.024528626, w: 0.7067537}
+  m_LocalPosition: {x: -114.29129, y: 6.428372, z: -28.445541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7643,8 +7643,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793607505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06095053, y: -0.12839942, z: 0.007906529, w: 0.9898162}
-  m_LocalPosition: {x: 304.84137, y: 23.852362, z: -75.00308}
+  m_LocalRotation: {x: 0.016674642, y: -0.038190246, z: 0.0006265226, w: 0.9991312}
+  m_LocalPosition: {x: -173.34648, y: 9.282663, z: -1065.6093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7701,7 +7701,7 @@ GameObject:
   - component: {fileID: 1817254630}
   - component: {fileID: 1817254631}
   m_Layer: 0
-  m_Name: Overtake Camera 2 (1)
+  m_Name: Overtake Camera 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7715,8 +7715,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817254629}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09997539, y: -0.3227837, z: 0.034316905, w: -0.94055194}
-  m_LocalPosition: {x: -247.80457, y: 35.821903, z: -1060.4874}
+  m_LocalRotation: {x: 0.04292641, y: -0.90759987, z: 0.09581731, w: 0.4064958}
+  m_LocalPosition: {x: 370.70093, y: 13.706959, z: 112.29695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

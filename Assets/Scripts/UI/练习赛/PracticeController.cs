@@ -98,6 +98,52 @@ public class PracticeController : MonoBehaviour
         client.Send(JsonStr.practice_session_update(tuningJson), (response) =>
         {
             JsonData json = JsonMapper.ToObject(response);
+            switch (json["sender"].ToString())
+            {
+                case "Mechanic":
+                    practiceUI.UpdateTeamDiscussion(json["content"].ToString(), null);
+
+                    break;
+                case "Hamilton":
+                    practiceUI.UpdateTeamDiscussion(null, json["content"].ToString());
+                    if (json.ContainsKey("tuning_data"))
+                    {
+                        JsonData tuning = json["tuning_data"];
+                        practiceUI.UpdateCarSetup(tuning["front_wing_angle"].ToString() + "°",
+                            tuning["rear_wing_angle"].ToString() + "°",
+                            tuning["anti_roll_distribution"].ToString(),
+                            tuning["tyre_camber"].ToString() + "°",
+                            tuning["toe_out"].ToString() + "°");
+                        //修改赛车参数
+
+                        targetCar.frontWingAngle = float.Parse(tuning["front_wing_angle"].ToString());
+                        targetCar.rearWingAngle = float.Parse(tuning["rear_wing_angle"].ToString());
+                        targetCar.antiRollDistribution = float.Parse(tuning["anti_roll_distribution"].ToString());
+                        targetCar.tyreCamber = float.Parse(tuning["tyre_camber"].ToString());
+                        targetCar.toeOut = float.Parse(tuning["toe_out"].ToString());
+                        targetCar.CalculateTuningRatings();
+                        //更新赛车性能
+                        string[] satisfaction = new string[5]
+                        {
+                        "Disaster","Low","Medium","High","Perfect"
+                        };
+
+                        practiceUI.UpdateDriverSatisfaction(satisfaction[targetCar.oversteerRating - 1],
+                            satisfaction[targetCar.brakingStabilityRating - 1],
+                            satisfaction[targetCar.corneringRating - 1],
+                            satisfaction[targetCar.tractionRating - 1],
+                            satisfaction[targetCar.straightsRating - 1]);
+
+                        practiceUI.UpdateCarPerformance(targetCar.topSpeed.ToString() + "km/h",
+                            targetCar.acceleration.ToString() + "G",
+                            targetCar.drsEffectiveness.ToString() + "%",
+                            (targetCar.carCornering * 100).ToString() + "G");
+                    }
+                    break;
+                default:
+                    Debug.Log("未知场景类型");
+                    break;
+            }
 
         }, (r) => { SceneManager.LoadScene("会议室"); });
     }

@@ -35,7 +35,7 @@ public class StartMenu : MonoBehaviour
 
     private void OnStartButtonClicked(ClickEvent evt)
     {
-        SceneManager.LoadScene("采访室");
+        SceneManager.LoadScene("练习赛");
     }
 
     private void OnQuitButtonClicked(ClickEvent evt)

@@ -101,7 +101,7 @@ public class InterviewUI : MonoBehaviour
             Debug.LogWarning("只有Wolff角色可以使用输入功能");
             return;
         }
-        print(_inputField);
+
         if (_inputField != null)
         {
             _inputField.value = "";

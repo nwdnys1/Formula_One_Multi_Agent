@@ -101,21 +101,7 @@ public class RaceController : MonoBehaviour
             }
         }, null);
     }
-    private void MeetingChoose()
-    {
 
-
-    }
-    private void MeetingEnd()
-    {
-        client.Send(JsonStr.before_meeting_end, (string response) =>
-        {
-            JsonData json = JsonMapper.ToObject(response);
-            // 处理服务器返回的JSON数据
-
-
-        }, null);
-    }
 
     private void Update()
     {

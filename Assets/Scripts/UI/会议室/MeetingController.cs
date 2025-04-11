@@ -141,7 +141,7 @@ public class MeetingController : MonoBehaviour
                                     }
                                     for (int j = 0; j < strategy["tyre_strategy"].Count; j++)
                                     {
-                                        tyre[j] = strategy["tyre_strategy"][j].ToString();
+                                        tyre[j] = strategy["tyre_strategy"][j].ToString().ToLower();
                                     }
                                     targetCar.pitStopLaps = pit;
                                     targetCar.tyreTypes = tyre;

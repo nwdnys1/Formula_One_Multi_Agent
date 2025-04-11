@@ -134,16 +134,10 @@ public class RaceUI : MonoBehaviour
                 {
                     pits[i] = int.Parse(json["strategy"]["pit_stop_laps"][i].ToString());
                 }
-                string[] tyres = new string[json["strategy"]["tyre_strategy"].Count];
-                for (int i = 0; i < tyres.Length; i++)
+                string[] tyreTypes = new string[json["strategy"]["tyre_strategy"].Count];
+                for (int i = 0; i < tyreTypes.Length; i++)
                 {
-                    tyres[i] = json["strategy"]["tyre_strategy"][i].ToString();
-                }
-                // tyres解析为枚举
-                string[] tyreTypes = new string[tyres.Length];
-                for (int i = 0; i < tyres.Length; i++)
-                {
-                    tyreTypes[i] = json["strategy"]["tyre_strategy"][i].ToString();
+                    tyreTypes[i] = json["strategy"]["tyre_strategy"][i].ToString().ToLower();
                 }
                 targetCar.pitStopLaps = pits;
                 targetCar.tyreTypes = tyreTypes;

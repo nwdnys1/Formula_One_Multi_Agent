@@ -56,7 +56,7 @@ public class RaceTimeManager : MonoBehaviour
     }
     private void Start()
     {
-        InvokeRepeating("update2LLM", 5f, 60f);
+        InvokeRepeating("update2LLM", 30f, 60f);
     }
 
     public void UpdateCarCheckpoint(string carId, int lapIdx, int ckptIdx, float time, int pitCnt, string tyreType, float tyreWear, Texture2D logo, bool finished)

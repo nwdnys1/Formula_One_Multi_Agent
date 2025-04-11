@@ -1013,7 +1013,7 @@
 	left: 66px;
 	width: 637px;
 	top: 0px;
-	height: 78px;
+	height: 136px;
 }
 
 .Mechanic {
@@ -1035,7 +1035,7 @@
 	left: 0px;
 	width: 637px;
 	top: 25px;
-	height: 53px;
+	height: 111px;
 	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
 	background-color: rgba(44,44,64,1);
 	overflow: hidden;
@@ -1044,11 +1044,11 @@
 .Has-everyone-reviewed-the-latest-setup-changes {
 	position: absolute;
 	left: 16px;
-	width: auto;
+	width: 609px;
 	top: 16px;
-	height: 21px;
+	height: 84px;
 	color: rgba(166,166,177,1);
-	white-space: nowrap;
+	white-space: normal;
 	font-size: 14px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-left;
@@ -1059,7 +1059,7 @@
 	position: absolute;
 	left: 25px;
 	width: 703px;
-	top: 226px;
+	top: 296px;
 	height: 78px;
 }
 
@@ -1080,7 +1080,7 @@
 	left: 66px;
 	width: 637px;
 	top: 0px;
-	height: 78px;
+	height: 136px;
 }
 
 .Hamilton {
@@ -1102,7 +1102,7 @@
 	left: 0px;
 	width: 637px;
 	top: 25px;
-	height: 53px;
+	height: 111px;
 	--box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
 	background-color: rgba(44,44,64,1);
 	overflow: hidden;
@@ -1111,11 +1111,11 @@
 .Yes-the-new-wing-configuration-looks-promising {
 	position: absolute;
 	left: 16px;
-	width: auto;
+	width: 604px;
 	top: 16px;
-	height: 21px;
+	height: 81px;
 	color: rgba(166,166,177,1);
-	white-space: nowrap;
+	white-space: normal;
 	font-size: 14px;
 	-unity-font: url('Fonts/Formula1-Medium.otf');
 	-unity-text-align: upper-left;

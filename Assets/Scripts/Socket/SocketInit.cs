@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class SocketInit : MonoBehaviour
 {
-    public string serverIP = "127.0.0.1";
-    public int serverPort = 8888;
     private void Awake()
     {
         var dispatcher = UnityMainThreadDispatcher.Instance;
@@ -14,7 +12,7 @@ public class SocketInit : MonoBehaviour
     {
 
         // 连接到服务器
-        SocketClient.Instance.Connect("127.0.0.1", 8888, (success) =>
+        SocketClient.Instance.Connect("47.101.153.28", 8887, (success) =>
         {
             if (success)
             {

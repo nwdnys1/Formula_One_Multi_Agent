@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class InterviewController : MonoBehaviour
 {
     InterviewUI dialog;
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
     CameraManager cm = CameraManager.Instance;
 
     public CinemachineVirtualCamera reporterCamera;
@@ -23,6 +23,7 @@ public class InterviewController : MonoBehaviour
     private void Awake()
     {
         dialog = GetComponent<InterviewUI>();
+        client = SocketClient.Instance;
         // 确保DialogUI组件已正确设置
         if (dialog == null)
         {

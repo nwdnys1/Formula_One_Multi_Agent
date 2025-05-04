@@ -4,8 +4,6 @@ using Cinemachine;
 using DTO;
 using LitJson;
 using UnityEngine.UIElements;
-using UnityEngine.InputSystem;
-using UnityEngine.WSA;
 using Cursor = UnityEngine.Cursor;
 using UnityEngine.SceneManagement;
 
@@ -13,7 +11,7 @@ public class MeetingController : MonoBehaviour
 {
     MeetingUI meetingUI;
     public PitStopWidgetTrible pitUI;
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
     CameraManager cm = CameraManager.Instance;
     public CinemachineVirtualCamera strategistCamera;
     public CinemachineVirtualCamera mechanicCamera;
@@ -28,6 +26,7 @@ public class MeetingController : MonoBehaviour
     private void Awake()
     {
         meetingUI = GetComponent<MeetingUI>();
+        client = SocketClient.Instance;
         // 确保DialogUI组件已正确设置
         if (meetingUI == null)
         {

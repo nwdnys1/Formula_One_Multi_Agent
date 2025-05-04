@@ -9,7 +9,7 @@ public class RaceController : MonoBehaviour
 {
     public RaceUI raceUI;
     public CarController targetCar;
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
     CameraManager cm = CameraManager.Instance;
     ParaManager para = ParaManager.Instance;
     [Header("摄像机")]
@@ -19,7 +19,7 @@ public class RaceController : MonoBehaviour
     public GameObject safeCar;
     private void Awake()
     {
-
+        client = SocketClient.Instance;
         raceUI = GetComponent<RaceUI>();
         if (raceUI == null)
         {

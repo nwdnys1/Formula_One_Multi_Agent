@@ -395,6 +395,10 @@ PrefabInstance:
       propertyPath: envParaPreset
       value: 
       objectReference: {fileID: 11400000, guid: 24203e56aaea2b74aaa5635cb32f92e7, type: 2}
+    - target: {fileID: 1945954736696944365, guid: 06e96f5ca69c29d4580c458734c11027, type: 3}
+      propertyPath: serverPort
+      value: 8887
+      objectReference: {fileID: 0}
     - target: {fileID: 7020820620383909390, guid: 06e96f5ca69c29d4580c458734c11027, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

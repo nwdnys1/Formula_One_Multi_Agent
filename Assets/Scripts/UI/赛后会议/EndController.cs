@@ -4,8 +4,6 @@ using Cinemachine;
 using DTO;
 using LitJson;
 using UnityEngine.UIElements;
-using UnityEngine.InputSystem;
-using UnityEngine.WSA;
 using Cursor = UnityEngine.Cursor;
 using UnityEngine.SceneManagement;
 
@@ -13,7 +11,7 @@ public class EndController : MonoBehaviour
 {
     EndUI UI;
     public PitStopWidgetTrible pitUI;
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
     CameraManager cm = CameraManager.Instance;
     public CinemachineVirtualCamera strategistCamera;
     public CinemachineVirtualCamera mechanicCamera;
@@ -27,6 +25,7 @@ public class EndController : MonoBehaviour
 
     private void Awake()
     {
+        client = SocketClient.Instance;
         UI = GetComponent<EndUI>();
         // 确保DialogUI组件已正确设置
         if (UI == null)

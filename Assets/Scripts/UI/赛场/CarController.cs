@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
-using DTO;
-using LitJson;
 
 
 
@@ -10,7 +8,6 @@ public class CarController : MonoBehaviour
 {
     public string carId;
     private CarPara para;
-    SocketClient client = SocketClient.Instance;
     public RaceController controller;
 
     [Header("导航设置")]

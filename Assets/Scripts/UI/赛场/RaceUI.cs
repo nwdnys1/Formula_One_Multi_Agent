@@ -11,7 +11,7 @@ public class RaceUI : MonoBehaviour
     public UIDocument StrategyUI;
     public UIDocument TrackUI;
     public PitStopWidget PitUI;
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
 
     private VisualElement POVRoot;
     private VisualElement StrategyRoot;
@@ -116,6 +116,7 @@ public class RaceUI : MonoBehaviour
     }
     private void Start()
     {
+        client = SocketClient.Instance;
         // 隐藏所有UI
         POVRoot.style.display = DisplayStyle.None;
         StrategyRoot.style.display = DisplayStyle.None;

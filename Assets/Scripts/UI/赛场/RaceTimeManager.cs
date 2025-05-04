@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class RaceTimeManager : MonoBehaviour
 {
     public static RaceTimeManager Instance { get; private set; }
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
 
     public struct CarRaceData
     {
@@ -41,6 +41,7 @@ public class RaceTimeManager : MonoBehaviour
 
     private void Awake()
     {
+        client = SocketClient.Instance;
         if (Instance != null && Instance != this)
         {
             Destroy(this);

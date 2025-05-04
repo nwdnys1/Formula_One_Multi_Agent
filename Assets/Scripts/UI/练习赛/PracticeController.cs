@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PracticeController : MonoBehaviour
 {
-    SocketClient client = SocketClient.Instance;
+    SocketClient client;
     ParaManager paraManager = ParaManager.Instance;
     public PracticeUI practiceUI;
     public string carId = "Hamilton";
@@ -14,7 +14,7 @@ public class PracticeController : MonoBehaviour
     private void Awake()
     {
 
-
+        client = SocketClient.Instance;
         if (client == null)
         {
             Debug.LogError("SocketClient is not assigned in the inspector.");
